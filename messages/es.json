@@ -1,0 +1,474 @@
+{
+  "header": {
+    "menu": {
+      "label": "Menú",
+      "items": [
+        {
+          "name": "Inicio",
+          "href": "/"
+        },
+        {
+          "name": "Sobre mí",
+          "href": "/about"
+        },
+        {
+          "name": "Portafolio",
+          "href": "/portfolio"
+        },
+        {
+          "name": "Contacto",
+          "href": "/contact"
+        }
+      ]
+    },
+    "languageButton": {
+      "label": "Idioma",
+      "languages": [
+        {
+          "name": "Inglés",
+          "id": "en"
+        },
+        {
+          "name": "Español",
+          "id": "es"
+        },
+        {
+          "name": "Francés",
+          "id": "fr"
+        },
+        {
+          "name": "Indonesio",
+          "id": "id"
+        },
+        {
+          "name": "Portugués",
+          "id": "pt"
+        }
+      ]
+    },
+    "themeButton": {
+      "label": "Tema",
+      "themes": {
+        "light": "Claro",
+        "dark": "Oscuro"
+      }
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 Roberto Jordán.",
+    "menu": {
+      "label": "Menú",
+      "items": [
+        {
+          "name": "Inicio",
+          "href": "/"
+        },
+        {
+          "name": "Sobre mí",
+          "href": "/about"
+        },
+        {
+          "name": "Portafolio",
+          "href": "/portfolio"
+        },
+        {
+          "name": "Contacto",
+          "href": "/contact"
+        }
+      ]
+    }
+  },
+  "home": {
+    "title": "Desarrollador Frontend & Diseñador",
+    "subtitle": "Construyendo experiencias digitales con tecnologías modernas. Enfocado en crear soluciones elegantes para problemas complejos.",
+    "projects": {
+      "title": "Mis Proyectos Recientes",
+      "subtitle": "Aquí hay algunos proyectos de diseño en los que he trabajado. ¿Quieres ver más?",
+      "emailButton": {
+        "label": "Envíame un correo.",
+        "href": "mailto:jordanroberto74@gmail.com"
+      },
+      "viewAllButton": {
+        "label": "Ver todos los proyectos",
+        "href": "/portfolio"
+      }
+    }
+  },
+  "about": {
+    "title": "sobre mí.",
+    "subtitle": "Soy un Desarrollador Frontend & Diseñador UI/UX basado en Santa Cruz de la Sierra, Bolivia.",
+    "paragraph1": "Me especializo en crear soluciones digitales escalables y de alto rendimiento para diversas plataformas, incluidos sitios web de comercio electrónico, landing pages y tiendas en línea. Con un fuerte enfoque en el diseño centrado en el usuario, combino lo mejor de las tecnologías frontend como React, Next.js y Tailwind CSS para entregar experiencias visualmente atractivas y fluidas.",
+    "paragraph2": "Estoy dedicado a entregar experiencias de usuario sin interrupciones, refinando constantemente mis habilidades y manteniéndome actualizado con las últimas tendencias y mejores prácticas tanto en desarrollo frontend como en diseño UX/UI.",
+    "avatarDialog": {
+      "title": "Hola. Soy Roberto"
+    },
+    "avatar": {
+      "url": "/img/avatar.png",
+      "alt": "imagen avatar"
+    },
+    "design": {
+      "title": "Parte Diseñador",
+      "label": "Diseñador",
+      "services": [
+        "Diseño UI/UX",
+        "Diseño Web",
+        "Diseño Móvil",
+        "Diseño de Productos",
+        "Branding",
+        "Ilustración",
+        "Motion"
+      ]
+    },
+    "development": {
+      "title": "Parte Programador",
+      "label": "Programador",
+      "services": [
+        "React",
+        "Next.js",
+        "Tailwind CSS",
+        "TypeScript",
+        "JavaScript",
+        "HTML",
+        "CSS"
+      ]
+    },
+    "skills": {
+      "title": "Mis Habilidades",
+      "subtitle": "Mis habilidades son una mezcla de diseño y desarrollo.",
+      "items": [
+        "Figma",
+        "Photoshop",
+        "Illustrator",
+        "After Effects",
+        "Filmora",
+        "Wordpress",
+        "Canva",
+        "React",
+        "Next.js",
+        "Vue.js",
+        "Tailwind CSS",
+        "TypeScript",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Git",
+        "GitHub",
+        "Vercel",
+        "Jira",
+        "Slack",
+        "MySQL",
+        "GraphQL",
+        "Strapi",
+        "Jest",
+        "Cloudinary"
+      ],
+      "design": {
+        "title": "Diseñador",
+        "description": "Priorizo una estructura de contenido clara, patrones de diseño intuitivos e interacciones de usuario fluidas para crear experiencias digitales atractivas. Mi enfoque equilibra la estética con la funcionalidad, asegurando que cada diseño cumpla una finalidad.",
+        "services": {
+          "title": "Áreas de especialización:",
+          "items": [
+            "Diseño UX/UI",
+            "Diseño de Web & Aplicaciones Móviles",
+            "Diseño de Branding & Logos"
+          ]
+        },
+        "tools": {
+          "title": "Herramientas & Tecnologías",
+          "items": [
+            "Figma",
+            "Photoshop",
+            "Illustrator",
+            "After Effects",
+            "Filmora"
+          ]
+        },
+        "chartData": {
+          "title": "Diseño",
+          "radarName": "Diseño",
+          "radarDataKey": "value",
+          "dataKey": "skill",
+          "data": [
+            { "skill": "Diseño UI/UX", "value": 90 },
+            { "skill": "Diseño Web", "value": 85 },
+            { "skill": "Diseño Móvil", "value": 80 },
+            { "skill": "Diseño de Productos", "value": 85 },
+            { "skill": "Branding", "value": 80 },
+            { "skill": "Ilustración", "value": 75 },
+            { "skill": "Diseño en Movimiento", "value": 70 },
+            { "skill": "Figma", "value": 85 },
+            { "skill": "Photoshop", "value": 80 },
+            { "skill": "Illustrator", "value": 75 },
+            { "skill": "After Effects", "value": 70 }
+          ]
+        }
+      },
+      "frontend": {
+        "title": "Desarrollador Frontend",
+        "description": "Como Desarrollador Frontend, me enfoco en escribir código limpio, mantenible y eficiente para crear aplicaciones web responsivas. Trabajo con las últimas tecnologías frontend para garantizar un rendimiento óptimo, accesibilidad y una experiencia de usuario fluida en todos los dispositivos.",
+        "services": {
+          "title": "Habilidades Principales:",
+          "items": [
+            "HTML & CSS",
+            "JavaScript",
+            "React & Next.js",
+            "Diseño Web Responsivo",
+            "Optimización de Rendimiento"
+          ]
+        },
+        "tools": {
+          "title": "Tecnologías & Herramientas:",
+          "items": [
+            "React",
+            "Next.js",
+            "Tailwind CSS",
+            "Git",
+            "Webpack"
+          ]
+        },
+        "chartData": {
+          "title": "Frontend",
+          "radarName": "Frontend",
+          "radarDataKey": "value",
+          "dataKey": "skill",
+          "data": [
+            { "skill": "HTML/CSS", "value": 95 },
+            { "skill": "JavaScript", "value": 90 },
+            { "skill": "React", "value": 85 },
+            { "skill": "Next.js", "value": 80 },
+            { "skill": "Tailwind CSS", "value": 85 },
+            { "skill": "Diseño Web Responsivo", "value": 85 },
+            { "skill": "Optimización de Rendimiento", "value": 75 },
+            { "skill": "TypeScript", "value": 75 },
+            { "skill": "Git", "value": 80 },
+            { "skill": "Webpack", "value": 70 }
+          ]
+        }
+      },
+      "backend": {
+        "title": "Desarrollador Backend",
+        "description": "Me enfoco en integrar servicios y APIs de terceros, optimizar flujos de trabajo y gestionar contenidos para aplicaciones web dinámicas. Aunque mi experiencia backend está en crecimiento, continuamente aprendo para ampliar mis habilidades en este campo.",
+        "services": {
+          "title": "Habilidades Principales:",
+          "items": [
+            "Integración API",
+            "Gestión de contenidos (Strapi)",
+            "Conectividad de bases de datos (Google Sheets, Cloudinary)",
+            "Arquitectura sin servidor (Vercel, GitHub Pages)",
+            "Pruebas y automatización (Jest, Husky)"
+          ]
+        },
+        "tools": {
+          "title": "Tecnologías & Herramientas:",
+          "items": [
+            "GraphQL",
+            "Strapi",
+            "Cloudinary",
+            "Google Sheets",
+            "Jest",
+            "Husky",
+            "GitHub Pages",
+            "Vercel"
+          ]
+        },
+        "chartData": {
+          "title": "Backend",
+          "radarName": "Backend",
+          "radarDataKey": "value",
+          "dataKey": "skill",
+          "data": [
+            { "skill": "API Integration", "value": 70 },
+            { "skill": "GraphQL", "value": 65 },
+            { "skill": "Strapi", "value": 70 },
+            { "skill": "Cloudinary", "value": 60 },
+            { "skill": "Jest", "value": 65 },
+            { "skill": "GitHub", "value": 80 },
+            { "skill": "Vercel", "value": 75 },
+            { "skill": "Google Analytics", "value": 70 },
+            { "skill": "Google Sheets", "value": 65 }
+          ]
+        } 
+      }
+    },
+    "random": {
+      "title": "Datos curiosos",
+      "items": [
+        "El café impulsa mi productividad.",
+        "Siempre estoy explorando nuevas tendencias tecnológicas.",
+        "El gimnasio me ayuda a mantenerme enfocado y con energía.",
+        "La comida es mi mayor alegría, siempre estoy dispuesto a probar nuevos platos.",
+        "TikTok e Instagram son mis plataformas sociales favoritas.",
+        "Me encanta viajar y descubrir nuevos lugares.",
+        "Los fines de semana en la piscina son mi forma de recargar energías."
+      ]
+    }
+  },
+  "portfolio": {
+    "title": "portafolio.",
+    "subtitle": "Explora mis últimos proyectos de desarrollo web.",
+    "paragraph1": "He trabajado con startups y clientes como freelance, creando soluciones digitales a medida que priorizan el rendimiento, la usabilidad y la escalabilidad. Ya sea desarrollando landing pages, aplicaciones empresariales o plataformas de gran escala, me enfoco en escribir código limpio y mantenible, además de perfeccionar la UI/UX para ofrecer experiencias digitales de alta calidad.",
+    "projects": {
+      "title": "Proyectos",
+      "subtitle": "Estos proyectos destacan mi capacidad para ofrecer soluciones digitales bien diseñadas. Cada ejemplo muestra mi experiencia en desarrollo front-end y back-end, experiencias de usuario intuitivas y arquitecturas escalables. También incluyen enlaces a repositorios de código y demostraciones en vivo."
+    }
+  },
+  "contact": {
+    "title": "contacto.",
+    "subtitle": "Conectemos. Contáctame a través de redes sociales o correo electrónico.",
+    "paragraph1": "Siempre estoy abierto a nuevas colaboraciones y proyectos innovadores. Si tienes una consulta, una propuesta de proyecto o simplemente deseas ponerte en contacto, no dudes en escribirme. Estaré encantado de escucharte.",
+    "sendEmail": {
+      "title": "Ponte en contacto",
+      "subtitle": "Completa el formulario a continuación y te responderé lo antes posible.",
+      "form": {
+        "name": {
+          "label": "Nombre completo",
+          "placeholder": "Ingresa tu nombre completo"
+        },
+        "email": {
+          "label": "Correo electrónico",
+          "placeholder": "Ingresa tu correo electrónico"
+        },
+        "subject": {
+          "label": "Asunto",
+          "placeholder": "Escribe el asunto de tu mensaje"
+        },
+        "message": {
+          "label": "Tu mensaje",
+          "placeholder": "Escribe tu mensaje aquí"
+        },
+        "sendButton": {
+          "label": "Enviar mensaje"
+        }
+      },
+      "success": {
+        "title": "Mensaje enviado con éxito",
+        "subtitle": "Gracias por contactarme. Te responderé lo antes posible."
+      },
+      "error": {
+        "title": "No se pudo enviar el mensaje",
+        "subtitle": "Ocurrió un error al enviar tu mensaje. Inténtalo nuevamente más tarde."
+      }
+    }
+  },
+  "projects": [
+    {
+      "id": 1,
+      "name": "ElectroFix - Henry",
+      "description": "ElectroFix es una landing page moderna y limpia para Henry, un técnico especializado en reparaciones electrónicas. El sitio muestra sus servicios, experiencia e información de contacto, facilitando que los clientes potenciales se comuniquen con él. Construido con HTML, CSS y JavaScript, incluye desplazamiento suave, diseño responsivo y elementos interactivos que resaltan el profesionalismo y la experiencia de Henry.",
+      "image": {
+        "url": "/img/projects/project1.png",
+        "alt": "Vista previa de la landing page de ElectroFix - Henry"
+      },
+      "code": {
+        "url": "https://github.com/JORDANROBERTO74/henry-tecnico",
+        "alt": "Repositorio de código de ElectroFix"
+      },
+      "demo": {
+        "url": "https://jordanroberto74.github.io/henry-tecnico/",
+        "alt": "Demo de ElectroFix"
+      }
+    },
+    {
+      "id": 2,
+      "name": "THE GYM",
+      "description": "THE GYM es una landing page enérgica para un moderno centro de fitness, diseñada para atraer nuevos miembros y mostrar las instalaciones del gimnasio, planes de membresía, entrenadores y horarios de clases. Creada con HTML, CSS y JavaScript, la web presenta un diseño audaz con animaciones dinámicas, diseño responsivo y secciones con llamados a la acción que impulsan la interacción y conversión del usuario.",
+      "image": {
+        "url": "/img/projects/project2.png",
+        "alt": "Vista previa de la landing page de THE GYM"
+      },
+      "code": {
+        "url": "https://github.com/jordanroberto74/the_gym",
+        "alt": "Repositorio de código de THE GYM"
+      },
+      "demo": {
+        "url": "https://jordanroberto74.github.io/the_gym/",
+        "alt": "Demo de THE GYM"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Q'RICO",
+      "description": "Q'RICO es una landing page vibrante y visualmente atractiva para un restaurante local especializado en cocina tradicional y fusión. El sitio muestra el menú, la ubicación, testimonios de clientes y una galería de fotos de los platos. Construido con HTML, CSS y JavaScript, ofrece un diseño responsivo, interacciones animadas y una navegación sencilla que mejora la experiencia del usuario e invita a explorar sus deliciosas propuestas.",
+      "image": {
+        "url": "/img/projects/project3.png",
+        "alt": "Vista previa de la landing page del restaurante Q'RICO"
+      },
+      "code": {
+        "url": "https://github.com/jordanroberto74/q-rico",
+        "alt": "Repositorio de código de Q'RICO"
+      },
+      "demo": {
+        "url": "https://jordanroberto74.github.io/q-rico/",
+        "alt": "Demo de Q'RICO"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Christian García - Abogado",
+      "description": "Una landing page profesional y elegante diseñada para Christian García, un abogado y asesor legal con experiencia. El sitio presenta sus áreas de especialización, información de contacto, biografía y una sección para agendar consultas. Desarrollado con HTML, CSS y JavaScript, el sitio cuenta con diseño responsivo, transiciones suaves y una estructura centrada en la claridad y la confianza.",
+      "image": {
+        "url": "/img/projects/project4.png",
+        "alt": "Vista previa de la landing page de Christian García - Abogado"
+      },
+      "code": {
+        "url": "https://github.com/jordanroberto74/christian-garcia-abg",
+        "alt": "Repositorio de código de Christian García"
+      },
+      "demo": {
+        "url": "https://jordanroberto74.github.io/christian-garcia-abg/",
+        "alt": "Demo de Christian García"
+      }
+    },
+    {
+      "id": 5,
+      "name": "UBICAR",
+      "description": "UBICAR es una landing page elegante y profesional para una empresa dedicada al rastreo satelital de vehículos, vigilancia para hogares y negocios, y soluciones de seguridad inteligente. Construido con HTML, CSS y JavaScript, el sitio presenta los servicios, tecnología, áreas de cobertura e información de contacto de UBICAR con una estructura clara y confiable. Con diseño responsivo, secciones interactivas y visuales modernos, está orientado a generar confianza y convertir visitantes en clientes.",
+      "image": {
+        "url": "/img/projects/project5.png",
+        "alt": "Vista previa de la landing page de UBICAR"
+      },
+      "code": {
+        "url": "https://github.com/jordanroberto74/ubicar",
+        "alt": "Repositorio de código de UBICAR"
+      },
+      "demo": {
+        "url": "https://jordanroberto74.github.io/ubicar/",
+        "alt": "Demo de UBICAR"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Titan Force Gym",
+      "description": "Titan Force Gym es una landing page poderosa y visualmente impactante creada para un centro de entrenamiento de alto rendimiento enfocado en fuerza, musculación y entrenamientos funcionales. El sitio destaca a los entrenadores de élite del gimnasio, las opciones de membresía, instalaciones y testimonios. Desarrollado con Next.js y App Router, usando TypeScript y estilizado con Tailwind CSS, también integra Prettier para un código limpio y consistente. Es completamente responsivo y está desplegado en Vercel para un rendimiento óptimo.",
+      "image": {
+        "url": "/img/projects/project6.png",
+        "alt": "Vista previa de la landing page de Titan Force Gym"
+      },
+      "code": {
+        "url": "https://github.com/jordanroberto74/titan_force_gym",
+        "alt": "Repositorio de código de Titan Force Gym"
+      },
+      "demo": {
+        "url": "https://titan-forge-gym.vercel.app/",
+        "alt": "Demo de Titan Force Gym"
+      }
+    },
+    {
+      "id": 7,
+      "name": "PC Mania",
+      "description": "PC Mania es una aplicación web de comercio electrónico para la compra de accesorios de computación en línea. Construida con Next.js y estilizada con Tailwind CSS, ofrece una experiencia de compra fluida y responsiva. Los usuarios pueden explorar el catálogo de productos, ver detalles, agregar artículos al carrito y completar sus compras fácilmente. El sitio está optimizado para el rendimiento y la interacción del usuario.",
+      "image": {
+        "url": "/img/projects/project7.png",
+        "alt": "Vista previa de PC Mania"
+      },
+      "code": {
+        "url": "https://github.com/jordanroberto74/pc_mania",
+        "alt": "Repositorio de código de PC Mania"
+      },
+      "demo": {
+        "url": "https://pcmania-eight.vercel.app/",
+        "alt": "Demo de PC Mania"
+      }
+    }
+  ]
+}
