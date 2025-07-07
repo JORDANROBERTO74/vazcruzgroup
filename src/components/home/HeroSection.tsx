@@ -6,12 +6,11 @@ import {
   Globe,
   TrendingUp,
   Shield,
-  Clock,
-  Users,
   Handshake,
   Building2,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 
 export default function HeroSection() {
   const containerVariants = {
@@ -72,10 +71,13 @@ export default function HeroSection() {
           >
             {/* Badge */}
             <motion.div variants={itemVariants}>
-              <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-primary/10 to-primary/5 text-primary rounded-full text-sm font-medium border border-primary/20 dark:border-primary/30">
+              <Badge
+                variant="outline"
+                className="px-4 py-2 text-sm font-medium"
+              >
                 <Building2 className="w-4 h-4 mr-2" />
                 Vascruz Group LLC
-              </div>
+              </Badge>
             </motion.div>
 
             {/* Main Title */}
