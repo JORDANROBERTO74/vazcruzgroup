@@ -11,8 +11,7 @@ import {
   DropdownMenuRadioItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { Languages } from "lucide-react";
-import { upperCase } from "lodash";
+import { Globe } from "lucide-react";
 
 export default function LocaleSwitcher() {
   const [isPending, startTransition] = useTransition();
@@ -36,8 +35,7 @@ export default function LocaleSwitcher() {
     <DropdownMenu>
       <DropdownMenuTrigger disabled={isPending} asChild>
         <Button variant="outline" className="w-full justify-start">
-          <Languages className="mr-2 h-4 w-4" />
-          {upperCase(selectedLocale)}
+          <Globe className="h-4 w-4" />
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="w-[200px]">

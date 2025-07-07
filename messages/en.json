@@ -8,12 +8,12 @@
           "href": "/"
         },
         {
-          "name": "About",
-          "href": "/about"
+          "name": "Services",
+          "href": "/services"
         },
         {
-          "name": "Portfolio",
-          "href": "/portfolio"
+          "name": "About",
+          "href": "/about"
         },
         {
           "name": "Contact",
@@ -31,18 +31,6 @@
         {
           "name": "Spanish",
           "id": "es"
-        },
-        {
-          "name": "French",
-          "id": "fr"
-        },
-        {
-          "name": "Indonesian",
-          "id": "id"
-        },
-        {
-          "name": "Portuguese",
-          "id": "pt"
         }
       ]
     },
@@ -94,7 +82,7 @@
       }
     }
   },
-  "about": {
+    "about": {
     "title": "about.",
     "subtitle": "I'm a Frontend Developer & UI/UX Designer based in Santa Cruz de la Sierra, Bolivia.",
     "paragraph1": "I specialize in creating scalable and high-performance digital solutions for various platforms, including e-commerce websites, landing pages, and online stores. With a strong emphasis on user-centric design, I combine the best of frontend technologies like React, Next.js, and Tailwind CSS to deliver visually engaging, seamless experiences.",
@@ -313,40 +301,153 @@
     }
   },
   "contact": {
-    "title": "contact.",
-    "subtitle": "Let's connect. Reach out via social media or email.",
-    "paragraph1": "I am always open to new collaborations and innovative projects. Whether you have a business inquiry, a project proposal, or simply wish to connect, feel free to reach out. I look forward to hearing from you.",
-    "sendEmail": {
-      "title": "Get in Touch",
-      "subtitle": "Fill out the form below, and I will respond as soon as possible.",
-      "form": {
-        "name": {
-          "label": "Full Name",
-          "placeholder": "Enter your full name"
-        },
+    "hero": {
+      "badge": "Let's Connect Businesses",
+      "title": "Let's Establish Commercial Connections",
+      "subtitle": "We are here to facilitate your commercial transactions. We connect manufacturers, distributors and buyers in national and international markets.",
+      "cards": {
         "email": {
-          "label": "Email Address",
-          "placeholder": "Enter your email address"
+          "title": "Email",
+          "value": "info@vascruzgroup.com"
         },
-        "subject": {
-          "label": "Subject",
-          "placeholder": "Enter the subject of your message"
+        "phone": {
+          "title": "Phone",
+          "value": "+1 (555) 123-4567"
         },
-        "message": {
-          "label": "Your Message",
-          "placeholder": "Write your message here"
+        "location": {
+          "title": "Location",
+          "value": "Miami, Florida, USA"
         },
-        "sendButton": {
-          "label": "Send Message"
+        "hours": {
+          "title": "Hours",
+          "value": "Mon - Fri: 9AM - 6PM"
+        }
+      }
+    },
+    "form": {
+      "badge": "Contact Form",
+      "title": "Let's Connect Your Business",
+      "subtitle": "Complete the form and our team of commercial intermediation experts will contact you to discuss business opportunities.",
+      "fields": {
+        "name": "Full Name *",
+        "email": "Corporate Email *",
+        "company": "Company *",
+        "phone": "Phone *",
+        "businessType": "Business Type *",
+        "subject": "Subject *",
+        "message": "Message *"
+      },
+      "placeholders": {
+        "name": "Your full name",
+        "email": "your@company.com",
+        "company": "Your company name",
+        "phone": "+1 (555) 123-4567",
+        "subject": "How can we help you?",
+        "message": "Describe your commercial needs, products of interest, or how we can help you connect with new markets..."
+      },
+      "businessTypes": {
+        "manufacturer": "Manufacturer",
+        "distributor": "Distributor",
+        "buyer": "Buyer",
+        "other": "Other"
+      },
+      "submit": "Send Message",
+      "sending": "Sending message...",
+      "success": {
+        "title": "Message Sent!",
+        "description": "Thank you for contacting us. Our team will contact you within the next 24 hours to discuss your commercial needs.",
+        "button": "Send another message"
+      }
+    },
+    "info": {
+      "badge": "About Vascruz Group",
+      "title": "Commercial Intermediation Experts",
+      "subtitle": "We are specialists in connecting manufacturers, distributors and buyers in national and international markets, facilitating successful commercial transactions.",
+      "stats": {
+        "experience": "Years of Experience",
+        "markets": "Markets Served",
+        "clients": "Satisfied Clients",
+        "transactions": "Successful Transactions"
+      },
+      "services": {
+        "title": "Our Main Services",
+        "representation": {
+          "title": "Commercial Representation",
+          "description": "We connect manufacturers with distributors and buyers"
+        },
+        "expansion": {
+          "title": "International Expansion",
+          "description": "We facilitate entry into new global markets"
+        },
+        "strategy": {
+          "title": "Business Strategies",
+          "description": "We develop personalized growth plans"
+        },
+        "consulting": {
+          "title": "Expert Consulting",
+          "description": "Specialized consulting in commercial intermediation"
         }
       },
-      "success": {
-        "title": "Message Sent Successfully",
-        "subtitle": "Thank you for reaching out. I will get back to you as soon as possible."
+      "contact": {
+        "title": "Contact Information",
+        "office": {
+          "title": "Main Office",
+          "value": "Miami, Florida, United States"
+        },
+        "phone": {
+          "title": "Phone",
+          "value": "+1 (555) 123-4567"
+        },
+        "email": {
+          "title": "Email",
+          "value": "info@vascruzgroup.com"
+        },
+        "hours": {
+          "title": "Business Hours",
+          "value": "Monday - Friday: 9:00 AM - 6:00 PM EST"
+        }
       },
-      "error": {
-        "title": "Message Not Sent",
-        "subtitle": "An error occurred while sending your message. Please try again later."
+      "whyUs": {
+        "title": "Why choose us?",
+        "experience": "Proven experience in commercial intermediation",
+        "network": "Global network of commercial contacts",
+        "confidentiality": "Personalized and confidential consulting",
+        "results": "Measurable and guaranteed results"
+      }
+    },
+    "map": {
+      "badge": "Global Presence",
+      "title": "Connecting International Markets",
+      "subtitle": "Our global network allows us to facilitate commercial transactions in multiple markets, connecting manufacturers, distributors and buyers worldwide.",
+      "location": {
+        "title": "Our Main Location",
+        "city": "Miami, Florida, USA",
+        "description": "Main office of Vascruz Group LLC"
+      },
+      "regions": {
+        "northAmerica": {
+          "title": "North America",
+          "countries": ["United States", "Canada", "Mexico"]
+        },
+        "southAmerica": {
+          "title": "South America",
+          "countries": ["Brazil", "Argentina", "Chile", "Colombia", "Peru"]
+        },
+        "europe": {
+          "title": "Europe",
+          "countries": ["Spain", "Germany", "France", "Italy", "Netherlands"]
+        },
+        "asia": {
+          "title": "Asia",
+          "countries": ["China", "Japan", "South Korea", "India"]
+        }
+      },
+      "cta": {
+        "title": "Ready to expand your business?",
+        "description": "Our team of experts is ready to help you connect with new markets and global business opportunities.",
+        "support": "Available Support",
+        "response": "Guaranteed Response",
+        "confidentiality": "Confidentiality"
       }
     }
   },
