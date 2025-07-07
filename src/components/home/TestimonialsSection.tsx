@@ -240,7 +240,7 @@ export default function TestimonialsSection() {
 
                       {/* Testimonial Text */}
                       <p className="text-muted-foreground leading-relaxed text-sm">
-                        "{testimonial.text}"
+                        {`"{testimonial.text}"`}
                       </p>
                     </CardContent>
                   </Card>
