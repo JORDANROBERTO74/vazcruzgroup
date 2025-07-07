@@ -8,12 +8,12 @@
           "href": "/"
         },
         {
-          "name": "Sobre mí",
-          "href": "/about"
+          "name": "Servicios",
+          "href": "/services"
         },
         {
-          "name": "Portafolio",
-          "href": "/portfolio"
+          "name": "Sobre mí",
+          "href": "/about"
         },
         {
           "name": "Contacto",
@@ -31,18 +31,6 @@
         {
           "name": "Español",
           "id": "es"
-        },
-        {
-          "name": "Francés",
-          "id": "fr"
-        },
-        {
-          "name": "Indonesio",
-          "id": "id"
-        },
-        {
-          "name": "Portugués",
-          "id": "pt"
         }
       ]
     },
@@ -94,7 +82,7 @@
       }
     }
   },
-  "about": {
+    "about": {
     "title": "sobre mí.",
     "subtitle": "Soy un Desarrollador Frontend & Diseñador UI/UX basado en Santa Cruz de la Sierra, Bolivia.",
     "paragraph1": "Me especializo en crear soluciones digitales escalables y de alto rendimiento para diversas plataformas, incluidos sitios web de comercio electrónico, landing pages y tiendas en línea. Con un fuerte enfoque en el diseño centrado en el usuario, combino lo mejor de las tecnologías frontend como React, Next.js y Tailwind CSS para entregar experiencias visualmente atractivas y fluidas.",
@@ -313,40 +301,153 @@
     }
   },
   "contact": {
-    "title": "contacto.",
-    "subtitle": "Conectemos. Contáctame a través de redes sociales o correo electrónico.",
-    "paragraph1": "Siempre estoy abierto a nuevas colaboraciones y proyectos innovadores. Si tienes una consulta, una propuesta de proyecto o simplemente deseas ponerte en contacto, no dudes en escribirme. Estaré encantado de escucharte.",
-    "sendEmail": {
-      "title": "Ponte en contacto",
-      "subtitle": "Completa el formulario a continuación y te responderé lo antes posible.",
-      "form": {
-        "name": {
-          "label": "Nombre completo",
-          "placeholder": "Ingresa tu nombre completo"
-        },
+    "hero": {
+      "badge": "Conectemos Negocios",
+      "title": "Establezcamos Conexiones Comerciales",
+      "subtitle": "Estamos aquí para facilitar sus transacciones comerciales. Conectamos fabricantes, distribuidores y compradores en mercados nacionales e internacionales.",
+      "cards": {
         "email": {
-          "label": "Correo electrónico",
-          "placeholder": "Ingresa tu correo electrónico"
+          "title": "Email",
+          "value": "info@vascruzgroup.com"
         },
-        "subject": {
-          "label": "Asunto",
-          "placeholder": "Escribe el asunto de tu mensaje"
+        "phone": {
+          "title": "Teléfono",
+          "value": "+1 (555) 123-4567"
         },
-        "message": {
-          "label": "Tu mensaje",
-          "placeholder": "Escribe tu mensaje aquí"
+        "location": {
+          "title": "Ubicación",
+          "value": "Miami, Florida, USA"
         },
-        "sendButton": {
-          "label": "Enviar mensaje"
+        "hours": {
+          "title": "Horarios",
+          "value": "Lun - Vie: 9AM - 6PM"
+        }
+      }
+    },
+    "form": {
+      "badge": "Formulario de Contacto",
+      "title": "Conectemos su Negocio",
+      "subtitle": "Complete el formulario y nuestro equipo de expertos en intermediación comercial se pondrá en contacto con usted para discutir oportunidades de negocio.",
+      "fields": {
+        "name": "Nombre Completo *",
+        "email": "Email Corporativo *",
+        "company": "Empresa *",
+        "phone": "Teléfono *",
+        "businessType": "Tipo de Negocio *",
+        "subject": "Asunto *",
+        "message": "Mensaje *"
+      },
+      "placeholders": {
+        "name": "Su nombre completo",
+        "email": "su@empresa.com",
+        "company": "Nombre de su empresa",
+        "phone": "+1 (555) 123-4567",
+        "subject": "¿En qué podemos ayudarle?",
+        "message": "Describa sus necesidades comerciales, productos de interés, o cómo podemos ayudarle a conectar con nuevos mercados..."
+      },
+      "businessTypes": {
+        "manufacturer": "Fabricante",
+        "distributor": "Distribuidor",
+        "buyer": "Comprador",
+        "other": "Otro"
+      },
+      "submit": "Enviar Mensaje",
+      "sending": "Enviando mensaje...",
+      "success": {
+        "title": "¡Mensaje Enviado!",
+        "description": "Gracias por contactarnos. Nuestro equipo se pondrá en contacto con usted en las próximas 24 horas para discutir sus necesidades comerciales.",
+        "button": "Enviar otro mensaje"
+      }
+    },
+    "info": {
+      "badge": "Sobre Vascruz Group",
+      "title": "Expertos en Intermediación Comercial",
+      "subtitle": "Somos especialistas en conectar fabricantes, distribuidores y compradores en mercados nacionales e internacionales, facilitando transacciones comerciales exitosas.",
+      "stats": {
+        "experience": "Años de Experiencia",
+        "markets": "Mercados Atendidos",
+        "clients": "Clientes Satisfechos",
+        "transactions": "Transacciones Exitosas"
+      },
+      "services": {
+        "title": "Nuestros Servicios Principales",
+        "representation": {
+          "title": "Representación Comercial",
+          "description": "Conectamos fabricantes con distribuidores y compradores"
+        },
+        "expansion": {
+          "title": "Expansión Internacional",
+          "description": "Facilitamos la entrada a nuevos mercados globales"
+        },
+        "strategy": {
+          "title": "Estrategias de Negocio",
+          "description": "Desarrollamos planes de crecimiento personalizados"
+        },
+        "consulting": {
+          "title": "Asesoría Experta",
+          "description": "Consultoría especializada en intermediación comercial"
         }
       },
-      "success": {
-        "title": "Mensaje enviado con éxito",
-        "subtitle": "Gracias por contactarme. Te responderé lo antes posible."
+      "contact": {
+        "title": "Información de Contacto",
+        "office": {
+          "title": "Oficina Principal",
+          "value": "Miami, Florida, Estados Unidos"
+        },
+        "phone": {
+          "title": "Teléfono",
+          "value": "+1 (555) 123-4567"
+        },
+        "email": {
+          "title": "Email",
+          "value": "info@vascruzgroup.com"
+        },
+        "hours": {
+          "title": "Horarios de Atención",
+          "value": "Lunes - Viernes: 9:00 AM - 6:00 PM EST"
+        }
       },
-      "error": {
-        "title": "No se pudo enviar el mensaje",
-        "subtitle": "Ocurrió un error al enviar tu mensaje. Inténtalo nuevamente más tarde."
+      "whyUs": {
+        "title": "¿Por qué elegirnos?",
+        "experience": "Experiencia comprobada en intermediación comercial",
+        "network": "Red global de contactos comerciales",
+        "confidentiality": "Asesoría personalizada y confidencial",
+        "results": "Resultados medibles y garantizados"
+      }
+    },
+    "map": {
+      "badge": "Presencia Global",
+      "title": "Conectando Mercados Internacionales",
+      "subtitle": "Nuestra red global nos permite facilitar transacciones comerciales en múltiples mercados, conectando fabricantes, distribuidores y compradores en todo el mundo.",
+      "location": {
+        "title": "Nuestra Ubicación Principal",
+        "city": "Miami, Florida, USA",
+        "description": "Oficina principal de Vascruz Group LLC"
+      },
+      "regions": {
+        "northAmerica": {
+          "title": "América del Norte",
+          "countries": ["Estados Unidos", "Canadá", "México"]
+        },
+        "southAmerica": {
+          "title": "América del Sur",
+          "countries": ["Brasil", "Argentina", "Chile", "Colombia", "Perú"]
+        },
+        "europe": {
+          "title": "Europa",
+          "countries": ["España", "Alemania", "Francia", "Italia", "Países Bajos"]
+        },
+        "asia": {
+          "title": "Asia",
+          "countries": ["China", "Japón", "Corea del Sur", "India"]
+        }
+      },
+      "cta": {
+        "title": "¿Listo para expandir su negocio?",
+        "description": "Nuestro equipo de expertos está listo para ayudarle a conectar con nuevos mercados y oportunidades comerciales globales.",
+        "support": "Soporte Disponible",
+        "response": "Respuesta Garantizada",
+        "confidentiality": "Confidencialidad"
       }
     }
   },
