@@ -119,243 +119,509 @@
     }
   },
   "home": {
-    "title": "Desarrollador Frontend & Diseñador",
-    "subtitle": "Construyendo experiencias digitales con tecnologías modernas. Enfocado en crear soluciones elegantes para problemas complejos.",
-    "projects": {
-      "title": "Mis Proyectos Recientes",
-      "subtitle": "Aquí hay algunos proyectos de diseño en los que he trabajado. ¿Quieres ver más?",
-      "emailButton": {
-        "label": "Envíame un correo.",
-        "href": "mailto:jordanroberto74@gmail.com"
+    "hero": {
+      "badge": {
+        "text": "Vascruz Group LLC",
+        "icon": "Building2"
       },
-      "viewAllButton": {
-        "label": "Ver todos los proyectos",
-        "href": "/portfolio"
-      }
-    }
-  },
-    "about": {
-    "title": "sobre mí.",
-    "subtitle": "Soy un Desarrollador Frontend & Diseñador UI/UX basado en Santa Cruz de la Sierra, Bolivia.",
-    "paragraph1": "Me especializo en crear soluciones digitales escalables y de alto rendimiento para diversas plataformas, incluidos sitios web de comercio electrónico, landing pages y tiendas en línea. Con un fuerte enfoque en el diseño centrado en el usuario, combino lo mejor de las tecnologías frontend como React, Next.js y Tailwind CSS para entregar experiencias visualmente atractivas y fluidas.",
-    "paragraph2": "Estoy dedicado a entregar experiencias de usuario sin interrupciones, refinando constantemente mis habilidades y manteniéndome actualizado con las últimas tendencias y mejores prácticas tanto en desarrollo frontend como en diseño UX/UI.",
-    "avatarDialog": {
-      "title": "Hola. Soy Roberto"
-    },
-    "avatar": {
-      "url": "/img/avatar.png",
-      "alt": "imagen avatar"
-    },
-    "design": {
-      "title": "Parte Diseñador",
-      "label": "Diseñador",
-      "services": [
-        "Diseño UI/UX",
-        "Diseño Web",
-        "Diseño Móvil",
-        "Diseño de Productos",
-        "Branding",
-        "Ilustración",
-        "Motion"
-      ]
-    },
-    "development": {
-      "title": "Parte Programador",
-      "label": "Programador",
-      "services": [
-        "React",
-        "Next.js",
-        "Tailwind CSS",
-        "TypeScript",
-        "JavaScript",
-        "HTML",
-        "CSS"
-      ]
-    },
-    "skills": {
-      "title": "Mis Habilidades",
-      "subtitle": "Mis habilidades son una mezcla de diseño y desarrollo.",
-      "items": [
-        "Figma",
-        "Photoshop",
-        "Illustrator",
-        "After Effects",
-        "Filmora",
-        "Wordpress",
-        "Canva",
-        "React",
-        "Next.js",
-        "Vue.js",
-        "Tailwind CSS",
-        "TypeScript",
-        "JavaScript",
-        "HTML",
-        "CSS",
-        "Git",
-        "GitHub",
-        "Vercel",
-        "Jira",
-        "Slack",
-        "MySQL",
-        "GraphQL",
-        "Strapi",
-        "Jest",
-        "Cloudinary"
+      "title": {
+        "line1": "Conectando",
+        "line2": "Negocios",
+        "line3": "Globalmente"
+      },
+      "subtitle": "Especialistas en intermediación y representación comercial mayorista, uniendo fabricantes, distribuidores y compradores en mercados nacionales e internacionales.",
+      "benefits": [
+        {
+          "title": "Representación Comercial",
+          "icon": "Handshake"
+        },
+        {
+          "title": "Alcance Global",
+          "icon": "Globe"
+        },
+        {
+          "title": "Asesoría Experta",
+          "icon": "Shield"
+        }
       ],
-      "design": {
-        "title": "Diseñador",
-        "description": "Priorizo una estructura de contenido clara, patrones de diseño intuitivos e interacciones de usuario fluidas para crear experiencias digitales atractivas. Mi enfoque equilibra la estética con la funcionalidad, asegurando que cada diseño cumpla una finalidad.",
-        "services": {
-          "title": "Áreas de especialización:",
-          "items": [
-            "Diseño UX/UI",
-            "Diseño de Web & Aplicaciones Móviles",
-            "Diseño de Branding & Logos"
-          ]
-        },
-        "tools": {
-          "title": "Herramientas & Tecnologías",
-          "items": [
-            "Figma",
-            "Photoshop",
-            "Illustrator",
-            "After Effects",
-            "Filmora"
-          ]
-        },
-        "chartData": {
-          "title": "Diseño",
-          "radarName": "Diseño",
-          "radarDataKey": "value",
-          "dataKey": "skill",
-          "data": [
-            { "skill": "Diseño UI/UX", "value": 90 },
-            { "skill": "Diseño Web", "value": 85 },
-            { "skill": "Diseño Móvil", "value": 80 },
-            { "skill": "Diseño de Productos", "value": 85 },
-            { "skill": "Branding", "value": 80 },
-            { "skill": "Ilustración", "value": 75 },
-            { "skill": "Diseño en Movimiento", "value": 70 },
-            { "skill": "Figma", "value": 85 },
-            { "skill": "Photoshop", "value": 80 },
-            { "skill": "Illustrator", "value": 75 },
-            { "skill": "After Effects", "value": 70 }
-          ]
-        }
+      "cta": {
+        "text": "Conoce Nuestros Servicios",
+        "icon": "ArrowRight"
       },
-      "frontend": {
-        "title": "Desarrollador Frontend",
-        "description": "Como Desarrollador Frontend, me enfoco en escribir código limpio, mantenible y eficiente para crear aplicaciones web responsivas. Trabajo con las últimas tecnologías frontend para garantizar un rendimiento óptimo, accesibilidad y una experiencia de usuario fluida en todos los dispositivos.",
-        "services": {
-          "title": "Habilidades Principales:",
-          "items": [
-            "HTML & CSS",
-            "JavaScript",
-            "React & Next.js",
-            "Diseño Web Responsivo",
-            "Optimización de Rendimiento"
-          ]
-        },
-        "tools": {
-          "title": "Tecnologías & Herramientas:",
-          "items": [
-            "React",
-            "Next.js",
-            "Tailwind CSS",
-            "Git",
-            "Webpack"
-          ]
-        },
-        "chartData": {
-          "title": "Frontend",
-          "radarName": "Frontend",
-          "radarDataKey": "value",
-          "dataKey": "skill",
-          "data": [
-            { "skill": "HTML/CSS", "value": 95 },
-            { "skill": "JavaScript", "value": 90 },
-            { "skill": "React", "value": 85 },
-            { "skill": "Next.js", "value": 80 },
-            { "skill": "Tailwind CSS", "value": 85 },
-            { "skill": "Diseño Web Responsivo", "value": 85 },
-            { "skill": "Optimización de Rendimiento", "value": 75 },
-            { "skill": "TypeScript", "value": 75 },
-            { "skill": "Git", "value": 80 },
-            { "skill": "Webpack", "value": 70 }
-          ]
-        }
-      },
-      "backend": {
-        "title": "Desarrollador Backend",
-        "description": "Me enfoco en integrar servicios y APIs de terceros, optimizar flujos de trabajo y gestionar contenidos para aplicaciones web dinámicas. Aunque mi experiencia backend está en crecimiento, continuamente aprendo para ampliar mis habilidades en este campo.",
-        "services": {
-          "title": "Habilidades Principales:",
-          "items": [
-            "Integración API",
-            "Gestión de contenidos (Strapi)",
-            "Conectividad de bases de datos (Google Sheets, Cloudinary)",
-            "Arquitectura sin servidor (Vercel, GitHub Pages)",
-            "Pruebas y automatización (Jest, Husky)"
-          ]
-        },
-        "tools": {
-          "title": "Tecnologías & Herramientas:",
-          "items": [
-            "GraphQL",
-            "Strapi",
-            "Cloudinary",
-            "Google Sheets",
-            "Jest",
-            "Husky",
-            "GitHub Pages",
-            "Vercel"
-          ]
-        },
-        "chartData": {
-          "title": "Backend",
-          "radarName": "Backend",
-          "radarDataKey": "value",
-          "dataKey": "skill",
-          "data": [
-            { "skill": "API Integration", "value": 70 },
-            { "skill": "GraphQL", "value": 65 },
-            { "skill": "Strapi", "value": 70 },
-            { "skill": "Cloudinary", "value": 60 },
-            { "skill": "Jest", "value": 65 },
-            { "skill": "GitHub", "value": 80 },
-            { "skill": "Vercel", "value": 75 },
-            { "skill": "Google Analytics", "value": 70 },
-            { "skill": "Google Sheets", "value": 65 }
-          ]
-        } 
+      "stats": {
+        "title": "Crecimiento Empresarial",
+        "subtitle": "Desarrollo de negocios y expansión estratégica 2020-2024",
+        "metrics": [
+          {
+            "label": "Desarrollo de Negocios",
+            "value": "85%",
+            "percentage": 85
+          },
+          {
+            "label": "Alianzas Estratégicas",
+            "value": "92%",
+            "percentage": 92
+          }
+        ]
       }
     },
-    "random": {
-      "title": "Datos curiosos",
+    "benefits": {
+      "title": "¿Por qué elegir Vascruz Group LLC?",
+      "subtitle": "Nuestra experiencia en desarrollo de negocios, análisis de mercado y negociación de contratos nos permite ofrecer soluciones integrales a cada uno de nuestros clientes.",
       "items": [
-        "El café impulsa mi productividad.",
-        "Siempre estoy explorando nuevas tendencias tecnológicas.",
-        "El gimnasio me ayuda a mantenerme enfocado y con energía.",
-        "La comida es mi mayor alegría, siempre estoy dispuesto a probar nuevos platos.",
-        "TikTok e Instagram son mis plataformas sociales favoritas.",
-        "Me encanta viajar y descubrir nuevos lugares.",
-        "Los fines de semana en la piscina son mi forma de recargar energías."
+        {
+          "title": "Alcance Global",
+          "description": "Conectamos negocios en mercados nacionales e internacionales",
+          "icon": "Globe"
+        },
+        {
+          "title": "Representación Experta",
+          "description": "Intermediación profesional entre fabricantes y compradores",
+          "icon": "Handshake"
+        },
+        {
+          "title": "Desarrollo Estratégico",
+          "description": "Estrategias de crecimiento y expansión empresarial",
+          "icon": "Target"
+        },
+        {
+          "title": "Alianzas Clave",
+          "description": "Creación de redes comerciales estratégicas",
+          "icon": "Users"
+        },
+        {
+          "title": "Asesoría Integral",
+          "description": "Soporte completo en negociación y contratos",
+          "icon": "Shield"
+        },
+        {
+          "title": "Innovación Constante",
+          "description": "Soluciones adaptadas a las necesidades del mercado",
+          "icon": "Award"
+        }
       ]
+    },
+    "services": {
+      "badge": "Nuestros Servicios",
+      "title": "Soluciones Integrales de Intermediación Comercial",
+      "subtitle": "Ofrecemos servicios especializados que conectan fabricantes, distribuidores y compradores, facilitando transacciones fluidas y estratégicas en un entorno global cada vez más complejo.",
+      "items": [
+        {
+          "title": "Representación Comercial",
+          "description": "Representamos a fabricantes y distribuidores en mercados nacionales e internacionales, facilitando conexiones comerciales estratégicas.",
+          "icon": "Handshake",
+          "features": [
+            "Conexión con compradores",
+            "Negociación de contratos",
+            "Gestión de relaciones comerciales"
+          ]
+        },
+        {
+          "title": "Análisis y Logística",
+          "description": "Análisis de mercado detallado y optimización de procesos logísticos para maximizar la eficiencia operativa.",
+          "icon": "BarChart3",
+          "features": [
+            "Estudios de mercado",
+            "Optimización logística",
+            "Análisis de costos"
+          ]
+        },
+        {
+          "title": "Desarrollo de Negocios Globales",
+          "description": "Estrategias de expansión internacional y desarrollo de nuevos mercados para el crecimiento sostenible.",
+          "icon": "Target",
+          "features": [
+            "Expansión internacional",
+            "Estrategias de entrada",
+            "Desarrollo de mercados"
+          ]
+        },
+        {
+          "title": "Alianzas Clave",
+          "description": "Creación y gestión de alianzas estratégicas que potencian el crecimiento y la competitividad empresarial.",
+          "icon": "Users",
+          "features": [
+            "Alianzas estratégicas",
+            "Networking empresarial",
+            "Colaboraciones comerciales"
+          ]
+        },
+        {
+          "title": "Innovación Constante",
+          "description": "Implementación de soluciones innovadoras y tecnologías emergentes para mantener la ventaja competitiva.",
+          "icon": "Lightbulb",
+          "features": [
+            "Soluciones innovadoras",
+            "Tecnologías emergentes",
+            "Mejora continua"
+          ]
+        },
+        {
+          "title": "Expansión Estratégica",
+          "description": "Asesoría integral para la expansión empresarial con enfoque en mercados emergentes y oportunidades de crecimiento.",
+          "icon": "Building2",
+          "features": [
+            "Planificación estratégica",
+            "Identificación de oportunidades",
+            "Gestión de riesgos"
+          ]
+        }
+      ]
+    },
+    "stats": {
+      "title": "Nuestros Números Hablan",
+      "subtitle": "Resultados que demuestran nuestro compromiso con el éxito de nuestros clientes en el comercio internacional y la intermediación comercial.",
+      "items": [
+        {
+          "number": "100+",
+          "label": "Alianzas Estratégicas"
+        },
+        {
+          "number": "25+",
+          "label": "Mercados Globales"
+        },
+        {
+          "number": "98%",
+          "label": "Satisfacción del Cliente"
+        },
+        {
+          "number": "24/7",
+          "label": "Soporte Dedicado"
+        }
+      ]
+    },
+    "process": {
+      "badge": "Nuestro Proceso",
+      "title": "Metodología de Intermediación Comercial",
+      "subtitle": "Nuestro proceso sistemático garantiza conexiones comerciales exitosas y relaciones duraderas entre fabricantes, distribuidores y compradores.",
+      "items": [
+        {
+          "step": "01",
+          "title": "Evaluación Inicial",
+          "description": "Análisis de necesidades comerciales y objetivos de expansión del cliente."
+        },
+        {
+          "step": "02",
+          "title": "Identificación de Oportunidades",
+          "description": "Búsqueda y evaluación de mercados, fabricantes y distribuidores potenciales."
+        },
+        {
+          "step": "03",
+          "title": "Negociación y Acuerdos",
+          "description": "Facilitación de reuniones y negociación de términos comerciales favorables."
+        },
+        {
+          "step": "04",
+          "title": "Seguimiento y Optimización",
+          "description": "Monitoreo continuo de relaciones comerciales y mejora de procesos."
+        }
+      ]
+    },
+    "cta": {
+      "title": "¿Listo para Expandir tu Negocio Globalmente?",
+      "subtitle": "Conectamos fabricantes, distribuidores y compradores en mercados nacionales e internacionales. Descubre cómo podemos facilitar tus transacciones comerciales y crear alianzas estratégicas que impulsen el crecimiento de tu empresa.",
+      "contact": {
+        "whatsapp": {
+          "title": "WhatsApp",
+          "phone": "+591 7700 4600",
+          "description": "Chatea con nosotros",
+          "href": "https://wa.me/59177004600"
+        },
+        "email": {
+          "title": "Email",
+          "email": "grupovascruzllc@gmail.com",
+          "description": "Envíanos un mensaje",
+          "href": "mailto:grupovascruzllc@gmail.com"
+        }
+      },
+      "buttons": {
+        "primary": "Solicitar Asesoría Gratuita",
+        "secondary": "Conocer Nuestros Servicios"
+      }
+    },
+    "testimonials": {
+      "title": "Lo que dicen nuestros clientes",
+      "subtitle": "Fabricantes, distribuidores y compradores confían en nuestra experiencia en intermediación comercial para conectar sus negocios globalmente.",
+      "items": [
+        {
+          "name": "Carlos Mendoza",
+          "company": "Fabricante Industrial",
+          "rating": 5,
+          "text": "Increíble experiencia trabajando con Vascruz Group. Nos ayudaron a conectar con distribuidores en Europa que nunca habíamos considerado. Nuestras ventas aumentaron un 40% en solo 6 meses. El equipo es muy profesional y siempre responde rápido.",
+          "date": "15/12/2024"
+        },
+        {
+          "name": "María González",
+          "company": "Distribuidora Global",
+          "rating": 4.5,
+          "text": "Llevamos 2 años trabajando con ellos y la verdad es que han transformado nuestro negocio. Nos facilitaron alianzas estratégicas que nos permitieron expandirnos a mercados que parecían imposibles. Muy recomendados.",
+          "date": "28/11/2024"
+        },
+        {
+          "name": "Roberto Silva",
+          "company": "Importadora del Norte",
+          "rating": 5,
+          "text": "Su análisis de mercado fue clave para nuestro crecimiento. Identificaron oportunidades que nosotros no veíamos y nos guiaron paso a paso. Los resultados superaron nuestras expectativas. Definitivamente volveremos a trabajar con ellos.",
+          "date": "05/12/2024"
+        },
+        {
+          "name": "Ana Rodríguez",
+          "company": "Comercial Internacional",
+          "rating": 4,
+          "text": "Buen servicio en general. Su experiencia en negociación nos ayudó a cerrar contratos más favorables. Aunque a veces la comunicación podría ser más rápida, el resultado final fue excelente.",
+          "date": "20/10/2024"
+        },
+        {
+          "name": "Luis Pérez",
+          "company": "Exportadora del Sur",
+          "rating": 5,
+          "text": "Gracias a Vascruz Group pudimos expandirnos a Asia con mucha confianza. Su conocimiento del mercado internacional es impresionante. Nos ahorraron mucho tiempo y errores costosos. Muy agradecidos.",
+          "date": "22/12/2024"
+        },
+        {
+          "name": "Carmen Torres",
+          "company": "Comercializadora Central",
+          "rating": 4.5,
+          "text": "El equipo es súper dedicado y profesional. Superaron todas nuestras expectativas desde el primer día. La atención al detalle y la personalización del servicio es lo que más nos gustó. Los recomendamos sin dudar.",
+          "date": "25/12/2024"
+        },
+        {
+          "name": "Diego Morales",
+          "company": "Distribuidora Regional",
+          "rating": 5,
+          "text": "Llevamos 3 años trabajando juntos y cada vez mejoran más. Su intermediación nos permitió formar alianzas estratégicas que transformaron completamente nuestro modelo de negocio. Nuestra rentabilidad aumentó significativamente.",
+          "date": "30/11/2024"
+        },
+        {
+          "name": "Patricia Vega",
+          "company": "Importadora Premium",
+          "rating": 4,
+          "text": "Buen trabajo en la negociación de contratos. Su experiencia en mercados internacionales nos permitió optimizar costos y mejorar nuestros márgenes. El proceso fue un poco más largo de lo esperado, pero valió la pena.",
+          "date": "10/12/2024"
+        },
+        {
+          "name": "Fernando Ruiz",
+          "company": "Comercial Internacional",
+          "rating": 5,
+          "text": "Vascruz Group ha sido fundamental para nuestro crecimiento internacional. Su red de contactos es invaluable y su experiencia nos ha ahorrado muchos dolores de cabeza. Son verdaderos expertos en lo que hacen.",
+          "date": "25/11/2024"
+        },
+        {
+          "name": "Pablo Salazar",
+          "company": "Distribuidora Regional",
+          "rating": 4.5,
+          "text": "Excelente servicio desde el primer contacto. El equipo es muy profesional y conocen muy bien el mercado. Nos ayudaron a identificar nuevas oportunidades de negocio que no habíamos visto. Muy satisfechos.",
+          "date": "20/12/2024"
+        },
+        {
+          "name": "Laura Martínez",
+          "company": "Exportadora del Este",
+          "rating": 5,
+          "text": "Increíble experiencia con Vascruz Group. Nos ayudaron a abrir mercados en África que parecían imposibles. Su conocimiento local y red de contactos es impresionante. Definitivamente los recomendamos.",
+          "date": "15/01/2025"
+        },
+        {
+          "name": "Ricardo Herrera",
+          "company": "Importadora del Oeste",
+          "rating": 4,
+          "text": "Buen trabajo en general. Su intermediación comercial nos permitió conectar con proveedores de calidad. Aunque el proceso inicial fue un poco lento, los resultados fueron satisfactorios.",
+          "date": "28/01/2025"
+        }
+      ],
+      "stats": {
+        "alliances": "+100 alianzas exitosas",
+        "averageRating": "rating promedio"
+      }
     }
   },
-  "portfolio": {
-    "title": "portafolio.",
-    "subtitle": "Explora mis últimos proyectos de desarrollo web.",
-    "paragraph1": "He trabajado con startups y clientes como freelance, creando soluciones digitales a medida que priorizan el rendimiento, la usabilidad y la escalabilidad. Ya sea desarrollando landing pages, aplicaciones empresariales o plataformas de gran escala, me enfoco en escribir código limpio y mantenible, además de perfeccionar la UI/UX para ofrecer experiencias digitales de alta calidad.",
-    "projects": {
-      "title": "Proyectos",
-      "subtitle": "Estos proyectos destacan mi capacidad para ofrecer soluciones digitales bien diseñadas. Cada ejemplo muestra mi experiencia en desarrollo front-end y back-end, experiencias de usuario intuitivas y arquitecturas escalables. También incluyen enlaces a repositorios de código y demostraciones en vivo."
+  "about": {
+    "hero": {
+      "badge": {
+        "text": "Sobre Vascruz Group LLC",
+        "icon": "Building2"
+      },
+      "title": {
+        "line1": "Nuestra",
+        "line2": "Historia",
+        "line3": "y Visión"
+      },
+      "subtitle": "Desde 2020, hemos sido pioneros en la intermediación comercial, conectando empresas globales y facilitando el crecimiento empresarial a través de alianzas estratégicas.",
+      "highlights": [
+        {
+          "title": "+4 Años de Experiencia",
+          "description": "Especialistas en intermediación comercial desde 2020",
+          "icon": "Award"
+        },
+        {
+          "title": "25+ Mercados Globales",
+          "description": "Presencia en mercados nacionales e internacionales",
+          "icon": "Globe"
+        },
+        {
+          "title": "100+ Alianzas Estratégicas",
+          "description": "Conexiones comerciales exitosas y duraderas",
+          "icon": "Handshake"
+        },
+        {
+          "title": "98% Satisfacción",
+          "description": "Clientes satisfechos con nuestros servicios",
+          "icon": "TrendingUp"
+        }
+      ]
+    },
+    "mission": {
+      "badge": "Misión y Visión",
+      "title": "Nuestros Pilares Fundamentales",
+      "subtitle": "Guiados por nuestra misión, visión y propósito, trabajamos incansablemente para crear valor y oportunidades de crecimiento para nuestros clientes en el mercado global.",
+      "items": [
+        {
+          "title": "Nuestra Misión",
+          "description": "Facilitar el crecimiento empresarial global conectando fabricantes, distribuidores y compradores a través de intermediación comercial estratégica y representación experta.",
+          "icon": "Target",
+          "highlights": [
+            "Conexiones comerciales estratégicas",
+            "Representación profesional",
+            "Desarrollo de mercados globales"
+          ]
+        },
+        {
+          "title": "Nuestra Visión",
+          "description": "Ser el líder reconocido en intermediación comercial, creando un ecosistema global donde las empresas puedan expandirse y prosperar sin fronteras.",
+          "icon": "Eye",
+          "highlights": [
+            "Liderazgo en intermediación",
+            "Ecosistema comercial global",
+            "Expansión sin fronteras"
+          ]
+        },
+        {
+          "title": "Nuestro Propósito",
+          "description": "Impulsar el éxito empresarial a través de alianzas estratégicas, innovación constante y un compromiso inquebrantable con la excelencia comercial.",
+          "icon": "Lightbulb",
+          "highlights": [
+            "Alianzas estratégicas",
+            "Innovación constante",
+            "Excelencia comercial"
+          ]
+        }
+      ]
+    },
+    "values": {
+      "title": "Nuestros Valores Corporativos",
+      "subtitle": "Estos principios fundamentales guían cada decisión que tomamos y cada relación que construimos, asegurando un servicio excepcional y resultados sobresalientes.",
+      "items": [
+        {
+          "title": "Integridad",
+          "description": "Actuamos con honestidad y transparencia en todas nuestras relaciones comerciales",
+          "icon": "Shield"
+        },
+        {
+          "title": "Colaboración",
+          "description": "Fomentamos alianzas estratégicas basadas en la confianza mutua",
+          "icon": "Users"
+        },
+        {
+          "title": "Excelencia",
+          "description": "Buscamos la perfección en cada transacción y servicio que ofrecemos",
+          "icon": "Target"
+        },
+        {
+          "title": "Innovación",
+          "description": "Implementamos soluciones creativas para desafíos comerciales complejos",
+          "icon": "Award"
+        },
+        {
+          "title": "Compromiso",
+          "description": "Nos dedicamos completamente al éxito de nuestros clientes",
+          "icon": "Heart"
+        },
+        {
+          "title": "Agilidad",
+          "description": "Respondemos rápidamente a las necesidades cambiantes del mercado",
+          "icon": "Zap"
+        },
+        {
+          "title": "Diversidad",
+          "description": "Valoramos y celebramos la diversidad cultural y empresarial",
+          "icon": "Globe"
+        },
+        {
+          "title": "Confianza",
+          "description": "Construimos relaciones duraderas basadas en la confianza mutua",
+          "icon": "Handshake"
+        }
+      ]
+    },
+    "stats": {
+      "title": "Excelencia en Comercio Internacional",
+      "subtitle": "Impulsamos el crecimiento global a través de conexiones estratégicas y un servicio de clase mundial en intermediación comercial.",
+      "sectionTitle": "Estadísticas que Hablan",
+      "sectionSubtitle": "Nuestro crecimiento y éxito en números",
+      "items": [
+        {
+          "number": "4+",
+          "label": "Años de Experiencia",
+          "description": "Desde 2020",
+          "icon": "TrendingUp"
+        },
+        {
+          "number": "25+",
+          "label": "Mercados Globales",
+          "description": "Presencia internacional",
+          "icon": "Globe"
+        },
+        {
+          "number": "100+",
+          "label": "Alianzas Estratégicas",
+          "description": "Conexiones exitosas",
+          "icon": "Handshake"
+        },
+        {
+          "number": "98%",
+          "label": "Satisfacción del Cliente",
+          "description": "Clientes satisfechos",
+          "icon": "Award"
+        },
+        {
+          "number": "500+",
+          "label": "Transacciones Exitosas",
+          "description": "Operaciones completadas",
+          "icon": "CheckCircle"
+        },
+        {
+          "number": "24/7",
+          "label": "Soporte Dedicado",
+          "description": "Atención continua",
+          "icon": "Clock"
+        }
+      ],
+      "cta": {
+        "title": "¿Listo para Crecer con Nosotros?",
+        "subtitle": "Únase a las cientos de empresas que ya confían en Vascruz Group para sus necesidades de intermediación comercial.",
+        "stats": [
+          {
+            "number": "500+",
+            "label": "Empresas Satisfechas"
+          },
+          {
+            "number": "$50M+",
+            "label": "En Transacciones"
+          }
+        ]
+      }
     }
   },
   "contact": {
     "hero": {
-      "badge": "Conectemos Negocios",
-      "title": "Establezcamos Conexiones Comerciales",
+      "badge": {
+        "text": "Conectemos Negocios",
+        "icon": "Handshake"
+      },
+      "title": {
+        "line1": "Establezcamos",
+        "line2": "Conexiones",
+        "line3": "Comerciales"
+      },
       "subtitle": "Estamos aquí para facilitar sus transacciones comerciales. Conectamos fabricantes, distribuidores y compradores en mercados nacionales e internacionales.",
       "cards": {
         "email": {
@@ -502,126 +768,5 @@
         "confidentiality": "Confidencialidad"
       }
     }
-  },
-  "projects": [
-    {
-      "id": 1,
-      "name": "ElectroFix - Henry",
-      "description": "ElectroFix es una landing page moderna y limpia para Henry, un técnico especializado en reparaciones electrónicas. El sitio muestra sus servicios, experiencia e información de contacto, facilitando que los clientes potenciales se comuniquen con él. Construido con HTML, CSS y JavaScript, incluye desplazamiento suave, diseño responsivo y elementos interactivos que resaltan el profesionalismo y la experiencia de Henry.",
-      "image": {
-        "url": "/img/projects/project1.png",
-        "alt": "Vista previa de la landing page de ElectroFix - Henry"
-      },
-      "code": {
-        "url": "https://github.com/JORDANROBERTO74/henry-tecnico",
-        "alt": "Repositorio de código de ElectroFix"
-      },
-      "demo": {
-        "url": "https://jordanroberto74.github.io/henry-tecnico/",
-        "alt": "Demo de ElectroFix"
-      }
-    },
-    {
-      "id": 2,
-      "name": "THE GYM",
-      "description": "THE GYM es una landing page enérgica para un moderno centro de fitness, diseñada para atraer nuevos miembros y mostrar las instalaciones del gimnasio, planes de membresía, entrenadores y horarios de clases. Creada con HTML, CSS y JavaScript, la web presenta un diseño audaz con animaciones dinámicas, diseño responsivo y secciones con llamados a la acción que impulsan la interacción y conversión del usuario.",
-      "image": {
-        "url": "/img/projects/project2.png",
-        "alt": "Vista previa de la landing page de THE GYM"
-      },
-      "code": {
-        "url": "https://github.com/jordanroberto74/the_gym",
-        "alt": "Repositorio de código de THE GYM"
-      },
-      "demo": {
-        "url": "https://jordanroberto74.github.io/the_gym/",
-        "alt": "Demo de THE GYM"
-      }
-    },
-    {
-      "id": 3,
-      "name": "Q'RICO",
-      "description": "Q'RICO es una landing page vibrante y visualmente atractiva para un restaurante local especializado en cocina tradicional y fusión. El sitio muestra el menú, la ubicación, testimonios de clientes y una galería de fotos de los platos. Construido con HTML, CSS y JavaScript, ofrece un diseño responsivo, interacciones animadas y una navegación sencilla que mejora la experiencia del usuario e invita a explorar sus deliciosas propuestas.",
-      "image": {
-        "url": "/img/projects/project3.png",
-        "alt": "Vista previa de la landing page del restaurante Q'RICO"
-      },
-      "code": {
-        "url": "https://github.com/jordanroberto74/q-rico",
-        "alt": "Repositorio de código de Q'RICO"
-      },
-      "demo": {
-        "url": "https://jordanroberto74.github.io/q-rico/",
-        "alt": "Demo de Q'RICO"
-      }
-    },
-    {
-      "id": 4,
-      "name": "Christian García - Abogado",
-      "description": "Una landing page profesional y elegante diseñada para Christian García, un abogado y asesor legal con experiencia. El sitio presenta sus áreas de especialización, información de contacto, biografía y una sección para agendar consultas. Desarrollado con HTML, CSS y JavaScript, el sitio cuenta con diseño responsivo, transiciones suaves y una estructura centrada en la claridad y la confianza.",
-      "image": {
-        "url": "/img/projects/project4.png",
-        "alt": "Vista previa de la landing page de Christian García - Abogado"
-      },
-      "code": {
-        "url": "https://github.com/jordanroberto74/christian-garcia-abg",
-        "alt": "Repositorio de código de Christian García"
-      },
-      "demo": {
-        "url": "https://jordanroberto74.github.io/christian-garcia-abg/",
-        "alt": "Demo de Christian García"
-      }
-    },
-    {
-      "id": 5,
-      "name": "UBICAR",
-      "description": "UBICAR es una landing page elegante y profesional para una empresa dedicada al rastreo satelital de vehículos, vigilancia para hogares y negocios, y soluciones de seguridad inteligente. Construido con HTML, CSS y JavaScript, el sitio presenta los servicios, tecnología, áreas de cobertura e información de contacto de UBICAR con una estructura clara y confiable. Con diseño responsivo, secciones interactivas y visuales modernos, está orientado a generar confianza y convertir visitantes en clientes.",
-      "image": {
-        "url": "/img/projects/project5.png",
-        "alt": "Vista previa de la landing page de UBICAR"
-      },
-      "code": {
-        "url": "https://github.com/jordanroberto74/ubicar",
-        "alt": "Repositorio de código de UBICAR"
-      },
-      "demo": {
-        "url": "https://jordanroberto74.github.io/ubicar/",
-        "alt": "Demo de UBICAR"
-      }
-    },
-    {
-      "id": 6,
-      "name": "Titan Force Gym",
-      "description": "Titan Force Gym es una landing page poderosa y visualmente impactante creada para un centro de entrenamiento de alto rendimiento enfocado en fuerza, musculación y entrenamientos funcionales. El sitio destaca a los entrenadores de élite del gimnasio, las opciones de membresía, instalaciones y testimonios. Desarrollado con Next.js y App Router, usando TypeScript y estilizado con Tailwind CSS, también integra Prettier para un código limpio y consistente. Es completamente responsivo y está desplegado en Vercel para un rendimiento óptimo.",
-      "image": {
-        "url": "/img/projects/project6.png",
-        "alt": "Vista previa de la landing page de Titan Force Gym"
-      },
-      "code": {
-        "url": "https://github.com/jordanroberto74/titan_force_gym",
-        "alt": "Repositorio de código de Titan Force Gym"
-      },
-      "demo": {
-        "url": "https://titan-forge-gym.vercel.app/",
-        "alt": "Demo de Titan Force Gym"
-      }
-    },
-    {
-      "id": 7,
-      "name": "PC Mania",
-      "description": "PC Mania es una aplicación web de comercio electrónico para la compra de accesorios de computación en línea. Construida con Next.js y estilizada con Tailwind CSS, ofrece una experiencia de compra fluida y responsiva. Los usuarios pueden explorar el catálogo de productos, ver detalles, agregar artículos al carrito y completar sus compras fácilmente. El sitio está optimizado para el rendimiento y la interacción del usuario.",
-      "image": {
-        "url": "/img/projects/project7.png",
-        "alt": "Vista previa de PC Mania"
-      },
-      "code": {
-        "url": "https://github.com/jordanroberto74/pc_mania",
-        "alt": "Repositorio de código de PC Mania"
-      },
-      "demo": {
-        "url": "https://pcmania-eight.vercel.app/",
-        "alt": "Demo de PC Mania"
-      }
-    }
-  ]
+  }
 }

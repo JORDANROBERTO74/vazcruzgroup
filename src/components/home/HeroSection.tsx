@@ -12,11 +12,32 @@ import {
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { useRouter } from "next/navigation";
-import { useLocale } from "next-intl";
+import { useLocale, useMessages } from "next-intl";
+import React from "react"; // Added missing import for React
+
+// Icon mapping for hero section
+const heroIcons = {
+  Building2,
+  Handshake,
+  Globe,
+  Shield,
+  ArrowRight,
+  TrendingUp,
+};
 
 export default function HeroSection() {
   const router = useRouter();
   const locale = useLocale();
+  const messages = useMessages();
+
+  // Extract hero data from messages
+  const heroData = (messages as any)?.home?.hero;
+  const badge = heroData?.badge;
+  const title = heroData?.title;
+  const subtitle = heroData?.subtitle;
+  const benefits = heroData?.benefits;
+  const cta = heroData?.cta;
+  const stats = heroData?.stats;
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -53,6 +74,19 @@ export default function HeroSection() {
     },
   };
 
+  // Fallback if no hero data
+  if (!heroData) {
+    return (
+      <section className="-mt-[30px] lg:-mt-[64px] h-full md:h-full lg:h-screen relative overflow-hidden bg-gradient-to-br from-background via-background to-muted/20 dark:from-background dark:via-background dark:to-muted/10">
+        <div className="container mx-auto px-4 py-16 lg:py-24 relative z-10 flex items-center justify-center min-h-screen">
+          <div className="text-center">
+            <p className="text-muted-foreground">Hero content not available</p>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section className="-mt-[30px] lg:-mt-[64px] h-full md:h-full lg:h-screen relative overflow-hidden bg-gradient-to-br from-background via-background to-muted/20 dark:from-background dark:via-background dark:to-muted/10">
       {/* Background decorative elements */}
@@ -80,30 +114,35 @@ export default function HeroSection() {
                 variant="outline"
                 className="px-4 py-2 text-sm font-medium"
               >
-                <Building2 className="w-4 h-4 mr-2" />
-                Vascruz Group LLC
+                {badge?.icon &&
+                  heroIcons[badge.icon as keyof typeof heroIcons] &&
+                  React.createElement(
+                    heroIcons[badge.icon as keyof typeof heroIcons],
+                    {
+                      className: "w-4 h-4 mr-2",
+                    }
+                  )}
+                {badge?.text}
               </Badge>
             </motion.div>
 
             {/* Main Title */}
             <motion.div variants={itemVariants}>
-              <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground leading-tight">
-                <div>Conectando</div>
-                <div className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">
-                  Negocios
+              <div className="flex flex-col gap-0 text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground leading-tight">
+                <div className="leading-[1.2]">{title?.line1}</div>
+                <div className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80 leading-[1.2]">
+                  {title?.line2}
                 </div>
-                <div className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">
-                  Globalmente
+                <div className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80 leading-[1.2]">
+                  {title?.line3}
                 </div>
-              </h1>
+              </div>
             </motion.div>
 
             {/* Subtitle */}
             <motion.div variants={itemVariants}>
               <p className="text-xl lg:text-2xl text-muted-foreground leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                Especialistas en intermediación y representación comercial
-                mayorista, uniendo fabricantes, distribuidores y compradores en
-                mercados nacionales e internacionales.
+                {subtitle}
               </p>
             </motion.div>
 
@@ -112,30 +151,22 @@ export default function HeroSection() {
               variants={itemVariants}
               className="grid grid-cols-1 sm:grid-cols-3 gap-4 py-6"
             >
-              <div className="flex items-center gap-3">
-                <div className="p-2 bg-primary/10 rounded-lg">
-                  <Handshake className="w-5 h-5 text-primary" />
-                </div>
-                <span className="text-sm font-medium text-muted-foreground">
-                  Representación Comercial
-                </span>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="p-2 bg-primary/10 rounded-lg">
-                  <Globe className="w-5 h-5 text-primary" />
-                </div>
-                <span className="text-sm font-medium text-muted-foreground">
-                  Alcance Global
-                </span>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="p-2 bg-primary/10 rounded-lg">
-                  <Shield className="w-5 h-5 text-primary" />
-                </div>
-                <span className="text-sm font-medium text-muted-foreground">
-                  Asesoría Experta
-                </span>
-              </div>
+              {benefits?.map((benefit: any, index: number) => {
+                const IconComponent =
+                  heroIcons[benefit.icon as keyof typeof heroIcons];
+                return (
+                  <div key={index} className="flex items-center gap-3">
+                    <div className="p-2 bg-primary/10 rounded-lg">
+                      {IconComponent && (
+                        <IconComponent className="w-5 h-5 text-primary" />
+                      )}
+                    </div>
+                    <span className="text-sm font-medium text-muted-foreground">
+                      {benefit.title}
+                    </span>
+                  </div>
+                );
+              })}
             </motion.div>
 
             {/* CTA Button */}
@@ -147,8 +178,15 @@ export default function HeroSection() {
                   router.push(`/${locale}/services`);
                 }}
               >
-                Conoce Nuestros Servicios
-                <ArrowRight className="h-5 w-5" />
+                {cta?.text}
+                {cta?.icon &&
+                  heroIcons[cta.icon as keyof typeof heroIcons] &&
+                  React.createElement(
+                    heroIcons[cta.icon as keyof typeof heroIcons],
+                    {
+                      className: "h-5 w-5",
+                    }
+                  )}
               </Button>
             </motion.div>
           </motion.div>
@@ -170,56 +208,37 @@ export default function HeroSection() {
                 <div className="bg-gradient-to-br from-primary to-primary/90 rounded-2xl p-8 text-primary-foreground">
                   <div className="space-y-6">
                     <div className="flex items-center justify-between">
-                      <h3 className="text-xl font-semibold">
-                        Crecimiento Empresarial
-                      </h3>
-                      <TrendingUp className="w-6 h-6" />
+                      <h3 className="text-xl font-semibold">{stats?.title}</h3>
+                      {stats?.icon &&
+                        heroIcons[stats.icon as keyof typeof heroIcons] &&
+                        React.createElement(
+                          heroIcons[stats.icon as keyof typeof heroIcons],
+                          {
+                            className: "w-6 h-6",
+                          }
+                        )}
                     </div>
                     <p className="text-primary-foreground/80 text-sm">
-                      Desarrollo de negocios y expansión estratégica 2020-2024
+                      {stats?.subtitle}
                     </p>
 
                     <div className="space-y-4">
-                      <div className="flex items-center justify-between">
-                        <span>Desarrollo de Negocios</span>
-                        <span className="font-semibold">+85%</span>
-                      </div>
-                      <div className="w-full bg-primary-foreground/20 rounded-full h-2">
-                        <div
-                          className="bg-primary-foreground h-2 rounded-full"
-                          style={{ width: "85%" }}
-                        ></div>
-                      </div>
-                      <div className="flex items-center justify-between">
-                        <span>Alianzas Estratégicas</span>
-                        <span className="font-semibold">+92%</span>
-                      </div>
-                      <div className="w-full bg-primary-foreground/20 rounded-full h-2">
-                        <div
-                          className="bg-primary-foreground h-2 rounded-full"
-                          style={{ width: "92%" }}
-                        ></div>
-                      </div>
-                      <div className="flex items-center justify-between">
-                        <span>Expansión Internacional</span>
-                        <span className="font-semibold">+78%</span>
-                      </div>
-                      <div className="w-full bg-primary-foreground/20 rounded-full h-2">
-                        <div
-                          className="bg-primary-foreground h-2 rounded-full"
-                          style={{ width: "78%" }}
-                        ></div>
-                      </div>
-                      <div className="flex items-center justify-between">
-                        <span>Satisfacción del Cliente</span>
-                        <span className="font-semibold">+96%</span>
-                      </div>
-                      <div className="w-full bg-primary-foreground/20 rounded-full h-2">
-                        <div
-                          className="bg-primary-foreground h-2 rounded-full"
-                          style={{ width: "96%" }}
-                        ></div>
-                      </div>
+                      {stats?.metrics?.map((metric: any, index: number) => (
+                        <div key={index}>
+                          <div className="flex items-center justify-between">
+                            <span>{metric.label}</span>
+                            <span className="font-semibold">
+                              {metric.value}
+                            </span>
+                          </div>
+                          <div className="w-full bg-primary-foreground/20 rounded-full h-2">
+                            <div
+                              className="bg-primary-foreground h-2 rounded-full"
+                              style={{ width: `${metric.percentage}%` }}
+                            ></div>
+                          </div>
+                        </div>
+                      ))}
                     </div>
                   </div>
                 </div>

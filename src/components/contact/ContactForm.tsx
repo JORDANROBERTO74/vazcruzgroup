@@ -21,6 +21,7 @@ import {
 } from "@/components/ui/select";
 import { useContactForm } from "@/hooks/useContactForm";
 import { useToast } from "@/hooks/use-toast";
+import { useMessages } from "next-intl";
 
 const contactSchema = z.object({
   name: z
@@ -46,6 +47,19 @@ export default function ContactForm() {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const { toast } = useToast();
   const contactMutation = useContactForm();
+  const messages = useMessages();
+
+  // Extract form data from messages
+  const formData = (messages as any)?.contact?.form;
+  const badge = formData?.badge;
+  const title = formData?.title;
+  const subtitle = formData?.subtitle;
+  const fields = formData?.fields;
+  const placeholders = formData?.placeholders;
+  const businessTypes = formData?.businessTypes;
+  const submit = formData?.submit;
+  const sending = formData?.sending;
+  const success = formData?.success;
 
   const {
     register,
@@ -96,6 +110,15 @@ export default function ContactForm() {
     transition: { duration: 0.6 },
   };
 
+  // Fallback if no form data
+  if (!formData) {
+    return (
+      <div className="max-w-2xl mx-auto text-center p-8">
+        <p className="text-muted-foreground">Contact form not available</p>
+      </div>
+    );
+  }
+
   if (isSubmitted) {
     return (
       <motion.div
@@ -107,18 +130,16 @@ export default function ContactForm() {
           <CheckCircle className="w-10 h-10 text-green-600" />
         </div>
         <h3 className="text-2xl font-bold text-foreground mb-4">
-          ¡Mensaje Enviado!
+          {success?.title}
         </h3>
         <p className="text-muted-foreground mb-6 max-w-md">
-          Gracias por contactarnos. Nuestro equipo se pondrá en contacto con
-          usted en las próximas 24 horas para discutir sus necesidades
-          comerciales.
+          {success?.description}
         </p>
         <Button
           onClick={() => setIsSubmitted(false)}
           className="bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary/80"
         >
-          Enviar otro mensaje
+          {success?.button}
         </Button>
       </motion.div>
     );
@@ -134,15 +155,13 @@ export default function ContactForm() {
       {/* Header Section */}
       <div className="text-center">
         <Badge variant="outline" className="mb-4 px-4 py-2 text-sm font-medium">
-          Formulario de Contacto
+          {badge}
         </Badge>
         <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-          Conectemos su Negocio
+          {title}
         </h2>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-          Complete el formulario y nuestro equipo de expertos en intermediación
-          comercial se pondrá en contacto con usted para discutir oportunidades
-          de negocio.
+          {subtitle}
         </p>
       </div>
 
@@ -151,7 +170,7 @@ export default function ContactForm() {
         <CardHeader className="pb-6">
           <CardTitle className="flex items-center gap-2 text-xl">
             <Send className="w-5 h-5 text-primary" />
-            Información de Contacto
+            {formData?.info?.title || "Contact Information"}
           </CardTitle>
         </CardHeader>
         <CardContent className="space-y-6">
@@ -160,12 +179,12 @@ export default function ContactForm() {
             <div className="grid md:grid-cols-2 gap-6">
               <div className="space-y-2">
                 <Label htmlFor="name" className="text-sm font-medium">
-                  Nombre Completo *
+                  {fields?.name}
                 </Label>
                 <Input
                   id="name"
                   {...register("name")}
-                  placeholder="Su nombre completo"
+                  placeholder={placeholders?.name}
                   className={`h-11 ${
                     errors.name
                       ? "border-destructive focus:border-destructive"
@@ -182,13 +201,13 @@ export default function ContactForm() {
 
               <div className="space-y-2">
                 <Label htmlFor="email" className="text-sm font-medium">
-                  Email Corporativo *
+                  {fields?.email}
                 </Label>
                 <Input
                   id="email"
                   type="email"
                   {...register("email")}
-                  placeholder="su@empresa.com"
+                  placeholder={placeholders?.email}
                   className={`h-11 ${
                     errors.email
                       ? "border-destructive focus:border-destructive"
@@ -208,12 +227,12 @@ export default function ContactForm() {
             <div className="grid md:grid-cols-2 gap-6">
               <div className="space-y-2">
                 <Label htmlFor="company" className="text-sm font-medium">
-                  Empresa *
+                  {fields?.company}
                 </Label>
                 <Input
                   id="company"
                   {...register("company")}
-                  placeholder="Nombre de su empresa"
+                  placeholder={placeholders?.company}
                   className={`h-11 ${
                     errors.company
                       ? "border-destructive focus:border-destructive"
@@ -230,12 +249,12 @@ export default function ContactForm() {
 
               <div className="space-y-2">
                 <Label htmlFor="phone" className="text-sm font-medium">
-                  Teléfono *
+                  {fields?.phone}
                 </Label>
                 <Input
                   id="phone"
                   {...register("phone")}
-                  placeholder="+1 (555) 123-4567"
+                  placeholder={placeholders?.phone}
                   className={`h-11 ${
                     errors.phone
                       ? "border-destructive focus:border-destructive"
@@ -254,7 +273,7 @@ export default function ContactForm() {
             {/* Business Type */}
             <div className="space-y-2">
               <Label htmlFor="businessType" className="text-sm font-medium">
-                Tipo de Negocio *
+                {fields?.businessType}
               </Label>
               <Select
                 value={watch("businessType") || undefined}
@@ -275,10 +294,14 @@ export default function ContactForm() {
                   <SelectValue placeholder="Seleccione su tipo de negocio" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="manufacturer">Fabricante</SelectItem>
-                  <SelectItem value="distributor">Distribuidor</SelectItem>
-                  <SelectItem value="buyer">Comprador</SelectItem>
-                  <SelectItem value="other">Otro</SelectItem>
+                  <SelectItem value="manufacturer">
+                    {businessTypes?.manufacturer}
+                  </SelectItem>
+                  <SelectItem value="distributor">
+                    {businessTypes?.distributor}
+                  </SelectItem>
+                  <SelectItem value="buyer">{businessTypes?.buyer}</SelectItem>
+                  <SelectItem value="other">{businessTypes?.other}</SelectItem>
                 </SelectContent>
               </Select>
               {errors.businessType && (
@@ -292,12 +315,12 @@ export default function ContactForm() {
             {/* Subject */}
             <div className="space-y-2">
               <Label htmlFor="subject" className="text-sm font-medium">
-                Asunto *
+                {fields?.subject}
               </Label>
               <Input
                 id="subject"
                 {...register("subject")}
-                placeholder="¿En qué podemos ayudarle?"
+                placeholder={placeholders?.subject}
                 className={`h-11 ${
                   errors.subject
                     ? "border-destructive focus:border-destructive"
@@ -315,12 +338,12 @@ export default function ContactForm() {
             {/* Message */}
             <div className="space-y-2">
               <Label htmlFor="message" className="text-sm font-medium">
-                Mensaje *
+                {fields?.message}
               </Label>
               <Textarea
                 id="message"
                 {...register("message")}
-                placeholder="Describa sus necesidades comerciales, productos de interés, o cómo podemos ayudarle a conectar con nuevos mercados..."
+                placeholder={placeholders?.message}
                 rows={6}
                 className={`resize-none ${
                   errors.message
@@ -345,12 +368,12 @@ export default function ContactForm() {
               {isSubmitting || contactMutation.isLoading ? (
                 <div className="flex items-center gap-2">
                   <div className="w-5 h-5 border-2 border-primary-foreground border-t-transparent rounded-full animate-spin"></div>
-                  Enviando mensaje...
+                  {sending}
                 </div>
               ) : (
                 <div className="flex items-center gap-2">
                   <Send className="w-5 h-5" />
-                  Enviar Mensaje
+                  {submit}
                 </div>
               )}
             </Button>

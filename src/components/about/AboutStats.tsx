@@ -9,47 +9,46 @@ import {
   CheckCircle,
   Clock,
 } from "lucide-react";
+import { useMessages } from "next-intl";
+import React from "react";
 
-const stats = [
-  {
-    number: "4+",
-    label: "Años de Experiencia",
-    icon: TrendingUp,
-    description: "Desde 2020",
-  },
-  {
-    number: "25+",
-    label: "Mercados Globales",
-    icon: Globe,
-    description: "Presencia internacional",
-  },
-  {
-    number: "100+",
-    label: "Alianzas Estratégicas",
-    icon: Handshake,
-    description: "Conexiones exitosas",
-  },
-  {
-    number: "98%",
-    label: "Satisfacción del Cliente",
-    icon: Award,
-    description: "Clientes satisfechos",
-  },
-  {
-    number: "500+",
-    label: "Transacciones Exitosas",
-    icon: CheckCircle,
-    description: "Operaciones completadas",
-  },
-  {
-    number: "24/7",
-    label: "Soporte Dedicado",
-    icon: Clock,
-    description: "Atención continua",
-  },
-];
+// Icon mapping for stats section
+const statsIcons = {
+  TrendingUp,
+  Globe,
+  Handshake,
+  Award,
+  CheckCircle,
+  Clock,
+};
 
 export default function AboutStats() {
+  const messages = useMessages();
+
+  // Extract stats data from messages
+  const statsData = (messages as any)?.about?.stats;
+  const title = statsData?.title;
+  const subtitle = statsData?.subtitle;
+  const sectionTitle = statsData?.sectionTitle;
+  const sectionSubtitle = statsData?.sectionSubtitle;
+  const items = statsData?.items;
+  const cta = statsData?.cta;
+
+  // Fallback if no stats data
+  if (!statsData) {
+    return (
+      <section className="py-20 bg-gradient-to-r from-primary to-primary/90 relative overflow-hidden">
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="text-center">
+            <p className="text-primary-foreground">
+              Stats content not available
+            </p>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section className="py-20 bg-gradient-to-r from-primary to-primary/90 relative overflow-hidden">
       {/* Background decorative elements */}
@@ -68,11 +67,10 @@ export default function AboutStats() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl lg:text-4xl font-bold text-primary-foreground mb-4">
-            Excelencia en Comercio Internacional
+            {title}
           </h2>
           <p className="text-xl text-primary-foreground/80 max-w-3xl mx-auto">
-            Impulsamos el crecimiento global a través de conexiones estratégicas
-            y un servicio de clase mundial en intermediación comercial.
+            {subtitle}
           </p>
         </motion.div>
 
@@ -86,37 +84,41 @@ export default function AboutStats() {
         >
           <div className="text-center mb-12">
             <h3 className="text-2xl font-bold text-primary-foreground mb-2">
-              Estadísticas que Hablan
+              {sectionTitle}
             </h3>
-            <p className="text-primary-foreground/70">
-              Nuestro crecimiento y éxito en números
-            </p>
+            <p className="text-primary-foreground/70">{sectionSubtitle}</p>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-            {stats.map((stat, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, scale: 0.5 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="text-center group"
-              >
-                <div className="bg-primary-foreground/10 rounded-xl p-4 mb-3 group-hover:bg-primary-foreground/20 transition-colors duration-300">
-                  <stat.icon className="w-8 h-8 text-primary-foreground mx-auto mb-2" />
-                </div>
-                <div className="text-3xl md:text-4xl font-bold text-primary-foreground mb-1">
-                  {stat.number}
-                </div>
-                <div className="text-primary-foreground/80 text-sm font-medium mb-1">
-                  {stat.label}
-                </div>
-                <div className="text-primary-foreground/60 text-xs">
-                  {stat.description}
-                </div>
-              </motion.div>
-            ))}
+            {items?.map((stat: any, index: number) => {
+              const IconComponent =
+                statsIcons[stat.icon as keyof typeof statsIcons];
+              return (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, scale: 0.5 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                  className="text-center group"
+                >
+                  <div className="bg-primary-foreground/10 rounded-xl p-4 mb-3 group-hover:bg-primary-foreground/20 transition-colors duration-300">
+                    {IconComponent && (
+                      <IconComponent className="w-8 h-8 text-primary-foreground mx-auto mb-2" />
+                    )}
+                  </div>
+                  <div className="text-3xl md:text-4xl font-bold text-primary-foreground mb-1">
+                    {stat.number}
+                  </div>
+                  <div className="text-primary-foreground/80 text-sm font-medium mb-1">
+                    {stat.label}
+                  </div>
+                  <div className="text-primary-foreground/60 text-xs">
+                    {stat.description}
+                  </div>
+                </motion.div>
+              );
+            })}
           </div>
         </motion.div>
 
@@ -130,29 +132,20 @@ export default function AboutStats() {
         >
           <div className="bg-primary-foreground/10 rounded-2xl p-8 max-w-2xl mx-auto">
             <h4 className="text-xl font-bold text-primary-foreground mb-3">
-              ¿Listo para Crecer con Nosotros?
+              {cta?.title}
             </h4>
-            <p className="text-primary-foreground/80 mb-4">
-              Únase a las cientos de empresas que ya confían en Vascruz Group
-              para sus necesidades de intermediación comercial.
-            </p>
+            <p className="text-primary-foreground/80 mb-4">{cta?.subtitle}</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <div className="text-center">
-                <div className="text-2xl font-bold text-primary-foreground">
-                  500+
+              {cta?.stats?.map((stat: any, index: number) => (
+                <div key={index} className="text-center">
+                  <div className="text-2xl font-bold text-primary-foreground">
+                    {stat.number}
+                  </div>
+                  <div className="text-primary-foreground/70 text-sm">
+                    {stat.label}
+                  </div>
                 </div>
-                <div className="text-primary-foreground/70 text-sm">
-                  Empresas Satisfechas
-                </div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-primary-foreground">
-                  $50M+
-                </div>
-                <div className="text-primary-foreground/70 text-sm">
-                  En Transacciones
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </motion.div>

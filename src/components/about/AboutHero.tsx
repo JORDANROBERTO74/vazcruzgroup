@@ -3,8 +3,28 @@
 import { motion } from "framer-motion";
 import { Building2, Globe, TrendingUp, Award, Handshake } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { useMessages } from "next-intl";
+import React from "react";
+
+// Icon mapping for hero section
+const heroIcons = {
+  Building2,
+  Globe,
+  TrendingUp,
+  Award,
+  Handshake,
+};
 
 export default function AboutHero() {
+  const messages = useMessages();
+
+  // Extract hero data from messages
+  const heroData = (messages as any)?.about?.hero;
+  const badge = heroData?.badge;
+  const title = heroData?.title;
+  const subtitle = heroData?.subtitle;
+  const highlights = heroData?.highlights;
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -40,6 +60,19 @@ export default function AboutHero() {
     },
   };
 
+  // Fallback if no hero data
+  if (!heroData) {
+    return (
+      <section className="-mt-[64px] pt-24 pb-16 relative overflow-hidden bg-gradient-to-br from-background via-background to-muted/20 dark:from-background dark:via-background dark:to-muted/10">
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="text-center">
+            <p className="text-muted-foreground">About content not available</p>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section className="-mt-[64px] pt-24 pb-16 relative overflow-hidden bg-gradient-to-br from-background via-background to-muted/20 dark:from-background dark:via-background dark:to-muted/10">
       {/* Background decorative elements */}
@@ -59,20 +92,27 @@ export default function AboutHero() {
           {/* Badge */}
           <motion.div variants={itemVariants} className="mb-6">
             <Badge variant="outline" className="px-4 py-2 text-sm font-medium">
-              <Building2 className="w-4 h-4 mr-2" />
-              Sobre Vascruz Group LLC
+              {badge?.icon &&
+                heroIcons[badge.icon as keyof typeof heroIcons] &&
+                React.createElement(
+                  heroIcons[badge.icon as keyof typeof heroIcons],
+                  {
+                    className: "w-4 h-4 mr-2",
+                  }
+                )}
+              {badge?.text}
             </Badge>
           </motion.div>
 
           {/* Main Title */}
           <motion.div variants={itemVariants}>
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground leading-tight mb-6">
-              <div>Nuestra</div>
+              <div>{title?.line1}</div>
               <div className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">
-                Historia
+                {title?.line2}
               </div>
               <div className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">
-                y Visión
+                {title?.line3}
               </div>
             </h1>
           </motion.div>
@@ -80,9 +120,7 @@ export default function AboutHero() {
           {/* Subtitle */}
           <motion.div variants={itemVariants}>
             <p className="text-xl lg:text-2xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-              Desde 2020, hemos sido pioneros en la intermediación comercial,
-              conectando empresas globales y facilitando el crecimiento
-              empresarial a través de alianzas estratégicas.
+              {subtitle}
             </p>
           </motion.div>
         </motion.div>
@@ -94,73 +132,30 @@ export default function AboutHero() {
           animate="visible"
           className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto"
         >
-          {/* Experience Card */}
-          <motion.div
-            variants={itemVariants}
-            whileHover={{ y: -5 }}
-            className="bg-card border border-border rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300"
-          >
-            <div className="w-12 h-12 bg-gradient-to-r from-primary to-primary/90 rounded-lg flex items-center justify-center mb-4 mx-auto">
-              <Award className="w-6 h-6 text-primary-foreground" />
-            </div>
-            <h3 className="text-lg font-semibold text-card-foreground mb-2 text-center">
-              +4 Años de Experiencia
-            </h3>
-            <p className="text-muted-foreground text-center text-sm">
-              Especialistas en intermediación comercial desde 2020
-            </p>
-          </motion.div>
-
-          {/* Global Reach Card */}
-          <motion.div
-            variants={itemVariants}
-            whileHover={{ y: -5 }}
-            className="bg-card border border-border rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300"
-          >
-            <div className="w-12 h-12 bg-gradient-to-r from-primary to-primary/90 rounded-lg flex items-center justify-center mb-4 mx-auto">
-              <Globe className="w-6 h-6 text-primary-foreground" />
-            </div>
-            <h3 className="text-lg font-semibold text-card-foreground mb-2 text-center">
-              25+ Mercados Globales
-            </h3>
-            <p className="text-muted-foreground text-center text-sm">
-              Presencia en mercados nacionales e internacionales
-            </p>
-          </motion.div>
-
-          {/* Partnerships Card */}
-          <motion.div
-            variants={itemVariants}
-            whileHover={{ y: -5 }}
-            className="bg-card border border-border rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300"
-          >
-            <div className="w-12 h-12 bg-gradient-to-r from-primary to-primary/90 rounded-lg flex items-center justify-center mb-4 mx-auto">
-              <Handshake className="w-6 h-6 text-primary-foreground" />
-            </div>
-            <h3 className="text-lg font-semibold text-card-foreground mb-2 text-center">
-              100+ Alianzas Estratégicas
-            </h3>
-            <p className="text-muted-foreground text-center text-sm">
-              Conexiones comerciales exitosas y duraderas
-            </p>
-          </motion.div>
-
-          {/* Growth Card */}
-          <motion.div
-            variants={itemVariants}
-            whileHover={{ y: -5 }}
-            className="bg-card border border-border rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300"
-          >
-            <div className="w-12 h-12 bg-gradient-to-r from-primary to-primary/90 rounded-lg flex items-center justify-center mb-4 mx-auto">
-              <TrendingUp className="w-6 h-6 text-primary-foreground" />
-            </div>
-            <h3 className="text-lg font-semibold text-card-foreground mb-2 text-center">
-              98% Satisfacción
-            </h3>
-            <p className="text-muted-foreground text-center text-sm">
-              Clientes satisfechos con nuestros servicios
-            </p>
-          </motion.div>
+          {highlights?.map((highlight: any, index: number) => {
+            const IconComponent =
+              heroIcons[highlight.icon as keyof typeof heroIcons];
+            return (
+              <motion.div
+                key={index}
+                variants={itemVariants}
+                whileHover={{ y: -5 }}
+                className="bg-card border border-border rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300"
+              >
+                <div className="w-12 h-12 bg-gradient-to-r from-primary to-primary/90 rounded-lg flex items-center justify-center mb-4 mx-auto">
+                  {IconComponent && (
+                    <IconComponent className="w-6 h-6 text-primary-foreground" />
+                  )}
+                </div>
+                <h3 className="text-lg font-semibold text-card-foreground mb-2 text-center">
+                  {highlight.title}
+                </h3>
+                <p className="text-muted-foreground text-center text-sm">
+                  {highlight.description}
+                </p>
+              </motion.div>
+            );
+          })}
         </motion.div>
       </div>
     </section>

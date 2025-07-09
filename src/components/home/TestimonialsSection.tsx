@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Star, Quote } from "lucide-react";
+import { Star } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import {
@@ -13,6 +13,8 @@ import {
   type CarouselApi,
 } from "@/components/ui/carousel";
 import { useEffect, useState } from "react";
+import { useMessages } from "next-intl";
+import { Separator } from "@/components/ui/separator";
 
 // Colores aleatorios similares a los de Google
 const avatarColors = [
@@ -30,96 +32,16 @@ const avatarColors = [
   "bg-amber-500",
 ];
 
-const testimonials = [
-  {
-    name: "Carlos Mendoza",
-    company: "Fabricante Industrial",
-    rating: 5,
-    text: "Increíble experiencia trabajando con Vascruz Group. Nos ayudaron a conectar con distribuidores en Europa que nunca habíamos considerado. Nuestras ventas aumentaron un 40% en solo 6 meses. El equipo es muy profesional y siempre responde rápido.",
-    date: "15/12/2024",
-  },
-  {
-    name: "María González",
-    company: "Distribuidora Global",
-    rating: 4.5,
-    text: "Llevamos 2 años trabajando con ellos y la verdad es que han transformado nuestro negocio. Nos facilitaron alianzas estratégicas que nos permitieron expandirnos a mercados que parecían imposibles. Muy recomendados.",
-    date: "28/11/2024",
-  },
-  {
-    name: "Roberto Silva",
-    company: "Importadora del Norte",
-    rating: 5,
-    text: "Su análisis de mercado fue clave para nuestro crecimiento. Identificaron oportunidades que nosotros no veíamos y nos guiaron paso a paso. Los resultados superaron nuestras expectativas. Definitivamente volveremos a trabajar con ellos.",
-    date: "05/12/2024",
-  },
-  {
-    name: "Ana Rodríguez",
-    company: "Comercial Internacional",
-    rating: 4,
-    text: "Buen servicio en general. Su experiencia en negociación nos ayudó a cerrar contratos más favorables. Aunque a veces la comunicación podría ser más rápida, el resultado final fue excelente.",
-    date: "20/10/2024",
-  },
-  {
-    name: "Luis Pérez",
-    company: "Exportadora del Sur",
-    rating: 5,
-    text: "Gracias a Vascruz Group pudimos expandirnos a Asia con mucha confianza. Su conocimiento del mercado internacional es impresionante. Nos ahorraron mucho tiempo y errores costosos. Muy agradecidos.",
-    date: "22/12/2024",
-  },
-  {
-    name: "Carmen Torres",
-    company: "Comercializadora Central",
-    rating: 4.5,
-    text: "El equipo es súper dedicado y profesional. Superaron todas nuestras expectativas desde el primer día. La atención al detalle y la personalización del servicio es lo que más nos gustó. Los recomendamos sin dudar.",
-    date: "25/12/2024",
-  },
-  {
-    name: "Diego Morales",
-    company: "Distribuidora Regional",
-    rating: 5,
-    text: "Llevamos 3 años trabajando juntos y cada vez mejoran más. Su intermediación nos permitió formar alianzas estratégicas que transformaron completamente nuestro modelo de negocio. Nuestra rentabilidad aumentó significativamente.",
-    date: "30/11/2024",
-  },
-  {
-    name: "Patricia Vega",
-    company: "Importadora Premium",
-    rating: 4,
-    text: "Buen trabajo en la negociación de contratos. Su experiencia en mercados internacionales nos permitió optimizar costos y mejorar nuestros márgenes. El proceso fue un poco más largo de lo esperado, pero valió la pena.",
-    date: "10/12/2024",
-  },
-  {
-    name: "Fernando Ruiz",
-    company: "Comercial Internacional",
-    rating: 5,
-    text: "Vascruz Group ha sido fundamental para nuestro crecimiento internacional. Su red de contactos es invaluable y su experiencia nos ha ahorrado muchos dolores de cabeza. Son verdaderos expertos en lo que hacen.",
-    date: "25/11/2024",
-  },
-  {
-    name: "Pablo Salazar",
-    company: "Distribuidora Regional",
-    rating: 4.5,
-    text: "Excelente servicio desde el primer contacto. El equipo es muy profesional y conocen muy bien el mercado. Nos ayudaron a identificar nuevas oportunidades de negocio que no habíamos visto. Muy satisfechos.",
-    date: "20/12/2024",
-  },
-  {
-    name: "Laura Martínez",
-    company: "Exportadora del Este",
-    rating: 5,
-    text: "Increíble experiencia con Vascruz Group. Nos ayudaron a abrir mercados en África que parecían imposibles. Su conocimiento local y red de contactos es impresionante. Definitivamente los recomendamos.",
-    date: "15/01/2025",
-  },
-  {
-    name: "Ricardo Herrera",
-    company: "Importadora del Oeste",
-    rating: 4,
-    text: "Buen trabajo en general. Su intermediación comercial nos permitió conectar con proveedores de calidad. Aunque el proceso inicial fue un poco lento, los resultados fueron satisfactorios.",
-    date: "28/01/2025",
-  },
-];
-
 export default function TestimonialsSection() {
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
+  const messages = useMessages();
+
+  // Extract testimonials data from messages
+  const testimonialsData = (messages as any)?.home?.testimonials;
+  const title = testimonialsData?.title;
+  const subtitle = testimonialsData?.subtitle;
+  const items = testimonialsData?.items;
 
   useEffect(() => {
     if (!api) {
@@ -143,6 +65,21 @@ export default function TestimonialsSection() {
     return () => clearInterval(interval);
   }, [api]);
 
+  // Fallback if no testimonials data
+  if (!testimonialsData) {
+    return (
+      <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="text-center">
+            <p className="text-muted-foreground">
+              Testimonials content not available
+            </p>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
@@ -154,12 +91,10 @@ export default function TestimonialsSection() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            Lo que dicen nuestros clientes
+            {title}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Fabricantes, distribuidores y compradores confían en nuestra
-            experiencia en intermediación comercial para conectar sus negocios
-            globalmente.
+            {subtitle}
           </p>
         </motion.div>
 
@@ -171,10 +106,10 @@ export default function TestimonialsSection() {
         >
           <Carousel className="mb-8" opts={{ loop: true }}>
             <CarouselContent>
-              {testimonials.map((testimonial, index) => (
+              {items?.map((testimonial: any, index: number) => (
                 <CarouselItem key={index} className="basis-full md:basis-1/4">
                   <Card className="h-full border-border shadow-lg hover:shadow-xl transition-all duration-300 bg-card">
-                    <CardContent className="p-6">
+                    <CardContent className="p-6 h-full flex flex-col">
                       {/* Header: Avatar, Name, Date, and Google Logo */}
                       <div className="flex items-start justify-between mb-4">
                         <div className="flex items-center gap-3">
@@ -265,10 +200,14 @@ export default function TestimonialsSection() {
                         })}
                       </div>
 
-                      {/* Testimonial Text */}
-                      <p className="text-muted-foreground leading-relaxed text-sm">
-                        {`"${testimonial.text}"`}
-                      </p>
+                      <div className="flex-1 flex flex-col justify-between gap-1">
+                        <p className="text-muted-foreground leading-relaxed text-sm">
+                          {`"${testimonial.text}"`}
+                        </p>
+                        <p className="text-xs text-muted-foreground leading-relaxed italic">
+                          {testimonial.company}
+                        </p>
+                      </div>
                     </CardContent>
                   </Card>
                 </CarouselItem>
@@ -289,7 +228,7 @@ export default function TestimonialsSection() {
           <div className="inline-flex flex-col md:flex-row items-center gap-4 bg-card rounded-full px-8 py-4 shadow-lg border border-border">
             <div className="flex items-center gap-2">
               <div className="flex -space-x-2">
-                {testimonials.slice(0, 5).map((testimonial, i: number) => (
+                {items?.slice(0, 5).map((testimonial: any, i: number) => (
                   <Avatar key={i} className="w-8 h-8 border-2 border-card">
                     <AvatarFallback
                       className={`${
@@ -302,18 +241,18 @@ export default function TestimonialsSection() {
                 ))}
               </div>
               <span className="text-sm text-muted-foreground">
-                +100 alianzas exitosas
+                {testimonialsData?.stats?.alliances}
               </span>
             </div>
-            <div className="hidden md:block w-px h-8 bg-border"></div>
+            <Separator orientation="vertical" className="h-8" />
             <div className="flex items-center gap-2">
               <Star className="w-5 h-5 text-yellow-400 fill-current" />
               <span className="text-sm text-muted-foreground">
                 {(
-                  testimonials.reduce((acc, t) => acc + t.rating, 0) /
-                  testimonials.length
+                  items?.reduce((acc: number, t: any) => acc + t.rating, 0) /
+                  items?.length
                 ).toFixed(1)}
-                /5 rating promedio
+                /5 {testimonialsData?.stats?.averageRating}
               </span>
             </div>
           </div>

@@ -3,8 +3,28 @@
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Clock, Handshake } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { useMessages } from "next-intl";
+import React from "react";
+
+// Icon mapping for hero section
+const heroIcons = {
+  Mail,
+  Phone,
+  MapPin,
+  Clock,
+  Handshake,
+};
 
 export default function ContactHero() {
+  const messages = useMessages();
+
+  // Extract hero data from messages
+  const heroData = (messages as any)?.contact?.hero;
+  const badge = heroData?.badge;
+  const title = heroData?.title;
+  const subtitle = heroData?.subtitle;
+  const cards = heroData?.cards;
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -40,6 +60,21 @@ export default function ContactHero() {
     },
   };
 
+  // Fallback if no hero data
+  if (!heroData) {
+    return (
+      <section className="-mt-[64px] pt-24 pb-16 relative overflow-hidden bg-gradient-to-br from-background via-background to-muted/20 dark:from-background dark:via-background dark:to-muted/10">
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="text-center">
+            <p className="text-muted-foreground">
+              Contact content not available
+            </p>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section className="-mt-[64px] pt-24 pb-16 relative overflow-hidden bg-gradient-to-br from-background via-background to-muted/20 dark:from-background dark:via-background dark:to-muted/10">
       {/* Background decorative elements */}
@@ -59,20 +94,27 @@ export default function ContactHero() {
           {/* Badge */}
           <motion.div variants={itemVariants} className="mb-6">
             <Badge variant="outline" className="px-4 py-2 text-sm font-medium">
-              <Handshake className="w-4 h-4 mr-2" />
-              Conectemos Negocios
+              {badge?.icon &&
+                heroIcons[badge.icon as keyof typeof heroIcons] &&
+                React.createElement(
+                  heroIcons[badge.icon as keyof typeof heroIcons],
+                  {
+                    className: "w-4 h-4 mr-2",
+                  }
+                )}
+              {badge?.text}
             </Badge>
           </motion.div>
 
           {/* Main Title */}
           <motion.div variants={itemVariants}>
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground leading-tight mb-6">
-              <div>Establezcamos</div>
-              <div className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">
-                Conexiones
+              <div className="leading-[1.2]">{title?.line1}</div>
+              <div className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80 leading-[1.2]">
+                {title?.line2}
               </div>
-              <div className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">
-                Comerciales
+              <div className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80 leading-[1.2]">
+                {title?.line3}
               </div>
             </h1>
           </motion.div>
@@ -80,9 +122,7 @@ export default function ContactHero() {
           {/* Subtitle */}
           <motion.div variants={itemVariants}>
             <p className="text-xl lg:text-2xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-              Estamos aquí para facilitar sus transacciones comerciales.
-              Conectamos fabricantes, distribuidores y compradores en mercados
-              nacionales e internacionales.
+              {subtitle}
             </p>
           </motion.div>
         </motion.div>
@@ -104,10 +144,10 @@ export default function ContactHero() {
               <Mail className="w-6 h-6 text-primary-foreground" />
             </div>
             <h3 className="text-lg font-semibold text-card-foreground mb-2 text-center">
-              Email
+              {cards?.email?.title}
             </h3>
             <p className="text-muted-foreground text-center text-sm">
-              info@vascruzgroup.com
+              {cards?.email?.value}
             </p>
           </motion.div>
 
@@ -121,10 +161,10 @@ export default function ContactHero() {
               <Phone className="w-6 h-6 text-primary-foreground" />
             </div>
             <h3 className="text-lg font-semibold text-card-foreground mb-2 text-center">
-              Teléfono
+              {cards?.phone?.title}
             </h3>
             <p className="text-muted-foreground text-center text-sm">
-              +1 (555) 123-4567
+              {cards?.phone?.value}
             </p>
           </motion.div>
 
@@ -138,10 +178,10 @@ export default function ContactHero() {
               <MapPin className="w-6 h-6 text-primary-foreground" />
             </div>
             <h3 className="text-lg font-semibold text-card-foreground mb-2 text-center">
-              Ubicación
+              {cards?.location?.title}
             </h3>
             <p className="text-muted-foreground text-center text-sm">
-              Miami, Florida, USA
+              {cards?.location?.value}
             </p>
           </motion.div>
 
@@ -155,10 +195,10 @@ export default function ContactHero() {
               <Clock className="w-6 h-6 text-primary-foreground" />
             </div>
             <h3 className="text-lg font-semibold text-card-foreground mb-2 text-center">
-              Horarios
+              {cards?.hours?.title}
             </h3>
             <p className="text-muted-foreground text-center text-sm">
-              Lun - Vie: 9AM - 6PM
+              {cards?.hours?.value}
             </p>
           </motion.div>
         </motion.div>
