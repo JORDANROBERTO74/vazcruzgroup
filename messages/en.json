@@ -43,26 +43,78 @@
     }
   },
   "footer": {
-    "copyright": "© 2025 Roberto Jordán.",
-    "menu": {
-      "label": "Menu",
-      "items": [
+    "company": {
+      "name": "VasCruz Group LLC",
+      "description": "Specialists in wholesale commercial intermediation and representation, connecting manufacturers, distributors and buyers in national and international markets."
+    },
+    "newsletter": {
+      "title": "Subscribe to our newsletter",
+      "placeholder": "Your email address",
+      "button": "Subscribe",
+      "success": "Thank you for subscribing!"
+    },
+    "sections": {
+      "quickLinks": {
+        "title": "Quick Links",
+        "items": [
+          { "name": "Home", "href": "/" },
+          { "name": "Services", "href": "/services" },
+          { "name": "About", "href": "/about" },
+          { "name": "Contact", "href": "/contact" }
+        ]
+      },
+      "specialties": {
+        "title": "Specialties",
+        "items": [
+          { "name": "Import", "href": "/services/import" },
+          { "name": "Export", "href": "/services/export" },
+          { "name": "Consulting", "href": "/services/consulting" }
+        ]
+      },
+      "offices": {
+        "title": "Offices",
+        "items": [
+          {
+            "city": "Aventura, Florida",
+            "address": "3530 Mystic Pointe Drive Apt 2403, Aventura, Florida, 33180, USA",
+            "phone": "+591 77004600",
+            "email": "grupovascruzllc@gmail.com"
+          }
+        ]
+      }
+    },
+    "social": {
+      "title": "Follow us",
+      "links": [
         {
-          "name": "Home",
-          "href": "/"
+          "name": "Facebook",
+          "href": "https://facebook.com/vascruzgroup",
+          "icon": "Facebook"
         },
         {
-          "name": "About",
-          "href": "/about"
+          "name": "Twitter",
+          "href": "https://twitter.com/vascruzgroup",
+          "icon": "Twitter"
         },
         {
-          "name": "Portfolio",
-          "href": "/portfolio"
+          "name": "LinkedIn",
+          "href": "https://linkedin.com/company/vascruzgroup",
+          "icon": "LinkedIn"
         },
         {
-          "name": "Contact",
-          "href": "/contact"
+          "name": "Instagram",
+          "href": "https://instagram.com/vascruzgroup",
+          "icon": "Instagram"
         }
+      ]
+    },
+    "legal": {
+      "copyright": "© 2025 Vascruz Group. All rights reserved.",
+      "links": [
+        { "name": "Privacy Policy", "href": "/legal/privacy" },
+        { "name": "Terms and Conditions", "href": "/legal/terms" },
+        { "name": "Cookie Policy", "href": "/legal/cookies" },
+        { "name": "Accessibility", "href": "/legal/accessibility" }
       ]
     }
   },
