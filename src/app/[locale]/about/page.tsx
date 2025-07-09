@@ -2,9 +2,7 @@
 
 import AboutHero from "@/components/about/AboutHero";
 import AboutMission from "@/components/about/AboutMission";
-import AboutTeam from "@/components/about/AboutTeam";
 import AboutValues from "@/components/about/AboutValues";
-import AboutTimeline from "@/components/about/AboutTimeline";
 import AboutStats from "@/components/about/AboutStats";
 
 export default function AboutPage() {
@@ -18,12 +16,6 @@ export default function AboutPage() {
 
       {/* Values Section */}
       <AboutValues />
-
-      {/* Timeline Section */}
-      <AboutTimeline />
-
-      {/* Team Section */}
-      <AboutTeam />
 
       {/* Stats Section */}
       <AboutStats />

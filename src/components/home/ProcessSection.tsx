@@ -56,20 +56,6 @@ export default function ProcessSection() {
           </p>
         </motion.div>
 
-        {/* Mobile Progress Line */}
-        <div className="lg:hidden mb-8">
-          <div className="flex items-center justify-center space-x-2">
-            {processes.map((_, index) => (
-              <div key={index} className="flex items-center">
-                <div className="w-3 h-3 bg-primary rounded-full"></div>
-                {index < processes.length - 1 && (
-                  <div className="w-8 h-0.5 bg-muted mx-2"></div>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 relative">
           {/* Desktop Connection Lines */}
           <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-primary via-primary/80 to-primary transform -translate-y-1/2 z-0"></div>
@@ -92,11 +78,6 @@ export default function ProcessSection() {
                       </span>
                     </div>
                     {/* Mobile step indicator */}
-                    <div className="lg:hidden absolute -top-2 -right-2 w-6 h-6 bg-primary rounded-full flex items-center justify-center">
-                      <span className="text-primary-foreground text-xs font-bold">
-                        {index + 1}
-                      </span>
-                    </div>
                   </div>
                   <CardTitle className="text-xl text-card-foreground">
                     {process.title}
@@ -119,22 +100,6 @@ export default function ProcessSection() {
               )}
             </motion.div>
           ))}
-        </div>
-
-        {/* Mobile Step Numbers */}
-        <div className="lg:hidden mt-8">
-          <div className="flex justify-between items-center px-4">
-            {processes.map((process, index) => (
-              <div key={index} className="text-center">
-                <div className="text-sm font-medium text-muted-foreground">
-                  Paso {index + 1}
-                </div>
-                <div className="text-xs text-muted-foreground/70 mt-1">
-                  {process.title}
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
     </section>

@@ -1,13 +1,14 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 import Link from "next/link";
-import { useLocale, useMessages } from "next-intl";
-import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import LocaleSwitcher from "@/components/local-switcher";
 import { Menu, X } from "lucide-react";
-import { cn } from "@/lib/utils";
+import DesktopNavigation from "./DesktopNavigation";
+import MobileNavigation from "./MobileNavigation";
+import { useLocale, useMessages } from "next-intl";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,21 +17,36 @@ const Header = () => {
   const messages = useMessages();
   const menuItems = (messages as any)?.header?.menu?.items || [];
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  const toggleMenu = useCallback(() => {
+    setIsMenuOpen((prev) => !prev);
+  }, []);
 
-  const closeMenu = () => {
+  const closeMenu = useCallback(() => {
     setIsMenuOpen(false);
-  };
+  }, []);
 
-  const isActiveLink = (href: string) => {
-    const currentPath = pathname.replace(`/${locale}`, "") || "/";
-    return currentPath === href;
-  };
+  // Fallback si no hay elementos de menú
+  if (menuItems.length === 0) {
+    return (
+      <header className="sticky top-0 z-50 w-100vw border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+        <div className="container mx-auto px-4">
+          <div className="flex h-16 items-center justify-between">
+            <div className="flex items-center">
+              <Link href={`/${locale}`} className="flex items-center space-x-2">
+                <span className="text-xl font-bold text-primary">LOGO</span>
+              </Link>
+            </div>
+            <div className="flex items-center space-x-4">
+              <LocaleSwitcher />
+            </div>
+          </div>
+        </div>
+      </header>
+    );
+  }
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-100vw border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
@@ -45,22 +61,11 @@ const Header = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            {menuItems.map((item: any) => (
-              <Link
-                key={item.href}
-                href={`/${locale}${item.href}`}
-                className={cn(
-                  "text-sm font-medium transition-colors hover:text-primary",
-                  isActiveLink(item.href)
-                    ? "text-primary"
-                    : "text-muted-foreground"
-                )}
-              >
-                {item.name}
-              </Link>
-            ))}
-          </nav>
+          <DesktopNavigation
+            menuItems={menuItems}
+            locale={locale}
+            pathname={pathname}
+          />
 
           {/* Desktop Actions */}
           <div className="hidden md:flex items-center space-x-4">
@@ -74,6 +79,8 @@ const Header = () => {
               size="icon"
               onClick={toggleMenu}
               aria-label="Toggle menu"
+              aria-expanded={isMenuOpen}
+              aria-controls="mobile-menu"
             >
               {isMenuOpen ? (
                 <X className="h-6 w-6" />
@@ -85,32 +92,13 @@ const Header = () => {
         </div>
 
         {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <div className="md:hidden">
-            <div className="space-y-1 pb-3 pt-2">
-              {menuItems.map((item: any) => (
-                <Link
-                  key={item.href}
-                  href={`/${locale}${item.href}`}
-                  className={cn(
-                    "block px-3 py-2 text-base font-medium transition-colors hover:text-primary",
-                    isActiveLink(item.href)
-                      ? "text-primary bg-accent"
-                      : "text-muted-foreground"
-                  )}
-                  onClick={closeMenu}
-                >
-                  {item.name}
-                </Link>
-              ))}
-            </div>
-            <div className="border-t pt-4 pb-3 space-y-2">
-              <div className="px-3">
-                <LocaleSwitcher />
-              </div>
-            </div>
-          </div>
-        )}
+        <MobileNavigation
+          menuItems={menuItems}
+          locale={locale}
+          isOpen={isMenuOpen}
+          onClose={closeMenu}
+          pathname={pathname}
+        />
       </div>
     </header>
   );

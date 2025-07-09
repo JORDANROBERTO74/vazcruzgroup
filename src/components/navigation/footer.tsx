@@ -31,17 +31,12 @@ const quickLinks = [
   { name: "Servicios", href: "/servicios" },
   { name: "Nosotros", href: "/nosotros" },
   { name: "Contacto", href: "/contacto" },
-  { name: "Blog", href: "/blog" },
-  { name: "Certificaciones", href: "/certificaciones" },
 ];
 
 const specialties = [
   { name: "Importación", href: "/servicios/importacion" },
   { name: "Exportación", href: "/servicios/exportacion" },
-  { name: "Despacho Aduanal", href: "/servicios/despacho" },
   { name: "Consultoría", href: "/servicios/consultoria" },
-  { name: "OEA", href: "/servicios/oea" },
-  { name: "Logística", href: "/servicios/logistica" },
 ];
 
 const legalLinks = [
@@ -54,18 +49,18 @@ const legalLinks = [
 const socialLinks = [
   {
     name: "Facebook",
-    href: "https://facebook.com/vazcruzgroup",
+    href: "https://facebook.com/vascruzgroup",
     icon: Facebook,
   },
-  { name: "Twitter", href: "https://twitter.com/vazcruzgroup", icon: Twitter },
+  { name: "Twitter", href: "https://twitter.com/vascruzgroup", icon: Twitter },
   {
     name: "LinkedIn",
-    href: "https://linkedin.com/company/vazcruzgroup",
+    href: "https://linkedin.com/company/vascruzgroup",
     icon: Linkedin,
   },
   {
     name: "Instagram",
-    href: "https://instagram.com/vazcruzgroup",
+    href: "https://instagram.com/vascruzgroup",
     icon: Instagram,
   },
 ];
@@ -85,7 +80,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-foreground text-white" role="contentinfo">
+    <footer className="bg-foreground text-white w-100vw" role="contentinfo">
       {/* Main Footer */}
       <div className="py-16 lg:py-20">
         <div className="container mx-auto px-4">
@@ -100,7 +95,7 @@ export default function Footer() {
             >
               <div className="flex items-center gap-2 mb-6">
                 <Globe className="w-8 h-8 text-primary" aria-hidden="true" />
-                <span className="text-xl font-bold">VazCruz Group LLC</span>
+                <span className="text-xl font-bold">VasCruz Group LLC</span>
               </div>
               <p className="text-gray-300 mb-6 leading-relaxed">
                 Especialistas en intermediación y representación comercial
@@ -161,7 +156,10 @@ export default function Footer() {
               <h3 className="text-lg font-semibold mb-6" id="quick-links">
                 Enlaces Rápidos
               </h3>
-              <ul className="space-y-3" aria-labelledby="quick-links">
+              <ul
+                className="grid grid-cols-2 md:grid-cols-1 gap-3"
+                aria-labelledby="quick-links"
+              >
                 {quickLinks.map((link, index) => (
                   <li key={index}>
                     <a
@@ -189,7 +187,10 @@ export default function Footer() {
               <h3 className="text-lg font-semibold mb-6" id="specialties">
                 Especialidades
               </h3>
-              <ul className="space-y-3" aria-labelledby="specialties">
+              <ul
+                className="grid grid-cols-2 md:grid-cols-1 gap-3"
+                aria-labelledby="specialties"
+              >
                 {specialties.map((specialty, index) => (
                   <li key={index}>
                     <a
@@ -269,12 +270,12 @@ export default function Footer() {
               viewport={{ once: true }}
               className="text-gray-400 text-sm text-center md:text-left"
             >
-              © {new Date().getFullYear()} VazCruz Group. Todos los derechos
+              © {new Date().getFullYear()} Vascruz Group. Todos los derechos
               reservados.
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, x: 50 }}
+              initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}

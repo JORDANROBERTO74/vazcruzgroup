@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { MapPin, Globe, Users, Building2 } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import MapWrapper from "@/components/map-wrapper";
 
 export default function ContactMap() {
   const fadeInUp = {
@@ -69,7 +70,7 @@ export default function ContactMap() {
           </p>
         </motion.div>
 
-        {/* Map Placeholder */}
+        {/* Interactive Map */}
         <motion.div
           variants={fadeInUp}
           initial="initial"
@@ -80,68 +81,21 @@ export default function ContactMap() {
             <CardHeader className="bg-gradient-to-r from-primary/10 to-primary/5">
               <CardTitle className="flex items-center gap-2">
                 <MapPin className="w-5 h-5 text-primary" />
-                Nuestra Ubicación Principal
+                <span className="md:hidden">Nuestra Ubicación</span>
+                <span className="hidden md:inline">
+                  Nuestra Ubicación Principal
+                </span>
               </CardTitle>
             </CardHeader>
             <CardContent className="p-0">
-              <div className="relative h-96 bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-800 dark:to-slate-900">
-                {/* Map Placeholder */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <MapPin className="w-8 h-8 text-primary" />
-                    </div>
-                    <h3 className="text-xl font-semibold text-foreground mb-2">
-                      Miami, Florida, USA
-                    </h3>
-                    <p className="text-muted-foreground">
-                      Oficina principal de Vascruz Group LLC
-                    </p>
-                  </div>
-                </div>
-
-                {/* Decorative elements */}
-                <div className="absolute top-1/4 left-1/4 w-4 h-4 bg-primary/30 rounded-full animate-pulse"></div>
-                <div className="absolute top-1/3 right-1/3 w-3 h-3 bg-primary/40 rounded-full animate-pulse delay-1000"></div>
-                <div className="absolute bottom-1/4 left-1/3 w-5 h-5 bg-primary/20 rounded-full animate-pulse delay-2000"></div>
-                <div className="absolute top-1/2 right-1/4 w-3 h-3 bg-primary/30 rounded-full animate-pulse delay-1500"></div>
-              </div>
+              <MapWrapper
+                center={[25.9564, -80.1392]} // Aventura, Florida coordinates
+                zoom={15}
+                height="h-96"
+                showMarker={true}
+              />
             </CardContent>
           </Card>
-        </motion.div>
-
-        {/* Global Presence */}
-        <motion.div variants={fadeInUp} initial="initial" animate="animate">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {globalPresence.map((region, index) => (
-              <motion.div
-                key={index}
-                variants={itemVariants}
-                initial="hidden"
-                animate="visible"
-                whileHover={{ y: -5 }}
-                className="bg-card border border-border rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300"
-              >
-                <div className="w-12 h-12 bg-gradient-to-r from-primary to-primary/90 rounded-lg flex items-center justify-center mb-4">
-                  <region.icon className="w-6 h-6 text-primary-foreground" />
-                </div>
-                <h3 className="text-lg font-semibold text-card-foreground mb-3">
-                  {region.region}
-                </h3>
-                <ul className="space-y-1">
-                  {region.countries.map((country, idx) => (
-                    <li
-                      key={idx}
-                      className="text-sm text-muted-foreground flex items-center gap-2"
-                    >
-                      <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
-                      {country}
-                    </li>
-                  ))}
-                </ul>
-              </motion.div>
-            ))}
-          </div>
         </motion.div>
 
         {/* Call to Action */}

@@ -8,12 +8,7 @@ import {
   Award,
   CheckCircle,
   Clock,
-  Shield,
-  Star,
-  Trophy,
 } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 
 const stats = [
   {
@@ -54,30 +49,6 @@ const stats = [
   },
 ];
 
-const achievements = [
-  {
-    title: "ISO 9001",
-    description: "Certificación de Calidad Internacional",
-    icon: Shield,
-    year: "2023",
-    detail: "Gestión de calidad certificada",
-  },
-  {
-    title: "A+",
-    description: "Calificación Crediticia",
-    icon: Star,
-    year: "2024",
-    detail: "Máxima calificación financiera",
-  },
-  {
-    title: "Top 10",
-    description: "Intermediarios Comerciales",
-    icon: Trophy,
-    year: "2024",
-    detail: "Reconocimiento del sector",
-  },
-];
-
 export default function AboutStats() {
   return (
     <section className="py-20 bg-gradient-to-r from-primary to-primary/90 relative overflow-hidden">
@@ -97,11 +68,11 @@ export default function AboutStats() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl lg:text-4xl font-bold text-primary-foreground mb-4">
-            Nuestros Logros y Reconocimientos
+            Excelencia en Comercio Internacional
           </h2>
           <p className="text-xl text-primary-foreground/80 max-w-3xl mx-auto">
-            Cada número y certificación representa nuestro compromiso con la
-            excelencia y nuestro impacto en el mundo del comercio internacional.
+            Impulsamos el crecimiento global a través de conexiones estratégicas
+            y un servicio de clase mundial en intermediación comercial.
           </p>
         </motion.div>
 
@@ -144,59 +115,6 @@ export default function AboutStats() {
                 <div className="text-primary-foreground/60 text-xs">
                   {stat.description}
                 </div>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
-
-        {/* Achievements Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 60 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-        >
-          <div className="text-center mb-12">
-            <h3 className="text-2xl font-bold text-primary-foreground mb-2">
-              Certificaciones y Reconocimientos
-            </h3>
-            <p className="text-primary-foreground/70">
-              Nuestro compromiso con la excelencia reconocido
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            {achievements.map((achievement, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 60 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                whileHover={{ y: -5 }}
-              >
-                <Card className="bg-primary-foreground/10 border-primary-foreground/20 hover:bg-primary-foreground/20 transition-all duration-300 h-full">
-                  <CardContent className="p-6 text-center">
-                    <div className="w-16 h-16 bg-primary-foreground/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <achievement.icon className="w-8 h-8 text-primary-foreground" />
-                    </div>
-                    <div className="text-3xl font-bold text-primary-foreground mb-2">
-                      {achievement.title}
-                    </div>
-                    <div className="text-primary-foreground/80 font-medium mb-2">
-                      {achievement.description}
-                    </div>
-                    <div className="text-primary-foreground/60 text-sm mb-3">
-                      {achievement.detail}
-                    </div>
-                    <Badge
-                      variant="secondary"
-                      className="bg-primary-foreground/20 text-primary-foreground border-primary-foreground/30"
-                    >
-                      {achievement.year}
-                    </Badge>
-                  </CardContent>
-                </Card>
               </motion.div>
             ))}
           </div>
