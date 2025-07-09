@@ -11,8 +11,13 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { useRouter } from "next/navigation";
+import { useLocale } from "next-intl";
 
 export default function HeroSection() {
+  const router = useRouter();
+  const locale = useLocale();
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -49,7 +54,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="-mt-[64px] h-screen relative overflow-hidden bg-gradient-to-br from-background via-background to-muted/20 dark:from-background dark:via-background dark:to-muted/10">
+    <section className="-mt-[30px] lg:-mt-[64px] h-full md:h-full lg:h-screen relative overflow-hidden bg-gradient-to-br from-background via-background to-muted/20 dark:from-background dark:via-background dark:to-muted/10">
       {/* Background decorative elements */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-1/4 w-72 h-72 bg-gradient-to-br from-primary/20 to-primary/10 rounded-full blur-3xl"></div>
@@ -62,7 +67,7 @@ export default function HeroSection() {
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center w-full"
+          className="text-center md:text-left grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center w-full"
         >
           {/* Left Column - Main Content */}
           <motion.div
@@ -137,10 +142,13 @@ export default function HeroSection() {
             <motion.div variants={itemVariants}>
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary/80 text-primary-foreground font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-lg"
+                className="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-sm md:text-lg w-full md:w-auto"
+                onClick={() => {
+                  router.push(`/${locale}/services`);
+                }}
               >
                 Conoce Nuestros Servicios
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <ArrowRight className="h-5 w-5" />
               </Button>
             </motion.div>
           </motion.div>

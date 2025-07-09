@@ -12,17 +12,32 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 import { useContactForm } from "@/hooks/useContactForm";
 import { useToast } from "@/hooks/use-toast";
 
 const contactSchema = z.object({
-  name: z.string().min(2, "El nombre debe tener al menos 2 caracteres"),
+  name: z
+    .string()
+    .min(2, "El nombre debe tener al menos 2 caracteres")
+    .regex(/^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/, "El nombre solo puede contener letras"),
   email: z.string().email("Ingrese un email válido"),
   company: z.string().min(2, "El nombre de la empresa es requerido"),
-  phone: z.string().min(10, "Ingrese un número de teléfono válido"),
+  phone: z
+    .string()
+    .min(10, "Ingrese un número de teléfono válido")
+    .regex(/^[\+]?[1-9][\d]{0,15}$/, "Formato de teléfono inválido"),
   subject: z.string().min(5, "El asunto debe tener al menos 5 caracteres"),
   message: z.string().min(20, "El mensaje debe tener al menos 20 caracteres"),
-  businessType: z.enum(["manufacturer", "distributor", "buyer", "other"]),
+  businessType: z.enum(["manufacturer", "distributor", "buyer", "other"], {
+    required_error: "Debe seleccionar un tipo de negocio",
+  }),
 });
 
 type ContactFormData = z.infer<typeof contactSchema>;
@@ -37,8 +52,11 @@ export default function ContactForm() {
     handleSubmit,
     formState: { errors, isSubmitting },
     reset,
+    setValue,
+    watch,
   } = useForm<ContactFormData>({
     resolver: zodResolver(contactSchema),
+    mode: "onBlur", // Validación en tiempo real al perder el foco
   });
 
   const onSubmit = async (data: ContactFormData) => {
@@ -57,9 +75,16 @@ export default function ContactForm() {
         variant: "default",
       });
     } catch (error) {
+      console.error("Error sending contact form:", error);
+
+      const errorMessage =
+        error instanceof Error
+          ? error.message
+          : "Error desconocido al enviar el mensaje";
+
       toast({
         title: "Error al enviar mensaje",
-        description: "Por favor, intente nuevamente más tarde.",
+        description: errorMessage,
         variant: "destructive",
       });
     }
@@ -142,13 +167,15 @@ export default function ContactForm() {
                   {...register("name")}
                   placeholder="Su nombre completo"
                   className={`h-11 ${
-                    errors.name ? "border-red-500 focus:border-red-500" : ""
+                    errors.name
+                      ? "border-destructive focus:border-destructive"
+                      : ""
                   }`}
                 />
                 {errors.name && (
-                  <p className="text-sm text-red-500 flex items-center gap-1">
-                    <AlertCircle className="w-4 h-4" />
-                    {errors.name.message}
+                  <p className="text-sm text-destructive flex items-start gap-1">
+                    <AlertCircle className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                    <span>{errors.name.message}</span>
                   </p>
                 )}
               </div>
@@ -163,13 +190,15 @@ export default function ContactForm() {
                   {...register("email")}
                   placeholder="su@empresa.com"
                   className={`h-11 ${
-                    errors.email ? "border-red-500 focus:border-red-500" : ""
+                    errors.email
+                      ? "border-destructive focus:border-destructive"
+                      : ""
                   }`}
                 />
                 {errors.email && (
-                  <p className="text-sm text-red-500 flex items-center gap-1">
-                    <AlertCircle className="w-4 h-4" />
-                    {errors.email.message}
+                  <p className="text-sm text-destructive flex items-start gap-1">
+                    <AlertCircle className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                    <span>{errors.email.message}</span>
                   </p>
                 )}
               </div>
@@ -186,13 +215,15 @@ export default function ContactForm() {
                   {...register("company")}
                   placeholder="Nombre de su empresa"
                   className={`h-11 ${
-                    errors.company ? "border-red-500 focus:border-red-500" : ""
+                    errors.company
+                      ? "border-destructive focus:border-destructive"
+                      : ""
                   }`}
                 />
                 {errors.company && (
-                  <p className="text-sm text-red-500 flex items-center gap-1">
-                    <AlertCircle className="w-4 h-4" />
-                    {errors.company.message}
+                  <p className="text-sm text-destructive flex items-start gap-1">
+                    <AlertCircle className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                    <span>{errors.company.message}</span>
                   </p>
                 )}
               </div>
@@ -206,13 +237,15 @@ export default function ContactForm() {
                   {...register("phone")}
                   placeholder="+1 (555) 123-4567"
                   className={`h-11 ${
-                    errors.phone ? "border-red-500 focus:border-red-500" : ""
+                    errors.phone
+                      ? "border-destructive focus:border-destructive"
+                      : ""
                   }`}
                 />
                 {errors.phone && (
-                  <p className="text-sm text-red-500 flex items-center gap-1">
-                    <AlertCircle className="w-4 h-4" />
-                    {errors.phone.message}
+                  <p className="text-sm text-destructive flex items-start gap-1">
+                    <AlertCircle className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                    <span>{errors.phone.message}</span>
                   </p>
                 )}
               </div>
@@ -223,25 +256,35 @@ export default function ContactForm() {
               <Label htmlFor="businessType" className="text-sm font-medium">
                 Tipo de Negocio *
               </Label>
-              <select
-                id="businessType"
-                {...register("businessType")}
-                className={`w-full h-11 px-3 py-2 border border-input rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-colors ${
-                  errors.businessType
-                    ? "border-red-500 focus:border-red-500"
-                    : ""
-                }`}
+              <Select
+                value={watch("businessType") || undefined}
+                onValueChange={(value) =>
+                  setValue(
+                    "businessType",
+                    value as "manufacturer" | "distributor" | "buyer" | "other"
+                  )
+                }
               >
-                <option value="">Seleccione su tipo de negocio</option>
-                <option value="manufacturer">Fabricante</option>
-                <option value="distributor">Distribuidor</option>
-                <option value="buyer">Comprador</option>
-                <option value="other">Otro</option>
-              </select>
+                <SelectTrigger
+                  className={`h-11 ${
+                    errors.businessType
+                      ? "border-destructive focus:border-destructive"
+                      : ""
+                  }`}
+                >
+                  <SelectValue placeholder="Seleccione su tipo de negocio" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="manufacturer">Fabricante</SelectItem>
+                  <SelectItem value="distributor">Distribuidor</SelectItem>
+                  <SelectItem value="buyer">Comprador</SelectItem>
+                  <SelectItem value="other">Otro</SelectItem>
+                </SelectContent>
+              </Select>
               {errors.businessType && (
-                <p className="text-sm text-red-500 flex items-center gap-1">
-                  <AlertCircle className="w-4 h-4" />
-                  {errors.businessType.message}
+                <p className="text-sm text-destructive flex items-start gap-1">
+                  <AlertCircle className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                  <span>{errors.businessType.message}</span>
                 </p>
               )}
             </div>
@@ -256,13 +299,15 @@ export default function ContactForm() {
                 {...register("subject")}
                 placeholder="¿En qué podemos ayudarle?"
                 className={`h-11 ${
-                  errors.subject ? "border-red-500 focus:border-red-500" : ""
+                  errors.subject
+                    ? "border-destructive focus:border-destructive"
+                    : ""
                 }`}
               />
               {errors.subject && (
-                <p className="text-sm text-red-500 flex items-center gap-1">
-                  <AlertCircle className="w-4 h-4" />
-                  {errors.subject.message}
+                <p className="text-sm text-destructive flex items-start gap-1">
+                  <AlertCircle className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                  <span>{errors.subject.message}</span>
                 </p>
               )}
             </div>
@@ -278,13 +323,15 @@ export default function ContactForm() {
                 placeholder="Describa sus necesidades comerciales, productos de interés, o cómo podemos ayudarle a conectar con nuevos mercados..."
                 rows={6}
                 className={`resize-none ${
-                  errors.message ? "border-red-500 focus:border-red-500" : ""
+                  errors.message
+                    ? "border-destructive focus:border-destructive"
+                    : ""
                 }`}
               />
               {errors.message && (
-                <p className="text-sm text-red-500 flex items-center gap-1">
-                  <AlertCircle className="w-4 h-4" />
-                  {errors.message.message}
+                <p className="text-sm text-destructive flex items-start gap-1">
+                  <AlertCircle className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                  <span>{errors.message.message}</span>
                 </p>
               )}
             </div>

@@ -36,6 +36,13 @@ export default function LocaleSwitcher() {
       <DropdownMenuTrigger disabled={isPending} asChild>
         <Button variant="outline" className="w-full justify-start">
           <Globe className="h-4 w-4" />
+          <span className="block md:hidden">
+            {
+              object?.languageButton?.languages?.find(
+                (item: any) => item.id === selectedLocale
+              )?.name
+            }
+          </span>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="w-[200px]">

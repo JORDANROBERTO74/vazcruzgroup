@@ -147,13 +147,15 @@ export default function ServicesSection() {
             >
               <Card className="h-full border-border shadow-lg hover:shadow-xl transition-all duration-300 bg-card">
                 <CardHeader>
-                  <div className="w-12 h-12 bg-gradient-to-r from-primary to-primary/90 rounded-lg flex items-center justify-center mb-4">
-                    <service.icon className="w-6 h-6 text-primary-foreground" />
+                  <div className="flex items-center justify-center md:justify-start mb-4">
+                    <div className="w-12 h-12 bg-gradient-to-r from-primary to-primary/90 rounded-lg flex items-center justify-center">
+                      <service.icon className="w-6 h-6 text-primary-foreground" />
+                    </div>
                   </div>
-                  <CardTitle className="text-xl text-card-foreground">
+                  <CardTitle className="text-center md:text-left text-xl text-card-foreground">
                     {service.title}
                   </CardTitle>
-                  <CardDescription className="text-muted-foreground">
+                  <CardDescription className="text-center md:text-left text-muted-foreground">
                     {service.description}
                   </CardDescription>
                 </CardHeader>

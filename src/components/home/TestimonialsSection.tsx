@@ -10,7 +10,9 @@ import {
   CarouselItem,
   CarouselPrevious,
   CarouselNext,
+  type CarouselApi,
 } from "@/components/ui/carousel";
+import { useEffect, useState } from "react";
 
 // Colores aleatorios similares a los de Google
 const avatarColors = [
@@ -116,6 +118,31 @@ const testimonials = [
 ];
 
 export default function TestimonialsSection() {
+  const [api, setApi] = useState<CarouselApi>();
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    if (!api) {
+      return;
+    }
+
+    setCurrent(api.selectedScrollSnap() + 1);
+
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap() + 1);
+    });
+  }, [api]);
+
+  useEffect(() => {
+    if (!api) return;
+
+    const interval = setInterval(() => {
+      api.scrollNext();
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [api]);
+
   return (
     <section className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
@@ -145,7 +172,7 @@ export default function TestimonialsSection() {
           <Carousel className="mb-8" opts={{ loop: true }}>
             <CarouselContent>
               {testimonials.map((testimonial, index) => (
-                <CarouselItem key={index} className="basis-1/4">
+                <CarouselItem key={index} className="basis-full md:basis-1/4">
                   <Card className="h-full border-border shadow-lg hover:shadow-xl transition-all duration-300 bg-card">
                     <CardContent className="p-6">
                       {/* Header: Avatar, Name, Date, and Google Logo */}
@@ -240,15 +267,15 @@ export default function TestimonialsSection() {
 
                       {/* Testimonial Text */}
                       <p className="text-muted-foreground leading-relaxed text-sm">
-                        {`"{testimonial.text}"`}
+                        {`"${testimonial.text}"`}
                       </p>
                     </CardContent>
                   </Card>
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+            <CarouselPrevious className="hidden md:flex" />
+            <CarouselNext className="hidden md:flex" />
           </Carousel>
         </motion.div>
 
@@ -259,7 +286,7 @@ export default function TestimonialsSection() {
           viewport={{ once: true }}
           className="text-center mt-12"
         >
-          <div className="inline-flex items-center gap-4 bg-card rounded-full px-8 py-4 shadow-lg border border-border">
+          <div className="inline-flex flex-col md:flex-row items-center gap-4 bg-card rounded-full px-8 py-4 shadow-lg border border-border">
             <div className="flex items-center gap-2">
               <div className="flex -space-x-2">
                 {testimonials.slice(0, 5).map((testimonial, i: number) => (
@@ -278,11 +305,15 @@ export default function TestimonialsSection() {
                 +100 alianzas exitosas
               </span>
             </div>
-            <div className="w-px h-8 bg-border"></div>
+            <div className="hidden md:block w-px h-8 bg-border"></div>
             <div className="flex items-center gap-2">
               <Star className="w-5 h-5 text-yellow-400 fill-current" />
               <span className="text-sm text-muted-foreground">
-                4.9/5 rating promedio
+                {(
+                  testimonials.reduce((acc, t) => acc + t.rating, 0) /
+                  testimonials.length
+                ).toFixed(1)}
+                /5 rating promedio
               </span>
             </div>
           </div>
