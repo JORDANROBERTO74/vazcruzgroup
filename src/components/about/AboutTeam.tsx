@@ -1,15 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {
-  Users,
-  Award,
-  Globe,
-  Target,
-  Linkedin,
-  Mail,
-  Phone,
-} from "lucide-react";
+import { Users, Linkedin, Mail, Phone } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 

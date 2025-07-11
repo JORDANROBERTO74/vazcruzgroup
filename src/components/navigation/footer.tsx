@@ -5,7 +5,6 @@ import {
   Phone,
   Mail,
   MapPin,
-  Globe,
   ArrowRight,
   Facebook,
   Twitter,
@@ -78,7 +77,13 @@ export default function Footer() {
               className="lg:col-span-2"
             >
               <div className="flex items-center gap-2 mb-6">
-                <Globe className="w-8 h-8 text-primary" aria-hidden="true" />
+                <img
+                  src="/img/logo.png"
+                  alt="VasCruz Group LLC"
+                  width={75}
+                  height={60}
+                  className="object-contain"
+                />
                 <span className="text-xl font-bold">{company?.name}</span>
               </div>
               <p className="text-gray-300 mb-6 leading-relaxed">

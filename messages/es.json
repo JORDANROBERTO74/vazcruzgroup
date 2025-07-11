@@ -12,7 +12,7 @@
           "href": "/services"
         },
         {
-          "name": "Sobre mí",
+          "name": "Nosotros",
           "href": "/about"
         },
         {
@@ -45,21 +45,21 @@
   "footer": {
     "company": {
       "name": "VasCruz Group LLC",
-      "description": "Especialistas en intermediación y representación comercial mayorista, uniendo fabricantes, distribuidores y compradores en mercados nacionales e internacionales."
+      "description": "Especialistas en intermediación y representación comercial mayorista, conectando fabricantes, distribuidores y compradores en mercados nacionales e internacionales."
     },
     "newsletter": {
-      "title": "Suscríbete a nuestro newsletter",
+      "title": "Suscríbete a nuestro boletín",
       "placeholder": "Tu correo electrónico",
       "button": "Suscribirse",
       "success": "¡Gracias por suscribirte!"
     },
     "sections": {
       "quickLinks": {
-        "title": "Enlaces Rápidos",
+        "title": "Enlaces rápidos",
         "items": [
           { "name": "Inicio", "href": "/" },
           { "name": "Servicios", "href": "/services" },
-          { "name": "Sobre Nosotros", "href": "/about" },
+          { "name": "Nosotros", "href": "/about" },
           { "name": "Contacto", "href": "/contact" }
         ]
       },
@@ -76,7 +76,7 @@
         "items": [
           {
             "city": "Aventura, Florida",
-            "address": "3530 Mystic Pointe Drive Apt 2403, Aventura, Florida, 33180, EE.UU.",
+            "address": "3530 Mystic Pointe Drive Apt 2403, Aventura, Florida, 33180, USA",
             "phone": "+591 77004600",
             "email": "grupovascruzllc@gmail.com"
           }
@@ -111,10 +111,10 @@
     "legal": {
       "copyright": "© 2025 Vascruz Group. Todos los derechos reservados.",
       "links": [
-        { "name": "Aviso de Privacidad", "href": "/legal/privacidad" },
-        { "name": "Términos y Condiciones", "href": "/legal/terminos" },
+        { "name": "Política de Privacidad", "href": "/legal/privacy" },
+        { "name": "Términos y Condiciones", "href": "/legal/terms" },
         { "name": "Política de Cookies", "href": "/legal/cookies" },
-        { "name": "Accesibilidad", "href": "/legal/accesibilidad" }
+        { "name": "Accesibilidad", "href": "/legal/accessibility" }
       ]
     }
   },
@@ -126,10 +126,10 @@
       },
       "title": {
         "line1": "Conectando",
-        "line2": "Negocios",
+        "line2": "Empresas",
         "line3": "Globalmente"
       },
-      "subtitle": "Especialistas en intermediación y representación comercial mayorista, uniendo fabricantes, distribuidores y compradores en mercados nacionales e internacionales.",
+      "subtitle": "Especialistas en intermediación y representación comercial mayorista, conectando fabricantes, distribuidores y compradores en mercados nacionales e internacionales.",
       "benefits": [
         {
           "title": "Representación Comercial",
@@ -145,15 +145,15 @@
         }
       ],
       "cta": {
-        "text": "Conoce Nuestros Servicios",
+        "text": "Descubre Nuestros Servicios",
         "icon": "ArrowRight"
       },
       "stats": {
         "title": "Crecimiento Empresarial",
-        "subtitle": "Desarrollo de negocios y expansión estratégica 2020-2024",
+        "subtitle": "Desarrollo empresarial y expansión estratégica 2020-2024",
         "metrics": [
           {
-            "label": "Desarrollo de Negocios",
+            "label": "Desarrollo Empresarial",
             "value": "85%",
             "percentage": 85
           },
@@ -167,11 +167,11 @@
     },
     "benefits": {
       "title": "¿Por qué elegir Vascruz Group LLC?",
-      "subtitle": "Nuestra experiencia en desarrollo de negocios, análisis de mercado y negociación de contratos nos permite ofrecer soluciones integrales a cada uno de nuestros clientes.",
+      "subtitle": "Nuestra experiencia en desarrollo empresarial, análisis de mercado y negociación de contratos nos permite ofrecer soluciones integrales a cada uno de nuestros clientes.",
       "items": [
         {
           "title": "Alcance Global",
-          "description": "Conectamos negocios en mercados nacionales e internacionales",
+          "description": "Conectamos empresas en mercados nacionales e internacionales",
           "icon": "Globe"
         },
         {
@@ -218,7 +218,7 @@
         },
         {
           "title": "Análisis y Logística",
-          "description": "Análisis de mercado detallado y optimización de procesos logísticos para maximizar la eficiencia operativa.",
+          "description": "Análisis detallado de mercado y optimización de procesos logísticos para maximizar la eficiencia operativa.",
           "icon": "BarChart3",
           "features": [
             "Estudios de mercado",
@@ -228,7 +228,7 @@
         },
         {
           "title": "Desarrollo de Negocios Globales",
-          "description": "Estrategias de expansión internacional y desarrollo de nuevos mercados para el crecimiento sostenible.",
+          "description": "Estrategias de expansión internacional y desarrollo de nuevos mercados para un crecimiento sostenible.",
           "icon": "Target",
           "features": [
             "Expansión internacional",
@@ -238,39 +238,29 @@
         },
         {
           "title": "Alianzas Clave",
-          "description": "Creación y gestión de alianzas estratégicas que potencian el crecimiento y la competitividad empresarial.",
+          "description": "Creación y gestión de alianzas estratégicas que impulsan el crecimiento y la competitividad empresarial.",
           "icon": "Users",
           "features": [
             "Alianzas estratégicas",
-            "Networking empresarial",
+            "Redes de negocios",
             "Colaboraciones comerciales"
           ]
         },
         {
           "title": "Innovación Constante",
           "description": "Implementación de soluciones innovadoras y tecnologías emergentes para mantener la ventaja competitiva.",
-          "icon": "Lightbulb",
+          "icon": "Award",
           "features": [
             "Soluciones innovadoras",
             "Tecnologías emergentes",
             "Mejora continua"
-          ]
-        },
-        {
-          "title": "Expansión Estratégica",
-          "description": "Asesoría integral para la expansión empresarial con enfoque en mercados emergentes y oportunidades de crecimiento.",
-          "icon": "Building2",
-          "features": [
-            "Planificación estratégica",
-            "Identificación de oportunidades",
-            "Gestión de riesgos"
           ]
         }
       ]
     },
     "stats": {
       "title": "Nuestros Números Hablan",
-      "subtitle": "Resultados que demuestran nuestro compromiso con el éxito de nuestros clientes en el comercio internacional y la intermediación comercial.",
+      "subtitle": "Resultados que demuestran nuestro compromiso con el éxito de nuestros clientes en comercio internacional e intermediación comercial.",
       "items": [
         {
           "number": "100+",
@@ -303,7 +293,7 @@
         {
           "step": "02",
           "title": "Identificación de Oportunidades",
-          "description": "Búsqueda y evaluación de mercados, fabricantes y distribuidores potenciales."
+          "description": "Búsqueda y evaluación de mercados potenciales, fabricantes y distribuidores."
         },
         {
           "step": "03",
@@ -318,7 +308,7 @@
       ]
     },
     "cta": {
-      "title": "¿Listo para Expandir tu Negocio Globalmente?",
+      "title": "¿Listo para Expandir tu Empresa Globalmente?",
       "subtitle": "Conectamos fabricantes, distribuidores y compradores en mercados nacionales e internacionales. Descubre cómo podemos facilitar tus transacciones comerciales y crear alianzas estratégicas que impulsen el crecimiento de tu empresa.",
       "contact": {
         "whatsapp": {
@@ -328,7 +318,7 @@
           "href": "https://wa.me/59177004600"
         },
         "email": {
-          "title": "Email",
+          "title": "Correo",
           "email": "grupovascruzllc@gmail.com",
           "description": "Envíanos un mensaje",
           "href": "mailto:grupovascruzllc@gmail.com"
@@ -345,92 +335,1012 @@
       "items": [
         {
           "name": "Carlos Mendoza",
-          "company": "Fabricante Industrial",
+          "company": "Industrial Manufacturer",
           "rating": 5,
-          "text": "Increíble experiencia trabajando con Vascruz Group. Nos ayudaron a conectar con distribuidores en Europa que nunca habíamos considerado. Nuestras ventas aumentaron un 40% en solo 6 meses. El equipo es muy profesional y siempre responde rápido.",
+          "text": "Incredible experience working with Vascruz Group. They helped us connect with distributors in Europe that we had never considered. Our sales increased by 40% in just 6 months. The team is very professional and always responds quickly.",
           "date": "15/12/2024"
         },
         {
           "name": "María González",
-          "company": "Distribuidora Global",
+          "company": "Global Distributor",
           "rating": 4.5,
-          "text": "Llevamos 2 años trabajando con ellos y la verdad es que han transformado nuestro negocio. Nos facilitaron alianzas estratégicas que nos permitieron expandirnos a mercados que parecían imposibles. Muy recomendados.",
+          "text": "We have been working with them for 2 years and the truth is that they have transformed our business. They facilitated strategic alliances that allowed us to expand into markets that seemed impossible. Highly recommended.",
           "date": "28/11/2024"
         },
         {
           "name": "Roberto Silva",
-          "company": "Importadora del Norte",
+          "company": "Northern Importer",
           "rating": 5,
-          "text": "Su análisis de mercado fue clave para nuestro crecimiento. Identificaron oportunidades que nosotros no veíamos y nos guiaron paso a paso. Los resultados superaron nuestras expectativas. Definitivamente volveremos a trabajar con ellos.",
+          "text": "Their market analysis was key to our growth. They identified opportunities that we didn't see and guided us step by step. The results exceeded our expectations. We will definitely work with them again.",
           "date": "05/12/2024"
         },
         {
           "name": "Ana Rodríguez",
-          "company": "Comercial Internacional",
+          "company": "International Commercial",
           "rating": 4,
-          "text": "Buen servicio en general. Su experiencia en negociación nos ayudó a cerrar contratos más favorables. Aunque a veces la comunicación podría ser más rápida, el resultado final fue excelente.",
+          "text": "Good service overall. Their negotiation experience helped us close more favorable contracts. Although communication could sometimes be faster, the final result was excellent.",
           "date": "20/10/2024"
         },
         {
           "name": "Luis Pérez",
-          "company": "Exportadora del Sur",
+          "company": "Southern Exporter",
           "rating": 5,
-          "text": "Gracias a Vascruz Group pudimos expandirnos a Asia con mucha confianza. Su conocimiento del mercado internacional es impresionante. Nos ahorraron mucho tiempo y errores costosos. Muy agradecidos.",
+          "text": "Thanks to Vascruz Group we were able to expand to Asia with great confidence. Their knowledge of the international market is impressive. They saved us a lot of time and costly mistakes. Very grateful.",
           "date": "22/12/2024"
         },
         {
           "name": "Carmen Torres",
-          "company": "Comercializadora Central",
+          "company": "Central Commercial",
           "rating": 4.5,
-          "text": "El equipo es súper dedicado y profesional. Superaron todas nuestras expectativas desde el primer día. La atención al detalle y la personalización del servicio es lo que más nos gustó. Los recomendamos sin dudar.",
+          "text": "The team is super dedicated and professional. They exceeded all our expectations from day one. The attention to detail and service personalization is what we liked most. We recommend them without hesitation.",
           "date": "25/12/2024"
         },
         {
           "name": "Diego Morales",
-          "company": "Distribuidora Regional",
+          "company": "Regional Distributor",
           "rating": 5,
-          "text": "Llevamos 3 años trabajando juntos y cada vez mejoran más. Su intermediación nos permitió formar alianzas estratégicas que transformaron completamente nuestro modelo de negocio. Nuestra rentabilidad aumentó significativamente.",
+          "text": "We have been working together for 3 years and they keep getting better. Their intermediation allowed us to form strategic alliances that completely transformed our business model. Our profitability increased significantly.",
           "date": "30/11/2024"
         },
         {
           "name": "Patricia Vega",
-          "company": "Importadora Premium",
+          "company": "Premium Importer",
           "rating": 4,
-          "text": "Buen trabajo en la negociación de contratos. Su experiencia en mercados internacionales nos permitió optimizar costos y mejorar nuestros márgenes. El proceso fue un poco más largo de lo esperado, pero valió la pena.",
+          "text": "Good work in contract negotiation. Their experience in international markets allowed us to optimize costs and improve our margins. The process was a bit longer than expected, but it was worth it.",
           "date": "10/12/2024"
         },
         {
           "name": "Fernando Ruiz",
-          "company": "Comercial Internacional",
+          "company": "International Commercial",
           "rating": 5,
-          "text": "Vascruz Group ha sido fundamental para nuestro crecimiento internacional. Su red de contactos es invaluable y su experiencia nos ha ahorrado muchos dolores de cabeza. Son verdaderos expertos en lo que hacen.",
+          "text": "Vascruz Group has been fundamental for our international growth. Their network of contacts is invaluable and their experience has saved us many headaches. They are true experts in what they do.",
           "date": "25/11/2024"
         },
         {
           "name": "Pablo Salazar",
-          "company": "Distribuidora Regional",
+          "company": "Regional Distributor",
           "rating": 4.5,
-          "text": "Excelente servicio desde el primer contacto. El equipo es muy profesional y conocen muy bien el mercado. Nos ayudaron a identificar nuevas oportunidades de negocio que no habíamos visto. Muy satisfechos.",
+          "text": "Excellent service from the first contact. The team is very professional and knows the market very well. They helped us identify new business opportunities that we hadn't seen. Very satisfied.",
           "date": "20/12/2024"
         },
         {
           "name": "Laura Martínez",
-          "company": "Exportadora del Este",
+          "company": "Eastern Exporter",
           "rating": 5,
-          "text": "Increíble experiencia con Vascruz Group. Nos ayudaron a abrir mercados en África que parecían imposibles. Su conocimiento local y red de contactos es impresionante. Definitivamente los recomendamos.",
+          "text": "Incredible experience with Vascruz Group. They helped us open markets in Africa that seemed impossible. Their local knowledge and network of contacts is impressive. We definitely recommend them.",
           "date": "15/01/2025"
         },
         {
           "name": "Ricardo Herrera",
-          "company": "Importadora del Oeste",
+          "company": "Western Importer",
           "rating": 4,
-          "text": "Buen trabajo en general. Su intermediación comercial nos permitió conectar con proveedores de calidad. Aunque el proceso inicial fue un poco lento, los resultados fueron satisfactorios.",
+          "text": "Good work overall. Their commercial intermediation allowed us to connect with quality suppliers. Although the initial process was a bit slow, the results were satisfactory.",
           "date": "28/01/2025"
         }
       ],
       "stats": {
         "alliances": "+100 alianzas exitosas",
-        "averageRating": "rating promedio"
+        "averageRating": "calificación promedio"
+      }
+    }
+  },
+  "services": {
+    "hero": {
+      "badge": {
+        "text": "Nuestros Servicios",
+        "icon": "Handshake"
+      },
+      "title": {
+        "line1": "Soluciones",
+        "line2": "Comerciales",
+        "line3": "Integrales"
+      },
+      "subtitle": "Ofrecemos servicios especializados de intermediación comercial que conectan fabricantes, distribuidores y compradores en mercados nacionales e internacionales.",
+      "highlights": [
+        {
+          "title": "Representación Comercial",
+          "description": "Intermediación profesional entre fabricantes y compradores",
+          "icon": "Handshake"
+        },
+        {
+          "title": "Acceso a Mercados Globales",
+          "description": "Conecta con mercados mundiales a través de nuestra red",
+          "icon": "Globe"
+        },
+        {
+          "title": "Consultoría Estratégica",
+          "description": "Asesoría experta para expansión y crecimiento empresarial",
+          "icon": "Target"
+        },
+        {
+          "title": "Negociación de Contratos",
+          "description": "Negociación profesional de acuerdos comerciales",
+          "icon": "Users"
+        }
+      ],
+      "stats": {
+        "title": "Nuestro Impacto",
+        "subtitle": "Resultados que hablan por sí mismos",
+        "metrics": [
+          {
+            "label": "Empresas Conectadas",
+            "value": "500+",
+            "percentage": 85
+          },
+          {
+            "label": "Mercados Atendidos",
+            "value": "25+",
+            "percentage": 92
+          },
+          {
+            "label": "Transacciones Exitosas",
+            "value": "1000+",
+            "percentage": 95
+          }
+        ]
+      }
+    },
+    "category": {
+      "notFound": {
+        "title": "Categoría de Servicio No Encontrada",
+        "description": "La categoría de servicio que buscas no existe. Por favor, intenta con una categoría diferente.",
+        "button": "Volver a Servicios"
+      },
+      "goBack": "Volver a Servicios",
+      "button": "Ver Productos",
+      "button1": "Consultar Servicio",
+      "title1": "¿Por qué elegir nuestros servicios?",
+      "description1": "Descubre las ventajas que hacen de nuestros servicios la opción preferida",
+      "title2": "Productos y Servicios",
+      "description2": "Explora nuestra amplia gama de servicios de intermediación comercial diseñados para conectar tu negocio con oportunidades globales.",
+      "filters": {
+        "search": {
+          "placeholder": "Buscar productos..."
+        },
+        "sort": {
+          "placeholder": "Ordenar por",
+          "options": [
+            { "popular": { "id": "popular", "text": "Más Popular" } },
+            { "price-low": { "id": "price-low", "text": "Precio: Menor a Mayor" } },
+            { "price-high": { "id": "price-high", "text": "Precio: Mayor a Menor" } },
+            { "name": { "id": "name", "text": "Nombre A-Z" } }
+          ]
+        },
+        "price": {
+          "placeholder": "Filtrar por precio",
+          "options": [
+            { "all": { "id": "all", "text": "Todos los precios" } },
+            { "under-25": { "id": "under-25", "text": "Menos de $25" } },
+            { "25-50": { "id": "25-50", "text": "$25 - $50" } },
+            { "over-50": { "id": "over-50", "text": "Más de $50" } }
+          ]
+        },
+        "results": "productos encontrados"
+      },
+      "noResults": {
+        "title": "No se encontraron productos",
+        "description": "Intenta ajustar tus filtros de búsqueda",
+        "button": "Limpiar filtros"
+      },
+      "share": {
+        "title": "Compartir Producto",
+        "description": "Comparte este producto con otros",
+        "urlLabel": "Enlace del producto",
+        "optionsLabel": "Compartir en",
+        "whatsapp": "WhatsApp",
+        "copyLink": "Copiar enlace",
+        "copied": "¡Enlace copiado!"
+      },
+      "hero": {
+        "breadcrumb": {
+          "back": "Volver a Servicios"
+        },
+        "stats": {
+          "rating": "calificación promedio",
+          "clients": "clientes atendidos",
+          "projects": "proyectos completados",
+          "markets": "mercados globales"
+        },
+        "cta": {
+          "primary": "Ver Productos",
+          "secondary": "Consultar Servicio"
+        }
+      }
+    },
+    "categories": {
+      "badge": "Categorías de Servicios",
+      "title": "Servicios Especializados",
+      "subtitle": "Cada servicio está diseñado para satisfacer necesidades específicas de intermediación comercial, desde representación hasta desarrollo estratégico.",
+      "items": [
+        {
+          "title": "Representación Comercial",
+          "description": "Representación profesional de fabricantes y distribuidores en mercados nacionales e internacionales.",
+          "icon": "Handshake",
+          "slug": "representation",
+          "features": [
+            "Representación comercial",
+            "Conexión con compradores",
+            "Gestión de contratos"
+          ],
+          "priceRange": "100",
+          "products": [
+            {
+              "title": "Representación Básica",
+              "description": "Servicio de representación comercial esencial para conectar con nuevos mercados.",
+              "icon": "Handshake",
+              "slug": "basic-representation",
+              "features": [
+                "Identificación de compradores",
+                "Presentación de productos",
+                "Seguimiento de contactos",
+                "Reportes mensuales"
+              ],
+              "price": "10",
+              "originalPrice": "15",
+              "badge": "Popular",
+              "cta": "Obtener Representación",
+              "paymentLink": "https://buy.stripe.com/eVq9AT2SHfTtcBJ1DpcZa0b",
+              "duration": "4 semanas",
+              "delivery": "Plan de representación",
+              "detailedDescription": "Nuestro servicio de representación básica proporciona una introducción efectiva a nuevos mercados, conectando fabricantes con compradores potenciales y facilitando las primeras conversaciones comerciales.",
+              "benefits": [
+                "Acceso a nuevos mercados",
+                "Conexiones comerciales",
+                "Soporte profesional",
+                "Reportes regulares"
+              ],
+              "additionalInfo": [
+                { "label": "Alcance", "value": "Mercado objetivo" },
+                { "label": "Tiempo de Entrega", "value": "4 semanas" },
+                { "label": "Formato", "value": "Plan de representación" },
+                { "label": "Soporte", "value": "6 meses" }
+              ]
+            },
+            {
+              "title": "Representación Premium",
+              "description": "Servicio completo de representación con gestión dedicada y soporte prioritario.",
+              "icon": "Handshake",
+              "slug": "premium-representation",
+              "features": [
+                "Gerente de cuenta dedicado",
+                "Conexiones prioritarias con compradores",
+                "Negociación avanzada de contratos",
+                "Soporte 24/7"
+              ],
+              "price": "23",
+              "originalPrice": "30",
+              "badge": "Más Popular",
+              "cta": "Obtener Servicio Premium",
+              "paymentLink": "https://buy.stripe.com/cNi6oHbpd36H0T1eqbcZa0a",
+              "duration": "8 semanas",
+              "delivery": "Gestión completa",
+              "detailedDescription": "Nuestro servicio de representación premium ofrece gestión dedicada y soporte prioritario para maximizar las oportunidades comerciales y acelerar el crecimiento en nuevos mercados.",
+              "benefits": [
+                "Gestión dedicada",
+                "Conexiones prioritarias",
+                "Negociación experta",
+                "Soporte completo"
+              ],
+              "additionalInfo": [
+                { "label": "Alcance", "value": "Gestión completa" },
+                { "label": "Tiempo de Entrega", "value": "8 semanas" },
+                { "label": "Formato", "value": "Gestión dedicada" },
+                { "label": "Soporte", "value": "12 meses" }
+              ]
+            },
+            {
+              "title": "Representación Estratégica",
+              "description": "Representación estratégica con enfoque en desarrollo de mercado y crecimiento sostenible.",
+              "icon": "Handshake",
+              "slug": "enterprise-representation",
+              "features": [
+                "Estrategia de mercado personalizada",
+                "Desarrollo de relaciones a largo plazo",
+                "Análisis de competencia",
+                "Optimización continua"
+              ],
+              "price": "50",
+              "originalPrice": "65",
+              "badge": "Premium",
+              "cta": "Desarrollar Estrategia",
+              "paymentLink": "https://buy.stripe.com/3cI00j0Kz0YzeJRdm7cZa0c",
+              "duration": "12 semanas",
+              "delivery": "Estrategia completa",
+              "detailedDescription": "Nuestro servicio de representación estratégica se enfoca en el desarrollo de mercado a largo plazo, creando relaciones duraderas y estrategias de crecimiento sostenible.",
+              "benefits": [
+                "Estrategia personalizada",
+                "Crecimiento sostenible",
+                "Relaciones duraderas",
+                "Optimización continua"
+              ],
+              "additionalInfo": [
+                { "label": "Alcance", "value": "Estrategia completa" },
+                { "label": "Tiempo de Entrega", "value": "12 semanas" },
+                { "label": "Formato", "value": "Estrategia completa" },
+                { "label": "Soporte", "value": "18 meses" }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Análisis y Logística",
+          "description": "Análisis detallado de mercado y optimización de procesos logísticos para maximizar la eficiencia operativa.",
+          "icon": "BarChart3",
+          "slug": "analysis",
+          "features": [
+            "Estudios de mercado",
+            "Optimización logística",
+            "Análisis de costos"
+          ],
+          "priceRange": "50",
+          "products": [
+            {
+              "title": "Análisis de Mercado",
+              "description": "Análisis completo de mercado para identificar oportunidades y riesgos.",
+              "icon": "BarChart3",
+              "slug": "market-research-report",
+              "features": [
+                "Investigación de mercado",
+                "Análisis de competencia",
+                "Identificación de oportunidades",
+                "Evaluación de riesgos"
+              ],
+              "price": "10",
+              "originalPrice": "15",
+              "badge": "Popular",
+              "cta": "Realizar Análisis",
+              "paymentLink": "https://buy.stripe.com/eVq9AT2SHfTtcBJ1DpcZa0b",
+              "duration": "4 semanas",
+              "delivery": "Reporte de análisis",
+              "detailedDescription": "Nuestro servicio de análisis de mercado proporciona información detallada sobre tendencias, competencia y oportunidades para tomar decisiones comerciales informadas.",
+              "benefits": [
+                "Información detallada",
+                "Decisiones informadas",
+                "Identificación de oportunidades",
+                "Reducción de riesgos"
+              ],
+              "additionalInfo": [
+                { "label": "Alcance", "value": "Análisis completo" },
+                { "label": "Tiempo de Entrega", "value": "4 semanas" },
+                { "label": "Formato", "value": "Reporte detallado" },
+                { "label": "Soporte", "value": "6 meses" }
+              ]
+            },
+            {
+              "title": "Optimización Logística",
+              "description": "Optimización de procesos logísticos para mejorar la eficiencia y reducir costos.",
+              "icon": "BarChart3",
+              "slug": "logistics-optimization",
+              "features": [
+                "Análisis de procesos",
+                "Optimización de rutas",
+                "Reducción de costos",
+                "Mejora de eficiencia"
+              ],
+              "price": "23",
+              "originalPrice": "30",
+              "badge": "Premium",
+              "cta": "Optimizar Logística",
+              "paymentLink": "https://buy.stripe.com/cNi6oHbpd36H0T1eqbcZa0a",
+              "duration": "6 semanas",
+              "delivery": "Plan de optimización",
+              "detailedDescription": "Nuestro servicio de optimización logística analiza y mejora los procesos de distribución para maximizar la eficiencia y minimizar los costos operativos.",
+              "benefits": [
+                "Reducción de costos",
+                "Mejora de eficiencia",
+                "Procesos optimizados",
+                "Mayor competitividad"
+              ],
+              "additionalInfo": [
+                { "label": "Alcance", "value": "Optimización completa" },
+                { "label": "Tiempo de Entrega", "value": "6 semanas" },
+                { "label": "Formato", "value": "Plan de optimización" },
+                { "label": "Soporte", "value": "12 meses" }
+              ]
+            },
+            {
+              "title": "Análisis de Costos",
+              "description": "Análisis detallado de costos para optimizar la rentabilidad y competitividad.",
+              "icon": "BarChart3",
+              "slug": "cost-analysis-optimization",
+              "features": [
+                "Análisis de costos operativos",
+                "Identificación de ahorros",
+                "Optimización de precios",
+                "Análisis de rentabilidad"
+              ],
+              "price": "50",
+              "originalPrice": "60",
+              "badge": "Esencial",
+              "cta": "Analizar Costos",
+              "paymentLink": "https://buy.stripe.com/3cI00j0Kz0YzeJRdm7cZa0c",
+              "duration": "4 semanas",
+              "delivery": "Reporte de costos",
+              "detailedDescription": "Nuestro servicio de análisis de costos identifica oportunidades de ahorro y optimización para mejorar la rentabilidad y competitividad en el mercado.",
+              "benefits": [
+                "Identificación de ahorros",
+                "Optimización de precios",
+                "Mejor rentabilidad",
+                "Mayor competitividad"
+              ],
+              "additionalInfo": [
+                { "label": "Alcance", "value": "Análisis completo" },
+                { "label": "Tiempo de Entrega", "value": "4 semanas" },
+                { "label": "Formato", "value": "Reporte detallado" },
+                { "label": "Soporte", "value": "6 meses" }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Desarrollo de Negocios Globales",
+          "description": "Estrategias de expansión internacional y desarrollo de nuevos mercados para un crecimiento sostenible.",
+          "icon": "Target",
+          "slug": "development",
+          "features": [
+            "Expansión internacional",
+            "Estrategias de entrada",
+            "Desarrollo de mercados"
+          ],
+          "priceRange": "100",
+          "products": [
+            {
+              "title": "Estrategia de Entrada al Mercado",
+              "description": "Desarrollo de estrategias completas para entrar a nuevos mercados internacionales.",
+              "icon": "Target",
+              "slug": "market-entry-strategy",
+              "features": [
+                "Análisis de oportunidades de mercado",
+                "Evaluación de riesgos",
+                "Desarrollo de estrategia de entrada",
+                "Plan de implementación",
+                "Estrategia de asignación de recursos",
+                "Definición de métricas de éxito"
+              ],
+              "price": "23",
+              "originalPrice": "30",
+              "badge": "Popular",
+              "cta": "Desarrollar Estrategia",
+              "paymentLink": "https://buy.stripe.com/cNi6oHbpd36H0T1eqbcZa0a",
+              "duration": "8 semanas",
+              "delivery": "Plan estratégico",
+              "detailedDescription": "Nuestro servicio de estrategia de entrada al mercado proporciona una hoja de ruta completa para entrar a nuevos mercados internacionales. Analizamos oportunidades de mercado, evaluamos riesgos y desarrollamos un plan de implementación detallado con hitos claros y métricas de éxito.",
+              "benefits": [
+                "Hoja de ruta clara de entrada",
+                "Mitigación de riesgos",
+                "Optimización de recursos",
+                "Seguimiento de éxito",
+                "Orientación experta",
+                "Soporte continuo"
+              ],
+              "additionalInfo": [
+                { "label": "Alcance de Estrategia", "value": "Entrada completa al mercado" },
+                { "label": "Tiempo de Entrega", "value": "8 semanas" },
+                { "label": "Formato", "value": "Plan estratégico" },
+                { "label": "Soporte", "value": "12 meses" }
+              ]
+            },
+            {
+              "title": "Paquete de Entrada al Mercado Global",
+              "description": "Paquete completo para entrar a nuevos mercados internacionales con soporte y orientación completa.",
+              "icon": "Target",
+              "slug": "market-entry-package",
+              "features": [
+                "Investigación y análisis de mercado",
+                "Desarrollo de estrategia de entrada",
+                "Identificación de socios locales",
+                "Soporte de lanzamiento y monitoreo",
+                "Orientación de cumplimiento regulatorio",
+                "Optimización de rendimiento"
+              ],
+              "price": "100",
+              "originalPrice": "120",
+              "badge": "Mejor Valor",
+              "cta": "Iniciar Entrada al Mercado",
+              "paymentLink": "https://buy.stripe.com/14AaEXcthaz959h5TFcZa0e",
+              "duration": "12 semanas",
+              "delivery": "Implementación completa",
+              "detailedDescription": "Nuestro paquete completo de entrada al mercado incluye todo lo necesario para entrar exitosamente a nuevos mercados internacionales. Desde la investigación inicial hasta el soporte de lanzamiento, proporcionamos orientación e implementación de extremo a extremo.",
+              "benefits": [
+                "Soporte de extremo a extremo",
+                "Orientación experta",
+                "Gestión de riesgos",
+                "Experiencia local",
+                "Monitoreo de rendimiento",
+                "Optimización continua"
+              ],
+              "additionalInfo": [
+                { "label": "Alcance del Paquete", "value": "Implementación completa" },
+                { "label": "Duración", "value": "12 semanas" },
+                { "label": "Soporte", "value": "24 meses" },
+                { "label": "Actualizaciones", "value": "Trimestral" }
+              ]
+            },
+            {
+              "title": "Desarrollo de Estrategia de Crecimiento",
+              "description": "Planificación estratégica de crecimiento e identificación de oportunidades para expansión empresarial sostenible.",
+              "icon": "Target",
+              "slug": "growth-strategy-development",
+              "features": [
+                "Análisis de oportunidades de crecimiento",
+                "Marco de planificación estratégica",
+                "Optimización de recursos",
+                "Sistemas de seguimiento de rendimiento",
+                "Estrategia de innovación",
+                "Posicionamiento competitivo"
+              ],
+              "price": "50",
+              "originalPrice": "65",
+              "badge": "Premium",
+              "cta": "Desarrollar Plan de Crecimiento",
+              "paymentLink": "https://buy.stripe.com/3cI00j0Kz0YzeJRdm7cZa0c",
+              "duration": "6 semanas",
+              "delivery": "Marco estratégico",
+              "detailedDescription": "Nuestro servicio de desarrollo de estrategia de crecimiento ayuda a las empresas a identificar y capitalizar oportunidades de crecimiento. Desarrollamos marcos estratégicos integrales que se alinean con sus objetivos empresariales y condiciones de mercado.",
+              "benefits": [
+                "Claridad estratégica",
+                "Aceleración del crecimiento",
+                "Optimización de recursos",
+                "Ventaja competitiva",
+                "Enfoque en innovación",
+                "Crecimiento sostenible"
+              ],
+              "additionalInfo": [
+                { "label": "Profundidad de Estrategia", "value": "Integral" },
+                { "label": "Tiempo de Entrega", "value": "6 semanas" },
+                { "label": "Formato", "value": "Marco estratégico" },
+                { "label": "Soporte", "value": "18 meses" }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Alianzas Clave",
+          "description": "Creación y gestión de alianzas estratégicas que impulsan el crecimiento y la competitividad empresarial.",
+          "icon": "Users",
+          "slug": "alliances",
+          "features": [
+            "Alianzas estratégicas",
+            "Redes de negocios",
+            "Colaboraciones comerciales"
+          ],
+          "priceRange": "50",
+          "products": [
+            {
+              "title": "Desarrollo de Alianzas",
+              "description": "Identificación y desarrollo de alianzas estratégicas para crecimiento empresarial.",
+              "icon": "Users",
+              "slug": "partnership-development",
+              "features": [
+                "Identificación y selección de socios",
+                "Análisis de compatibilidad estratégica",
+                "Diseño de estructura de alianza",
+                "Soporte en negociación",
+                "Redacción de acuerdos",
+                "Monitoreo de rendimiento"
+              ],
+              "price": "10",
+              "originalPrice": "15",
+              "badge": "Popular",
+              "cta": "Desarrollar Alianzas",
+              "paymentLink": "https://buy.stripe.com/eVq9AT2SHfTtcBJ1DpcZa0b",
+              "duration": "6 semanas",
+              "delivery": "Marco de alianza",
+              "detailedDescription": "Nuestro servicio de desarrollo de alianzas ayuda a las empresas a identificar y establecer alianzas estratégicas que impulsan el crecimiento y la ventaja competitiva. Proporcionamos soporte integral desde la identificación inicial hasta la ejecución del acuerdo.",
+              "benefits": [
+                "Alianzas estratégicas",
+                "Aceleración del crecimiento",
+                "Compartir riesgos",
+                "Optimización de recursos",
+                "Expansión de mercado",
+                "Ventaja competitiva"
+              ],
+              "additionalInfo": [
+                { "label": "Alcance de Alianza", "value": "Alianzas estratégicas" },
+                { "label": "Tiempo de Entrega", "value": "6 semanas" },
+                { "label": "Formato", "value": "Marco de alianza" },
+                { "label": "Soporte", "value": "12 meses" }
+              ]
+            },
+            {
+              "title": "Desarrollo de Alianzas Estratégicas",
+              "description": "Servicio integral para desarrollar alianzas estratégicas y alianzas empresariales.",
+              "icon": "Users",
+              "slug": "alliance-development",
+              "features": [
+                "Identificación de oportunidades de alianza",
+                "Evaluación de compatibilidad estratégica",
+                "Diseño de estructura de alianza",
+                "Negociación y redacción de acuerdos",
+                "Soporte de implementación",
+                "Gestión continua de relaciones"
+              ],
+              "price": "45",
+              "originalPrice": "55",
+              "badge": "Nuevo Servicio",
+              "cta": "Construir Alianzas",
+              "paymentLink": "https://buy.stripe.com/14AeVdbpd22DeJR4PBcZa09",
+              "duration": "8 semanas",
+              "delivery": "Estrategia de alianza",
+              "detailedDescription": "Nuestro servicio de desarrollo de alianzas estratégicas proporciona soporte integral para crear y gestionar alianzas empresariales estratégicas. Ayudamos a identificar oportunidades, evaluar compatibilidad estratégica y desarrollar estructuras de alianza sostenibles.",
+              "benefits": [
+                "Alianzas estratégicas",
+                "Expansión de mercado",
+                "Compartir recursos",
+                "Colaboración en innovación",
+                "Mitigación de riesgos",
+                "Crecimiento sostenible"
+              ],
+              "additionalInfo": [
+                { "label": "Alcance de Alianza", "value": "Alianzas estratégicas" },
+                { "label": "Tiempo de Entrega", "value": "8 semanas" },
+                { "label": "Formato", "value": "Estrategia de alianza" },
+                { "label": "Soporte", "value": "18 meses" }
+              ]
+            },
+            {
+              "title": "Desarrollo de Redes Empresariales",
+              "description": "Desarrollo de redes empresariales estratégicas y conexiones de la industria.",
+              "icon": "Users",
+              "slug": "business-network-development",
+              "features": [
+                "Mapeo y análisis de redes",
+                "Desarrollo de estrategia de conexión",
+                "Soporte en construcción de relaciones",
+                "Optimización de redes",
+                "Facilitación de colaboración",
+                "Seguimiento de rendimiento"
+              ],
+              "price": "50",
+              "originalPrice": "60",
+              "badge": "Esencial",
+              "cta": "Construir Red",
+              "paymentLink": "https://buy.stripe.com/3cI00j0Kz0YzeJRdm7cZa0c",
+              "duration": "4 semanas",
+              "delivery": "Estrategia de red",
+              "detailedDescription": "Nuestro servicio de desarrollo de redes empresariales ayuda a las empresas a construir y optimizar redes estratégicas de conexiones de la industria, socios y colaboradores. Proporcionamos enfoques sistemáticos para la construcción de redes y gestión de relaciones.",
+              "benefits": [
+                "Conexiones estratégicas",
+                "Relaciones de la industria",
+                "Oportunidades de colaboración",
+                "Inteligencia de mercado",
+                "Desarrollo empresarial",
+                "Perspectivas competitivas"
+              ],
+              "additionalInfo": [
+                { "label": "Alcance de Red", "value": "Conexiones de la industria" },
+                { "label": "Tiempo de Entrega", "value": "4 semanas" },
+                { "label": "Formato", "value": "Estrategia de red" },
+                { "label": "Soporte", "value": "6 meses" }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Innovación Constante",
+          "description": "Implementación de soluciones innovadoras y tecnologías emergentes para mantener la ventaja competitiva.",
+          "icon": "Lightbulb",
+          "slug": "innovation",
+          "features": [
+            "Soluciones innovadoras",
+            "Tecnologías emergentes",
+            "Mejora continua"
+          ],
+          "priceRange": "50",
+          "products": [
+            {
+              "title": "Estrategia de Innovación",
+              "description": "Desarrollo de estrategias de innovación y hojas de ruta tecnológicas para ventaja competitiva.",
+              "icon": "Lightbulb",
+              "slug": "innovation-strategy",
+              "features": [
+                "Análisis de oportunidades de innovación",
+                "Desarrollo de hoja de ruta tecnológica",
+                "Evaluación de cultura de innovación",
+                "Identificación de mejoras de procesos",
+                "Planificación de integración tecnológica",
+                "Marco de medición de rendimiento"
+              ],
+              "price": "10",
+              "originalPrice": "15",
+              "badge": "Popular",
+              "cta": "Desarrollar Estrategia",
+              "paymentLink": "https://buy.stripe.com/eVq9AT2SHfTtcBJ1DpcZa0b",
+              "duration": "6 semanas",
+              "delivery": "Hoja de ruta de innovación",
+              "detailedDescription": "Nuestro servicio de estrategia de innovación ayuda a las empresas a desarrollar hojas de ruta de innovación integrales y planes de integración tecnológica. Evaluamos capacidades actuales y diseñamos estrategias para mantener la ventaja competitiva a través de la innovación.",
+              "benefits": [
+                "Ventaja competitiva",
+                "Liderazgo tecnológico",
+                "Optimización de procesos",
+                "Cultura de innovación",
+                "Mejora de rendimiento",
+                "Crecimiento sostenible"
+              ],
+              "additionalInfo": [
+                { "label": "Alcance de Estrategia", "value": "Hoja de ruta de innovación" },
+                { "label": "Tiempo de Entrega", "value": "6 semanas" },
+                { "label": "Formato", "value": "Plan estratégico" },
+                { "label": "Soporte", "value": "12 meses" }
+              ]
+            },
+            {
+              "title": "Integración Tecnológica",
+              "description": "Soporte de integración tecnológica estratégica y transformación digital.",
+              "icon": "Lightbulb",
+              "slug": "technology-integration",
+              "features": [
+                "Evaluación tecnológica",
+                "Desarrollo de estrategia de integración",
+                "Planificación de implementación",
+                "Soporte de gestión del cambio",
+                "Optimización de rendimiento",
+                "Mantenimiento continuo"
+              ],
+              "price": "23",
+              "originalPrice": "30",
+              "badge": "Premium",
+              "cta": "Integrar Tecnología",
+              "paymentLink": "https://buy.stripe.com/cNi6oHbpd36H0T1eqbcZa0a",
+              "duration": "8 semanas",
+              "delivery": "Plan de integración",
+              "detailedDescription": "Nuestro servicio de integración tecnológica proporciona soporte integral para implementar nuevas tecnologías e iniciativas de transformación digital. Aseguramos una integración fluida con mínima interrupción a las operaciones empresariales.",
+              "benefits": [
+                "Transformación digital",
+                "Eficiencia operativa",
+                "Optimización tecnológica",
+                "Gestión del cambio",
+                "Mejora de rendimiento",
+                "Ventaja competitiva"
+              ],
+              "additionalInfo": [
+                { "label": "Alcance de Integración", "value": "Transformación completa" },
+                { "label": "Tiempo de Entrega", "value": "8 semanas" },
+                { "label": "Formato", "value": "Plan de integración" },
+                { "label": "Soporte", "value": "18 meses" }
+              ]
+            },
+            {
+              "title": "Innovación de Procesos",
+              "description": "Mejora de procesos e innovación para excelencia operativa.",
+              "icon": "Lightbulb",
+              "slug": "process-innovation",
+              "features": [
+                "Análisis y mapeo de procesos",
+                "Identificación de oportunidades de mejora",
+                "Diseño de soluciones innovadoras",
+                "Soporte de implementación",
+                "Monitoreo de rendimiento",
+                "Mejora continua"
+              ],
+              "price": "50",
+              "originalPrice": "60",
+              "badge": "Esencial",
+              "cta": "Innovar Procesos",
+              "paymentLink": "https://buy.stripe.com/3cI00j0Kz0YzeJRdm7cZa0c",
+              "duration": "4 semanas",
+              "delivery": "Hoja de ruta de procesos",
+              "detailedDescription": "Nuestro servicio de innovación de procesos ayuda a las empresas a identificar e implementar mejoras de procesos que impulsan la excelencia operativa y la ventaja competitiva. Nos enfocamos en mejoras sostenibles que entregan resultados medibles.",
+              "benefits": [
+                "Eficiencia operativa",
+                "Reducción de costos",
+                "Mejora de calidad",
+                "Cultura de innovación",
+                "Optimización de rendimiento",
+                "Mejora sostenible"
+              ],
+              "additionalInfo": [
+                { "label": "Alcance de Procesos", "value": "Optimización completa" },
+                { "label": "Tiempo de Entrega", "value": "4 semanas" },
+                { "label": "Formato", "value": "Hoja de ruta de procesos" },
+                { "label": "Soporte", "value": "6 meses" }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Expansión Estratégica",
+          "description": "Asesoría integral para expansión empresarial con enfoque en mercados emergentes y oportunidades de crecimiento.",
+          "icon": "Building2",
+          "slug": "expansion",
+          "features": [
+            "Planificación estratégica",
+            "Identificación de oportunidades",
+            "Gestión de riesgos"
+          ],
+          "priceRange": "100",
+          "products": [
+            {
+              "title": "Planificación Estratégica",
+              "description": "Planificación estratégica integral para expansión y crecimiento empresarial.",
+              "icon": "Building2",
+              "slug": "strategic-planning",
+              "features": [
+                "Análisis y evaluación estratégica",
+                "Identificación de oportunidades de crecimiento",
+                "Planificación de asignación de recursos",
+                "Evaluación y mitigación de riesgos",
+                "Hoja de ruta de implementación",
+                "Marco de monitoreo de rendimiento"
+              ],
+              "price": "23",
+              "originalPrice": "30",
+              "badge": "Popular",
+              "cta": "Desarrollar Plan",
+              "paymentLink": "https://buy.stripe.com/cNi6oHbpd36H0T1eqbcZa0a",
+              "duration": "8 semanas",
+              "delivery": "Plan estratégico",
+              "detailedDescription": "Nuestro servicio de planificación estratégica proporciona análisis y planificación integral para expansión y crecimiento empresarial. Desarrollamos hojas de ruta detalladas que se alinean con sus objetivos empresariales y oportunidades de mercado.",
+              "benefits": [
+                "Dirección estratégica clara",
+                "Aceleración del crecimiento",
+                "Mitigación de riesgos",
+                "Optimización de recursos",
+                "Seguimiento de rendimiento",
+                "Expansión sostenible"
+              ],
+              "additionalInfo": [
+                { "label": "Alcance del Plan", "value": "Estrategia integral" },
+                { "label": "Tiempo de Entrega", "value": "8 semanas" },
+                { "label": "Formato", "value": "Plan estratégico" },
+                { "label": "Soporte", "value": "18 meses" }
+              ]
+            },
+            {
+              "title": "Entrada a Mercados Emergentes",
+              "description": "Soporte especializado para entrar a mercados emergentes con gestión integral de riesgos.",
+              "icon": "Building2",
+              "slug": "emerging-market-entry",
+              "features": [
+                "Análisis de mercados emergentes",
+                "Desarrollo de estrategia de entrada",
+                "Evaluación y mitigación de riesgos",
+                "Identificación de socios locales",
+                "Orientación de cumplimiento regulatorio",
+                "Soporte de lanzamiento y monitoreo"
+              ],
+              "price": "100",
+              "originalPrice": "120",
+              "badge": "Premium",
+              "cta": "Entrar a Mercados",
+              "paymentLink": "https://buy.stripe.com/14AaEXcthaz959h5TFcZa0e",
+              "duration": "12 semanas",
+              "delivery": "Plan de entrada al mercado",
+              "detailedDescription": "Nuestro servicio de entrada a mercados emergentes proporciona soporte especializado para empresas que buscan expandirse a mercados emergentes. Ofrecemos gestión integral de riesgos y experiencia local para asegurar una entrada exitosa al mercado.",
+              "benefits": [
+                "Experiencia en mercados emergentes",
+                "Gestión de riesgos",
+                "Alianzas locales",
+                "Cumplimiento regulatorio",
+                "Soporte de lanzamiento",
+                "Monitoreo continuo"
+              ],
+              "additionalInfo": [
+                { "label": "Alcance de Mercado", "value": "Mercados emergentes" },
+                { "label": "Tiempo de Entrega", "value": "12 semanas" },
+                { "label": "Formato", "value": "Plan de entrada al mercado" },
+                { "label": "Soporte", "value": "24 meses" }
+              ]
+            },
+            {
+              "title": "Gestión y Mitigación de Riesgos",
+              "description": "Evaluación integral de riesgos y estrategias de mitigación para expansión empresarial.",
+              "icon": "Building2",
+              "slug": "risk-management-mitigation",
+              "features": [
+                "Evaluación integral de riesgos",
+                "Desarrollo de estrategia de mitigación",
+                "Planificación de contingencia",
+                "Sistemas de monitoreo de riesgos",
+                "Planificación de gestión de crisis",
+                "Revisión continua de riesgos"
+              ],
+              "price": "45",
+              "originalPrice": "55",
+              "badge": "Esencial",
+              "cta": "Gestionar Riesgos",
+              "paymentLink": "https://buy.stripe.com/14AeVdbpd22DeJR4PBcZa09",
+              "duration": "6 semanas",
+              "delivery": "Plan de gestión de riesgos",
+              "detailedDescription": "Nuestro servicio de gestión y mitigación de riesgos proporciona evaluación integral de riesgos y desarrollo de estrategias para expansión empresarial. Ayudamos a identificar riesgos potenciales y desarrollar estrategias de mitigación efectivas.",
+              "benefits": [
+                "Identificación de riesgos",
+                "Estrategias de mitigación",
+                "Planificación de contingencia",
+                "Gestión de crisis",
+                "Monitoreo continuo",
+                "Tranquilidad"
+              ],
+              "additionalInfo": [
+                { "label": "Alcance de Riesgos", "value": "Evaluación integral" },
+                { "label": "Tiempo de Entrega", "value": "6 semanas" },
+                { "label": "Formato", "value": "Plan de gestión de riesgos" },
+                { "label": "Soporte", "value": "12 meses" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "featured": {
+      "badge": "Servicios Destacados",
+      "title": "Nuestros Servicios Más Populares",
+      "subtitle": "Descubre nuestros servicios más solicitados que han ayudado a cientos de empresas a expandirse globalmente.",
+      "items": [
+        {
+          "title": "Representación Comercial Premium",
+          "description": "Servicio completo de representación con gerente de cuenta dedicado y soporte prioritario.",
+          "icon": "Handshake",
+          "categorySlug": "representation",
+          "slug": "premium-representation",
+          "features": [
+            "Gerente de cuenta dedicado",
+            "Conexiones prioritarias con compradores",
+            "Negociación avanzada de contratos",
+            "Soporte 24/7"
+          ],
+          "price": "4,500",
+          "originalPrice": "5,500",
+          "badge": "Más Popular",
+          "featured": true,
+          "cta": "Obtener Servicio Premium"
+        },
+        {
+          "title": "Paquete de Entrada al Mercado Global",
+          "description": "Paquete completo para entrar a nuevos mercados internacionales con soporte y orientación completa.",
+          "icon": "Target",
+          "categorySlug": "development",
+          "slug": "market-entry-package",
+          "features": [
+            "Investigación y análisis de mercado",
+            "Desarrollo de estrategia de entrada",
+            "Identificación de socios locales",
+            "Soporte de lanzamiento y monitoreo"
+          ],
+          "price": "8,500",
+          "originalPrice": "10,000",
+          "badge": "Mejor Valor",
+          "featured": true,
+          "cta": "Iniciar Entrada al Mercado"
+        },
+        {
+          "title": "Desarrollo de Alianzas Estratégicas",
+          "description": "Servicio integral para desarrollar alianzas estratégicas y alianzas empresariales.",
+          "icon": "Users",
+          "categorySlug": "alliances",
+          "slug": "alliance-development",
+          "features": [
+            "Identificación y selección de socios",
+            "Diseño de estructura de alianza",
+            "Negociación y redacción de acuerdos",
+            "Gestión continua de relaciones"
+          ],
+          "price": "6,500",
+          "badge": "Nuevo Servicio",
+          "featured": true,
+          "cta": "Construir Alianzas"
+        }
+      ]
+    },
+    "cta": {
+      "badge": "Comenzar",
+      "title": "¿Listo para expandir tu empresa globalmente?",
+      "subtitle": "Únete a cientos de empresas que confían en Vascruz Group para sus necesidades de intermediación comercial. Conversemos sobre cómo podemos ayudarte a conectar con nuevos mercados y oportunidades.",
+      "buttons": {
+        "primary": "Solicitar Consulta Gratuita",
+        "secondary": "Conoce Más Sobre Nosotros"
+      },
+      "contact": {
+        "phone": {
+          "title": "Llámanos",
+          "number": "+591 7700 4600",
+          "description": "Habla con nuestros expertos"
+        },
+        "email": {
+          "title": "Escríbenos",
+          "address": "grupovascruzllc@gmail.com",
+          "description": "Envíanos tus requerimientos"
+        }
       }
     }
   },
@@ -445,7 +1355,7 @@
         "line2": "Historia",
         "line3": "y Visión"
       },
-      "subtitle": "Desde 2020, hemos sido pioneros en la intermediación comercial, conectando empresas globales y facilitando el crecimiento empresarial a través de alianzas estratégicas.",
+      "subtitle": "Desde 2020, somos pioneros en intermediación comercial, conectando empresas globales y facilitando el crecimiento empresarial a través de alianzas estratégicas.",
       "highlights": [
         {
           "title": "+4 Años de Experiencia",
@@ -476,7 +1386,7 @@
       "items": [
         {
           "title": "Nuestra Misión",
-          "description": "Facilitar el crecimiento empresarial global conectando fabricantes, distribuidores y compradores a través de intermediación comercial estratégica y representación experta.",
+          "description": "Facilitar el crecimiento empresarial global conectando fabricantes, distribuidores y compradores mediante intermediación comercial estratégica y representación experta.",
           "icon": "Target",
           "highlights": [
             "Conexiones comerciales estratégicas",
@@ -496,7 +1406,7 @@
         },
         {
           "title": "Nuestro Propósito",
-          "description": "Impulsar el éxito empresarial a través de alianzas estratégicas, innovación constante y un compromiso inquebrantable con la excelencia comercial.",
+          "description": "Impulsar el éxito empresarial mediante alianzas estratégicas, innovación constante y un compromiso inquebrantable con la excelencia comercial.",
           "icon": "Lightbulb",
           "highlights": [
             "Alianzas estratégicas",
@@ -532,7 +1442,7 @@
         },
         {
           "title": "Compromiso",
-          "description": "Nos dedicamos completamente al éxito de nuestros clientes",
+          "description": "Estamos totalmente dedicados al éxito de nuestros clientes",
           "icon": "Heart"
         },
         {
@@ -596,8 +1506,8 @@
         }
       ],
       "cta": {
-        "title": "¿Listo para Crecer con Nosotros?",
-        "subtitle": "Únase a las cientos de empresas que ya confían en Vascruz Group para sus necesidades de intermediación comercial.",
+        "title": "¿Listo para crecer con nosotros?",
+        "subtitle": "Únete a las cientos de empresas que ya confían en Vascruz Group para sus necesidades de intermediación comercial.",
         "stats": [
           {
             "number": "500+",
@@ -611,10 +1521,53 @@
       }
     }
   },
+  "product": {
+    "notFound": {
+      "title": "Producto no encontrado",
+      "description": "El producto que buscas no existe. Por favor, intenta con otro producto diferente.",
+      "button": "Volver a la Categoría"
+    },
+    "backButton": "Volver a",
+    "pricing": {
+      "title": "Precios",
+      "duration": "Duración:",
+      "delivery": "Entrega:"
+    },
+    "features": {
+      "title": "¿Qué incluye?"
+    },
+    "details": {
+      "title": "Detalles del Producto"
+    },
+    "benefits": {
+      "title": "Beneficios Clave"
+    },
+    "additionalInfo": {
+      "title": "Información Adicional"
+    },
+    "cta": {
+      "default": "Comprar Ahora",
+      "paid": "Pago Completado",
+      "paymentConfirmation": "Ya has realizado el pago. Presiona el botón para confirmar tu pago y recibir tu producto."
+    },
+    "whatsapp": {
+      "phoneNumber": "59177004600",
+      "messageTemplate": {
+        "greeting": "Hola, estoy interesado en el siguiente producto:",
+        "price": "Precio:",
+        "originalPrice": "Precio original:",
+        "duration": "Duración:",
+        "delivery": "Entrega:",
+        "features": "Características incluidas:",
+        "benefits": "Beneficios:",
+        "closing": "Por favor, necesito información sobre el proceso de pago y entrega."
+      }
+    }
+  },
   "contact": {
     "hero": {
       "badge": {
-        "text": "Conectemos Negocios",
+        "text": "Conectemos Empresas",
         "icon": "Handshake"
       },
       "title": {
@@ -622,10 +1575,10 @@
         "line2": "Conexiones",
         "line3": "Comerciales"
       },
-      "subtitle": "Estamos aquí para facilitar sus transacciones comerciales. Conectamos fabricantes, distribuidores y compradores en mercados nacionales e internacionales.",
+      "subtitle": "Estamos aquí para facilitar tus transacciones comerciales. Conectamos fabricantes, distribuidores y compradores en mercados nacionales e internacionales.",
       "cards": {
         "email": {
-          "title": "Email",
+          "title": "Correo electrónico",
           "value": "info@vascruzgroup.com"
         },
         "phone": {
@@ -637,18 +1590,18 @@
           "value": "Miami, Florida, USA"
         },
         "hours": {
-          "title": "Horarios",
+          "title": "Horario",
           "value": "Lun - Vie: 9AM - 6PM"
         }
       }
     },
     "form": {
       "badge": "Formulario de Contacto",
-      "title": "Conectemos su Negocio",
-      "subtitle": "Complete el formulario y nuestro equipo de expertos en intermediación comercial se pondrá en contacto con usted para discutir oportunidades de negocio.",
+      "title": "Conectemos tu Empresa",
+      "subtitle": "Completa el formulario y nuestro equipo de expertos en intermediación comercial te contactará para conversar sobre oportunidades de negocio.",
       "fields": {
         "name": "Nombre Completo *",
-        "email": "Email Corporativo *",
+        "email": "Correo Corporativo *",
         "company": "Empresa *",
         "phone": "Teléfono *",
         "businessType": "Tipo de Negocio *",
@@ -656,12 +1609,12 @@
         "message": "Mensaje *"
       },
       "placeholders": {
-        "name": "Su nombre completo",
-        "email": "su@empresa.com",
-        "company": "Nombre de su empresa",
+        "name": "Tu nombre completo",
+        "email": "tu@empresa.com",
+        "company": "Nombre de tu empresa",
         "phone": "+1 (555) 123-4567",
-        "subject": "¿En qué podemos ayudarle?",
-        "message": "Describa sus necesidades comerciales, productos de interés, o cómo podemos ayudarle a conectar con nuevos mercados..."
+        "subject": "¿Cómo podemos ayudarte?",
+        "message": "Describe tus necesidades comerciales, productos de interés o cómo podemos ayudarte a conectar con nuevos mercados..."
       },
       "businessTypes": {
         "manufacturer": "Fabricante",
@@ -673,7 +1626,7 @@
       "sending": "Enviando mensaje...",
       "success": {
         "title": "¡Mensaje Enviado!",
-        "description": "Gracias por contactarnos. Nuestro equipo se pondrá en contacto con usted en las próximas 24 horas para discutir sus necesidades comerciales.",
+        "description": "Gracias por contactarnos. Nuestro equipo se comunicará contigo en las próximas 24 horas para conversar sobre tus necesidades comerciales.",
         "button": "Enviar otro mensaje"
       }
     },
@@ -698,11 +1651,11 @@
           "description": "Facilitamos la entrada a nuevos mercados globales"
         },
         "strategy": {
-          "title": "Estrategias de Negocio",
+          "title": "Estrategias Empresariales",
           "description": "Desarrollamos planes de crecimiento personalizados"
         },
         "consulting": {
-          "title": "Asesoría Experta",
+          "title": "Consultoría Experta",
           "description": "Consultoría especializada en intermediación comercial"
         }
       },
@@ -717,11 +1670,11 @@
           "value": "+1 (555) 123-4567"
         },
         "email": {
-          "title": "Email",
+          "title": "Correo electrónico",
           "value": "info@vascruzgroup.com"
         },
         "hours": {
-          "title": "Horarios de Atención",
+          "title": "Horario de Atención",
           "value": "Lunes - Viernes: 9:00 AM - 6:00 PM EST"
         }
       },
@@ -729,7 +1682,7 @@
         "title": "¿Por qué elegirnos?",
         "experience": "Experiencia comprobada en intermediación comercial",
         "network": "Red global de contactos comerciales",
-        "confidentiality": "Asesoría personalizada y confidencial",
+        "confidentiality": "Consultoría personalizada y confidencial",
         "results": "Resultados medibles y garantizados"
       }
     },
@@ -744,11 +1697,11 @@
       },
       "regions": {
         "northAmerica": {
-          "title": "América del Norte",
+          "title": "Norteamérica",
           "countries": ["Estados Unidos", "Canadá", "México"]
         },
         "southAmerica": {
-          "title": "América del Sur",
+          "title": "Sudamérica",
           "countries": ["Brasil", "Argentina", "Chile", "Colombia", "Perú"]
         },
         "europe": {
@@ -757,15 +1710,8 @@
         },
         "asia": {
           "title": "Asia",
-          "countries": ["China", "Japón", "Corea del Sur", "India"]
+          "countries": ["China", "Japón", "Corea del Sur", "India", "Singapur"]
         }
-      },
-      "cta": {
-        "title": "¿Listo para expandir su negocio?",
-        "description": "Nuestro equipo de expertos está listo para ayudarle a conectar con nuevos mercados y oportunidades comerciales globales.",
-        "support": "Soporte Disponible",
-        "response": "Respuesta Garantizada",
-        "confidentiality": "Confidencialidad"
       }
     }
   }

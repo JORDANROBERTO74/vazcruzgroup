@@ -9,6 +9,7 @@ import DesktopNavigation from "./DesktopNavigation";
 import MobileNavigation from "./MobileNavigation";
 import { useLocale, useMessages } from "next-intl";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,7 +34,13 @@ const Header = () => {
           <div className="flex h-16 items-center justify-between">
             <div className="flex items-center">
               <Link href={`/${locale}`} className="flex items-center space-x-2">
-                <span className="text-xl font-bold text-primary">LOGO</span>
+                <img
+                  src="/img/logo.png"
+                  alt="VasCruz Group LLC"
+                  width={100}
+                  height={100}
+                  className="object-contain"
+                />
               </Link>
             </div>
             <div className="flex items-center space-x-4">
@@ -56,7 +63,13 @@ const Header = () => {
               className="flex items-center space-x-2"
               onClick={closeMenu}
             >
-              <span className="text-xl font-bold text-primary">LOGO</span>
+              <img
+                src="/img/logo.png"
+                alt="VasCruz Group LLC"
+                width={75}
+                height={60}
+                className="object-contain"
+              />
             </Link>
           </div>
 

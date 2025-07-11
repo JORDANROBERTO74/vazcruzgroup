@@ -88,7 +88,7 @@ export default function HeroSection() {
   }
 
   return (
-    <section className="-mt-[30px] lg:-mt-[64px] h-full md:h-full lg:h-screen relative overflow-hidden bg-gradient-to-br from-background via-background to-muted/20 dark:from-background dark:via-background dark:to-muted/10">
+    <section className="-mt-[30px] lg:-mt-[64px] h-full relative overflow-hidden bg-gradient-to-br from-background via-background to-muted/20 dark:from-background dark:via-background dark:to-muted/10">
       {/* Background decorative elements */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-1/4 w-72 h-72 bg-gradient-to-br from-primary/20 to-primary/10 rounded-full blur-3xl"></div>

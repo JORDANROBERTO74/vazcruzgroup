@@ -434,6 +434,925 @@
       }
     }
   },
+  "services": {
+    "hero": {
+      "badge": {
+        "text": "Our Services",
+        "icon": "Building2"
+      },
+      "title": {
+        "line1": "Comprehensive",
+        "line2": "Commercial",
+        "line3": "Solutions"
+      },
+      "subtitle": "We offer specialized services that connect manufacturers, distributors and buyers, facilitating fluid and strategic transactions in an increasingly complex global environment.",
+      "highlights": [
+        {
+          "title": "Commercial Representation",
+          "description": "Professional intermediation between manufacturers and buyers",
+          "icon": "Handshake"
+        },
+        {
+          "title": "Global Market Access",
+          "description": "Connect with markets worldwide through our network",
+          "icon": "Globe"
+        },
+        {
+          "title": "Strategic Consulting",
+          "description": "Expert advice for business expansion and growth",
+          "icon": "Target"
+        },
+        {
+          "title": "Contract Negotiation",
+          "description": "Professional negotiation of commercial agreements",
+          "icon": "Users"
+        }
+      ]
+    },
+    "category": {
+      "notFound": {
+        "title": "Service Category Not Found",
+        "description": "The service category you are looking for does not exist. Please try again with a different category.",
+        "button": "Back to Services"
+      },
+      "goBack": "Back to Services",
+      "button": "See Products",
+      "button1": "Consult Service",
+      "title1": "Why choose our services?",
+      "description1": "Discover the advantages that make our services the preferred choice",
+      "title2": "Products and Services",
+      "description2": "Explore our comprehensive range of commercial intermediation services designed to connect your business with global opportunities.",
+      "filters": {
+        "search": {
+          "placeholder": "Search products..."
+        },
+        "sort": {
+          "placeholder": "Sort by",
+          "options": [
+            { "popular": { "id": "popular", "text": "Most Popular" } },
+            { "price-low": { "id": "price-low", "text": "Price: Low to High" } },
+            { "price-high": { "id": "price-high", "text": "Price: High to Low" } },
+            { "name": { "id": "name", "text": "Name A-Z" } }
+          ]
+        },
+        "price": {
+          "placeholder": "Filter by price",
+          "options": [
+            {"all":  { "id": "all", "text": "All prices" } },
+            {"under-25":  { "id": "under-25", "text": "Under $25" } },
+            {"25-50":  { "id": "25-50", "text": "$25 - $50" } },
+            {"over-50":  { "id": "over-50", "text": "Over $50" } }
+          ]
+        },
+        "results": "products found"
+      },
+      "noResults": {
+        "title": "No products found",
+        "description": "Try adjusting your search filters",
+        "button": "Clear filters"
+      },
+      "share": {
+        "title": "Share Product",
+        "description": "Share this product with others",
+        "urlLabel": "Product link",
+        "optionsLabel": "Share on",
+        "whatsapp": "WhatsApp",
+        "copyLink": "Copy link",
+        "copied": "Link copied!"
+      },
+      "hero": {
+        "breadcrumb": {
+          "back": "Back to Services"
+        },
+        "stats": {
+          "rating": "average rating",
+          "clients": "clients served",
+          "projects": "projects completed",
+          "markets": "global markets"
+        },
+        "cta": {
+          "primary": "See Products",
+          "secondary": "Consult Service"
+        }
+      }
+    },
+    "categories": {
+      "badge": "Service Categories",
+      "title": "Our Service Categories",
+      "subtitle": "Explore our comprehensive range of commercial intermediation services designed to connect your business with global opportunities.",
+      "items": [
+        {
+          "title": "Commercial Representation",
+          "description": "We represent manufacturers and distributors in national and international markets, facilitating strategic commercial connections.",
+          "icon": "Handshake",
+          "slug": "representation",
+          "features": [
+            "Buyer connection",
+            "Contract negotiation",
+            "Commercial relationship management"
+          ],
+          "priceRange": "100",
+          "products": [
+            {
+              "title": "Basic Representation",
+              "description": "Essential commercial representation service for small to medium businesses.",
+              "icon": "Handshake",
+              "slug": "basic-representation",
+              "features": [
+                "Buyer identification and connection",
+                "Basic contract negotiation",
+                "Monthly progress reports",
+                "Email support"
+              ],
+              "price": "10",
+              "originalPrice": "15",
+              "badge": "Popular",
+              "cta": "Get Started",
+              "paymentLink": "https://buy.stripe.com/eVq9AT2SHfTtcBJ1DpcZa0b",
+              "duration": "3 months",
+              "delivery": "Immediate start",
+              "detailedDescription": "Our basic representation service provides essential support for businesses looking to establish their presence in new markets. We connect you with qualified buyers and handle initial negotiations to get your business relationships started.",
+              "benefits": [
+                "Quick market entry",
+                "Cost-effective solution",
+                "Professional representation",
+                "Risk-free trial period"
+              ],
+              "additionalInfo": [
+                { "label": "Contract Duration", "value": "3 months" },
+                { "label": "Support Level", "value": "Email & Phone" },
+                { "label": "Reports", "value": "Monthly" },
+                { "label": "Meetings", "value": "As needed" }
+              ]
+            },
+            {
+              "title": "Premium Representation",
+              "description": "Comprehensive representation service with dedicated account manager and priority support.",
+              "icon": "Handshake",
+              "slug": "premium-representation",
+              "features": [
+                "Dedicated account manager",
+                "Priority buyer connections",
+                "Advanced contract negotiation",
+                "24/7 support access",
+                "Custom market research",
+                "Quarterly strategy reviews"
+              ],
+              "price": "23",
+              "originalPrice": "30",
+              "badge": "Most Popular",
+              "cta": "Get Premium Service",
+              "paymentLink": "https://buy.stripe.com/cNi6oHbpd36H0T1eqbcZa0a",
+              "duration": "6 months",
+              "delivery": "Immediate start",
+              "detailedDescription": "Our premium representation service offers comprehensive support with a dedicated account manager who works exclusively with your business. This service includes advanced market research, strategic planning, and priority access to our global network of buyers and distributors.",
+              "benefits": [
+                "Dedicated account manager",
+                "Priority buyer access",
+                "Advanced market research",
+                "Strategic planning support",
+                "24/7 priority support",
+                "Custom reporting"
+              ],
+              "additionalInfo": [
+                { "label": "Contract Duration", "value": "6 months" },
+                { "label": "Support Level", "value": "24/7 Priority" },
+                { "label": "Reports", "value": "Weekly" },
+                { "label": "Meetings", "value": "Bi-weekly" }
+              ]
+            },
+            {
+              "title": "Enterprise Representation",
+              "description": "Full-service representation for large enterprises with custom solutions and dedicated team.",
+              "icon": "Building2",
+              "slug": "enterprise-representation",
+              "features": [
+                "Dedicated team of experts",
+                "Custom market strategies",
+                "Exclusive buyer network access",
+                "Advanced analytics and reporting",
+                "International expansion support",
+                "Risk management services"
+              ],
+              "price": "100",
+              "originalPrice": "120",
+              "badge": "Enterprise",
+              "cta": "Contact Sales",
+              "paymentLink": "https://buy.stripe.com/14AaEXcthaz959h5TFcZa0e",
+              "duration": "12 months",
+              "delivery": "Custom timeline",
+              "detailedDescription": "Our enterprise representation service is designed for large companies requiring comprehensive market presence and strategic growth. This service includes a dedicated team of experts, custom market strategies, and exclusive access to our premium buyer network.",
+              "benefits": [
+                "Dedicated expert team",
+                "Custom market strategies",
+                "Exclusive network access",
+                "Advanced analytics",
+                "International expansion",
+                "Risk management"
+              ],
+              "additionalInfo": [
+                { "label": "Contract Duration", "value": "12 months" },
+                { "label": "Support Level", "value": "Dedicated Team" },
+                { "label": "Reports", "value": "Real-time" },
+                { "label": "Meetings", "value": "Weekly" }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Analysis and Logistics",
+          "description": "Detailed market analysis and logistics process optimization to maximize operational efficiency.",
+          "icon": "BarChart3",
+          "slug": "analysis",
+          "features": [
+            "Market studies",
+            "Logistics optimization",
+            "Cost analysis"
+          ],
+          "priceRange": "50",
+          "products": [
+            {
+              "title": "Market Research Report",
+              "description": "Comprehensive market analysis report for your target markets and industries.",
+              "icon": "BarChart3",
+              "slug": "market-research-report",
+              "features": [
+                "Market size and growth analysis",
+                "Competitive landscape study",
+                "Consumer behavior insights",
+                "Regulatory environment review",
+                "SWOT analysis",
+                "Market entry recommendations"
+              ],
+              "price": "10",
+              "originalPrice": "15",
+              "badge": "Best Seller",
+              "cta": "Get Report",
+              "paymentLink": "https://buy.stripe.com/eVq9AT2SHfTtcBJ1DpcZa0b",
+              "duration": "4 weeks",
+              "delivery": "Digital + Print",
+              "detailedDescription": "Our comprehensive market research report provides deep insights into your target markets, including detailed analysis of market size, growth trends, competitive landscape, and regulatory environment. This report serves as the foundation for informed business decisions and strategic planning.",
+              "benefits": [
+                "Data-driven insights",
+                "Comprehensive analysis",
+                "Actionable recommendations",
+                "Professional presentation",
+                "Ongoing support",
+                "Customizable focus areas"
+              ],
+              "additionalInfo": [
+                { "label": "Report Length", "value": "50-80 pages" },
+                { "label": "Delivery Time", "value": "4 weeks" },
+                { "label": "Format", "value": "PDF + Print" },
+                { "label": "Updates", "value": "6 months" }
+              ]
+            },
+            {
+              "title": "Logistics Optimization",
+              "description": "Complete logistics analysis and optimization for cost reduction and efficiency improvement.",
+              "icon": "BarChart3",
+              "slug": "logistics-optimization",
+              "features": [
+                "Supply chain analysis",
+                "Cost optimization strategies",
+                "Route optimization",
+                "Warehouse efficiency review",
+                "Technology integration recommendations",
+                "Performance metrics dashboard"
+              ],
+              "price": "45",
+              "originalPrice": "55",
+              "badge": "Premium",
+              "cta": "Optimize Logistics",
+              "paymentLink": "https://buy.stripe.com/14AeVdbpd22DeJR4PBcZa09",
+              "duration": "6 weeks",
+              "delivery": "Implementation ready",
+              "detailedDescription": "Our logistics optimization service analyzes your entire supply chain to identify inefficiencies and cost-saving opportunities. We provide actionable recommendations for route optimization, warehouse efficiency, and technology integration to maximize your operational performance.",
+              "benefits": [
+                "Cost reduction",
+                "Efficiency improvement",
+                "Technology integration",
+                "Performance monitoring",
+                "Custom solutions",
+                "Ongoing support"
+              ],
+              "additionalInfo": [
+                { "label": "Analysis Scope", "value": "Full supply chain" },
+                { "label": "Implementation", "value": "6 weeks" },
+                { "label": "ROI Tracking", "value": "3 months" },
+                { "label": "Support", "value": "12 months" }
+              ]
+            },
+            {
+              "title": "Cost Analysis & Optimization",
+              "description": "Detailed cost analysis and optimization strategies for maximum profitability.",
+              "icon": "BarChart3",
+              "slug": "cost-analysis-optimization",
+              "features": [
+                "Comprehensive cost analysis",
+                "Profitability optimization",
+                "Pricing strategy development",
+                "Cost reduction recommendations",
+                "Financial modeling",
+                "Performance tracking"
+              ],
+              "price": "50",
+              "originalPrice": "60",
+              "badge": "New",
+              "cta": "Analyze Costs",
+              "paymentLink": "https://buy.stripe.com/3cI00j0Kz0YzeJRdm7cZa0c",
+              "duration": "3 weeks",
+              "delivery": "Digital report",
+              "detailedDescription": "Our cost analysis and optimization service provides detailed insights into your cost structure and identifies opportunities for improvement. We develop customized strategies to optimize profitability while maintaining quality and service standards.",
+              "benefits": [
+                "Cost transparency",
+                "Profitability improvement",
+                "Strategic pricing",
+                "Efficiency gains",
+                "Data-driven decisions",
+                "Ongoing monitoring"
+              ],
+              "additionalInfo": [
+                { "label": "Analysis Depth", "value": "Full cost structure" },
+                { "label": "Delivery Time", "value": "3 weeks" },
+                { "label": "Format", "value": "Digital dashboard" },
+                { "label": "Updates", "value": "Quarterly" }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Global Business Development",
+          "description": "International expansion strategies and new market development for sustainable growth.",
+          "icon": "Target",
+          "slug": "development",
+          "features": [
+            "International expansion",
+            "Entry strategies",
+            "Market development"
+          ],
+          "priceRange": "100",
+          "products": [
+            {
+              "title": "Market Entry Strategy",
+              "description": "Comprehensive market entry strategy for international expansion.",
+              "icon": "Target",
+              "slug": "market-entry-strategy",
+              "features": [
+                "Market opportunity analysis",
+                "Entry mode selection",
+                "Risk assessment and mitigation",
+                "Timeline and milestone planning",
+                "Resource allocation strategy",
+                "Success metrics definition"
+              ],
+              "price": "23",
+              "originalPrice": "30",
+              "badge": "Popular",
+              "cta": "Develop Strategy",
+              "paymentLink": "https://buy.stripe.com/cNi6oHbpd36H0T1eqbcZa0a",
+              "duration": "8 weeks",
+              "delivery": "Strategic plan",
+              "detailedDescription": "Our market entry strategy service provides a comprehensive roadmap for entering new international markets. We analyze market opportunities, assess risks, and develop a detailed implementation plan with clear milestones and success metrics.",
+              "benefits": [
+                "Clear entry roadmap",
+                "Risk mitigation",
+                "Resource optimization",
+                "Success tracking",
+                "Expert guidance",
+                "Ongoing support"
+              ],
+              "additionalInfo": [
+                { "label": "Strategy Scope", "value": "Full market entry" },
+                { "label": "Delivery Time", "value": "8 weeks" },
+                { "label": "Format", "value": "Strategic plan" },
+                { "label": "Support", "value": "12 months" }
+              ]
+            },
+            {
+              "title": "Global Market Entry Package",
+              "description": "Complete package for entering new international markets with full support and guidance.",
+              "icon": "Target",
+              "slug": "market-entry-package",
+              "features": [
+                "Market research and analysis",
+                "Entry strategy development",
+                "Local partner identification",
+                "Launch support and monitoring",
+                "Regulatory compliance guidance",
+                "Performance optimization"
+              ],
+              "price": "100",
+              "originalPrice": "120",
+              "badge": "Best Value",
+              "cta": "Start Market Entry",
+              "paymentLink": "https://buy.stripe.com/14AaEXcthaz959h5TFcZa0e",
+              "duration": "12 weeks",
+              "delivery": "Full implementation",
+              "detailedDescription": "Our comprehensive market entry package includes everything needed to successfully enter new international markets. From initial research to launch support, we provide end-to-end guidance and implementation support.",
+              "benefits": [
+                "End-to-end support",
+                "Expert guidance",
+                "Risk management",
+                "Local expertise",
+                "Performance monitoring",
+                "Ongoing optimization"
+              ],
+              "additionalInfo": [
+                { "label": "Package Scope", "value": "Full implementation" },
+                { "label": "Duration", "value": "12 weeks" },
+                { "label": "Support", "value": "24 months" },
+                { "label": "Updates", "value": "Quarterly" }
+              ]
+            },
+            {
+              "title": "Growth Strategy Development",
+              "description": "Strategic growth planning and opportunity identification for sustainable business expansion.",
+              "icon": "Target",
+              "slug": "growth-strategy-development",
+              "features": [
+                "Growth opportunity analysis",
+                "Strategic planning framework",
+                "Resource optimization",
+                "Performance tracking systems",
+                "Innovation strategy",
+                "Competitive positioning"
+              ],
+              "price": "50",
+              "originalPrice": "65",
+              "badge": "Premium",
+              "cta": "Develop Growth Plan",
+              "paymentLink": "https://buy.stripe.com/3cI00j0Kz0YzeJRdm7cZa0c",
+              "duration": "6 weeks",
+              "delivery": "Strategic framework",
+              "detailedDescription": "Our growth strategy development service helps businesses identify and capitalize on growth opportunities. We develop comprehensive strategic frameworks that align with your business objectives and market conditions.",
+              "benefits": [
+                "Strategic clarity",
+                "Growth acceleration",
+                "Resource optimization",
+                "Competitive advantage",
+                "Innovation focus",
+                "Sustainable growth"
+              ],
+              "additionalInfo": [
+                { "label": "Strategy Depth", "value": "Comprehensive" },
+                { "label": "Delivery Time", "value": "6 weeks" },
+                { "label": "Format", "value": "Strategic framework" },
+                { "label": "Support", "value": "18 months" }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Key Alliances",
+          "description": "Creation and management of strategic alliances that boost business growth and competitiveness.",
+          "icon": "Users",
+          "slug": "alliances",
+          "features": [
+            "Strategic alliances",
+            "Business networking",
+            "Commercial collaborations"
+          ],
+          "priceRange": "50",
+          "products": [
+            {
+              "title": "Partnership Development",
+              "description": "Strategic partnership identification and development for business growth.",
+              "icon": "Users",
+              "slug": "partnership-development",
+              "features": [
+                "Partner identification and screening",
+                "Strategic fit analysis",
+                "Partnership structure design",
+                "Negotiation support",
+                "Agreement drafting",
+                "Performance monitoring"
+              ],
+              "price": "10",
+              "originalPrice": "15",
+              "badge": "Popular",
+              "cta": "Develop Partnerships",
+              "paymentLink": "https://buy.stripe.com/eVq9AT2SHfTtcBJ1DpcZa0b",
+              "duration": "6 weeks",
+              "delivery": "Partnership framework",
+              "detailedDescription": "Our partnership development service helps businesses identify and establish strategic partnerships that drive growth and competitive advantage. We provide comprehensive support from initial identification through agreement execution.",
+              "benefits": [
+                "Strategic partnerships",
+                "Growth acceleration",
+                "Risk sharing",
+                "Resource optimization",
+                "Market expansion",
+                "Competitive advantage"
+              ],
+              "additionalInfo": [
+                { "label": "Partnership Scope", "value": "Strategic alliances" },
+                { "label": "Delivery Time", "value": "6 weeks" },
+                { "label": "Format", "value": "Partnership framework" },
+                { "label": "Support", "value": "12 months" }
+              ]
+            },
+            {
+              "title": "Strategic Alliance Development",
+              "description": "Comprehensive service for developing strategic partnerships and business alliances.",
+              "icon": "Users",
+              "slug": "alliance-development",
+              "features": [
+                "Alliance opportunity identification",
+                "Strategic fit assessment",
+                "Alliance structure design",
+                "Negotiation and agreement drafting",
+                "Implementation support",
+                "Ongoing relationship management"
+              ],
+              "price": "45",
+              "originalPrice": "55",
+              "badge": "New Service",
+              "cta": "Build Alliances",
+              "paymentLink": "https://buy.stripe.com/14AeVdbpd22DeJR4PBcZa09",
+              "duration": "8 weeks",
+              "delivery": "Alliance strategy",
+              "detailedDescription": "Our strategic alliance development service provides comprehensive support for creating and managing strategic business alliances. We help identify opportunities, assess strategic fit, and develop sustainable alliance structures.",
+              "benefits": [
+                "Strategic alliances",
+                "Market expansion",
+                "Resource sharing",
+                "Innovation collaboration",
+                "Risk mitigation",
+                "Sustainable growth"
+              ],
+              "additionalInfo": [
+                { "label": "Alliance Scope", "value": "Strategic partnerships" },
+                { "label": "Delivery Time", "value": "8 weeks" },
+                { "label": "Format", "value": "Alliance strategy" },
+                { "label": "Support", "value": "18 months" }
+              ]
+            },
+            {
+              "title": "Business Network Development",
+              "description": "Development of strategic business networks and industry connections.",
+              "icon": "Users",
+              "slug": "business-network-development",
+              "features": [
+                "Network mapping and analysis",
+                "Connection strategy development",
+                "Relationship building support",
+                "Network optimization",
+                "Collaboration facilitation",
+                "Performance tracking"
+              ],
+              "price": "50",
+              "originalPrice": "60",
+              "badge": "Essential",
+              "cta": "Build Network",
+              "paymentLink": "https://buy.stripe.com/3cI00j0Kz0YzeJRdm7cZa0c",
+              "duration": "4 weeks",
+              "delivery": "Network strategy",
+              "detailedDescription": "Our business network development service helps businesses build and optimize strategic networks of industry connections, partners, and collaborators. We provide systematic approaches to network building and relationship management.",
+              "benefits": [
+                "Strategic connections",
+                "Industry relationships",
+                "Collaboration opportunities",
+                "Market intelligence",
+                "Business development",
+                "Competitive insights"
+              ],
+              "additionalInfo": [
+                { "label": "Network Scope", "value": "Industry connections" },
+                { "label": "Delivery Time", "value": "4 weeks" },
+                { "label": "Format", "value": "Network strategy" },
+                { "label": "Support", "value": "6 months" }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Constant Innovation",
+          "description": "Implementation of innovative solutions and emerging technologies to maintain competitive advantage.",
+          "icon": "Lightbulb",
+          "slug": "innovation",
+          "features": [
+            "Innovative solutions",
+            "Emerging technologies",
+            "Continuous improvement"
+          ],
+          "priceRange": "50",
+          "products": [
+            {
+              "title": "Innovation Strategy",
+              "description": "Development of innovation strategies and technology roadmaps for competitive advantage.",
+              "icon": "Lightbulb",
+              "slug": "innovation-strategy",
+              "features": [
+                "Innovation opportunity analysis",
+                "Technology roadmap development",
+                "Innovation culture assessment",
+                "Process improvement identification",
+                "Technology integration planning",
+                "Performance measurement framework"
+              ],
+              "price": "10",
+              "originalPrice": "15",
+              "badge": "Popular",
+              "cta": "Develop Strategy",
+              "paymentLink": "https://buy.stripe.com/eVq9AT2SHfTtcBJ1DpcZa0b",
+              "duration": "6 weeks",
+              "delivery": "Innovation roadmap",
+              "detailedDescription": "Our innovation strategy service helps businesses develop comprehensive innovation roadmaps and technology integration plans. We assess current capabilities and design strategies to maintain competitive advantage through innovation.",
+              "benefits": [
+                "Competitive advantage",
+                "Technology leadership",
+                "Process optimization",
+                "Innovation culture",
+                "Performance improvement",
+                "Sustainable growth"
+              ],
+              "additionalInfo": [
+                { "label": "Strategy Scope", "value": "Innovation roadmap" },
+                { "label": "Delivery Time", "value": "6 weeks" },
+                { "label": "Format", "value": "Strategic plan" },
+                { "label": "Support", "value": "12 months" }
+              ]
+            },
+            {
+              "title": "Technology Integration",
+              "description": "Strategic technology integration and digital transformation support.",
+              "icon": "Lightbulb",
+              "slug": "technology-integration",
+              "features": [
+                "Technology assessment",
+                "Integration strategy development",
+                "Implementation planning",
+                "Change management support",
+                "Performance optimization",
+                "Ongoing maintenance"
+              ],
+              "price": "23",
+              "originalPrice": "30",
+              "badge": "Premium",
+              "cta": "Integrate Technology",
+              "paymentLink": "https://buy.stripe.com/cNi6oHbpd36H0T1eqbcZa0a",
+              "duration": "8 weeks",
+              "delivery": "Integration plan",
+              "detailedDescription": "Our technology integration service provides comprehensive support for implementing new technologies and digital transformation initiatives. We ensure smooth integration with minimal disruption to business operations.",
+              "benefits": [
+                "Digital transformation",
+                "Operational efficiency",
+                "Technology optimization",
+                "Change management",
+                "Performance improvement",
+                "Competitive advantage"
+              ],
+              "additionalInfo": [
+                { "label": "Integration Scope", "value": "Full transformation" },
+                { "label": "Delivery Time", "value": "8 weeks" },
+                { "label": "Format", "value": "Integration plan" },
+                { "label": "Support", "value": "18 months" }
+              ]
+            },
+            {
+              "title": "Process Innovation",
+              "description": "Process improvement and innovation for operational excellence.",
+              "icon": "Lightbulb",
+              "slug": "process-innovation",
+              "features": [
+                "Process analysis and mapping",
+                "Improvement opportunity identification",
+                "Innovation solution design",
+                "Implementation support",
+                "Performance monitoring",
+                "Continuous improvement"
+              ],
+              "price": "50",
+              "originalPrice": "60",
+              "badge": "Essential",
+              "cta": "Innovate Processes",
+              "paymentLink": "https://buy.stripe.com/3cI00j0Kz0YzeJRdm7cZa0c",
+              "duration": "4 weeks",
+              "delivery": "Process roadmap",
+              "detailedDescription": "Our process innovation service helps businesses identify and implement process improvements that drive operational excellence and competitive advantage. We focus on sustainable improvements that deliver measurable results.",
+              "benefits": [
+                "Operational efficiency",
+                "Cost reduction",
+                "Quality improvement",
+                "Innovation culture",
+                "Performance optimization",
+                "Sustainable improvement"
+              ],
+              "additionalInfo": [
+                { "label": "Process Scope", "value": "Full optimization" },
+                { "label": "Delivery Time", "value": "4 weeks" },
+                { "label": "Format", "value": "Process roadmap" },
+                { "label": "Support", "value": "6 months" }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Strategic Expansion",
+          "description": "Comprehensive advisory for business expansion with focus on emerging markets and growth opportunities.",
+          "icon": "Building2",
+          "slug": "expansion",
+          "features": [
+            "Strategic planning",
+            "Opportunity identification",
+            "Risk management"
+          ],
+          "priceRange": "100",
+          "products": [
+            {
+              "title": "Strategic Planning",
+              "description": "Comprehensive strategic planning for business expansion and growth.",
+              "icon": "Building2",
+              "slug": "strategic-planning",
+              "features": [
+                "Strategic analysis and assessment",
+                "Growth opportunity identification",
+                "Resource allocation planning",
+                "Risk assessment and mitigation",
+                "Implementation roadmap",
+                "Performance monitoring framework"
+              ],
+              "price": "23",
+              "originalPrice": "30",
+              "badge": "Popular",
+              "cta": "Develop Plan",
+              "paymentLink": "https://buy.stripe.com/cNi6oHbpd36H0T1eqbcZa0a",
+              "duration": "8 weeks",
+              "delivery": "Strategic plan",
+              "detailedDescription": "Our strategic planning service provides comprehensive analysis and planning for business expansion and growth. We develop detailed roadmaps that align with your business objectives and market opportunities.",
+              "benefits": [
+                "Clear strategic direction",
+                "Growth acceleration",
+                "Risk mitigation",
+                "Resource optimization",
+                "Performance tracking",
+                "Sustainable expansion"
+              ],
+              "additionalInfo": [
+                { "label": "Plan Scope", "value": "Comprehensive strategy" },
+                { "label": "Delivery Time", "value": "8 weeks" },
+                { "label": "Format", "value": "Strategic plan" },
+                { "label": "Support", "value": "18 months" }
+              ]
+            },
+            {
+              "title": "Emerging Market Entry",
+              "description": "Specialized support for entering emerging markets with comprehensive risk management.",
+              "icon": "Building2",
+              "slug": "emerging-market-entry",
+              "features": [
+                "Emerging market analysis",
+                "Entry strategy development",
+                "Risk assessment and mitigation",
+                "Local partner identification",
+                "Regulatory compliance guidance",
+                "Launch support and monitoring"
+              ],
+              "price": "100",
+              "originalPrice": "120",
+              "badge": "Premium",
+              "cta": "Enter Markets",
+              "paymentLink": "https://buy.stripe.com/14AaEXcthaz959h5TFcZa0e",
+              "duration": "12 weeks",
+              "delivery": "Market entry plan",
+              "detailedDescription": "Our emerging market entry service provides specialized support for businesses looking to expand into emerging markets. We offer comprehensive risk management and local expertise to ensure successful market entry.",
+              "benefits": [
+                "Emerging market expertise",
+                "Risk management",
+                "Local partnerships",
+                "Regulatory compliance",
+                "Launch support",
+                "Ongoing monitoring"
+              ],
+              "additionalInfo": [
+                { "label": "Market Scope", "value": "Emerging markets" },
+                { "label": "Delivery Time", "value": "12 weeks" },
+                { "label": "Format", "value": "Market entry plan" },
+                { "label": "Support", "value": "24 months" }
+              ]
+            },
+            {
+              "title": "Risk Management & Mitigation",
+              "description": "Comprehensive risk assessment and mitigation strategies for business expansion.",
+              "icon": "Building2",
+              "slug": "risk-management-mitigation",
+              "features": [
+                "Comprehensive risk assessment",
+                "Risk mitigation strategy development",
+                "Contingency planning",
+                "Risk monitoring systems",
+                "Crisis management planning",
+                "Ongoing risk review"
+              ],
+              "price": "45",
+              "originalPrice": "55",
+              "badge": "Essential",
+              "cta": "Manage Risks",
+              "paymentLink": "https://buy.stripe.com/14AeVdbpd22DeJR4PBcZa09",
+              "duration": "6 weeks",
+              "delivery": "Risk management plan",
+              "detailedDescription": "Our risk management and mitigation service provides comprehensive risk assessment and strategy development for business expansion. We help identify potential risks and develop effective mitigation strategies.",
+              "benefits": [
+                "Risk identification",
+                "Mitigation strategies",
+                "Contingency planning",
+                "Crisis management",
+                "Ongoing monitoring",
+                "Peace of mind"
+              ],
+              "additionalInfo": [
+                { "label": "Risk Scope", "value": "Comprehensive assessment" },
+                { "label": "Delivery Time", "value": "6 weeks" },
+                { "label": "Format", "value": "Risk management plan" },
+                { "label": "Support", "value": "12 months" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "featured": {
+      "badge": "Featured Services",
+      "title": "Our Most Popular Services",
+      "subtitle": "Discover our most requested services that have helped hundreds of companies expand globally.",
+      "items": [
+        {
+          "title": "Premium Commercial Representation",
+          "description": "Comprehensive representation service with dedicated account manager and priority support.",
+          "icon": "Handshake",
+          "categorySlug": "representation",
+          "slug": "premium-representation",
+          "features": [
+            "Dedicated account manager",
+            "Priority buyer connections",
+            "Advanced contract negotiation",
+            "24/7 support access"
+          ],
+          "price": "4,500",
+          "originalPrice": "5,500",
+          "badge": "Most Popular",
+          "featured": true,
+          "cta": "Get Premium Service"
+        },
+        {
+          "title": "Global Market Entry Package",
+          "description": "Complete package for entering new international markets with full support and guidance.",
+          "icon": "Target",
+          "categorySlug": "development",
+          "slug": "market-entry-package",
+          "features": [
+            "Market research and analysis",
+            "Entry strategy development",
+            "Local partner identification",
+            "Launch support and monitoring"
+          ],
+          "price": "8,500",
+          "originalPrice": "10,000",
+          "badge": "Best Value",
+          "featured": true,
+          "cta": "Start Market Entry"
+        },
+        {
+          "title": "Strategic Alliance Development",
+          "description": "Comprehensive service for developing strategic partnerships and business alliances.",
+          "icon": "Users",
+          "categorySlug": "alliances",
+          "slug": "alliance-development",
+          "features": [
+            "Partner identification and screening",
+            "Alliance structure design",
+            "Negotiation and agreement drafting",
+            "Ongoing relationship management"
+          ],
+          "price": "6,500",
+          "badge": "New Service",
+          "featured": true,
+          "cta": "Build Alliances"
+        }
+      ]
+    },
+    "cta": {
+      "badge": "Get Started",
+      "title": "Ready to Expand Your Business Globally?",
+      "subtitle": "Join hundreds of companies that trust Vascruz Group for their commercial intermediation needs. Let's discuss how we can help you connect with new markets and opportunities.",
+      "buttons": {
+        "primary": "Request Free Consultation",
+        "secondary": "Learn More About Us"
+      },
+      "contact": {
+        "phone": {
+          "title": "Call Us",
+          "number": "+591 7700 4600",
+          "description": "Speak with our experts"
+        },
+        "email": {
+          "title": "Email Us",
+          "address": "grupovascruzllc@gmail.com",
+          "description": "Send us your requirements"
+        }
+      }
+    }
+  },
   "about": {
     "hero": {
       "badge": {
@@ -608,6 +1527,49 @@
             "label": "In Transactions"
           }
         ]
+      }
+    }
+  },
+  "product": {
+    "notFound": {
+      "title": "Product not found",
+      "description": "The product you are looking for does not exist. Please try again with a different product.",
+      "button": "Back to Category"
+    },
+    "backButton": "Back to",
+    "pricing": {
+      "title": "Pricing",
+      "duration": "Duration:",
+      "delivery": "Delivery:"
+    },
+    "features": {
+      "title": "What's Included"
+    },
+    "details": {
+      "title": "Product Details"
+    },
+    "benefits": {
+      "title": "Key Benefits"
+    },
+    "additionalInfo": {
+      "title": "Additional Information"
+    },
+    "cta": {
+      "default": "Purchase Now",
+      "paid": "Payment Completed",
+      "paymentConfirmation": "You have already made the payment. Press the button to confirm your payment and receive your product."
+    },
+    "whatsapp": {
+      "phoneNumber": "59177004600",
+      "messageTemplate": {
+        "greeting": "Hello, I'm interested in the following product:",
+        "price": "Price:",
+        "originalPrice": "Original price:",
+        "duration": "Duration:",
+        "delivery": "Delivery:",
+        "features": "Included features:",
+        "benefits": "Benefits:",
+        "closing": "Please, I need information about the payment process and delivery."
       }
     }
   },

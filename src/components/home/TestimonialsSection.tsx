@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import {
   Carousel,
@@ -60,7 +60,7 @@ export default function TestimonialsSection() {
 
     const interval = setInterval(() => {
       api.scrollNext();
-    }, 3000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, [api]);
@@ -68,7 +68,7 @@ export default function TestimonialsSection() {
   // Fallback if no testimonials data
   if (!testimonialsData) {
     return (
-      <section className="py-20 bg-muted/30">
+      <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center">
             <p className="text-muted-foreground">
@@ -81,7 +81,7 @@ export default function TestimonialsSection() {
   }
 
   return (
-    <section className="py-20 bg-muted/30">
+    <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 60 }}
@@ -104,12 +104,12 @@ export default function TestimonialsSection() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <Carousel className="mb-8" opts={{ loop: true }}>
+          <Carousel className="mb-8" opts={{ loop: true }} setApi={setApi}>
             <CarouselContent>
               {items?.map((testimonial: any, index: number) => (
                 <CarouselItem key={index} className="basis-full md:basis-1/4">
                   <Card className="h-full border-border shadow-lg hover:shadow-xl transition-all duration-300 bg-card">
-                    <CardContent className="p-6 h-full flex flex-col">
+                    <CardHeader className="pb-4">
                       {/* Header: Avatar, Name, Date, and Google Logo */}
                       <div className="flex items-start justify-between mb-4">
                         <div className="flex items-center gap-3">
@@ -199,8 +199,9 @@ export default function TestimonialsSection() {
                           }
                         })}
                       </div>
-
-                      <div className="flex-1 flex flex-col justify-between gap-1">
+                    </CardHeader>
+                    <CardContent>
+                      <div className="flex flex-col justify-between gap-1">
                         <p className="text-muted-foreground leading-relaxed text-sm">
                           {`"${testimonial.text}"`}
                         </p>
