@@ -4,35 +4,33 @@ import { motion } from "framer-motion";
 import { ChevronRight } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-
-const processes = [
-  {
-    step: "01",
-    title: "Evaluación Inicial",
-    description:
-      "Análisis de necesidades comerciales y objetivos de expansión del cliente.",
-  },
-  {
-    step: "02",
-    title: "Identificación de Oportunidades",
-    description:
-      "Búsqueda y evaluación de mercados, fabricantes y distribuidores potenciales.",
-  },
-  {
-    step: "03",
-    title: "Negociación y Acuerdos",
-    description:
-      "Facilitación de reuniones y negociación de términos comerciales favorables.",
-  },
-  {
-    step: "04",
-    title: "Seguimiento y Optimización",
-    description:
-      "Monitoreo continuo de relaciones comerciales y mejora de procesos.",
-  },
-];
+import { useMessages } from "next-intl";
 
 export default function ProcessSection() {
+  const messages = useMessages();
+
+  // Extract process data from messages
+  const processData = (messages as any)?.home?.process;
+  const badge = processData?.badge;
+  const title = processData?.title;
+  const subtitle = processData?.subtitle;
+  const items = processData?.items;
+
+  // Fallback if no process data
+  if (!processData) {
+    return (
+      <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="text-center">
+            <p className="text-muted-foreground">
+              Process content not available
+            </p>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
@@ -44,15 +42,13 @@ export default function ProcessSection() {
           className="text-center mb-16"
         >
           <Badge variant="outline" className="mb-4">
-            Nuestro Proceso
+            {badge}
           </Badge>
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            Metodología de Intermediación Comercial
+            {title}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Nuestro proceso sistemático garantiza conexiones comerciales
-            exitosas y relaciones duraderas entre fabricantes, distribuidores y
-            compradores.
+            {subtitle}
           </p>
         </motion.div>
 
@@ -60,7 +56,7 @@ export default function ProcessSection() {
           {/* Desktop Connection Lines */}
           <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-primary via-primary/80 to-primary transform -translate-y-1/2 z-0"></div>
 
-          {processes.map((process, index) => (
+          {items?.map((process: any, index: number) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 60 }}
@@ -91,7 +87,7 @@ export default function ProcessSection() {
               </Card>
 
               {/* Improved Desktop Arrows */}
-              {index < processes.length - 1 && (
+              {index < items.length - 1 && (
                 <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2 z-20">
                   <div className="w-8 h-8 bg-card rounded-full flex items-center justify-center shadow-md border border-border">
                     <ChevronRight className="w-5 h-5 text-primary" />

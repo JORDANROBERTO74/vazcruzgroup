@@ -1,25 +1,33 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Building2, Globe, TrendingUp, Award, Handshake } from "lucide-react";
+import {
+  Briefcase,
+  Globe,
+  Target,
+  Users,
+  Building2,
+  Handshake,
+} from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { useMessages } from "next-intl";
 import React from "react";
 
 // Icon mapping for hero section
 const heroIcons = {
-  Building2,
+  Briefcase,
   Globe,
-  TrendingUp,
-  Award,
+  Target,
+  Users,
+  Building2,
   Handshake,
 };
 
-export default function AboutHero() {
+export default function ServicesHero() {
   const messages = useMessages();
 
   // Extract hero data from messages
-  const heroData = (messages as any)?.about?.hero;
+  const heroData = (messages as any)?.services?.hero;
   const badge = heroData?.badge;
   const title = heroData?.title;
   const subtitle = heroData?.subtitle;
@@ -66,7 +74,9 @@ export default function AboutHero() {
       <section className="-mt-[64px] pt-24 pb-16 relative overflow-hidden bg-gradient-to-br from-background via-background to-muted/20 dark:from-background dark:via-background dark:to-muted/10">
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center">
-            <p className="text-muted-foreground">About content not available</p>
+            <p className="text-muted-foreground">
+              Services content not available
+            </p>
           </div>
         </div>
       </section>

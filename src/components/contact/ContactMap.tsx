@@ -5,8 +5,28 @@ import { MapPin, Globe, Users, Building2 } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import MapWrapper from "@/components/map-wrapper";
+import { useMessages } from "next-intl";
+
+// Icon mapping for map section
+const mapIcons = {
+  MapPin,
+  Globe,
+  Users,
+  Building2,
+};
 
 export default function ContactMap() {
+  const messages = useMessages();
+
+  // Extract map data from messages
+  const mapData = (messages as any)?.contact?.map;
+  const badge = mapData?.badge;
+  const title = mapData?.title;
+  const subtitle = mapData?.subtitle;
+  const location = mapData?.location;
+  const regions = mapData?.regions;
+  const cta = mapData?.cta;
+
   const fadeInUp = {
     initial: { opacity: 0, y: 60 },
     animate: { opacity: 1, y: 0 },
@@ -25,25 +45,38 @@ export default function ContactMap() {
     },
   };
 
+  // Fallback if no map data
+  if (!mapData) {
+    return (
+      <section className="py-20 bg-gradient-to-br from-muted/20 to-background">
+        <div className="container mx-auto px-4">
+          <div className="text-center">
+            <p className="text-muted-foreground">Map content not available</p>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
   const globalPresence = [
     {
-      region: "América del Norte",
-      countries: ["Estados Unidos", "Canadá", "México"],
+      region: regions?.northAmerica?.title,
+      countries: regions?.northAmerica?.countries,
       icon: Building2,
     },
     {
-      region: "América del Sur",
-      countries: ["Brasil", "Argentina", "Chile", "Colombia", "Perú"],
+      region: regions?.southAmerica?.title,
+      countries: regions?.southAmerica?.countries,
       icon: Globe,
     },
     {
-      region: "Europa",
-      countries: ["España", "Alemania", "Francia", "Italia", "Países Bajos"],
+      region: regions?.europe?.title,
+      countries: regions?.europe?.countries,
       icon: Users,
     },
     {
-      region: "Asia",
-      countries: ["China", "Japón", "Corea del Sur", "India"],
+      region: regions?.asia?.title,
+      countries: regions?.asia?.countries,
       icon: MapPin,
     },
   ];
@@ -58,15 +91,13 @@ export default function ContactMap() {
           className="text-center mb-16"
         >
           <Badge variant="outline" className="mb-4">
-            Presencia Global
+            {badge}
           </Badge>
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            Conectando Mercados Internacionales
+            {title}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Nuestra red global nos permite facilitar transacciones comerciales
-            en múltiples mercados, conectando fabricantes, distribuidores y
-            compradores en todo el mundo.
+            {subtitle}
           </p>
         </motion.div>
 
@@ -81,10 +112,8 @@ export default function ContactMap() {
             <CardHeader className="bg-gradient-to-r from-primary/10 to-primary/5">
               <CardTitle className="flex items-center gap-2">
                 <MapPin className="w-5 h-5 text-primary" />
-                <span className="md:hidden">Nuestra Ubicación</span>
-                <span className="hidden md:inline">
-                  Nuestra Ubicación Principal
-                </span>
+                <span className="md:hidden">{location?.title}</span>
+                <span className="hidden md:inline">{location?.title}</span>
               </CardTitle>
             </CardHeader>
             <CardContent className="p-0">
@@ -108,11 +137,10 @@ export default function ContactMap() {
           <Card className="border-border shadow-lg bg-gradient-to-r from-primary/10 to-primary/5">
             <CardContent className="p-8">
               <h3 className="text-2xl font-bold text-foreground mb-4">
-                ¿Listo para expandir su negocio?
+                {cta?.title}
               </h3>
               <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
-                Nuestro equipo de expertos está listo para ayudarle a conectar
-                con nuevos mercados y oportunidades comerciales globales.
+                {cta?.description}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <div className="text-center">
@@ -120,7 +148,7 @@ export default function ContactMap() {
                     24/7
                   </div>
                   <div className="text-sm text-muted-foreground">
-                    Soporte Disponible
+                    {cta?.support}
                   </div>
                 </div>
                 <div className="text-center">
@@ -128,7 +156,7 @@ export default function ContactMap() {
                     48h
                   </div>
                   <div className="text-sm text-muted-foreground">
-                    Respuesta Garantizada
+                    {cta?.response}
                   </div>
                 </div>
                 <div className="text-center">
@@ -136,7 +164,7 @@ export default function ContactMap() {
                     100%
                   </div>
                   <div className="text-sm text-muted-foreground">
-                    Confidencialidad
+                    {cta?.confidentiality}
                   </div>
                 </div>
               </div>

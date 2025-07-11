@@ -19,9 +19,10 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  title: "Roberto Jordán | Frontend Developer & Designer",
+  title:
+    "VasCruz Group LLC | Commercial Intermediation & Global Business Solutions",
   description:
-    "Portfolio of Roberto Jordán, a frontend developer and designer.",
+    "Specialists in wholesale commercial intermediation and representation, connecting manufacturers, distributors and buyers in national and international markets.",
   icons: {
     icon: "/favicon.ico",
   },

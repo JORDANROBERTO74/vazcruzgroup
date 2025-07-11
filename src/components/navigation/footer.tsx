@@ -5,7 +5,6 @@ import {
   Phone,
   Mail,
   MapPin,
-  Globe,
   ArrowRight,
   Facebook,
   Twitter,
@@ -15,59 +14,28 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { useMessages } from "next-intl";
 
-const offices = [
-  {
-    city: "Aventura, Florida",
-    address:
-      "3530 Mystic Pointe Drive Apt 2403, Aventura, Florida, 33180, EE.UU.",
-    phone: "+591 77004600",
-    email: "grupovascruzllc@gmail.com",
-  },
-];
-
-const quickLinks = [
-  { name: "Inicio", href: "/" },
-  { name: "Servicios", href: "/servicios" },
-  { name: "Nosotros", href: "/nosotros" },
-  { name: "Contacto", href: "/contacto" },
-];
-
-const specialties = [
-  { name: "Importación", href: "/servicios/importacion" },
-  { name: "Exportación", href: "/servicios/exportacion" },
-  { name: "Consultoría", href: "/servicios/consultoria" },
-];
-
-const legalLinks = [
-  { name: "Aviso de Privacidad", href: "/legal/privacidad" },
-  { name: "Términos y Condiciones", href: "/legal/terminos" },
-  { name: "Política de Cookies", href: "/legal/cookies" },
-  { name: "Accesibilidad", href: "/legal/accesibilidad" },
-];
-
-const socialLinks = [
-  {
-    name: "Facebook",
-    href: "https://facebook.com/vascruzgroup",
-    icon: Facebook,
-  },
-  { name: "Twitter", href: "https://twitter.com/vascruzgroup", icon: Twitter },
-  {
-    name: "LinkedIn",
-    href: "https://linkedin.com/company/vascruzgroup",
-    icon: Linkedin,
-  },
-  {
-    name: "Instagram",
-    href: "https://instagram.com/vascruzgroup",
-    icon: Instagram,
-  },
-];
+// Icon mapping for social media
+const socialIcons = {
+  Facebook,
+  Twitter,
+  LinkedIn: Linkedin,
+  Instagram,
+};
 
 export default function Footer() {
   const [email, setEmail] = useState("");
   const [isSubscribed, setIsSubscribed] = useState(false);
+  const messages = useMessages();
+
+  // Extract footer data from messages
+  const footerData = (messages as any)?.footer;
+  const company = footerData?.company;
+  const newsletter = footerData?.newsletter;
+  const sections = footerData?.sections;
+  const social = footerData?.social;
+  const legal = footerData?.legal;
 
   const handleNewsletterSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -78,6 +46,21 @@ export default function Footer() {
       setTimeout(() => setIsSubscribed(false), 3000);
     }
   };
+
+  // Fallback if no footer data
+  if (!footerData) {
+    return (
+      <footer className="bg-foreground text-white w-100vw" role="contentinfo">
+        <div className="py-16 lg:py-20">
+          <div className="container mx-auto px-4">
+            <div className="text-center">
+              <p className="text-gray-300">Footer content not available</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    );
+  }
 
   return (
     <footer className="bg-foreground text-white w-100vw" role="contentinfo">
@@ -94,55 +77,63 @@ export default function Footer() {
               className="lg:col-span-2"
             >
               <div className="flex items-center gap-2 mb-6">
-                <Globe className="w-8 h-8 text-primary" aria-hidden="true" />
-                <span className="text-xl font-bold">VasCruz Group LLC</span>
+                <img
+                  src="/img/logo.png"
+                  alt="VasCruz Group LLC"
+                  width={75}
+                  height={60}
+                  className="object-contain"
+                />
+                <span className="text-xl font-bold">{company?.name}</span>
               </div>
               <p className="text-gray-300 mb-6 leading-relaxed">
-                Especialistas en intermediación y representación comercial
-                mayorista, uniendo fabricantes, distribuidores y compradores en
-                mercados nacionales e internacionales.
+                {company?.description}
               </p>
 
               {/* Newsletter */}
               <div className="mb-6">
                 <h4 className="text-sm font-semibold mb-3">
-                  Suscríbete a nuestro newsletter
+                  {newsletter?.title}
                 </h4>
                 <form onSubmit={handleNewsletterSubmit} className="flex gap-2">
                   <input
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder="Tu correo electrónico"
+                    placeholder={newsletter?.placeholder}
                     className="flex-1 px-3 py-2 bg-gray-800 border border-gray-700 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                     required
-                    aria-label="Correo electrónico para newsletter"
+                    aria-label={newsletter?.placeholder}
                   />
-                  <Button type="submit" aria-label="Suscribirse al newsletter">
+                  <Button type="submit" aria-label={newsletter?.button}>
                     <Send className="w-4 h-4" />
                   </Button>
                 </form>
                 {isSubscribed && (
                   <p className="text-green-400 text-sm mt-2">
-                    ¡Gracias por suscribirte!
+                    {newsletter?.success}
                   </p>
                 )}
               </div>
 
               {/* Social Links */}
               <div className="flex gap-4">
-                {socialLinks.map((social, index) => (
-                  <a
-                    key={index}
-                    href={social.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-10 h-10 bg-gray-800 hover:bg-blue-600 rounded-full flex items-center justify-center transition-colors"
-                    aria-label={`Síguenos en ${social.name}`}
-                  >
-                    <social.icon className="w-5 h-5" />
-                  </a>
-                ))}
+                {social?.links?.map((socialLink: any, index: number) => {
+                  const IconComponent =
+                    socialIcons[socialLink.icon as keyof typeof socialIcons];
+                  return (
+                    <a
+                      key={index}
+                      href={socialLink.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-10 h-10 bg-gray-800 hover:bg-blue-600 rounded-full flex items-center justify-center transition-colors"
+                      aria-label={`Síguenos en ${socialLink.name}`}
+                    >
+                      {IconComponent && <IconComponent className="w-5 h-5" />}
+                    </a>
+                  );
+                })}
               </div>
             </motion.div>
 
@@ -154,26 +145,28 @@ export default function Footer() {
               viewport={{ once: true }}
             >
               <h3 className="text-lg font-semibold mb-6" id="quick-links">
-                Enlaces Rápidos
+                {sections?.quickLinks?.title}
               </h3>
               <ul
                 className="grid grid-cols-2 md:grid-cols-1 gap-3"
                 aria-labelledby="quick-links"
               >
-                {quickLinks.map((link, index) => (
-                  <li key={index}>
-                    <a
-                      href={link.href}
-                      className="text-gray-300 hover:text-white transition-colors flex items-center gap-2 group"
-                    >
-                      <ArrowRight
-                        className="w-3 h-3 group-hover:translate-x-1 transition-transform"
-                        aria-hidden="true"
-                      />
-                      {link.name}
-                    </a>
-                  </li>
-                ))}
+                {sections?.quickLinks?.items?.map(
+                  (link: any, index: number) => (
+                    <li key={index}>
+                      <a
+                        href={link.href}
+                        className="text-gray-300 hover:text-white transition-colors flex items-center gap-2 group"
+                      >
+                        <ArrowRight
+                          className="w-3 h-3 group-hover:translate-x-1 transition-transform"
+                          aria-hidden="true"
+                        />
+                        {link.name}
+                      </a>
+                    </li>
+                  )
+                )}
               </ul>
             </motion.div>
 
@@ -185,26 +178,28 @@ export default function Footer() {
               viewport={{ once: true }}
             >
               <h3 className="text-lg font-semibold mb-6" id="specialties">
-                Especialidades
+                {sections?.specialties?.title}
               </h3>
               <ul
                 className="grid grid-cols-2 md:grid-cols-1 gap-3"
                 aria-labelledby="specialties"
               >
-                {specialties.map((specialty, index) => (
-                  <li key={index}>
-                    <a
-                      href={specialty.href}
-                      className="text-gray-300 hover:text-white transition-colors flex items-center gap-2 group"
-                    >
-                      <ArrowRight
-                        className="w-3 h-3 group-hover:translate-x-1 transition-transform"
-                        aria-hidden="true"
-                      />
-                      {specialty.name}
-                    </a>
-                  </li>
-                ))}
+                {sections?.specialties?.items?.map(
+                  (specialty: any, index: number) => (
+                    <li key={index}>
+                      <a
+                        href={specialty.href}
+                        className="text-gray-300 hover:text-white transition-colors flex items-center gap-2 group"
+                      >
+                        <ArrowRight
+                          className="w-3 h-3 group-hover:translate-x-1 transition-transform"
+                          aria-hidden="true"
+                        />
+                        {specialty.name}
+                      </a>
+                    </li>
+                  )
+                )}
               </ul>
             </motion.div>
 
@@ -216,10 +211,10 @@ export default function Footer() {
               viewport={{ once: true }}
             >
               <h3 className="text-lg font-semibold mb-6" id="offices">
-                Oficinas
+                {sections?.offices?.title}
               </h3>
               <div className="space-y-4" aria-labelledby="offices">
-                {offices.map((office, index) => (
+                {sections?.offices?.items?.map((office: any, index: number) => (
                   <div key={index} className="border-l-2 border-blue-600 pl-4">
                     <h4 className="font-semibold text-blue-400 mb-1">
                       {office.city}
@@ -270,8 +265,7 @@ export default function Footer() {
               viewport={{ once: true }}
               className="text-gray-400 text-sm text-center md:text-left"
             >
-              © {new Date().getFullYear()} Vascruz Group. Todos los derechos
-              reservados.
+              {legal?.copyright}
             </motion.div>
 
             <motion.div
@@ -281,7 +275,7 @@ export default function Footer() {
               viewport={{ once: true }}
               className="flex flex-wrap justify-center md:justify-end gap-4 lg:gap-6 text-sm"
             >
-              {legalLinks.map((link, index) => (
+              {legal?.links?.map((link: any, index: number) => (
                 <a
                   key={index}
                   href={link.href}

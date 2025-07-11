@@ -2,39 +2,17 @@
 
 import { motion } from "framer-motion";
 import { Globe, Handshake, Target, Award, Users, Shield } from "lucide-react";
+import { useMessages } from "next-intl";
 
-const benefits = [
-  {
-    icon: Globe,
-    title: "Alcance Global",
-    description: "Conectamos negocios en mercados nacionales e internacionales",
-  },
-  {
-    icon: Handshake,
-    title: "Representación Experta",
-    description: "Intermediación profesional entre fabricantes y compradores",
-  },
-  {
-    icon: Target,
-    title: "Desarrollo Estratégico",
-    description: "Estrategias de crecimiento y expansión empresarial",
-  },
-  {
-    icon: Users,
-    title: "Alianzas Clave",
-    description: "Creación de redes comerciales estratégicas",
-  },
-  {
-    icon: Shield,
-    title: "Asesoría Integral",
-    description: "Soporte completo en negociación y contratos",
-  },
-  {
-    icon: Award,
-    title: "Innovación Constante",
-    description: "Soluciones adaptadas a las necesidades del mercado",
-  },
-];
+// Icon mapping for benefits section
+const benefitIcons = {
+  Globe,
+  Handshake,
+  Target,
+  Award,
+  Users,
+  Shield,
+};
 
 const fadeInUp = {
   initial: { opacity: 0, y: 60 },
@@ -43,6 +21,29 @@ const fadeInUp = {
 };
 
 export default function BenefitsSection() {
+  const messages = useMessages();
+
+  // Extract benefits data from messages
+  const benefitsData = (messages as any)?.home?.benefits;
+  const title = benefitsData?.title;
+  const subtitle = benefitsData?.subtitle;
+  const items = benefitsData?.items;
+
+  // Fallback if no benefits data
+  if (!benefitsData) {
+    return (
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="text-center">
+            <p className="text-muted-foreground">
+              Benefits content not available
+            </p>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section className="py-16 bg-background">
       <div className="container mx-auto px-4">
@@ -54,12 +55,10 @@ export default function BenefitsSection() {
           className="text-center mb-12"
         >
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            ¿Por qué elegir Vascruz Group LLC?
+            {title}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Nuestra experiencia en desarrollo de negocios, análisis de mercado y
-            negociación de contratos nos permite ofrecer soluciones integrales a
-            cada uno de nuestros clientes.
+            {subtitle}
           </p>
         </motion.div>
 
@@ -70,27 +69,33 @@ export default function BenefitsSection() {
           viewport={{ once: true }}
           className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8"
         >
-          {benefits.map((benefit, index) => (
-            <motion.div
-              key={index}
-              variants={fadeInUp}
-              initial="initial"
-              whileInView="animate"
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              className="text-center"
-            >
-              <div className="w-16 h-16 bg-gradient-to-r from-primary to-primary/90 rounded-full flex items-center justify-center mx-auto mb-4">
-                <benefit.icon className="w-8 h-8 text-primary-foreground" />
-              </div>
-              <h3 className="text-lg font-bold text-foreground mb-2">
-                {benefit.title}
-              </h3>
-              <p className="text-muted-foreground text-sm">
-                {benefit.description}
-              </p>
-            </motion.div>
-          ))}
+          {items?.map((benefit: any, index: number) => {
+            const IconComponent =
+              benefitIcons[benefit.icon as keyof typeof benefitIcons];
+            return (
+              <motion.div
+                key={index}
+                variants={fadeInUp}
+                initial="initial"
+                whileInView="animate"
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="text-center"
+              >
+                <div className="w-16 h-16 bg-gradient-to-r from-primary to-primary/90 rounded-full flex items-center justify-center mx-auto mb-4">
+                  {IconComponent && (
+                    <IconComponent className="w-8 h-8 text-primary-foreground" />
+                  )}
+                </div>
+                <h3 className="text-lg font-bold text-foreground mb-2">
+                  {benefit.title}
+                </h3>
+                <p className="text-muted-foreground text-sm">
+                  {benefit.description}
+                </p>
+              </motion.div>
+            );
+          })}
         </motion.div>
       </div>
     </section>
