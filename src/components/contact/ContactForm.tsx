@@ -1,15 +1,14 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
-import { Send, CheckCircle, AlertCircle } from "lucide-react";
+import { Send, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import {
@@ -19,12 +18,21 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form";
 import { useContactForm } from "@/hooks/useContactForm";
 import { useToast } from "@/hooks/use-toast";
 import { useMessages } from "next-intl";
+import moment from "moment";
 
 const contactSchema = z.object({
-  name: z
+  full_name: z
     .string()
     .min(2, "El nombre debe tener al menos 2 caracteres")
     .regex(/^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/, "El nombre solo puede contener letras"),
@@ -34,22 +42,30 @@ const contactSchema = z.object({
     .string()
     .min(10, "Ingrese un número de teléfono válido")
     .regex(/^[\+]?[1-9][\d]{0,15}$/, "Formato de teléfono inválido"),
-  subject: z.string().min(5, "El asunto debe tener al menos 5 caracteres"),
-  message: z.string().min(20, "El mensaje debe tener al menos 20 caracteres"),
-  businessType: z.enum(["manufacturer", "distributor", "buyer", "other"], {
+  business_type: z.enum(["manufacturer", "distributor", "buyer", "other"], {
     required_error: "Debe seleccionar un tipo de negocio",
   }),
+  subject: z.string().min(5, "El asunto debe tener al menos 5 caracteres"),
+  message: z.string().min(20, "El mensaje debe tener al menos 20 caracteres"),
+  website_url: z.string().optional(),
 });
 
 type ContactFormData = z.infer<typeof contactSchema>;
 
 export default function ContactForm() {
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [origin, setOrigin] = useState("");
   const { toast } = useToast();
-  const contactMutation = useContactForm();
+  const { mutateAsync, isLoading } = useContactForm();
   const messages = useMessages();
 
+  useEffect(() => {
+    setOrigin(window.location.origin);
+  }, []);
+
   // Extract form data from messages
+  const companyName = (messages as any)?.footer?.company?.name;
+
   const formData = (messages as any)?.contact?.form;
   const badge = formData?.badge;
   const title = formData?.title;
@@ -60,45 +76,62 @@ export default function ContactForm() {
   const submit = formData?.submit;
   const sending = formData?.sending;
   const success = formData?.success;
+  const errorMessages = formData?.error;
 
-  const {
-    register,
-    handleSubmit,
-    formState: { errors, isSubmitting },
-    reset,
-    setValue,
-    watch,
-  } = useForm<ContactFormData>({
+  const form = useForm<ContactFormData>({
     resolver: zodResolver(contactSchema),
     mode: "onBlur", // Validación en tiempo real al perder el foco
+    defaultValues: {
+      full_name: "",
+      email: "",
+      company: "",
+      phone: "",
+      business_type: undefined,
+      message: "",
+      subject: "",
+      website_url: "",
+    },
   });
 
   const onSubmit = async (data: ContactFormData) => {
     try {
-      const currentTime = new Date().toLocaleString();
-      await contactMutation.mutateAsync({
+      const res = await mutateAsync({
         ...data,
-        time: currentTime,
+        name: companyName || "",
+        phone: parseInt(data.phone, 10),
+        website_url: data.website_url || "",
+        domain: origin || window.location.origin,
+        date: moment(new Date()).format("YYYY-MM-DD HH:mm:ss"),
       });
 
-      setIsSubmitted(true);
-      reset();
-      toast({
-        title: "Mensaje enviado exitosamente",
-        description: "Nos pondremos en contacto con usted pronto.",
-        variant: "default",
-      });
+      if (res.status === 200) {
+        setIsSubmitted(true);
+        //form.reset();
+        toast({
+          title: success?.title || "Message Sent!",
+          description:
+            success?.description ||
+            "Thank you for contacting us. Our team will contact you within the next 24 hours to discuss your commercial needs.",
+          variant: "default",
+        });
+      } else {
+        toast({
+          title: errorMessages?.title || "Error Sending Message",
+          description:
+            errorMessages?.description ||
+            "There was an error sending your message. Please try again or contact us directly.",
+          variant: "destructive",
+        });
+      }
     } catch (error) {
-      console.error("Error sending contact form:", error);
-
       const errorMessage =
         error instanceof Error
           ? error.message
           : "Error desconocido al enviar el mensaje";
 
       toast({
-        title: "Error al enviar mensaje",
-        description: errorMessage,
+        title: errorMessages?.title || "Error Sending Message",
+        description: errorMessage || errorMessages?.description,
         variant: "destructive",
       });
     }
@@ -174,210 +207,207 @@ export default function ContactForm() {
           </CardTitle>
         </CardHeader>
         <CardContent className="space-y-6">
-          <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
-            {/* Name and Email Row */}
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="space-y-2">
-                <Label htmlFor="name" className="text-sm font-medium">
-                  {fields?.name}
-                </Label>
-                <Input
-                  id="name"
-                  {...register("name")}
-                  placeholder={placeholders?.name}
-                  className={`h-11 ${
-                    errors.name
-                      ? "border-destructive focus:border-destructive"
-                      : ""
-                  }`}
+          <Form {...form}>
+            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+              {/* Name and Email Row */}
+              <div className="grid md:grid-cols-2 gap-6">
+                <FormField
+                  control={form.control}
+                  name="full_name"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>{fields?.name}</FormLabel>
+                      <FormControl>
+                        <Input
+                          placeholder={placeholders?.name}
+                          className="h-11"
+                          {...field}
+                        />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
                 />
-                {errors.name && (
-                  <p className="text-sm text-destructive flex items-start gap-1">
-                    <AlertCircle className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                    <span>{errors.name.message}</span>
-                  </p>
-                )}
+
+                <FormField
+                  control={form.control}
+                  name="email"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>{fields?.email}</FormLabel>
+                      <FormControl>
+                        <Input
+                          type="email"
+                          placeholder={placeholders?.email}
+                          className="h-11"
+                          {...field}
+                        />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
               </div>
 
-              <div className="space-y-2">
-                <Label htmlFor="email" className="text-sm font-medium">
-                  {fields?.email}
-                </Label>
-                <Input
-                  id="email"
-                  type="email"
-                  {...register("email")}
-                  placeholder={placeholders?.email}
-                  className={`h-11 ${
-                    errors.email
-                      ? "border-destructive focus:border-destructive"
-                      : ""
-                  }`}
+              {/* Company and Phone Row */}
+              <div className="grid md:grid-cols-2 gap-6">
+                <FormField
+                  control={form.control}
+                  name="company"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>{fields?.company}</FormLabel>
+                      <FormControl>
+                        <Input
+                          placeholder={placeholders?.company}
+                          className="h-11"
+                          {...field}
+                        />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
                 />
-                {errors.email && (
-                  <p className="text-sm text-destructive flex items-start gap-1">
-                    <AlertCircle className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                    <span>{errors.email.message}</span>
-                  </p>
-                )}
-              </div>
-            </div>
 
-            {/* Company and Phone Row */}
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="space-y-2">
-                <Label htmlFor="company" className="text-sm font-medium">
-                  {fields?.company}
-                </Label>
-                <Input
-                  id="company"
-                  {...register("company")}
-                  placeholder={placeholders?.company}
-                  className={`h-11 ${
-                    errors.company
-                      ? "border-destructive focus:border-destructive"
-                      : ""
-                  }`}
+                <FormField
+                  control={form.control}
+                  name="phone"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>{fields?.phone}</FormLabel>
+                      <FormControl>
+                        <Input
+                          placeholder={placeholders?.phone}
+                          className="h-11"
+                          {...field}
+                        />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
                 />
-                {errors.company && (
-                  <p className="text-sm text-destructive flex items-start gap-1">
-                    <AlertCircle className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                    <span>{errors.company.message}</span>
-                  </p>
-                )}
               </div>
 
-              <div className="space-y-2">
-                <Label htmlFor="phone" className="text-sm font-medium">
-                  {fields?.phone}
-                </Label>
-                <Input
-                  id="phone"
-                  {...register("phone")}
-                  placeholder={placeholders?.phone}
-                  className={`h-11 ${
-                    errors.phone
-                      ? "border-destructive focus:border-destructive"
-                      : ""
-                  }`}
+              {/* Business Type and Website URL Row */}
+              <div className="grid md:grid-cols-2 gap-6">
+                <FormField
+                  control={form.control}
+                  name="business_type"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>{fields?.businessType}</FormLabel>
+                      <Select
+                        onValueChange={field.onChange}
+                        defaultValue={field.value}
+                      >
+                        <FormControl>
+                          <SelectTrigger className="h-11">
+                            <SelectValue placeholder="Seleccione su tipo de negocio" />
+                          </SelectTrigger>
+                        </FormControl>
+                        <SelectContent>
+                          <SelectItem value="manufacturer">
+                            {businessTypes?.manufacturer}
+                          </SelectItem>
+                          <SelectItem value="distributor">
+                            {businessTypes?.distributor}
+                          </SelectItem>
+                          <SelectItem value="buyer">
+                            {businessTypes?.buyer}
+                          </SelectItem>
+                          <SelectItem value="other">
+                            {businessTypes?.other}
+                          </SelectItem>
+                        </SelectContent>
+                      </Select>
+                      <FormMessage />
+                    </FormItem>
+                  )}
                 />
-                {errors.phone && (
-                  <p className="text-sm text-destructive flex items-start gap-1">
-                    <AlertCircle className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                    <span>{errors.phone.message}</span>
-                  </p>
-                )}
-              </div>
-            </div>
 
-            {/* Business Type */}
-            <div className="space-y-2">
-              <Label htmlFor="businessType" className="text-sm font-medium">
-                {fields?.businessType}
-              </Label>
-              <Select
-                value={watch("businessType") || undefined}
-                onValueChange={(value) =>
-                  setValue(
-                    "businessType",
-                    value as "manufacturer" | "distributor" | "buyer" | "other"
-                  )
-                }
+                <FormField
+                  control={form.control}
+                  name="website_url"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>
+                        {fields?.website_url || "Sitio Web"}
+                      </FormLabel>
+                      <FormControl>
+                        <Input
+                          type="url"
+                          placeholder={
+                            placeholders?.website_url || "https://ejemplo.com"
+                          }
+                          className="h-11"
+                          {...field}
+                        />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+              </div>
+
+              {/* Subject */}
+              <FormField
+                control={form.control}
+                name="subject"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>{fields?.subject}</FormLabel>
+                    <FormControl>
+                      <Input
+                        placeholder={placeholders?.subject}
+                        className="h-11"
+                        {...field}
+                      />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+
+              {/* Message */}
+              <FormField
+                control={form.control}
+                name="message"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>{fields?.message}</FormLabel>
+                    <FormControl>
+                      <Textarea
+                        placeholder={placeholders?.message}
+                        rows={6}
+                        className="resize-none"
+                        {...field}
+                      />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+
+              {/* Submit Button */}
+              <Button
+                type="submit"
+                disabled={form.formState.isSubmitting || isLoading}
+                className="w-full h-12 bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary/80 text-primary-foreground font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] disabled:transform-none disabled:opacity-70"
               >
-                <SelectTrigger
-                  className={`h-11 ${
-                    errors.businessType
-                      ? "border-destructive focus:border-destructive"
-                      : ""
-                  }`}
-                >
-                  <SelectValue placeholder="Seleccione su tipo de negocio" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="manufacturer">
-                    {businessTypes?.manufacturer}
-                  </SelectItem>
-                  <SelectItem value="distributor">
-                    {businessTypes?.distributor}
-                  </SelectItem>
-                  <SelectItem value="buyer">{businessTypes?.buyer}</SelectItem>
-                  <SelectItem value="other">{businessTypes?.other}</SelectItem>
-                </SelectContent>
-              </Select>
-              {errors.businessType && (
-                <p className="text-sm text-destructive flex items-start gap-1">
-                  <AlertCircle className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                  <span>{errors.businessType.message}</span>
-                </p>
-              )}
-            </div>
-
-            {/* Subject */}
-            <div className="space-y-2">
-              <Label htmlFor="subject" className="text-sm font-medium">
-                {fields?.subject}
-              </Label>
-              <Input
-                id="subject"
-                {...register("subject")}
-                placeholder={placeholders?.subject}
-                className={`h-11 ${
-                  errors.subject
-                    ? "border-destructive focus:border-destructive"
-                    : ""
-                }`}
-              />
-              {errors.subject && (
-                <p className="text-sm text-destructive flex items-start gap-1">
-                  <AlertCircle className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                  <span>{errors.subject.message}</span>
-                </p>
-              )}
-            </div>
-
-            {/* Message */}
-            <div className="space-y-2">
-              <Label htmlFor="message" className="text-sm font-medium">
-                {fields?.message}
-              </Label>
-              <Textarea
-                id="message"
-                {...register("message")}
-                placeholder={placeholders?.message}
-                rows={6}
-                className={`resize-none ${
-                  errors.message
-                    ? "border-destructive focus:border-destructive"
-                    : ""
-                }`}
-              />
-              {errors.message && (
-                <p className="text-sm text-destructive flex items-start gap-1">
-                  <AlertCircle className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                  <span>{errors.message.message}</span>
-                </p>
-              )}
-            </div>
-
-            {/* Submit Button */}
-            <Button
-              type="submit"
-              disabled={isSubmitting || contactMutation.isLoading}
-              className="w-full h-12 bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary/80 text-primary-foreground font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] disabled:transform-none disabled:opacity-70"
-            >
-              {isSubmitting || contactMutation.isLoading ? (
-                <div className="flex items-center gap-2">
-                  <div className="w-5 h-5 border-2 border-primary-foreground border-t-transparent rounded-full animate-spin"></div>
-                  {sending}
-                </div>
-              ) : (
-                <div className="flex items-center gap-2">
-                  <Send className="w-5 h-5" />
-                  {submit}
-                </div>
-              )}
-            </Button>
-          </form>
+                {form.formState.isSubmitting || isLoading ? (
+                  <div className="flex items-center gap-2">
+                    <div className="w-5 h-5 border-2 border-primary-foreground border-t-transparent rounded-full animate-spin"></div>
+                    {sending}
+                  </div>
+                ) : (
+                  <div className="flex items-center gap-2">
+                    <Send className="w-5 h-5" />
+                    {submit}
+                  </div>
+                )}
+              </Button>
+            </form>
+          </Form>
         </CardContent>
       </Card>
     </motion.div>

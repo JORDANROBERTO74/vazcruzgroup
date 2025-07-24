@@ -15,6 +15,8 @@ import {
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { useMessages } from "next-intl";
+import Image from "next/image";
+import { useParams, useRouter } from "next/navigation";
 
 // Icon mapping for social media
 const socialIcons = {
@@ -25,6 +27,8 @@ const socialIcons = {
 };
 
 export default function Footer() {
+  const router = useRouter();
+  const { locale } = useParams();
   const [email, setEmail] = useState("");
   const [isSubscribed, setIsSubscribed] = useState(false);
   const messages = useMessages();
@@ -36,6 +40,9 @@ export default function Footer() {
   const sections = footerData?.sections;
   const social = footerData?.social;
   const legal = footerData?.legal;
+
+  const services = (messages as any)?.services;
+  const specialties = services?.categories?.items;
 
   const handleNewsletterSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -77,12 +84,13 @@ export default function Footer() {
               className="lg:col-span-2"
             >
               <div className="flex items-center gap-2 mb-6">
-                <img
+                <Image
                   src="/img/logo.png"
                   alt="VasCruz Group LLC"
                   width={75}
                   height={60}
-                  className="object-contain"
+                  className="object-contain cursor-pointer"
+                  onClick={() => router.push(`/${locale}/`)}
                 />
                 <span className="text-xl font-bold">{company?.name}</span>
               </div>
@@ -155,7 +163,7 @@ export default function Footer() {
                   (link: any, index: number) => (
                     <li key={index}>
                       <a
-                        href={link.href}
+                        href={`/${locale}/${link.href}`}
                         className="text-gray-300 hover:text-white transition-colors flex items-center gap-2 group"
                       >
                         <ArrowRight
@@ -178,28 +186,26 @@ export default function Footer() {
               viewport={{ once: true }}
             >
               <h3 className="text-lg font-semibold mb-6" id="specialties">
-                {sections?.specialties?.title}
+                {services?.categories?.title}
               </h3>
               <ul
                 className="grid grid-cols-2 md:grid-cols-1 gap-3"
                 aria-labelledby="specialties"
               >
-                {sections?.specialties?.items?.map(
-                  (specialty: any, index: number) => (
-                    <li key={index}>
-                      <a
-                        href={specialty.href}
-                        className="text-gray-300 hover:text-white transition-colors flex items-center gap-2 group"
-                      >
-                        <ArrowRight
-                          className="w-3 h-3 group-hover:translate-x-1 transition-transform"
-                          aria-hidden="true"
-                        />
-                        {specialty.name}
-                      </a>
-                    </li>
-                  )
-                )}
+                {specialties?.map((specialty: any, index: number) => (
+                  <li key={index}>
+                    <a
+                      href={`/${locale}/services/${specialty.slug}`}
+                      className="text-gray-300 hover:text-white transition-colors flex items-center gap-2 group"
+                    >
+                      <ArrowRight
+                        className="w-3 h-3 group-hover:translate-x-1 transition-transform"
+                        aria-hidden="true"
+                      />
+                      {specialty.title}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </motion.div>
 
@@ -278,7 +284,7 @@ export default function Footer() {
               {legal?.links?.map((link: any, index: number) => (
                 <a
                   key={index}
-                  href={link.href}
+                  href={`/${locale}/${link.href}`}
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   {link.name}

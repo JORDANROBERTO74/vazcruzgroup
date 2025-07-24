@@ -63,14 +63,6 @@
           { "name": "Contacto", "href": "/contact" }
         ]
       },
-      "specialties": {
-        "title": "Especialidades",
-        "items": [
-          { "name": "Importación", "href": "/services/import" },
-          { "name": "Exportación", "href": "/services/export" },
-          { "name": "Consultoría", "href": "/services/consulting" }
-        ]
-      },
       "offices": {
         "title": "Oficinas",
         "items": [
@@ -116,6 +108,285 @@
         { "name": "Política de Cookies", "href": "/legal/cookies" },
         { "name": "Accesibilidad", "href": "/legal/accessibility" }
       ]
+    },
+    "legalPages": {
+      "privacy": {
+        "title": "Política de Privacidad",
+        "lastUpdated": "1 de agosto de 2024",
+        "introduction": "VasCruz Group LLC está comprometida a proteger tu privacidad y garantizar la seguridad de tu información personal. Esta política de privacidad explica cómo recopilamos, usamos y protegemos tus datos cuando utilizas nuestros servicios de intermediación comercial.",
+        "sections": {
+          "information": {
+            "title": "Información que Recopilamos",
+            "content": "Recopilamos varios tipos de información para proporcionar nuestros servicios de intermediación comercial de manera efectiva y mejorar tu experiencia.",
+            "items": [
+              "Información personal como nombre, dirección de correo electrónico, número de teléfono y detalles de la empresa",
+              "Requisitos comerciales y preferencias para la correspondencia de servicios",
+              "Datos de uso del sitio web y patrones de interacción",
+              "Registros de comunicación incluyendo consultas y correspondencia",
+              "Información técnica como dirección IP y tipo de navegador"
+            ]
+          },
+          "usage": {
+            "title": "Cómo Usamos tu Información",
+            "content": "Tu información nos ayuda a proporcionar mejores servicios y apoyar tus necesidades comerciales.",
+            "items": [
+              "Para proporcionar servicios de intermediación comercial y conectarte con oportunidades de negocio",
+              "Para comunicarnos contigo sobre servicios, actualizaciones y oportunidades comerciales",
+              "Para mejorar nuestros servicios, funcionalidad del sitio web y experiencia del usuario",
+              "Para cumplir con obligaciones legales y requisitos regulatorios",
+              "Para proteger nuestros derechos y prevenir fraude o abuso"
+            ]
+          },
+          "sharing": {
+            "title": "Cómo Compartimos tu Información",
+            "content": "No vendemos tu información personal. Podemos compartir datos solo en circunstancias específicas.",
+            "items": [
+              "Con tu consentimiento, podemos compartir información con socios comerciales de confianza para la prestación de servicios",
+              "Con proveedores de servicios que ayudan en nuestras operaciones bajo acuerdos estrictos de confidencialidad",
+              "Cuando lo requiera la ley o para proteger nuestros derechos y seguridad",
+              "En conexión con transferencias comerciales o fusiones, con salvaguardas apropiadas",
+              "Con autoridades regulatorias cuando sea legalmente requerido"
+            ]
+          },
+          "security": {
+            "title": "Seguridad de Datos",
+            "content": "Implementamos medidas de seguridad robustas para proteger tu información de acceso no autorizado, alteración, divulgación o destrucción.",
+            "items": [
+              "Encriptación de todos los datos usando protocolos de seguridad estándar de la industria",
+              "Controles de acceso estrictos y procedimientos de autenticación",
+              "Auditorías de seguridad regulares y evaluaciones de vulnerabilidades",
+              "Capacitación de empleados en prácticas de protección de datos y privacidad",
+              "Procedimientos de respuesta a incidentes para violaciones de datos"
+            ]
+          },
+          "rights": {
+            "title": "Tus Derechos y Opciones",
+            "content": "Tienes ciertos derechos con respecto a tu información personal y cómo se usa.",
+            "items": [
+              "Acceder a tu información personal y solicitar una copia de tus datos",
+              "Corregir información inexacta o incompleta",
+              "Solicitar eliminación de tu información personal en ciertas circunstancias",
+              "Oponerte al procesamiento de tus datos para propósitos específicos",
+              "Retirar consentimiento para el procesamiento de datos donde sea aplicable"
+            ]
+          },
+          "retention": {
+            "title": "Retención de Datos",
+            "content": "Retenemos tu información personal solo por el tiempo necesario para cumplir con los propósitos descritos en esta política, a menos que se requiera o permita un período de retención más largo por ley."
+          },
+          "thirdParty": {
+            "title": "Enlaces de Terceros",
+            "content": "Nuestro sitio web puede contener enlaces a sitios web de terceros. No somos responsables de las prácticas de privacidad de estos sitios externos y te alentamos a revisar sus políticas de privacidad."
+          },
+          "children": {
+            "title": "Privacidad de los Niños",
+            "content": "Nuestros servicios no están destinados a niños menores de 13 años. No recopilamos conscientemente información personal de niños menores de 13 años."
+          },
+          "changes": {
+            "title": "Cambios a esta Política de Privacidad",
+            "content": "Podemos actualizar esta política de privacidad de vez en cuando. Te notificaremos de cualquier cambio material publicando la política actualizada en nuestro sitio web y actualizando la fecha de 'Última Actualización'."
+          }
+        },
+        "contact": {
+          "title": "Contáctanos",
+          "address": "VasCruz Group LLC, 3530 Mystic Pointe Drive Apt 2403, Aventura, Florida, 33180, USA",
+          "email": "privacy@vascruzgroup.com",
+          "phone": "+591 7700 4600"
+        }
+      },
+      "terms": {
+        "title": "Términos y Condiciones",
+        "lastUpdated": "1 de agosto de 2024",
+        "introduction": "Estos términos y condiciones rigen tu uso de los servicios de intermediación comercial de VasCruz Group LLC. Al usar nuestros servicios, aceptas estar sujeto a estos términos.",
+        "sections": {
+          "acceptance": {
+            "title": "Aceptación de Términos",
+            "content": "Estos términos y condiciones constituyen un acuerdo legalmente vinculante entre tú y VasCruz Group LLC. Al acceder o usar nuestros servicios, reconoces que has leído, entendido y acuerdas estar sujeto a estos términos. Si no estás de acuerdo con alguna parte de estos términos, por favor no uses nuestros servicios."
+          },
+          "services": {
+            "title": "Nuestros Servicios",
+            "content": "VasCruz Group LLC proporciona servicios de intermediación comercial para conectar negocios con oportunidades, socios y mercados.",
+            "items": [
+              "Correspondencia de negocios y facilitación de asociaciones",
+              "Análisis de mercado e inteligencia comercial",
+              "Servicios de consultoría y asesoría",
+              "Desarrollo de redes y construcción de relaciones",
+              "Identificación y evaluación de oportunidades comerciales"
+            ]
+          },
+          "obligations": {
+            "title": "Obligaciones del Usuario",
+            "content": "Como usuario de nuestros servicios, tienes ciertas responsabilidades y obligaciones.",
+            "items": [
+              "Proporcionar información precisa y completa sobre tu negocio y requisitos",
+              "Cumplir con todas las leyes y regulaciones aplicables en tus actividades comerciales",
+              "Mantener estándares profesionales en todas las interacciones comerciales",
+              "Respetar la confidencialidad de la información compartida a través de nuestra plataforma",
+              "Usar nuestros servicios solo para propósitos comerciales legales y legítimos"
+            ]
+          },
+          "limitations": {
+            "title": "Limitaciones de Responsabilidad",
+            "content": "VasCruz Group LLC proporciona servicios de intermediación comercial en base 'tal como están'. Si bien nos esforzamos por proporcionar información precisa y confiable, no podemos garantizar el éxito de ninguna relación comercial o transacción. No somos responsables por ningún daño directo, indirecto, incidental o consecuencial que surja del uso de nuestros servicios."
+          },
+          "intellectual": {
+            "title": "Propiedad Intelectual",
+            "content": "Todo el contenido, incluyendo pero no limitado a texto, gráficos, logos y software, es propiedad de VasCruz Group LLC o sus licenciantes y está protegido por leyes de derechos de autor, marcas comerciales y otras leyes de propiedad intelectual. No puedes reproducir, distribuir o crear obras derivadas sin nuestro consentimiento expreso por escrito."
+          },
+          "termination": {
+            "title": "Terminación",
+            "content": "Nos reservamos el derecho de terminar o suspender el acceso a nuestros servicios en cualquier momento, con o sin previo aviso, por conducta que creemos viola estos términos o es perjudicial para otros usuarios o nuestro negocio. También puedes terminar tu uso de nuestros servicios en cualquier momento descontinuando el uso."
+          },
+          "changes": {
+            "title": "Cambios a los Términos",
+            "content": "Nos reservamos el derecho de modificar estos términos en cualquier momento. Notificaremos a los usuarios de cualquier cambio material publicando los términos actualizados en nuestro sitio web. Tu uso continuado de nuestros servicios después de dichos cambios constituye aceptación de los nuevos términos."
+          },
+          "governing": {
+            "title": "Ley Aplicable",
+            "content": "Estos términos y condiciones se rigen por y se interpretan de acuerdo con las leyes del Estado de Florida, Estados Unidos. Cualquier disputa que surja de estos términos se resolverá en los tribunales del Condado de Miami-Dade, Florida."
+          }
+        },
+        "contact": {
+          "title": "Contáctanos",
+          "address": "VasCruz Group LLC, 3530 Mystic Pointe Drive Apt 2403, Aventura, Florida, 33180, USA",
+          "email": "legal@vascruzgroup.com",
+          "phone": "+591 7700 4600"
+        }
+      },
+      "cookies": {
+        "title": "Política de Cookies",
+        "lastUpdated": "1 de agosto de 2024",
+        "introduction": "Esta política de cookies explica cómo VasCruz Group LLC usa cookies y tecnologías similares para mejorar tu experiencia de navegación y proporcionar servicios personalizados en nuestro sitio web.",
+        "sections": {
+          "what": {
+            "title": "¿Qué Son las Cookies",
+            "content": "Las cookies son pequeños archivos de texto que se almacenan en tu dispositivo cuando visitas nuestro sitio web. Nos ayudan a recordar tus preferencias, analizar cómo usas nuestro sitio y proporcionar contenido y servicios personalizados. Las cookies no contienen información personal y no pueden acceder a archivos en tu dispositivo."
+          },
+          "types": {
+            "title": "Tipos de Cookies que Usamos",
+            "content": "Usamos diferentes tipos de cookies para varios propósitos para mejorar tu experiencia.",
+            "items": [
+              "Cookies esenciales requeridas para la funcionalidad básica del sitio web y seguridad",
+              "Cookies de análisis que nos ayudan a entender cómo los visitantes usan nuestro sitio web",
+              "Cookies funcionales que recuerdan tus preferencias y configuraciones",
+              "Cookies de marketing que proporcionan contenido personalizado y publicidad",
+              "Cookies de rendimiento que nos ayudan a optimizar el rendimiento del sitio web"
+            ]
+          },
+          "usage": {
+            "title": "Cómo Usamos las Cookies",
+            "content": "Usamos cookies para proporcionarte una mejor experiencia de navegación y mejorar nuestros servicios.",
+            "items": [
+              "Para recordar tus preferencias y configuraciones",
+              "Para analizar el tráfico del sitio web y patrones de uso",
+              "Para proporcionar contenido personalizado y recomendaciones",
+              "Para mejorar la funcionalidad y rendimiento del sitio web",
+              "Para asegurar la seguridad y prevenir fraude"
+            ]
+          },
+          "management": {
+            "title": "Gestión de Cookies",
+            "content": "Tienes control sobre cómo se usan las cookies en tu dispositivo.",
+            "items": [
+              "Puedes controlar las cookies a través de la configuración y preferencias de tu navegador",
+              "Obtenemos tu consentimiento antes de usar cookies no esenciales",
+              "Puedes optar por no recibir cookies de terceros a través de sus respectivas plataformas",
+              "Puedes eliminar cookies de tu dispositivo en cualquier momento",
+              "Algunas funciones del sitio web pueden no funcionar correctamente si las cookies están deshabilitadas"
+            ]
+          },
+          "thirdParty": {
+            "title": "Servicios de Terceros",
+            "content": "Algunos servicios de terceros también pueden usar cookies en nuestro sitio web.",
+            "items": [
+              "Google Analytics y servicios similares para análisis del sitio web",
+              "Plataformas de redes sociales para funciones de compartir y participación",
+              "Procesadores de pago para procesamiento seguro de transacciones",
+              "Redes publicitarias para publicidad personalizada",
+              "Herramientas de soporte al cliente para entrega de servicio mejorada"
+            ]
+          },
+          "consent": {
+            "title": "Consentimiento de Cookies",
+            "content": "Respetamos tu privacidad y te proporcionamos control sobre tus preferencias de cookies. Puedes gestionar la configuración de cookies en cualquier momento a través de la configuración de tu navegador o contactándonos."
+          },
+          "changes": {
+            "title": "Cambios a la Política de Cookies",
+            "content": "Podemos actualizar esta política de cookies de vez en cuando para reflejar cambios en nuestras prácticas o por otras razones operativas, legales o regulatorias. Te notificaremos de cualquier cambio material publicando la política actualizada en nuestro sitio web."
+          }
+        },
+        "contact": {
+          "title": "Contáctanos",
+          "address": "VasCruz Group LLC, 3530 Mystic Pointe Drive Apt 2403, Aventura, Florida, 33180, USA",
+          "email": "privacy@vascruzgroup.com",
+          "phone": "+591 7700 4600"
+        }
+      },
+      "accessibility": {
+        "title": "Declaración de Accesibilidad Web",
+        "lastUpdated": "1 de agosto de 2024",
+        "introduction": "VasCruz Group LLC está comprometida a hacer nuestro sitio web accesible para todos los usuarios, incluyendo aquellos con discapacidades. Creemos que la accesibilidad no es solo un requisito legal sino un aspecto fundamental de proporcionar un excelente servicio al cliente.",
+        "sections": {
+          "commitment": {
+            "title": "Nuestro Compromiso",
+            "content": "Continuamente trabajamos para mejorar la accesibilidad de nuestro sitio web y asegurar el cumplimiento con los estándares de accesibilidad. Nuestro objetivo es proporcionar una experiencia inclusiva que permita a todos los usuarios acceder a nuestros servicios de manera efectiva."
+          },
+          "standards": {
+            "title": "Estándares de Accesibilidad",
+            "content": "Seguimos pautas y estándares de accesibilidad establecidos para asegurar que nuestro sitio web sea accesible para usuarios con varias discapacidades.",
+            "items": [
+              "Cumplimiento con las Pautas de Accesibilidad del Contenido Web (WCAG) 2.1 Nivel AA",
+              "Adherencia a los requisitos de la Sección 508 de la Ley de Rehabilitación",
+              "Asegurar cumplimiento con los estándares de la Ley de Estadounidenses con Discapacidades (ADA)",
+              "Seguir estándares internacionales de accesibilidad y mejores prácticas",
+              "Auditorías de accesibilidad regulares y pruebas con tecnologías de asistencia"
+            ]
+          },
+          "features": {
+            "title": "Características de Accesibilidad",
+            "content": "Nuestro sitio web incluye varias características para mejorar la accesibilidad para usuarios con discapacidades.",
+            "items": [
+              "Soporte completo de navegación por teclado para todos los elementos interactivos",
+              "Compatibilidad con lectores de pantalla y tecnologías de asistencia",
+              "Modo de alto contraste y esquemas de color personalizables",
+              "Capacidad de aumentar el tamaño del texto sin perder funcionalidad",
+              "Texto alternativo para imágenes y texto descriptivo de enlaces"
+            ]
+          },
+          "assistance": {
+            "title": "Obtener Asistencia",
+            "content": "Proporcionamos múltiples formas de obtener ayuda con problemas de accesibilidad y asegurar que todos los usuarios puedan acceder a nuestros servicios.",
+            "items": [
+              "Contacto directo con nuestro equipo de soporte de accesibilidad",
+              "Documentación y guías completas de accesibilidad",
+              "Sistema de retroalimentación fácil de usar para problemas de accesibilidad",
+              "Métodos de contacto alternativos incluyendo teléfono y correo electrónico",
+              "Capacitación regular de accesibilidad para nuestro personal"
+            ]
+          },
+          "technical": {
+            "title": "Requisitos Técnicos",
+            "content": "Nuestro sitio web está diseñado para funcionar con varias tecnologías de asistencia y navegadores.",
+            "items": [
+              "Compatibilidad con lectores de pantalla principales incluyendo JAWS, NVDA y VoiceOver",
+              "Soporte para navegación solo con teclado y comandos de voz",
+              "Diseño responsivo que funciona en diferentes dispositivos y tamaños de pantalla",
+              "Tiempos de carga rápidos y rendimiento optimizado para tecnologías de asistencia",
+              "Pruebas regulares con usuarios que tienen discapacidades"
+            ]
+          },
+          "testing": {
+            "title": "Pruebas y Evaluación",
+            "content": "Regularmente probamos nuestro sitio web para accesibilidad usando herramientas automatizadas, pruebas manuales y retroalimentación de usuarios con discapacidades. Estamos comprometidos con la mejora continua y damos la bienvenida a la retroalimentación sobre problemas de accesibilidad."
+          }
+        },
+        "contact": {
+          "title": "Contáctanos",
+          "address": "VasCruz Group LLC, 3530 Mystic Pointe Drive Apt 2403, Aventura, Florida, 33180, USA",
+          "email": "accessibility@vascruzgroup.com",
+          "phone": "+591 7700 4600"
+        }
+      }
     }
   },
   "home": {
@@ -129,7 +400,7 @@
         "line2": "Empresas",
         "line3": "Globalmente"
       },
-      "subtitle": "Especialistas en intermediación y representación comercial mayorista, conectando fabricantes, distribuidores y compradores en mercados nacionales e internacionales.",
+      "subtitle": "Especialistas en intermediación y representación comercial mayorista, conectando fabricantes, distribuidores y compradores en mercados globales.",
       "benefits": [
         {
           "title": "Representación Comercial",
@@ -457,28 +728,7 @@
           "description": "Negociación profesional de acuerdos comerciales",
           "icon": "Users"
         }
-      ],
-      "stats": {
-        "title": "Nuestro Impacto",
-        "subtitle": "Resultados que hablan por sí mismos",
-        "metrics": [
-          {
-            "label": "Empresas Conectadas",
-            "value": "500+",
-            "percentage": 85
-          },
-          {
-            "label": "Mercados Atendidos",
-            "value": "25+",
-            "percentage": 92
-          },
-          {
-            "label": "Transacciones Exitosas",
-            "value": "1000+",
-            "percentage": 95
-          }
-        ]
-      }
+      ]
     },
     "category": {
       "notFound": {
@@ -566,98 +816,106 @@
           "products": [
             {
               "title": "Representación Básica",
-              "description": "Servicio de representación comercial esencial para conectar con nuevos mercados.",
+              "description": "Servicio de representación comercial esencial para pequeñas y medianas empresas.",
               "icon": "Handshake",
               "slug": "basic-representation",
               "features": [
-                "Identificación de compradores",
-                "Presentación de productos",
-                "Seguimiento de contactos",
-                "Reportes mensuales"
+                "Identificación y conexión con compradores",
+                "Negociación básica de contratos",
+                "Reportes de progreso mensuales",
+                "Soporte por email"
               ],
               "price": "10",
               "originalPrice": "15",
               "badge": "Popular",
-              "cta": "Obtener Representación",
+              "cta": "Comenzar",
               "paymentLink": "https://buy.stripe.com/eVq9AT2SHfTtcBJ1DpcZa0b",
-              "duration": "4 semanas",
-              "delivery": "Plan de representación",
-              "detailedDescription": "Nuestro servicio de representación básica proporciona una introducción efectiva a nuevos mercados, conectando fabricantes con compradores potenciales y facilitando las primeras conversaciones comerciales.",
+              "duration": "3 meses",
+              "delivery": "Inicio inmediato",
+              "detailedDescription": "Nuestro servicio de representación básica proporciona soporte esencial para empresas que buscan establecer su presencia en nuevos mercados. Te conectamos con compradores calificados y manejamos las negociaciones iniciales para comenzar tus relaciones comerciales.",
               "benefits": [
-                "Acceso a nuevos mercados",
-                "Conexiones comerciales",
-                "Soporte profesional",
-                "Reportes regulares"
+                "Entrada rápida al mercado",
+                "Solución rentable",
+                "Representación profesional",
+                "Período de prueba sin riesgo"
               ],
               "additionalInfo": [
-                { "label": "Alcance", "value": "Mercado objetivo" },
-                { "label": "Tiempo de Entrega", "value": "4 semanas" },
-                { "label": "Formato", "value": "Plan de representación" },
-                { "label": "Soporte", "value": "6 meses" }
+                { "label": "Duración del Contrato", "value": "3 meses" },
+                { "label": "Nivel de Soporte", "value": "Email y Teléfono" },
+                { "label": "Reportes", "value": "Mensuales" },
+                { "label": "Reuniones", "value": "Según necesidad" }
               ]
             },
             {
               "title": "Representación Premium",
-              "description": "Servicio completo de representación con gestión dedicada y soporte prioritario.",
+              "description": "Servicio completo de representación con gerente de cuenta dedicado y soporte prioritario.",
               "icon": "Handshake",
               "slug": "premium-representation",
               "features": [
                 "Gerente de cuenta dedicado",
                 "Conexiones prioritarias con compradores",
                 "Negociación avanzada de contratos",
-                "Soporte 24/7"
+                "Soporte 24/7",
+                "Investigación de mercado personalizada",
+                "Revisiones estratégicas trimestrales"
               ],
               "price": "23",
               "originalPrice": "30",
               "badge": "Más Popular",
               "cta": "Obtener Servicio Premium",
               "paymentLink": "https://buy.stripe.com/cNi6oHbpd36H0T1eqbcZa0a",
-              "duration": "8 semanas",
-              "delivery": "Gestión completa",
-              "detailedDescription": "Nuestro servicio de representación premium ofrece gestión dedicada y soporte prioritario para maximizar las oportunidades comerciales y acelerar el crecimiento en nuevos mercados.",
+              "duration": "6 meses",
+              "delivery": "Inicio inmediato",
+              "detailedDescription": "Nuestro servicio de representación premium ofrece soporte completo con un gerente de cuenta dedicado que trabaja exclusivamente con tu empresa. Este servicio incluye investigación de mercado avanzada, planificación estratégica y acceso prioritario a nuestra red global de compradores y distribuidores.",
               "benefits": [
-                "Gestión dedicada",
-                "Conexiones prioritarias",
-                "Negociación experta",
-                "Soporte completo"
+                "Gerente de cuenta dedicado",
+                "Acceso prioritario a compradores",
+                "Investigación de mercado avanzada",
+                "Soporte de planificación estratégica",
+                "Soporte prioritario 24/7",
+                "Reportes personalizados"
               ],
               "additionalInfo": [
-                { "label": "Alcance", "value": "Gestión completa" },
-                { "label": "Tiempo de Entrega", "value": "8 semanas" },
-                { "label": "Formato", "value": "Gestión dedicada" },
-                { "label": "Soporte", "value": "12 meses" }
+                { "label": "Duración del Contrato", "value": "6 meses" },
+                { "label": "Nivel de Soporte", "value": "24/7 Prioritario" },
+                { "label": "Reportes", "value": "Semanales" },
+                { "label": "Reuniones", "value": "Quincenales" }
               ]
             },
             {
-              "title": "Representación Estratégica",
-              "description": "Representación estratégica con enfoque en desarrollo de mercado y crecimiento sostenible.",
-              "icon": "Handshake",
+              "title": "Representación Empresarial",
+              "description": "Servicio de representación completo para grandes empresas con soluciones personalizadas y equipo dedicado.",
+              "icon": "Building2",
               "slug": "enterprise-representation",
               "features": [
-                "Estrategia de mercado personalizada",
-                "Desarrollo de relaciones a largo plazo",
-                "Análisis de competencia",
-                "Optimización continua"
+                "Equipo dedicado de expertos",
+                "Estrategias de mercado personalizadas",
+                "Acceso exclusivo a red de compradores",
+                "Análisis y reportes avanzados",
+                "Soporte de expansión internacional",
+                "Servicios de gestión de riesgos"
               ],
-              "price": "50",
-              "originalPrice": "65",
-              "badge": "Premium",
-              "cta": "Desarrollar Estrategia",
-              "paymentLink": "https://buy.stripe.com/3cI00j0Kz0YzeJRdm7cZa0c",
-              "duration": "12 semanas",
-              "delivery": "Estrategia completa",
-              "detailedDescription": "Nuestro servicio de representación estratégica se enfoca en el desarrollo de mercado a largo plazo, creando relaciones duraderas y estrategias de crecimiento sostenible.",
+              "price": "100",
+              "originalPrice": "120",
+              "badge": "Empresarial",
+              "cta": "Contactar Ventas",
+              "paymentLink": "https://buy.stripe.com/14AaEXcthaz959h5TFcZa0e",
+              "duration": "12 meses",
+              "delivery": "Cronograma personalizado",
+              "detailedDescription": "Nuestro servicio de representación empresarial está diseñado para grandes empresas que requieren presencia integral en el mercado y crecimiento estratégico. Este servicio incluye un equipo dedicado de expertos, estrategias de mercado personalizadas y acceso exclusivo a nuestra red premium de compradores.",
               "benefits": [
-                "Estrategia personalizada",
-                "Crecimiento sostenible",
-                "Relaciones duraderas",
-                "Optimización continua"
+                "Equipo de expertos dedicado",
+                "Estrategias de mercado personalizadas",
+                "Acceso exclusivo a la red",
+                "Análisis avanzados",
+                "Expansión internacional",
+                "Gestión de riesgos"
               ],
               "additionalInfo": [
-                { "label": "Alcance", "value": "Estrategia completa" },
-                { "label": "Tiempo de Entrega", "value": "12 semanas" },
-                { "label": "Formato", "value": "Estrategia completa" },
-                { "label": "Soporte", "value": "18 meses" }
+                { "label": "Duración del Contrato", "value": "12 meses" },
+                { "label": "Nivel de Soporte", "value": "Equipo Dedicado" },
+                { "label": "Reportes", "value": "Tiempo real" },
+                { "label": "Reuniones", "value": "Semanales" }
               ]
             }
           ]
@@ -675,99 +933,111 @@
           "priceRange": "50",
           "products": [
             {
-              "title": "Análisis de Mercado",
-              "description": "Análisis completo de mercado para identificar oportunidades y riesgos.",
+              "title": "Reporte de Investigación de Mercado",
+              "description": "Reporte de análisis de mercado completo para tus mercados objetivo e industrias.",
               "icon": "BarChart3",
               "slug": "market-research-report",
               "features": [
-                "Investigación de mercado",
-                "Análisis de competencia",
-                "Identificación de oportunidades",
-                "Evaluación de riesgos"
+                "Análisis de tamaño y crecimiento del mercado",
+                "Estudio del panorama competitivo",
+                "Insights del comportamiento del consumidor",
+                "Revisión del entorno regulatorio",
+                "Análisis FODA",
+                "Recomendaciones de entrada al mercado"
               ],
               "price": "10",
               "originalPrice": "15",
-              "badge": "Popular",
-              "cta": "Realizar Análisis",
+              "badge": "Más Vendido",
+              "cta": "Obtener Reporte",
               "paymentLink": "https://buy.stripe.com/eVq9AT2SHfTtcBJ1DpcZa0b",
               "duration": "4 semanas",
-              "delivery": "Reporte de análisis",
-              "detailedDescription": "Nuestro servicio de análisis de mercado proporciona información detallada sobre tendencias, competencia y oportunidades para tomar decisiones comerciales informadas.",
+              "delivery": "Digital + Impreso",
+              "detailedDescription": "Nuestro reporte completo de investigación de mercado proporciona insights profundos sobre tus mercados objetivo, incluyendo análisis detallado del tamaño del mercado, tendencias de crecimiento, panorama competitivo y entorno regulatorio. Este reporte sirve como base para decisiones comerciales informadas y planificación estratégica.",
               "benefits": [
-                "Información detallada",
-                "Decisiones informadas",
-                "Identificación de oportunidades",
-                "Reducción de riesgos"
+                "Insights basados en datos",
+                "Análisis completo",
+                "Recomendaciones accionables",
+                "Presentación profesional",
+                "Soporte continuo",
+                "Áreas de enfoque personalizables"
               ],
               "additionalInfo": [
-                { "label": "Alcance", "value": "Análisis completo" },
+                { "label": "Longitud del Reporte", "value": "50-80 páginas" },
                 { "label": "Tiempo de Entrega", "value": "4 semanas" },
-                { "label": "Formato", "value": "Reporte detallado" },
-                { "label": "Soporte", "value": "6 meses" }
+                { "label": "Formato", "value": "PDF + Impreso" },
+                { "label": "Actualizaciones", "value": "6 meses" }
               ]
             },
             {
               "title": "Optimización Logística",
-              "description": "Optimización de procesos logísticos para mejorar la eficiencia y reducir costos.",
+              "description": "Análisis logístico completo y optimización para reducción de costos y mejora de eficiencia.",
               "icon": "BarChart3",
               "slug": "logistics-optimization",
               "features": [
-                "Análisis de procesos",
+                "Análisis de cadena de suministro",
+                "Estrategias de optimización de costos",
                 "Optimización de rutas",
-                "Reducción de costos",
-                "Mejora de eficiencia"
+                "Revisión de eficiencia de almacén",
+                "Recomendaciones de integración tecnológica",
+                "Dashboard de métricas de rendimiento"
               ],
-              "price": "23",
-              "originalPrice": "30",
+              "price": "45",
+              "originalPrice": "55",
               "badge": "Premium",
               "cta": "Optimizar Logística",
-              "paymentLink": "https://buy.stripe.com/cNi6oHbpd36H0T1eqbcZa0a",
+              "paymentLink": "https://buy.stripe.com/14AeVdbpd22DeJR4PBcZa09",
               "duration": "6 semanas",
-              "delivery": "Plan de optimización",
-              "detailedDescription": "Nuestro servicio de optimización logística analiza y mejora los procesos de distribución para maximizar la eficiencia y minimizar los costos operativos.",
+              "delivery": "Listo para implementar",
+              "detailedDescription": "Nuestro servicio de optimización logística analiza toda tu cadena de suministro para identificar ineficiencias y oportunidades de ahorro de costos. Proporcionamos recomendaciones accionables para optimización de rutas, eficiencia de almacén e integración tecnológica para maximizar tu rendimiento operativo.",
               "benefits": [
                 "Reducción de costos",
                 "Mejora de eficiencia",
-                "Procesos optimizados",
-                "Mayor competitividad"
+                "Integración tecnológica",
+                "Monitoreo de rendimiento",
+                "Soluciones personalizadas",
+                "Soporte continuo"
               ],
               "additionalInfo": [
-                { "label": "Alcance", "value": "Optimización completa" },
-                { "label": "Tiempo de Entrega", "value": "6 semanas" },
-                { "label": "Formato", "value": "Plan de optimización" },
+                { "label": "Alcance del Análisis", "value": "Cadena de suministro completa" },
+                { "label": "Implementación", "value": "6 semanas" },
+                { "label": "Seguimiento ROI", "value": "3 meses" },
                 { "label": "Soporte", "value": "12 meses" }
               ]
             },
             {
-              "title": "Análisis de Costos",
-              "description": "Análisis detallado de costos para optimizar la rentabilidad y competitividad.",
+              "title": "Análisis y Optimización de Costos",
+              "description": "Análisis detallado de costos y estrategias de optimización para máxima rentabilidad.",
               "icon": "BarChart3",
               "slug": "cost-analysis-optimization",
               "features": [
-                "Análisis de costos operativos",
-                "Identificación de ahorros",
-                "Optimización de precios",
-                "Análisis de rentabilidad"
+                "Análisis integral de costos",
+                "Optimización de rentabilidad",
+                "Desarrollo de estrategia de precios",
+                "Recomendaciones de reducción de costos",
+                "Modelado financiero",
+                "Seguimiento de rendimiento"
               ],
               "price": "50",
               "originalPrice": "60",
-              "badge": "Esencial",
+              "badge": "Nuevo",
               "cta": "Analizar Costos",
               "paymentLink": "https://buy.stripe.com/3cI00j0Kz0YzeJRdm7cZa0c",
-              "duration": "4 semanas",
-              "delivery": "Reporte de costos",
-              "detailedDescription": "Nuestro servicio de análisis de costos identifica oportunidades de ahorro y optimización para mejorar la rentabilidad y competitividad en el mercado.",
+              "duration": "3 semanas",
+              "delivery": "Reporte digital",
+              "detailedDescription": "Nuestro servicio de análisis y optimización de costos proporciona insights detallados sobre tu estructura de costos e identifica oportunidades de mejora. Desarrollamos estrategias personalizadas para optimizar la rentabilidad manteniendo estándares de calidad y servicio.",
               "benefits": [
-                "Identificación de ahorros",
-                "Optimización de precios",
-                "Mejor rentabilidad",
-                "Mayor competitividad"
+                "Transparencia de costos",
+                "Mejora de rentabilidad",
+                "Precios estratégicos",
+                "Ganancias de eficiencia",
+                "Decisiones basadas en datos",
+                "Monitoreo continuo"
               ],
               "additionalInfo": [
-                { "label": "Alcance", "value": "Análisis completo" },
-                { "label": "Tiempo de Entrega", "value": "4 semanas" },
-                { "label": "Formato", "value": "Reporte detallado" },
-                { "label": "Soporte", "value": "6 meses" }
+                { "label": "Profundidad del Análisis", "value": "Estructura de costos completa" },
+                { "label": "Tiempo de Entrega", "value": "3 semanas" },
+                { "label": "Formato", "value": "Dashboard digital" },
+                { "label": "Actualizaciones", "value": "Trimestral" }
               ]
             }
           ]
@@ -1622,13 +1892,18 @@
         "buyer": "Comprador",
         "other": "Otro"
       },
-      "submit": "Enviar Mensaje",
-      "sending": "Enviando mensaje...",
-      "success": {
-        "title": "¡Mensaje Enviado!",
-        "description": "Gracias por contactarnos. Nuestro equipo se comunicará contigo en las próximas 24 horas para conversar sobre tus necesidades comerciales.",
-        "button": "Enviar otro mensaje"
-      }
+        "submit": "Enviar Mensaje",
+        "sending": "Enviando mensaje...",
+        "success": {
+          "title": "¡Mensaje Enviado!",
+          "description": "Gracias por contactarnos. Nuestro equipo se comunicará contigo en las próximas 24 horas para conversar sobre tus necesidades comerciales.",
+          "button": "Enviar otro mensaje"
+        },
+        "error": {
+          "title": "Error al Enviar",
+          "description": "Hubo un problema al enviar tu mensaje. Por favor, intenta nuevamente o contáctanos directamente.",
+          "button": "Intentar Nuevamente"
+        }
     },
     "info": {
       "badge": "Sobre Vascruz Group",
@@ -1710,8 +1985,15 @@
         },
         "asia": {
           "title": "Asia",
-          "countries": ["China", "Japón", "Corea del Sur", "India", "Singapur"]
+          "countries": ["China", "Japón", "Corea del Sur", "India"]
         }
+      },
+      "cta": {
+        "title": "¿Listo para expandir tu empresa?",
+        "description": "Nuestro equipo de expertos está listo para ayudarte a conectar con nuevos mercados y oportunidades comerciales globales.",
+        "support": "Soporte Disponible",
+        "response": "Respuesta Garantizada",
+        "confidentiality": "Confidencialidad"
       }
     }
   }
