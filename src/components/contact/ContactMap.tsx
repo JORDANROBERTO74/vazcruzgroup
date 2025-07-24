@@ -1,19 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { MapPin, Globe, Users, Building2 } from "lucide-react";
+import { MapPin } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import MapWrapper from "@/components/map-wrapper";
 import { useMessages } from "next-intl";
-
-// Icon mapping for map section
-const mapIcons = {
-  MapPin,
-  Globe,
-  Users,
-  Building2,
-};
 
 export default function ContactMap() {
   const messages = useMessages();
@@ -24,25 +16,12 @@ export default function ContactMap() {
   const title = mapData?.title;
   const subtitle = mapData?.subtitle;
   const location = mapData?.location;
-  const regions = mapData?.regions;
   const cta = mapData?.cta;
 
   const fadeInUp = {
     initial: { opacity: 0, y: 60 },
     animate: { opacity: 1, y: 0 },
     transition: { duration: 0.6 },
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.6,
-        ease: "easeOut",
-      },
-    },
   };
 
   // Fallback if no map data
@@ -57,29 +36,6 @@ export default function ContactMap() {
       </section>
     );
   }
-
-  const globalPresence = [
-    {
-      region: regions?.northAmerica?.title,
-      countries: regions?.northAmerica?.countries,
-      icon: Building2,
-    },
-    {
-      region: regions?.southAmerica?.title,
-      countries: regions?.southAmerica?.countries,
-      icon: Globe,
-    },
-    {
-      region: regions?.europe?.title,
-      countries: regions?.europe?.countries,
-      icon: Users,
-    },
-    {
-      region: regions?.asia?.title,
-      countries: regions?.asia?.countries,
-      icon: MapPin,
-    },
-  ];
 
   return (
     <section className="py-20 bg-gradient-to-br from-muted/20 to-background">

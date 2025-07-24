@@ -63,14 +63,6 @@
           { "name": "Contacto", "href": "/contact" }
         ]
       },
-      "specialties": {
-        "title": "Especialidades",
-        "items": [
-          { "name": "Importación", "href": "/services/import" },
-          { "name": "Exportación", "href": "/services/export" },
-          { "name": "Consultoría", "href": "/services/consulting" }
-        ]
-      },
       "offices": {
         "title": "Oficinas",
         "items": [
@@ -457,28 +449,7 @@
           "description": "Negociación profesional de acuerdos comerciales",
           "icon": "Users"
         }
-      ],
-      "stats": {
-        "title": "Nuestro Impacto",
-        "subtitle": "Resultados que hablan por sí mismos",
-        "metrics": [
-          {
-            "label": "Empresas Conectadas",
-            "value": "500+",
-            "percentage": 85
-          },
-          {
-            "label": "Mercados Atendidos",
-            "value": "25+",
-            "percentage": 92
-          },
-          {
-            "label": "Transacciones Exitosas",
-            "value": "1000+",
-            "percentage": 95
-          }
-        ]
-      }
+      ]
     },
     "category": {
       "notFound": {
@@ -566,98 +537,106 @@
           "products": [
             {
               "title": "Representación Básica",
-              "description": "Servicio de representación comercial esencial para conectar con nuevos mercados.",
+              "description": "Servicio de representación comercial esencial para pequeñas y medianas empresas.",
               "icon": "Handshake",
               "slug": "basic-representation",
               "features": [
-                "Identificación de compradores",
-                "Presentación de productos",
-                "Seguimiento de contactos",
-                "Reportes mensuales"
+                "Identificación y conexión con compradores",
+                "Negociación básica de contratos",
+                "Reportes de progreso mensuales",
+                "Soporte por email"
               ],
               "price": "10",
               "originalPrice": "15",
               "badge": "Popular",
-              "cta": "Obtener Representación",
+              "cta": "Comenzar",
               "paymentLink": "https://buy.stripe.com/eVq9AT2SHfTtcBJ1DpcZa0b",
-              "duration": "4 semanas",
-              "delivery": "Plan de representación",
-              "detailedDescription": "Nuestro servicio de representación básica proporciona una introducción efectiva a nuevos mercados, conectando fabricantes con compradores potenciales y facilitando las primeras conversaciones comerciales.",
+              "duration": "3 meses",
+              "delivery": "Inicio inmediato",
+              "detailedDescription": "Nuestro servicio de representación básica proporciona soporte esencial para empresas que buscan establecer su presencia en nuevos mercados. Te conectamos con compradores calificados y manejamos las negociaciones iniciales para comenzar tus relaciones comerciales.",
               "benefits": [
-                "Acceso a nuevos mercados",
-                "Conexiones comerciales",
-                "Soporte profesional",
-                "Reportes regulares"
+                "Entrada rápida al mercado",
+                "Solución rentable",
+                "Representación profesional",
+                "Período de prueba sin riesgo"
               ],
               "additionalInfo": [
-                { "label": "Alcance", "value": "Mercado objetivo" },
-                { "label": "Tiempo de Entrega", "value": "4 semanas" },
-                { "label": "Formato", "value": "Plan de representación" },
-                { "label": "Soporte", "value": "6 meses" }
+                { "label": "Duración del Contrato", "value": "3 meses" },
+                { "label": "Nivel de Soporte", "value": "Email y Teléfono" },
+                { "label": "Reportes", "value": "Mensuales" },
+                { "label": "Reuniones", "value": "Según necesidad" }
               ]
             },
             {
               "title": "Representación Premium",
-              "description": "Servicio completo de representación con gestión dedicada y soporte prioritario.",
+              "description": "Servicio completo de representación con gerente de cuenta dedicado y soporte prioritario.",
               "icon": "Handshake",
               "slug": "premium-representation",
               "features": [
                 "Gerente de cuenta dedicado",
                 "Conexiones prioritarias con compradores",
                 "Negociación avanzada de contratos",
-                "Soporte 24/7"
+                "Soporte 24/7",
+                "Investigación de mercado personalizada",
+                "Revisiones estratégicas trimestrales"
               ],
               "price": "23",
               "originalPrice": "30",
               "badge": "Más Popular",
               "cta": "Obtener Servicio Premium",
               "paymentLink": "https://buy.stripe.com/cNi6oHbpd36H0T1eqbcZa0a",
-              "duration": "8 semanas",
-              "delivery": "Gestión completa",
-              "detailedDescription": "Nuestro servicio de representación premium ofrece gestión dedicada y soporte prioritario para maximizar las oportunidades comerciales y acelerar el crecimiento en nuevos mercados.",
+              "duration": "6 meses",
+              "delivery": "Inicio inmediato",
+              "detailedDescription": "Nuestro servicio de representación premium ofrece soporte completo con un gerente de cuenta dedicado que trabaja exclusivamente con tu empresa. Este servicio incluye investigación de mercado avanzada, planificación estratégica y acceso prioritario a nuestra red global de compradores y distribuidores.",
               "benefits": [
-                "Gestión dedicada",
-                "Conexiones prioritarias",
-                "Negociación experta",
-                "Soporte completo"
+                "Gerente de cuenta dedicado",
+                "Acceso prioritario a compradores",
+                "Investigación de mercado avanzada",
+                "Soporte de planificación estratégica",
+                "Soporte prioritario 24/7",
+                "Reportes personalizados"
               ],
               "additionalInfo": [
-                { "label": "Alcance", "value": "Gestión completa" },
-                { "label": "Tiempo de Entrega", "value": "8 semanas" },
-                { "label": "Formato", "value": "Gestión dedicada" },
-                { "label": "Soporte", "value": "12 meses" }
+                { "label": "Duración del Contrato", "value": "6 meses" },
+                { "label": "Nivel de Soporte", "value": "24/7 Prioritario" },
+                { "label": "Reportes", "value": "Semanales" },
+                { "label": "Reuniones", "value": "Quincenales" }
               ]
             },
             {
-              "title": "Representación Estratégica",
-              "description": "Representación estratégica con enfoque en desarrollo de mercado y crecimiento sostenible.",
-              "icon": "Handshake",
+              "title": "Representación Empresarial",
+              "description": "Servicio de representación completo para grandes empresas con soluciones personalizadas y equipo dedicado.",
+              "icon": "Building2",
               "slug": "enterprise-representation",
               "features": [
-                "Estrategia de mercado personalizada",
-                "Desarrollo de relaciones a largo plazo",
-                "Análisis de competencia",
-                "Optimización continua"
+                "Equipo dedicado de expertos",
+                "Estrategias de mercado personalizadas",
+                "Acceso exclusivo a red de compradores",
+                "Análisis y reportes avanzados",
+                "Soporte de expansión internacional",
+                "Servicios de gestión de riesgos"
               ],
-              "price": "50",
-              "originalPrice": "65",
-              "badge": "Premium",
-              "cta": "Desarrollar Estrategia",
-              "paymentLink": "https://buy.stripe.com/3cI00j0Kz0YzeJRdm7cZa0c",
-              "duration": "12 semanas",
-              "delivery": "Estrategia completa",
-              "detailedDescription": "Nuestro servicio de representación estratégica se enfoca en el desarrollo de mercado a largo plazo, creando relaciones duraderas y estrategias de crecimiento sostenible.",
+              "price": "100",
+              "originalPrice": "120",
+              "badge": "Empresarial",
+              "cta": "Contactar Ventas",
+              "paymentLink": "https://buy.stripe.com/14AaEXcthaz959h5TFcZa0e",
+              "duration": "12 meses",
+              "delivery": "Cronograma personalizado",
+              "detailedDescription": "Nuestro servicio de representación empresarial está diseñado para grandes empresas que requieren presencia integral en el mercado y crecimiento estratégico. Este servicio incluye un equipo dedicado de expertos, estrategias de mercado personalizadas y acceso exclusivo a nuestra red premium de compradores.",
               "benefits": [
-                "Estrategia personalizada",
-                "Crecimiento sostenible",
-                "Relaciones duraderas",
-                "Optimización continua"
+                "Equipo de expertos dedicado",
+                "Estrategias de mercado personalizadas",
+                "Acceso exclusivo a la red",
+                "Análisis avanzados",
+                "Expansión internacional",
+                "Gestión de riesgos"
               ],
               "additionalInfo": [
-                { "label": "Alcance", "value": "Estrategia completa" },
-                { "label": "Tiempo de Entrega", "value": "12 semanas" },
-                { "label": "Formato", "value": "Estrategia completa" },
-                { "label": "Soporte", "value": "18 meses" }
+                { "label": "Duración del Contrato", "value": "12 meses" },
+                { "label": "Nivel de Soporte", "value": "Equipo Dedicado" },
+                { "label": "Reportes", "value": "Tiempo real" },
+                { "label": "Reuniones", "value": "Semanales" }
               ]
             }
           ]
@@ -675,99 +654,111 @@
           "priceRange": "50",
           "products": [
             {
-              "title": "Análisis de Mercado",
-              "description": "Análisis completo de mercado para identificar oportunidades y riesgos.",
+              "title": "Reporte de Investigación de Mercado",
+              "description": "Reporte de análisis de mercado completo para tus mercados objetivo e industrias.",
               "icon": "BarChart3",
               "slug": "market-research-report",
               "features": [
-                "Investigación de mercado",
-                "Análisis de competencia",
-                "Identificación de oportunidades",
-                "Evaluación de riesgos"
+                "Análisis de tamaño y crecimiento del mercado",
+                "Estudio del panorama competitivo",
+                "Insights del comportamiento del consumidor",
+                "Revisión del entorno regulatorio",
+                "Análisis FODA",
+                "Recomendaciones de entrada al mercado"
               ],
               "price": "10",
               "originalPrice": "15",
-              "badge": "Popular",
-              "cta": "Realizar Análisis",
+              "badge": "Más Vendido",
+              "cta": "Obtener Reporte",
               "paymentLink": "https://buy.stripe.com/eVq9AT2SHfTtcBJ1DpcZa0b",
               "duration": "4 semanas",
-              "delivery": "Reporte de análisis",
-              "detailedDescription": "Nuestro servicio de análisis de mercado proporciona información detallada sobre tendencias, competencia y oportunidades para tomar decisiones comerciales informadas.",
+              "delivery": "Digital + Impreso",
+              "detailedDescription": "Nuestro reporte completo de investigación de mercado proporciona insights profundos sobre tus mercados objetivo, incluyendo análisis detallado del tamaño del mercado, tendencias de crecimiento, panorama competitivo y entorno regulatorio. Este reporte sirve como base para decisiones comerciales informadas y planificación estratégica.",
               "benefits": [
-                "Información detallada",
-                "Decisiones informadas",
-                "Identificación de oportunidades",
-                "Reducción de riesgos"
+                "Insights basados en datos",
+                "Análisis completo",
+                "Recomendaciones accionables",
+                "Presentación profesional",
+                "Soporte continuo",
+                "Áreas de enfoque personalizables"
               ],
               "additionalInfo": [
-                { "label": "Alcance", "value": "Análisis completo" },
+                { "label": "Longitud del Reporte", "value": "50-80 páginas" },
                 { "label": "Tiempo de Entrega", "value": "4 semanas" },
-                { "label": "Formato", "value": "Reporte detallado" },
-                { "label": "Soporte", "value": "6 meses" }
+                { "label": "Formato", "value": "PDF + Impreso" },
+                { "label": "Actualizaciones", "value": "6 meses" }
               ]
             },
             {
               "title": "Optimización Logística",
-              "description": "Optimización de procesos logísticos para mejorar la eficiencia y reducir costos.",
+              "description": "Análisis logístico completo y optimización para reducción de costos y mejora de eficiencia.",
               "icon": "BarChart3",
               "slug": "logistics-optimization",
               "features": [
-                "Análisis de procesos",
+                "Análisis de cadena de suministro",
+                "Estrategias de optimización de costos",
                 "Optimización de rutas",
-                "Reducción de costos",
-                "Mejora de eficiencia"
+                "Revisión de eficiencia de almacén",
+                "Recomendaciones de integración tecnológica",
+                "Dashboard de métricas de rendimiento"
               ],
-              "price": "23",
-              "originalPrice": "30",
+              "price": "45",
+              "originalPrice": "55",
               "badge": "Premium",
               "cta": "Optimizar Logística",
-              "paymentLink": "https://buy.stripe.com/cNi6oHbpd36H0T1eqbcZa0a",
+              "paymentLink": "https://buy.stripe.com/14AeVdbpd22DeJR4PBcZa09",
               "duration": "6 semanas",
-              "delivery": "Plan de optimización",
-              "detailedDescription": "Nuestro servicio de optimización logística analiza y mejora los procesos de distribución para maximizar la eficiencia y minimizar los costos operativos.",
+              "delivery": "Listo para implementar",
+              "detailedDescription": "Nuestro servicio de optimización logística analiza toda tu cadena de suministro para identificar ineficiencias y oportunidades de ahorro de costos. Proporcionamos recomendaciones accionables para optimización de rutas, eficiencia de almacén e integración tecnológica para maximizar tu rendimiento operativo.",
               "benefits": [
                 "Reducción de costos",
                 "Mejora de eficiencia",
-                "Procesos optimizados",
-                "Mayor competitividad"
+                "Integración tecnológica",
+                "Monitoreo de rendimiento",
+                "Soluciones personalizadas",
+                "Soporte continuo"
               ],
               "additionalInfo": [
-                { "label": "Alcance", "value": "Optimización completa" },
-                { "label": "Tiempo de Entrega", "value": "6 semanas" },
-                { "label": "Formato", "value": "Plan de optimización" },
+                { "label": "Alcance del Análisis", "value": "Cadena de suministro completa" },
+                { "label": "Implementación", "value": "6 semanas" },
+                { "label": "Seguimiento ROI", "value": "3 meses" },
                 { "label": "Soporte", "value": "12 meses" }
               ]
             },
             {
-              "title": "Análisis de Costos",
-              "description": "Análisis detallado de costos para optimizar la rentabilidad y competitividad.",
+              "title": "Análisis y Optimización de Costos",
+              "description": "Análisis detallado de costos y estrategias de optimización para máxima rentabilidad.",
               "icon": "BarChart3",
               "slug": "cost-analysis-optimization",
               "features": [
-                "Análisis de costos operativos",
-                "Identificación de ahorros",
-                "Optimización de precios",
-                "Análisis de rentabilidad"
+                "Análisis integral de costos",
+                "Optimización de rentabilidad",
+                "Desarrollo de estrategia de precios",
+                "Recomendaciones de reducción de costos",
+                "Modelado financiero",
+                "Seguimiento de rendimiento"
               ],
               "price": "50",
               "originalPrice": "60",
-              "badge": "Esencial",
+              "badge": "Nuevo",
               "cta": "Analizar Costos",
               "paymentLink": "https://buy.stripe.com/3cI00j0Kz0YzeJRdm7cZa0c",
-              "duration": "4 semanas",
-              "delivery": "Reporte de costos",
-              "detailedDescription": "Nuestro servicio de análisis de costos identifica oportunidades de ahorro y optimización para mejorar la rentabilidad y competitividad en el mercado.",
+              "duration": "3 semanas",
+              "delivery": "Reporte digital",
+              "detailedDescription": "Nuestro servicio de análisis y optimización de costos proporciona insights detallados sobre tu estructura de costos e identifica oportunidades de mejora. Desarrollamos estrategias personalizadas para optimizar la rentabilidad manteniendo estándares de calidad y servicio.",
               "benefits": [
-                "Identificación de ahorros",
-                "Optimización de precios",
-                "Mejor rentabilidad",
-                "Mayor competitividad"
+                "Transparencia de costos",
+                "Mejora de rentabilidad",
+                "Precios estratégicos",
+                "Ganancias de eficiencia",
+                "Decisiones basadas en datos",
+                "Monitoreo continuo"
               ],
               "additionalInfo": [
-                { "label": "Alcance", "value": "Análisis completo" },
-                { "label": "Tiempo de Entrega", "value": "4 semanas" },
-                { "label": "Formato", "value": "Reporte detallado" },
-                { "label": "Soporte", "value": "6 meses" }
+                { "label": "Profundidad del Análisis", "value": "Estructura de costos completa" },
+                { "label": "Tiempo de Entrega", "value": "3 semanas" },
+                { "label": "Formato", "value": "Dashboard digital" },
+                { "label": "Actualizaciones", "value": "Trimestral" }
               ]
             }
           ]
@@ -1622,13 +1613,18 @@
         "buyer": "Comprador",
         "other": "Otro"
       },
-      "submit": "Enviar Mensaje",
-      "sending": "Enviando mensaje...",
-      "success": {
-        "title": "¡Mensaje Enviado!",
-        "description": "Gracias por contactarnos. Nuestro equipo se comunicará contigo en las próximas 24 horas para conversar sobre tus necesidades comerciales.",
-        "button": "Enviar otro mensaje"
-      }
+        "submit": "Enviar Mensaje",
+        "sending": "Enviando mensaje...",
+        "success": {
+          "title": "¡Mensaje Enviado!",
+          "description": "Gracias por contactarnos. Nuestro equipo se comunicará contigo en las próximas 24 horas para conversar sobre tus necesidades comerciales.",
+          "button": "Enviar otro mensaje"
+        },
+        "error": {
+          "title": "Error al Enviar",
+          "description": "Hubo un problema al enviar tu mensaje. Por favor, intenta nuevamente o contáctanos directamente.",
+          "button": "Intentar Nuevamente"
+        }
     },
     "info": {
       "badge": "Sobre Vascruz Group",
@@ -1710,8 +1706,15 @@
         },
         "asia": {
           "title": "Asia",
-          "countries": ["China", "Japón", "Corea del Sur", "India", "Singapur"]
+          "countries": ["China", "Japón", "Corea del Sur", "India"]
         }
+      },
+      "cta": {
+        "title": "¿Listo para expandir tu empresa?",
+        "description": "Nuestro equipo de expertos está listo para ayudarte a conectar con nuevos mercados y oportunidades comerciales globales.",
+        "support": "Soporte Disponible",
+        "response": "Respuesta Garantizada",
+        "confidentiality": "Confidencialidad"
       }
     }
   }

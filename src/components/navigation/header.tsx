@@ -34,11 +34,11 @@ const Header = () => {
           <div className="flex h-16 items-center justify-between">
             <div className="flex items-center">
               <Link href={`/${locale}`} className="flex items-center space-x-2">
-                <img
+                <Image
                   src="/img/logo.png"
                   alt="VasCruz Group LLC"
-                  width={100}
-                  height={100}
+                  width={60}
+                  height={60}
                   className="object-contain"
                 />
               </Link>
@@ -63,10 +63,10 @@ const Header = () => {
               className="flex items-center space-x-2"
               onClick={closeMenu}
             >
-              <img
+              <Image
                 src="/img/logo.png"
                 alt="VasCruz Group LLC"
-                width={75}
+                width={60}
                 height={60}
                 className="object-contain"
               />

@@ -135,7 +135,7 @@ ${whatsappMessages?.closing}`;
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50">
       {/* Header */}
-      <section className="-mt-[64px] pt-20 pb-16 relative overflow-hidden bg-gradient-to-br from-background via-background to-muted/20">
+      <section className="-mt-[64px] pt-20 relative overflow-hidden bg-gradient-to-br from-background via-background to-muted/20">
         <div className="container mx-auto px-4 relative z-10">
           <motion.div
             variants={containerVariants}
@@ -187,7 +187,7 @@ ${whatsappMessages?.closing}`;
       </section>
 
       {/* Product Details */}
-      <section className="py-16 lg:py-20 bg-background">
+      <section className="py-16 lg:pt-10 lg:pb-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12">

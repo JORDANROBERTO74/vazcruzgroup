@@ -63,14 +63,6 @@
           { "name": "Contact", "href": "/contact" }
         ]
       },
-      "specialties": {
-        "title": "Specialties",
-        "items": [
-          { "name": "Import", "href": "/services/import" },
-          { "name": "Export", "href": "/services/export" },
-          { "name": "Consulting", "href": "/services/consulting" }
-        ]
-      },
       "offices": {
         "title": "Offices",
         "items": [
@@ -1637,6 +1629,11 @@
         "title": "Message Sent!",
         "description": "Thank you for contacting us. Our team will contact you within the next 24 hours to discuss your commercial needs.",
         "button": "Send another message"
+      },
+      "error": {
+        "title": "Error Sending Message",
+        "description": "There was an error sending your message. Please try again or contact us directly.",
+        "button": "Try Again"
       }
     },
     "info": {
