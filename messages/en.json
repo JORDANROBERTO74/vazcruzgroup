@@ -108,6 +108,285 @@
         { "name": "Cookie Policy", "href": "/legal/cookies" },
         { "name": "Accessibility", "href": "/legal/accessibility" }
       ]
+    },
+    "legalPages": {
+      "privacy": {
+        "title": "Privacy Policy",
+        "lastUpdated": "August 1, 2024",
+        "introduction": "VasCruz Group LLC is committed to protecting your privacy and ensuring the security of your personal information. This privacy policy explains how we collect, use, and safeguard your data when you use our commercial intermediation services.",
+        "sections": {
+          "information": {
+            "title": "Information We Collect",
+            "content": "We collect various types of information to provide our commercial intermediation services effectively and improve your experience.",
+            "items": [
+              "Personal information such as name, email address, phone number, and company details",
+              "Business requirements and preferences for service matching",
+              "Website usage data and interaction patterns",
+              "Communication records including inquiries and correspondence",
+              "Technical information such as IP address and browser type"
+            ]
+          },
+          "usage": {
+            "title": "How We Use Your Information",
+            "content": "Your information helps us provide better services and support your business needs.",
+            "items": [
+              "To provide commercial intermediation services and connect you with business opportunities",
+              "To communicate with you about services, updates, and business opportunities",
+              "To improve our services, website functionality, and user experience",
+              "To comply with legal obligations and regulatory requirements",
+              "To protect our rights and prevent fraud or abuse"
+            ]
+          },
+          "sharing": {
+            "title": "How We Share Your Information",
+            "content": "We do not sell your personal information. We may share data only in specific circumstances.",
+            "items": [
+              "With your consent, we may share information with trusted business partners for service provision",
+              "With service providers who assist in our operations under strict confidentiality agreements",
+              "When required by law or to protect our rights and safety",
+              "In connection with business transfers or mergers, with appropriate safeguards",
+              "With regulatory authorities when legally required"
+            ]
+          },
+          "security": {
+            "title": "Data Security",
+            "content": "We implement robust security measures to protect your information from unauthorized access, alteration, disclosure, or destruction.",
+            "items": [
+              "Encryption of all data using industry-standard security protocols",
+              "Strict access controls and authentication procedures",
+              "Regular security audits and vulnerability assessments",
+              "Employee training on data protection and privacy practices",
+              "Incident response procedures for data breaches"
+            ]
+          },
+          "rights": {
+            "title": "Your Rights and Choices",
+            "content": "You have certain rights regarding your personal information and how it is used.",
+            "items": [
+              "Access your personal information and request a copy of your data",
+              "Correct inaccurate or incomplete information",
+              "Request deletion of your personal information in certain circumstances",
+              "Object to processing of your data for specific purposes",
+              "Withdraw consent for data processing where applicable"
+            ]
+          },
+          "retention": {
+            "title": "Data Retention",
+            "content": "We retain your personal information only for as long as necessary to fulfill the purposes outlined in this policy, unless a longer retention period is required or permitted by law."
+          },
+          "thirdParty": {
+            "title": "Third-Party Links",
+            "content": "Our website may contain links to third-party websites. We are not responsible for the privacy practices of these external sites and encourage you to review their privacy policies."
+          },
+          "children": {
+            "title": "Children's Privacy",
+            "content": "Our services are not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13."
+          },
+          "changes": {
+            "title": "Changes to This Privacy Policy",
+            "content": "We may update this privacy policy from time to time. We will notify you of any material changes by posting the updated policy on our website and updating the 'Last Updated' date."
+          }
+        },
+        "contact": {
+          "title": "Contact Us",
+          "address": "VasCruz Group LLC, 3530 Mystic Pointe Drive Apt 2403, Aventura, Florida, 33180, USA",
+          "email": "privacy@vascruzgroup.com",
+          "phone": "+591 7700 4600"
+        }
+      },
+      "terms": {
+        "title": "Terms and Conditions",
+        "lastUpdated": "August 1, 2024",
+        "introduction": "These terms and conditions govern your use of VasCruz Group LLC's commercial intermediation services. By using our services, you agree to be bound by these terms.",
+        "sections": {
+          "acceptance": {
+            "title": "Acceptance of Terms",
+            "content": "These terms and conditions constitute a legally binding agreement between you and VasCruz Group LLC. By accessing or using our services, you acknowledge that you have read, understood, and agree to be bound by these terms. If you do not agree with any part of these terms, please do not use our services."
+          },
+          "services": {
+            "title": "Our Services",
+            "content": "VasCruz Group LLC provides commercial intermediation services to connect businesses with opportunities, partners, and markets.",
+            "items": [
+              "Business matching and partnership facilitation",
+              "Market analysis and business intelligence",
+              "Consultation and advisory services",
+              "Network development and relationship building",
+              "Business opportunity identification and evaluation"
+            ]
+          },
+          "obligations": {
+            "title": "User Obligations",
+            "content": "As a user of our services, you have certain responsibilities and obligations.",
+            "items": [
+              "Provide accurate and complete information about your business and requirements",
+              "Comply with all applicable laws and regulations in your business activities",
+              "Maintain professional standards in all business interactions",
+              "Respect the confidentiality of information shared through our platform",
+              "Use our services only for lawful and legitimate business purposes"
+            ]
+          },
+          "limitations": {
+            "title": "Limitations of Liability",
+            "content": "VasCruz Group LLC provides commercial intermediation services on an 'as is' basis. While we strive to provide accurate and reliable information, we cannot guarantee the success of any business relationship or transaction. We are not liable for any direct, indirect, incidental, or consequential damages arising from the use of our services."
+          },
+          "intellectual": {
+            "title": "Intellectual Property",
+            "content": "All content, including but not limited to text, graphics, logos, and software, is the property of VasCruz Group LLC or its licensors and is protected by copyright, trademark, and other intellectual property laws. You may not reproduce, distribute, or create derivative works without our express written consent."
+          },
+          "termination": {
+            "title": "Termination",
+            "content": "We reserve the right to terminate or suspend access to our services at any time, with or without notice, for conduct that we believe violates these terms or is harmful to other users or our business. You may also terminate your use of our services at any time by discontinuing use."
+          },
+          "changes": {
+            "title": "Changes to Terms",
+            "content": "We reserve the right to modify these terms at any time. We will notify users of any material changes by posting the updated terms on our website. Your continued use of our services after such changes constitutes acceptance of the new terms."
+          },
+          "governing": {
+            "title": "Governing Law",
+            "content": "These terms and conditions are governed by and construed in accordance with the laws of the State of Florida, United States. Any disputes arising from these terms will be resolved in the courts of Miami-Dade County, Florida."
+          }
+        },
+        "contact": {
+          "title": "Contact Us",
+          "address": "VasCruz Group LLC, 3530 Mystic Pointe Drive Apt 2403, Aventura, Florida, 33180, USA",
+          "email": "legal@vascruzgroup.com",
+          "phone": "+591 7700 4600"
+        }
+      },
+      "cookies": {
+        "title": "Cookie Policy",
+        "lastUpdated": "August 1, 2024",
+        "introduction": "This cookie policy explains how VasCruz Group LLC uses cookies and similar technologies to enhance your browsing experience and provide personalized services on our website.",
+        "sections": {
+          "what": {
+            "title": "What Are Cookies",
+            "content": "Cookies are small text files that are stored on your device when you visit our website. They help us remember your preferences, analyze how you use our site, and provide personalized content and services. Cookies do not contain personal information and cannot access files on your device."
+          },
+          "types": {
+            "title": "Types of Cookies We Use",
+            "content": "We use different types of cookies for various purposes to improve your experience.",
+            "items": [
+              "Essential cookies required for basic website functionality and security",
+              "Analytics cookies that help us understand how visitors use our website",
+              "Functional cookies that remember your preferences and settings",
+              "Marketing cookies that provide personalized content and advertisements",
+              "Performance cookies that help us optimize website performance"
+            ]
+          },
+          "usage": {
+            "title": "How We Use Cookies",
+            "content": "We use cookies to provide you with a better browsing experience and to improve our services.",
+            "items": [
+              "To remember your preferences and settings",
+              "To analyze website traffic and usage patterns",
+              "To provide personalized content and recommendations",
+              "To improve website functionality and performance",
+              "To ensure security and prevent fraud"
+            ]
+          },
+          "management": {
+            "title": "Managing Cookies",
+            "content": "You have control over how cookies are used on your device.",
+            "items": [
+              "You can control cookies through your browser settings and preferences",
+              "We obtain your consent before using non-essential cookies",
+              "You can opt out of third-party cookies through their respective platforms",
+              "You can delete cookies from your device at any time",
+              "Some website features may not work properly if cookies are disabled"
+            ]
+          },
+          "thirdParty": {
+            "title": "Third-Party Services",
+            "content": "Some third-party services may also use cookies on our website.",
+            "items": [
+              "Google Analytics and similar services for website analytics",
+              "Social media platforms for sharing and engagement features",
+              "Payment processors for secure transaction processing",
+              "Advertising networks for personalized advertisements",
+              "Customer support tools for enhanced service delivery"
+            ]
+          },
+          "consent": {
+            "title": "Cookie Consent",
+            "content": "We respect your privacy and provide you with control over your cookie preferences. You can manage your cookie settings at any time through your browser settings or by contacting us."
+          },
+          "changes": {
+            "title": "Changes to Cookie Policy",
+            "content": "We may update this cookie policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. We will notify you of any material changes by posting the updated policy on our website."
+          }
+        },
+        "contact": {
+          "title": "Contact Us",
+          "address": "VasCruz Group LLC, 3530 Mystic Pointe Drive Apt 2403, Aventura, Florida, 33180, USA",
+          "email": "privacy@vascruzgroup.com",
+          "phone": "+591 7700 4600"
+        }
+      },
+      "accessibility": {
+        "title": "Website Accessibility Statement",
+        "lastUpdated": "August 1, 2024",
+        "introduction": "VasCruz Group LLC is committed to making our website accessible to all users, including those with disabilities. We believe that accessibility is not just a legal requirement but a fundamental aspect of providing excellent customer service.",
+        "sections": {
+          "commitment": {
+            "title": "Our Commitment",
+            "content": "We continuously work to improve the accessibility of our website and ensure compliance with accessibility standards. Our goal is to provide an inclusive experience that allows all users to access our services effectively."
+          },
+          "standards": {
+            "title": "Accessibility Standards",
+            "content": "We follow established accessibility guidelines and standards to ensure our website is accessible to users with various disabilities.",
+            "items": [
+              "Compliance with Web Content Accessibility Guidelines (WCAG) 2.1 Level AA",
+              "Adherence to Section 508 of the Rehabilitation Act requirements",
+              "Ensuring compliance with Americans with Disabilities Act (ADA) standards",
+              "Following international accessibility standards and best practices",
+              "Regular accessibility audits and testing with assistive technologies"
+            ]
+          },
+          "features": {
+            "title": "Accessibility Features",
+            "content": "Our website includes various features to enhance accessibility for users with disabilities.",
+            "items": [
+              "Full keyboard navigation support for all interactive elements",
+              "Compatibility with screen readers and assistive technologies",
+              "High contrast mode and customizable color schemes",
+              "Ability to increase text size without losing functionality",
+              "Alternative text for images and descriptive link text"
+            ]
+          },
+          "assistance": {
+            "title": "Getting Assistance",
+            "content": "We provide multiple ways to get help with accessibility issues and ensure all users can access our services.",
+            "items": [
+              "Direct contact with our accessibility support team",
+              "Comprehensive accessibility documentation and guides",
+              "Easy-to-use feedback system for accessibility issues",
+              "Alternative contact methods including phone and email",
+              "Regular accessibility training for our staff"
+            ]
+          },
+          "technical": {
+            "title": "Technical Requirements",
+            "content": "Our website is designed to work with various assistive technologies and browsers.",
+            "items": [
+              "Compatibility with major screen readers including JAWS, NVDA, and VoiceOver",
+              "Support for keyboard-only navigation and voice commands",
+              "Responsive design that works across different devices and screen sizes",
+              "Fast loading times and optimized performance for assistive technologies",
+              "Regular testing with users who have disabilities"
+            ]
+          },
+          "testing": {
+            "title": "Testing and Evaluation",
+            "content": "We regularly test our website for accessibility using automated tools, manual testing, and feedback from users with disabilities. We are committed to continuous improvement and welcome feedback on accessibility issues."
+          }
+        },
+        "contact": {
+          "title": "Contact Us",
+          "address": "VasCruz Group LLC, 3530 Mystic Pointe Drive Apt 2403, Aventura, Florida, 33180, USA",
+          "email": "accessibility@vascruzgroup.com",
+          "phone": "+591 7700 4600"
+        }
+      }
     }
   },
   "home": {
