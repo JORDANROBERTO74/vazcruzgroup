@@ -825,15 +825,15 @@
           "priceRange": "100",
           "products": [
             {
-              "title": "Basic Representation",
-              "description": "Essential commercial representation service for small to medium businesses.",
+              "title": "Import Advisory 1.1",
+              "description": "First import advisory 1.1",
               "icon": "Handshake",
-              "slug": "basic-representation",
+              "slug": "import-advisory-1.1",
               "features": [
-                "Buyer identification and connection",
-                "Basic contract negotiation",
-                "Monthly progress reports",
-                "Email support"
+                "Potential buyer identification",
+                "Contact and presentation processes",
+                "Opportunity tracking system",
+                "Integrated communication platform"
               ],
               "price": "10",
               "originalPrice": "15",
@@ -842,32 +842,32 @@
               "paymentLink": "https://buy.stripe.com/eVq9AT2SHfTtcBJ1DpcZa0b",
               "duration": "3 months",
               "delivery": "Immediate start",
-              "detailedDescription": "Our basic representation service provides essential support for businesses looking to establish their presence in new markets. We connect you with qualified buyers and handle initial negotiations to get your business relationships started.",
+              "detailedDescription": "Our basic representation service provides essential support for companies looking to establish their presence in new markets. We connect you with qualified buyers and guide you through basic business processes to start your business relationships safely and professionally.",
               "benefits": [
-                "Quick market entry",
-                "Cost-effective solution",
-                "Professional representation",
-                "Risk-free trial period"
+                "Buyer identification and connection",
+                "Business process guidance",
+                "Basic relationship management",
+                "Initial consulting support"
               ],
               "additionalInfo": [
                 { "label": "Contract Duration", "value": "3 months" },
-                { "label": "Support Level", "value": "Email & Phone" },
+                { "label": "Support Level", "value": "Email and Phone" },
                 { "label": "Reports", "value": "Monthly" },
                 { "label": "Meetings", "value": "As needed" }
               ]
             },
             {
-              "title": "Premium Representation",
-              "description": "Comprehensive representation service with dedicated account manager and priority support.",
+              "title": "Import Advisory for Business 1.0",
+              "description": "Advance payment for first initial advisory course 1.0",
               "icon": "Handshake",
-              "slug": "premium-representation",
+              "slug": "import-advisory-1.0",
               "features": [
-                "Dedicated account manager",
-                "Priority buyer connections",
-                "Advanced contract negotiation",
-                "24/7 support access",
-                "Custom market research",
-                "Quarterly strategy reviews"
+                "Advanced buyer identification system",
+                "Intermediate process management platform",
+                "Relationship tracking dashboard",
+                "Monthly reporting tools",
+                "Integrated communication system",
+                "Progress monitoring platform"
               ],
               "price": "23",
               "originalPrice": "30",
@@ -876,32 +876,140 @@
               "paymentLink": "https://buy.stripe.com/cNi6oHbpd36H0T1eqbcZa0a",
               "duration": "6 months",
               "delivery": "Immediate start",
-              "detailedDescription": "Our premium representation service offers comprehensive support with a dedicated account manager who works exclusively with your business. This service includes advanced market research, strategic planning, and priority access to our global network of buyers and distributors.",
+              "detailedDescription": "Our intermediate representation service provides professional support for companies looking to establish solid business connections. We connect you with qualified buyers and guide you through intermediate business processes to develop lasting business relationships.",
               "benefits": [
-                "Dedicated account manager",
-                "Priority buyer access",
-                "Advanced market research",
-                "Strategic planning support",
-                "24/7 priority support",
-                "Custom reporting"
+                "Connection with qualified buyers",
+                "Business process guidance",
+                "Business relationship management",
+                "Monthly progress reports",
+                "Email support and consulting",
+                "Opportunity tracking"
               ],
               "additionalInfo": [
                 { "label": "Contract Duration", "value": "6 months" },
-                { "label": "Support Level", "value": "24/7 Priority" },
-                { "label": "Reports", "value": "Weekly" },
-                { "label": "Meetings", "value": "Bi-weekly" }
+                { "label": "Support Level", "value": "Email and Consulting" },
+                { "label": "Reports", "value": "Monthly" },
+                { "label": "Meetings", "value": "As needed" }
               ]
             },
             {
-              "title": "Enterprise Representation",
-              "description": "Full-service representation for large enterprises with custom solutions and dedicated team.",
+              "title": "Import Advisory for Beginners",
+              "description": "First import advisory 1.1",
+              "icon": "Handshake",
+              "slug": "import-advisory-1.1",
+              "features": [
+                "Basic buyer identification system",
+                "Educational business process platform",
+                "Basic relationship management dashboard",
+                "Monthly reporting tools",
+                "Email communication system",
+                "Progressive learning platform"
+              ],
+              "price": "28",
+              "originalPrice": "35",
+              "badge": "Most Popular",
+              "cta": "Get Premium Service",
+              "paymentLink": "https://buy.stripe.com/14AbJ164T4aL1X5fufcZa0f",
+              "duration": "6 months",
+              "delivery": "Immediate start",
+              "detailedDescription": "Our beginner representation service is designed for companies just starting in international trade. We provide educational guidance, basic business connections, and support to learn the fundamentals of importing safely and professionally.",
+              "benefits": [
+                "Connection with qualified buyers",
+                "Educational business process guidance",
+                "Basic business relationship management",
+                "Monthly progress reports",
+                "Email support and guidance",
+                "Gradual learning of international trade"
+              ],
+              "additionalInfo": [
+                { "label": "Contract Duration", "value": "6 months" },
+                { "label": "Support Level", "value": "Email and Guidance" },
+                { "label": "Reports", "value": "Monthly" },
+                { "label": "Meetings", "value": "As needed" }
+              ]
+            },
+            {
+              "title": "Business Advisory",
+              "description": "First business advisory 1.3",
               "icon": "Building2",
-              "slug": "enterprise-representation",
+              "slug": "import-advisory-1.3",
+              "features": [
+                "Advanced market analysis platform",
+                "Business relationship management system",
+                "Opportunity tracking tools",
+                "Real-time metrics dashboard",
+                "Alert and notification system",
+                "Integrated communication platform"
+              ],
+              "price": "45",
+              "originalPrice": "50",
+              "badge": "Enterprise",
+              "cta": "Get Premium Service",
+              "paymentLink": "https://buy.stripe.com/14AaEXcthaz959h5TFcZa0e",
+              "duration": "12 months",
+              "delivery": "Custom schedule",
+              "detailedDescription": "Our business advisory service is designed for established companies looking to optimize and expand their import operations. It includes specialized expert support, personalized market strategies, and preferential access to our premium network of international buyers and distributors.",
+              "benefits": [
+                "Specialized expert support",
+                "Personalized market strategies",
+                "Preferential network access",
+                "Advanced analytics",
+                "International expansion",
+                "Risk management"
+              ],
+              "additionalInfo": [
+                { "label": "Contract Duration", "value": "12 months" },
+                { "label": "Support Level", "value": "Dedicated Team" },
+                { "label": "Reports", "value": "Real-time" },
+                { "label": "Meetings", "value": "Weekly" }
+              ]
+            },
+            {
+              "title": "Import Advisory for Business 1.2",
+              "description": "Initial advisory for master business",
+              "icon": "Building2",
+              "slug": "import-advisory-1.2",
+              "features": [
+                "Specialized expert support",
+                "Personalized market strategies",
+                "Preferential access to buyer network",
+                "Advanced analysis and reports",
+                "International expansion support",
+                "Risk management services"
+              ],
+              "price": "50",
+              "originalPrice": "60",
+              "badge": "Enterprise",
+              "cta": "Get Premium Service",
+              "paymentLink": "https://buy.stripe.com/14AeVdbpd22DeJR4PBcZa09",
+              "duration": "12 months",
+              "delivery": "Custom schedule",
+              "detailedDescription": "Our advanced advisory service is designed for experienced companies looking to take their import operations to the next level. It includes specialized strategies, deep market analysis, and premium support to maximize return on investment in international trade.",
+              "benefits": [
+                "Specialized expert support",
+                "Personalized market strategies",
+                "Preferential network access",
+                "Advanced analytics",
+                "International expansion",
+                "Risk management"
+              ],
+              "additionalInfo": [
+                { "label": "Contract Duration", "value": "12 months" },
+                { "label": "Support Level", "value": "Dedicated Team" },
+                { "label": "Reports", "value": "Real-time" },
+                { "label": "Meetings", "value": "Weekly" }
+              ]
+            },
+            {
+              "title": "Master Import Advisory 1.2",
+              "description": "Master Advisory for Premium Class Business",
+              "icon": "Building2",
+              "slug": "import-advisory-1.2",
               "features": [
                 "Dedicated team of experts",
-                "Custom market strategies",
-                "Exclusive buyer network access",
-                "Advanced analytics and reporting",
+                "Personalized market strategies",
+                "Exclusive access to buyer network",
+                "Advanced analysis and reports",
                 "International expansion support",
                 "Risk management services"
               ],
@@ -909,13 +1017,13 @@
               "originalPrice": "120",
               "badge": "Enterprise",
               "cta": "Contact Sales",
-              "paymentLink": "https://buy.stripe.com/14AaEXcthaz959h5TFcZa0e",
+              "paymentLink": "https://buy.stripe.com/3cI00j0Kz0YzeJRdm7cZa0c",
               "duration": "12 months",
-              "delivery": "Custom timeline",
-              "detailedDescription": "Our enterprise representation service is designed for large companies requiring comprehensive market presence and strategic growth. This service includes a dedicated team of experts, custom market strategies, and exclusive access to our premium buyer network.",
+              "delivery": "Custom schedule",
+              "detailedDescription": "Our master advisory service represents the highest level of support for companies looking to dominate the import market. It includes a dedicated executive team, cutting-edge market strategies, and VIP access to our global network of buyers, distributors, and strategic partners.",
               "benefits": [
                 "Dedicated expert team",
-                "Custom market strategies",
+                "Personalized market strategies",
                 "Exclusive network access",
                 "Advanced analytics",
                 "International expansion",
@@ -943,111 +1051,215 @@
           "priceRange": "50",
           "products": [
             {
-              "title": "Market Research Report",
-              "description": "Comprehensive market analysis report for your target markets and industries.",
-              "icon": "BarChart3",
-              "slug": "market-research-report",
+              "title": "Import Advisory 1.1",
+              "description": "First import advisory 1.1",
+              "icon": "Handshake",
+              "slug": "import-advisory-1.1",
               "features": [
-                "Market size and growth analysis",
-                "Competitive landscape study",
-                "Consumer behavior insights",
-                "Regulatory environment review",
-                "SWOT analysis",
-                "Market entry recommendations"
+                "Potential buyer identification",
+                "Contact and presentation processes",
+                "Opportunity tracking system",
+                "Integrated communication platform"
               ],
               "price": "10",
               "originalPrice": "15",
-              "badge": "Best Seller",
-              "cta": "Get Report",
+              "badge": "Popular",
+              "cta": "Get Started",
               "paymentLink": "https://buy.stripe.com/eVq9AT2SHfTtcBJ1DpcZa0b",
-              "duration": "4 weeks",
-              "delivery": "Digital + Print",
-              "detailedDescription": "Our comprehensive market research report provides deep insights into your target markets, including detailed analysis of market size, growth trends, competitive landscape, and regulatory environment. This report serves as the foundation for informed business decisions and strategic planning.",
+              "duration": "3 months",
+              "delivery": "Immediate start",
+              "detailedDescription": "Our basic representation service provides essential support for companies looking to establish their presence in new markets. We connect you with qualified buyers and guide you through basic business processes to start your business relationships safely and professionally.",
               "benefits": [
-                "Data-driven insights",
-                "Comprehensive analysis",
-                "Actionable recommendations",
-                "Professional presentation",
-                "Ongoing support",
-                "Customizable focus areas"
+                "Buyer identification and connection",
+                "Business process guidance",
+                "Basic relationship management",
+                "Initial consulting support"
               ],
               "additionalInfo": [
-                { "label": "Report Length", "value": "50-80 pages" },
-                { "label": "Delivery Time", "value": "4 weeks" },
-                { "label": "Format", "value": "PDF + Print" },
-                { "label": "Updates", "value": "6 months" }
+                { "label": "Contract Duration", "value": "3 months" },
+                { "label": "Support Level", "value": "Email and Phone" },
+                { "label": "Reports", "value": "Monthly" },
+                { "label": "Meetings", "value": "As needed" }
               ]
             },
             {
-              "title": "Logistics Optimization",
-              "description": "Complete logistics analysis and optimization for cost reduction and efficiency improvement.",
-              "icon": "BarChart3",
-              "slug": "logistics-optimization",
+              "title": "Import Advisory for Business 1.0",
+              "description": "Advance payment for first initial advisory course 1.0",
+              "icon": "Handshake",
+              "slug": "import-advisory-1.0",
               "features": [
-                "Supply chain analysis",
-                "Cost optimization strategies",
-                "Route optimization",
-                "Warehouse efficiency review",
-                "Technology integration recommendations",
-                "Performance metrics dashboard"
+                "Advanced buyer identification system",
+                "Intermediate process management platform",
+                "Relationship tracking dashboard",
+                "Monthly reporting tools",
+                "Integrated communication system",
+                "Progress monitoring platform"
+              ],
+              "price": "23",
+              "originalPrice": "30",
+              "badge": "Most Popular",
+              "cta": "Get Premium Service",
+              "paymentLink": "https://buy.stripe.com/cNi6oHbpd36H0T1eqbcZa0a",
+              "duration": "6 months",
+              "delivery": "Immediate start",
+              "detailedDescription": "Our intermediate representation service provides professional support for companies looking to establish solid business connections. We connect you with qualified buyers and guide you through intermediate business processes to develop lasting business relationships.",
+              "benefits": [
+                "Connection with qualified buyers",
+                "Business process guidance",
+                "Business relationship management",
+                "Monthly progress reports",
+                "Email support and consulting",
+                "Opportunity tracking"
+              ],
+              "additionalInfo": [
+                { "label": "Contract Duration", "value": "6 months" },
+                { "label": "Support Level", "value": "Email and Consulting" },
+                { "label": "Reports", "value": "Monthly" },
+                { "label": "Meetings", "value": "As needed" }
+              ]
+            },
+            {
+              "title": "Import Advisory for Beginners",
+              "description": "First import advisory 1.1",
+              "icon": "Handshake",
+              "slug": "import-advisory-1.1",
+              "features": [
+                "Basic buyer identification system",
+                "Educational business process platform",
+                "Basic relationship management dashboard",
+                "Monthly reporting tools",
+                "Email communication system",
+                "Progressive learning platform"
+              ],
+              "price": "28",
+              "originalPrice": "35",
+              "badge": "Most Popular",
+              "cta": "Get Premium Service",
+              "paymentLink": "https://buy.stripe.com/14AbJ164T4aL1X5fufcZa0f",
+              "duration": "6 months",
+              "delivery": "Immediate start",
+              "detailedDescription": "Our beginner representation service is designed for companies just starting in international trade. We provide educational guidance, basic business connections, and support to learn the fundamentals of importing safely and professionally.",
+              "benefits": [
+                "Connection with qualified buyers",
+                "Educational business process guidance",
+                "Basic business relationship management",
+                "Monthly progress reports",
+                "Email support and guidance",
+                "Gradual learning of international trade"
+              ],
+              "additionalInfo": [
+                { "label": "Contract Duration", "value": "6 months" },
+                { "label": "Support Level", "value": "Email and Guidance" },
+                { "label": "Reports", "value": "Monthly" },
+                { "label": "Meetings", "value": "As needed" }
+              ]
+            },
+            {
+              "title": "Business Advisory",
+              "description": "First business advisory 1.3",
+              "icon": "Building2",
+              "slug": "import-advisory-1.3",
+              "features": [
+                "Advanced market analysis platform",
+                "Business relationship management system",
+                "Opportunity tracking tools",
+                "Real-time metrics dashboard",
+                "Alert and notification system",
+                "Integrated communication platform"
               ],
               "price": "45",
-              "originalPrice": "55",
-              "badge": "Premium",
-              "cta": "Optimize Logistics",
-              "paymentLink": "https://buy.stripe.com/14AeVdbpd22DeJR4PBcZa09",
-              "duration": "6 weeks",
-              "delivery": "Implementation ready",
-              "detailedDescription": "Our logistics optimization service analyzes your entire supply chain to identify inefficiencies and cost-saving opportunities. We provide actionable recommendations for route optimization, warehouse efficiency, and technology integration to maximize your operational performance.",
+              "originalPrice": "50",
+              "badge": "Enterprise",
+              "cta": "Get Premium Service",
+              "paymentLink": "https://buy.stripe.com/14AaEXcthaz959h5TFcZa0e",
+              "duration": "12 months",
+              "delivery": "Custom schedule",
+              "detailedDescription": "Our business advisory service is designed for established companies looking to optimize and expand their import operations. It includes specialized expert support, personalized market strategies, and preferential access to our premium network of international buyers and distributors.",
               "benefits": [
-                "Cost reduction",
-                "Efficiency improvement",
-                "Technology integration",
-                "Performance monitoring",
-                "Custom solutions",
-                "Ongoing support"
+                "Specialized expert support",
+                "Personalized market strategies",
+                "Preferential network access",
+                "Advanced analytics",
+                "International expansion",
+                "Risk management"
               ],
               "additionalInfo": [
-                { "label": "Analysis Scope", "value": "Full supply chain" },
-                { "label": "Implementation", "value": "6 weeks" },
-                { "label": "ROI Tracking", "value": "3 months" },
-                { "label": "Support", "value": "12 months" }
+                { "label": "Contract Duration", "value": "12 months" },
+                { "label": "Support Level", "value": "Dedicated Team" },
+                { "label": "Reports", "value": "Real-time" },
+                { "label": "Meetings", "value": "Weekly" }
               ]
             },
             {
-              "title": "Cost Analysis & Optimization",
-              "description": "Detailed cost analysis and optimization strategies for maximum profitability.",
-              "icon": "BarChart3",
-              "slug": "cost-analysis-optimization",
+              "title": "Import Advisory for Business 1.2",
+              "description": "Initial advisory for master business",
+              "icon": "Building2",
+              "slug": "import-advisory-1.2",
               "features": [
-                "Comprehensive cost analysis",
-                "Profitability optimization",
-                "Pricing strategy development",
-                "Cost reduction recommendations",
-                "Financial modeling",
-                "Performance tracking"
+                "Specialized expert support",
+                "Personalized market strategies",
+                "Preferential access to buyer network",
+                "Advanced analysis and reports",
+                "International expansion support",
+                "Risk management services"
               ],
               "price": "50",
               "originalPrice": "60",
-              "badge": "New",
-              "cta": "Analyze Costs",
-              "paymentLink": "https://buy.stripe.com/3cI00j0Kz0YzeJRdm7cZa0c",
-              "duration": "3 weeks",
-              "delivery": "Digital report",
-              "detailedDescription": "Our cost analysis and optimization service provides detailed insights into your cost structure and identifies opportunities for improvement. We develop customized strategies to optimize profitability while maintaining quality and service standards.",
+              "badge": "Enterprise",
+              "cta": "Get Premium Service",
+              "paymentLink": "https://buy.stripe.com/14AeVdbpd22DeJR4PBcZa09",
+              "duration": "12 months",
+              "delivery": "Custom schedule",
+              "detailedDescription": "Our advanced advisory service is designed for experienced companies looking to take their import operations to the next level. It includes specialized strategies, deep market analysis, and premium support to maximize return on investment in international trade.",
               "benefits": [
-                "Cost transparency",
-                "Profitability improvement",
-                "Strategic pricing",
-                "Efficiency gains",
-                "Data-driven decisions",
-                "Ongoing monitoring"
+                "Specialized expert support",
+                "Personalized market strategies",
+                "Preferential network access",
+                "Advanced analytics",
+                "International expansion",
+                "Risk management"
               ],
               "additionalInfo": [
-                { "label": "Analysis Depth", "value": "Full cost structure" },
-                { "label": "Delivery Time", "value": "3 weeks" },
-                { "label": "Format", "value": "Digital dashboard" },
-                { "label": "Updates", "value": "Quarterly" }
+                { "label": "Contract Duration", "value": "12 months" },
+                { "label": "Support Level", "value": "Dedicated Team" },
+                { "label": "Reports", "value": "Real-time" },
+                { "label": "Meetings", "value": "Weekly" }
+              ]
+            },
+            {
+              "title": "Master Import Advisory 1.2",
+              "description": "Master Advisory for Premium Class Business",
+              "icon": "Building2",
+              "slug": "import-advisory-1.2",
+              "features": [
+                "Dedicated team of experts",
+                "Personalized market strategies",
+                "Exclusive access to buyer network",
+                "Advanced analysis and reports",
+                "International expansion support",
+                "Risk management services"
+              ],
+              "price": "100",
+              "originalPrice": "120",
+              "badge": "Enterprise",
+              "cta": "Contact Sales",
+              "paymentLink": "https://buy.stripe.com/3cI00j0Kz0YzeJRdm7cZa0c",
+              "duration": "12 months",
+              "delivery": "Custom schedule",
+              "detailedDescription": "Our master advisory service represents the highest level of support for companies looking to dominate the import market. It includes a dedicated executive team, cutting-edge market strategies, and VIP access to our global network of buyers, distributors, and strategic partners.",
+              "benefits": [
+                "Dedicated expert team",
+                "Personalized market strategies",
+                "Exclusive network access",
+                "Advanced analytics",
+                "International expansion",
+                "Risk management"
+              ],
+              "additionalInfo": [
+                { "label": "Contract Duration", "value": "12 months" },
+                { "label": "Support Level", "value": "Dedicated Team" },
+                { "label": "Reports", "value": "Real-time" },
+                { "label": "Meetings", "value": "Weekly" }
               ]
             }
           ]
@@ -1065,111 +1277,215 @@
           "priceRange": "100",
           "products": [
             {
-              "title": "Market Entry Strategy",
-              "description": "Comprehensive market entry strategy for international expansion.",
-              "icon": "Target",
-              "slug": "market-entry-strategy",
+              "title": "Import Advisory 1.1",
+              "description": "First import advisory 1.1",
+              "icon": "Handshake",
+              "slug": "import-advisory-1.1",
               "features": [
-                "Market opportunity analysis",
-                "Entry mode selection",
-                "Risk assessment and mitigation",
-                "Timeline and milestone planning",
-                "Resource allocation strategy",
-                "Success metrics definition"
+                "Potential buyer identification",
+                "Contact and presentation processes",
+                "Opportunity tracking system",
+                "Integrated communication platform"
+              ],
+              "price": "10",
+              "originalPrice": "15",
+              "badge": "Popular",
+              "cta": "Get Started",
+              "paymentLink": "https://buy.stripe.com/eVq9AT2SHfTtcBJ1DpcZa0b",
+              "duration": "3 months",
+              "delivery": "Immediate start",
+              "detailedDescription": "Our basic representation service provides essential support for companies looking to establish their presence in new markets. We connect you with qualified buyers and guide you through basic business processes to start your business relationships safely and professionally.",
+              "benefits": [
+                "Buyer identification and connection",
+                "Business process guidance",
+                "Basic relationship management",
+                "Initial consulting support"
+              ],
+              "additionalInfo": [
+                { "label": "Contract Duration", "value": "3 months" },
+                { "label": "Support Level", "value": "Email and Phone" },
+                { "label": "Reports", "value": "Monthly" },
+                { "label": "Meetings", "value": "As needed" }
+              ]
+            },
+            {
+              "title": "Import Advisory for Business 1.0",
+              "description": "Advance payment for first initial advisory course 1.0",
+              "icon": "Handshake",
+              "slug": "import-advisory-1.0",
+              "features": [
+                "Advanced buyer identification system",
+                "Intermediate process management platform",
+                "Relationship tracking dashboard",
+                "Monthly reporting tools",
+                "Integrated communication system",
+                "Progress monitoring platform"
               ],
               "price": "23",
               "originalPrice": "30",
-              "badge": "Popular",
-              "cta": "Develop Strategy",
+              "badge": "Most Popular",
+              "cta": "Get Premium Service",
               "paymentLink": "https://buy.stripe.com/cNi6oHbpd36H0T1eqbcZa0a",
-              "duration": "8 weeks",
-              "delivery": "Strategic plan",
-              "detailedDescription": "Our market entry strategy service provides a comprehensive roadmap for entering new international markets. We analyze market opportunities, assess risks, and develop a detailed implementation plan with clear milestones and success metrics.",
+              "duration": "6 months",
+              "delivery": "Immediate start",
+              "detailedDescription": "Our intermediate representation service provides professional support for companies looking to establish solid business connections. We connect you with qualified buyers and guide you through intermediate business processes to develop lasting business relationships.",
               "benefits": [
-                "Clear entry roadmap",
-                "Risk mitigation",
-                "Resource optimization",
-                "Success tracking",
-                "Expert guidance",
-                "Ongoing support"
+                "Connection with qualified buyers",
+                "Business process guidance",
+                "Business relationship management",
+                "Monthly progress reports",
+                "Email support and consulting",
+                "Opportunity tracking"
               ],
               "additionalInfo": [
-                { "label": "Strategy Scope", "value": "Full market entry" },
-                { "label": "Delivery Time", "value": "8 weeks" },
-                { "label": "Format", "value": "Strategic plan" },
-                { "label": "Support", "value": "12 months" }
+                { "label": "Contract Duration", "value": "6 months" },
+                { "label": "Support Level", "value": "Email and Consulting" },
+                { "label": "Reports", "value": "Monthly" },
+                { "label": "Meetings", "value": "As needed" }
               ]
             },
             {
-              "title": "Global Market Entry Package",
-              "description": "Complete package for entering new international markets with full support and guidance.",
-              "icon": "Target",
-              "slug": "market-entry-package",
+              "title": "Import Advisory for Beginners",
+              "description": "First import advisory 1.1",
+              "icon": "Handshake",
+              "slug": "import-advisory-1.1",
               "features": [
-                "Market research and analysis",
-                "Entry strategy development",
-                "Local partner identification",
-                "Launch support and monitoring",
-                "Regulatory compliance guidance",
-                "Performance optimization"
+                "Basic buyer identification system",
+                "Educational business process platform",
+                "Basic relationship management dashboard",
+                "Monthly reporting tools",
+                "Email communication system",
+                "Progressive learning platform"
+              ],
+              "price": "28",
+              "originalPrice": "35",
+              "badge": "Most Popular",
+              "cta": "Get Premium Service",
+              "paymentLink": "https://buy.stripe.com/14AbJ164T4aL1X5fufcZa0f",
+              "duration": "6 months",
+              "delivery": "Immediate start",
+              "detailedDescription": "Our beginner representation service is designed for companies just starting in international trade. We provide educational guidance, basic business connections, and support to learn the fundamentals of importing safely and professionally.",
+              "benefits": [
+                "Connection with qualified buyers",
+                "Educational business process guidance",
+                "Basic business relationship management",
+                "Monthly progress reports",
+                "Email support and guidance",
+                "Gradual learning of international trade"
+              ],
+              "additionalInfo": [
+                { "label": "Contract Duration", "value": "6 months" },
+                { "label": "Support Level", "value": "Email and Guidance" },
+                { "label": "Reports", "value": "Monthly" },
+                { "label": "Meetings", "value": "As needed" }
+              ]
+            },
+            {
+              "title": "Business Advisory",
+              "description": "First business advisory 1.3",
+              "icon": "Building2",
+              "slug": "import-advisory-1.3",
+              "features": [
+                "Advanced market analysis platform",
+                "Business relationship management system",
+                "Opportunity tracking tools",
+                "Real-time metrics dashboard",
+                "Alert and notification system",
+                "Integrated communication platform"
+              ],
+              "price": "45",
+              "originalPrice": "50",
+              "badge": "Enterprise",
+              "cta": "Get Premium Service",
+              "paymentLink": "https://buy.stripe.com/14AaEXcthaz959h5TFcZa0e",
+              "duration": "12 months",
+              "delivery": "Custom schedule",
+              "detailedDescription": "Our business advisory service is designed for established companies looking to optimize and expand their import operations. It includes specialized expert support, personalized market strategies, and preferential access to our premium network of international buyers and distributors.",
+              "benefits": [
+                "Specialized expert support",
+                "Personalized market strategies",
+                "Preferential network access",
+                "Advanced analytics",
+                "International expansion",
+                "Risk management"
+              ],
+              "additionalInfo": [
+                { "label": "Contract Duration", "value": "12 months" },
+                { "label": "Support Level", "value": "Dedicated Team" },
+                { "label": "Reports", "value": "Real-time" },
+                { "label": "Meetings", "value": "Weekly" }
+              ]
+            },
+            {
+              "title": "Import Advisory for Business 1.2",
+              "description": "Initial advisory for master business",
+              "icon": "Building2",
+              "slug": "import-advisory-1.2",
+              "features": [
+                "Specialized expert support",
+                "Personalized market strategies",
+                "Preferential access to buyer network",
+                "Advanced analysis and reports",
+                "International expansion support",
+                "Risk management services"
+              ],
+              "price": "50",
+              "originalPrice": "60",
+              "badge": "Enterprise",
+              "cta": "Get Premium Service",
+              "paymentLink": "https://buy.stripe.com/14AeVdbpd22DeJR4PBcZa09",
+              "duration": "12 months",
+              "delivery": "Custom schedule",
+              "detailedDescription": "Our advanced advisory service is designed for experienced companies looking to take their import operations to the next level. It includes specialized strategies, deep market analysis, and premium support to maximize return on investment in international trade.",
+              "benefits": [
+                "Specialized expert support",
+                "Personalized market strategies",
+                "Preferential network access",
+                "Advanced analytics",
+                "International expansion",
+                "Risk management"
+              ],
+              "additionalInfo": [
+                { "label": "Contract Duration", "value": "12 months" },
+                { "label": "Support Level", "value": "Dedicated Team" },
+                { "label": "Reports", "value": "Real-time" },
+                { "label": "Meetings", "value": "Weekly" }
+              ]
+            },
+            {
+              "title": "Master Import Advisory 1.2",
+              "description": "Master Advisory for Premium Class Business",
+              "icon": "Building2",
+              "slug": "import-advisory-1.2",
+              "features": [
+                "Dedicated team of experts",
+                "Personalized market strategies",
+                "Exclusive access to buyer network",
+                "Advanced analysis and reports",
+                "International expansion support",
+                "Risk management services"
               ],
               "price": "100",
               "originalPrice": "120",
-              "badge": "Best Value",
-              "cta": "Start Market Entry",
-              "paymentLink": "https://buy.stripe.com/14AaEXcthaz959h5TFcZa0e",
-              "duration": "12 weeks",
-              "delivery": "Full implementation",
-              "detailedDescription": "Our comprehensive market entry package includes everything needed to successfully enter new international markets. From initial research to launch support, we provide end-to-end guidance and implementation support.",
-              "benefits": [
-                "End-to-end support",
-                "Expert guidance",
-                "Risk management",
-                "Local expertise",
-                "Performance monitoring",
-                "Ongoing optimization"
-              ],
-              "additionalInfo": [
-                { "label": "Package Scope", "value": "Full implementation" },
-                { "label": "Duration", "value": "12 weeks" },
-                { "label": "Support", "value": "24 months" },
-                { "label": "Updates", "value": "Quarterly" }
-              ]
-            },
-            {
-              "title": "Growth Strategy Development",
-              "description": "Strategic growth planning and opportunity identification for sustainable business expansion.",
-              "icon": "Target",
-              "slug": "growth-strategy-development",
-              "features": [
-                "Growth opportunity analysis",
-                "Strategic planning framework",
-                "Resource optimization",
-                "Performance tracking systems",
-                "Innovation strategy",
-                "Competitive positioning"
-              ],
-              "price": "50",
-              "originalPrice": "65",
-              "badge": "Premium",
-              "cta": "Develop Growth Plan",
+              "badge": "Enterprise",
+              "cta": "Contact Sales",
               "paymentLink": "https://buy.stripe.com/3cI00j0Kz0YzeJRdm7cZa0c",
-              "duration": "6 weeks",
-              "delivery": "Strategic framework",
-              "detailedDescription": "Our growth strategy development service helps businesses identify and capitalize on growth opportunities. We develop comprehensive strategic frameworks that align with your business objectives and market conditions.",
+              "duration": "12 months",
+              "delivery": "Custom schedule",
+              "detailedDescription": "Our master advisory service represents the highest level of support for companies looking to dominate the import market. It includes a dedicated executive team, cutting-edge market strategies, and VIP access to our global network of buyers, distributors, and strategic partners.",
               "benefits": [
-                "Strategic clarity",
-                "Growth acceleration",
-                "Resource optimization",
-                "Competitive advantage",
-                "Innovation focus",
-                "Sustainable growth"
+                "Dedicated expert team",
+                "Personalized market strategies",
+                "Exclusive network access",
+                "Advanced analytics",
+                "International expansion",
+                "Risk management"
               ],
               "additionalInfo": [
-                { "label": "Strategy Depth", "value": "Comprehensive" },
-                { "label": "Delivery Time", "value": "6 weeks" },
-                { "label": "Format", "value": "Strategic framework" },
-                { "label": "Support", "value": "18 months" }
+                { "label": "Contract Duration", "value": "12 months" },
+                { "label": "Support Level", "value": "Dedicated Team" },
+                { "label": "Reports", "value": "Real-time" },
+                { "label": "Meetings", "value": "Weekly" }
               ]
             }
           ]
@@ -1187,111 +1503,215 @@
           "priceRange": "50",
           "products": [
             {
-              "title": "Partnership Development",
-              "description": "Strategic partnership identification and development for business growth.",
-              "icon": "Users",
-              "slug": "partnership-development",
+              "title": "Import Advisory 1.1",
+              "description": "First import advisory 1.1",
+              "icon": "Handshake",
+              "slug": "import-advisory-1.1",
               "features": [
-                "Partner identification and screening",
-                "Strategic fit analysis",
-                "Partnership structure design",
-                "Negotiation support",
-                "Agreement drafting",
-                "Performance monitoring"
+                "Potential buyer identification",
+                "Contact and presentation processes",
+                "Opportunity tracking system",
+                "Integrated communication platform"
               ],
               "price": "10",
               "originalPrice": "15",
               "badge": "Popular",
-              "cta": "Develop Partnerships",
+              "cta": "Get Started",
               "paymentLink": "https://buy.stripe.com/eVq9AT2SHfTtcBJ1DpcZa0b",
-              "duration": "6 weeks",
-              "delivery": "Partnership framework",
-              "detailedDescription": "Our partnership development service helps businesses identify and establish strategic partnerships that drive growth and competitive advantage. We provide comprehensive support from initial identification through agreement execution.",
+              "duration": "3 months",
+              "delivery": "Immediate start",
+              "detailedDescription": "Our basic representation service provides essential support for companies looking to establish their presence in new markets. We connect you with qualified buyers and guide you through basic business processes to start your business relationships safely and professionally.",
               "benefits": [
-                "Strategic partnerships",
-                "Growth acceleration",
-                "Risk sharing",
-                "Resource optimization",
-                "Market expansion",
-                "Competitive advantage"
+                "Buyer identification and connection",
+                "Business process guidance",
+                "Basic relationship management",
+                "Initial consulting support"
               ],
               "additionalInfo": [
-                { "label": "Partnership Scope", "value": "Strategic alliances" },
-                { "label": "Delivery Time", "value": "6 weeks" },
-                { "label": "Format", "value": "Partnership framework" },
-                { "label": "Support", "value": "12 months" }
+                { "label": "Contract Duration", "value": "3 months" },
+                { "label": "Support Level", "value": "Email and Phone" },
+                { "label": "Reports", "value": "Monthly" },
+                { "label": "Meetings", "value": "As needed" }
               ]
             },
             {
-              "title": "Strategic Alliance Development",
-              "description": "Comprehensive service for developing strategic partnerships and business alliances.",
-              "icon": "Users",
-              "slug": "alliance-development",
+              "title": "Import Advisory for Business 1.0",
+              "description": "Advance payment for first initial advisory course 1.0",
+              "icon": "Handshake",
+              "slug": "import-advisory-1.0",
               "features": [
-                "Alliance opportunity identification",
-                "Strategic fit assessment",
-                "Alliance structure design",
-                "Negotiation and agreement drafting",
-                "Implementation support",
-                "Ongoing relationship management"
+                "Advanced buyer identification system",
+                "Intermediate process management platform",
+                "Relationship tracking dashboard",
+                "Monthly reporting tools",
+                "Integrated communication system",
+                "Progress monitoring platform"
+              ],
+              "price": "23",
+              "originalPrice": "30",
+              "badge": "Most Popular",
+              "cta": "Get Premium Service",
+              "paymentLink": "https://buy.stripe.com/cNi6oHbpd36H0T1eqbcZa0a",
+              "duration": "6 months",
+              "delivery": "Immediate start",
+              "detailedDescription": "Our intermediate representation service provides professional support for companies looking to establish solid business connections. We connect you with qualified buyers and guide you through intermediate business processes to develop lasting business relationships.",
+              "benefits": [
+                "Connection with qualified buyers",
+                "Business process guidance",
+                "Business relationship management",
+                "Monthly progress reports",
+                "Email support and consulting",
+                "Opportunity tracking"
+              ],
+              "additionalInfo": [
+                { "label": "Contract Duration", "value": "6 months" },
+                { "label": "Support Level", "value": "Email and Consulting" },
+                { "label": "Reports", "value": "Monthly" },
+                { "label": "Meetings", "value": "As needed" }
+              ]
+            },
+            {
+              "title": "Import Advisory for Beginners",
+              "description": "First import advisory 1.1",
+              "icon": "Handshake",
+              "slug": "import-advisory-1.1",
+              "features": [
+                "Basic buyer identification system",
+                "Educational business process platform",
+                "Basic relationship management dashboard",
+                "Monthly reporting tools",
+                "Email communication system",
+                "Progressive learning platform"
+              ],
+              "price": "28",
+              "originalPrice": "35",
+              "badge": "Most Popular",
+              "cta": "Get Premium Service",
+              "paymentLink": "https://buy.stripe.com/14AbJ164T4aL1X5fufcZa0f",
+              "duration": "6 months",
+              "delivery": "Immediate start",
+              "detailedDescription": "Our beginner representation service is designed for companies just starting in international trade. We provide educational guidance, basic business connections, and support to learn the fundamentals of importing safely and professionally.",
+              "benefits": [
+                "Connection with qualified buyers",
+                "Educational business process guidance",
+                "Basic business relationship management",
+                "Monthly progress reports",
+                "Email support and guidance",
+                "Gradual learning of international trade"
+              ],
+              "additionalInfo": [
+                { "label": "Contract Duration", "value": "6 months" },
+                { "label": "Support Level", "value": "Email and Guidance" },
+                { "label": "Reports", "value": "Monthly" },
+                { "label": "Meetings", "value": "As needed" }
+              ]
+            },
+            {
+              "title": "Business Advisory",
+              "description": "First business advisory 1.3",
+              "icon": "Building2",
+              "slug": "import-advisory-1.3",
+              "features": [
+                "Advanced market analysis platform",
+                "Business relationship management system",
+                "Opportunity tracking tools",
+                "Real-time metrics dashboard",
+                "Alert and notification system",
+                "Integrated communication platform"
               ],
               "price": "45",
-              "originalPrice": "55",
-              "badge": "New Service",
-              "cta": "Build Alliances",
-              "paymentLink": "https://buy.stripe.com/14AeVdbpd22DeJR4PBcZa09",
-              "duration": "8 weeks",
-              "delivery": "Alliance strategy",
-              "detailedDescription": "Our strategic alliance development service provides comprehensive support for creating and managing strategic business alliances. We help identify opportunities, assess strategic fit, and develop sustainable alliance structures.",
+              "originalPrice": "50",
+              "badge": "Enterprise",
+              "cta": "Get Premium Service",
+              "paymentLink": "https://buy.stripe.com/14AaEXcthaz959h5TFcZa0e",
+              "duration": "12 months",
+              "delivery": "Custom schedule",
+              "detailedDescription": "Our business advisory service is designed for established companies looking to optimize and expand their import operations. It includes specialized expert support, personalized market strategies, and preferential access to our premium network of international buyers and distributors.",
               "benefits": [
-                "Strategic alliances",
-                "Market expansion",
-                "Resource sharing",
-                "Innovation collaboration",
-                "Risk mitigation",
-                "Sustainable growth"
+                "Specialized expert support",
+                "Personalized market strategies",
+                "Preferential network access",
+                "Advanced analytics",
+                "International expansion",
+                "Risk management"
               ],
               "additionalInfo": [
-                { "label": "Alliance Scope", "value": "Strategic partnerships" },
-                { "label": "Delivery Time", "value": "8 weeks" },
-                { "label": "Format", "value": "Alliance strategy" },
-                { "label": "Support", "value": "18 months" }
+                { "label": "Contract Duration", "value": "12 months" },
+                { "label": "Support Level", "value": "Dedicated Team" },
+                { "label": "Reports", "value": "Real-time" },
+                { "label": "Meetings", "value": "Weekly" }
               ]
             },
             {
-              "title": "Business Network Development",
-              "description": "Development of strategic business networks and industry connections.",
-              "icon": "Users",
-              "slug": "business-network-development",
+              "title": "Import Advisory for Business 1.2",
+              "description": "Initial advisory for master business",
+              "icon": "Building2",
+              "slug": "import-advisory-1.2",
               "features": [
-                "Network mapping and analysis",
-                "Connection strategy development",
-                "Relationship building support",
-                "Network optimization",
-                "Collaboration facilitation",
-                "Performance tracking"
+                "Specialized expert support",
+                "Personalized market strategies",
+                "Preferential access to buyer network",
+                "Advanced analysis and reports",
+                "International expansion support",
+                "Risk management services"
               ],
               "price": "50",
               "originalPrice": "60",
-              "badge": "Essential",
-              "cta": "Build Network",
-              "paymentLink": "https://buy.stripe.com/3cI00j0Kz0YzeJRdm7cZa0c",
-              "duration": "4 weeks",
-              "delivery": "Network strategy",
-              "detailedDescription": "Our business network development service helps businesses build and optimize strategic networks of industry connections, partners, and collaborators. We provide systematic approaches to network building and relationship management.",
+              "badge": "Enterprise",
+              "cta": "Get Premium Service",
+              "paymentLink": "https://buy.stripe.com/14AeVdbpd22DeJR4PBcZa09",
+              "duration": "12 months",
+              "delivery": "Custom schedule",
+              "detailedDescription": "Our advanced advisory service is designed for experienced companies looking to take their import operations to the next level. It includes specialized strategies, deep market analysis, and premium support to maximize return on investment in international trade.",
               "benefits": [
-                "Strategic connections",
-                "Industry relationships",
-                "Collaboration opportunities",
-                "Market intelligence",
-                "Business development",
-                "Competitive insights"
+                "Specialized expert support",
+                "Personalized market strategies",
+                "Preferential network access",
+                "Advanced analytics",
+                "International expansion",
+                "Risk management"
               ],
               "additionalInfo": [
-                { "label": "Network Scope", "value": "Industry connections" },
-                { "label": "Delivery Time", "value": "4 weeks" },
-                { "label": "Format", "value": "Network strategy" },
-                { "label": "Support", "value": "6 months" }
+                { "label": "Contract Duration", "value": "12 months" },
+                { "label": "Support Level", "value": "Dedicated Team" },
+                { "label": "Reports", "value": "Real-time" },
+                { "label": "Meetings", "value": "Weekly" }
+              ]
+            },
+            {
+              "title": "Master Import Advisory 1.2",
+              "description": "Master Advisory for Premium Class Business",
+              "icon": "Building2",
+              "slug": "import-advisory-1.2",
+              "features": [
+                "Dedicated team of experts",
+                "Personalized market strategies",
+                "Exclusive access to buyer network",
+                "Advanced analysis and reports",
+                "International expansion support",
+                "Risk management services"
+              ],
+              "price": "100",
+              "originalPrice": "120",
+              "badge": "Enterprise",
+              "cta": "Contact Sales",
+              "paymentLink": "https://buy.stripe.com/3cI00j0Kz0YzeJRdm7cZa0c",
+              "duration": "12 months",
+              "delivery": "Custom schedule",
+              "detailedDescription": "Our master advisory service represents the highest level of support for companies looking to dominate the import market. It includes a dedicated executive team, cutting-edge market strategies, and VIP access to our global network of buyers, distributors, and strategic partners.",
+              "benefits": [
+                "Dedicated expert team",
+                "Personalized market strategies",
+                "Exclusive network access",
+                "Advanced analytics",
+                "International expansion",
+                "Risk management"
+              ],
+              "additionalInfo": [
+                { "label": "Contract Duration", "value": "12 months" },
+                { "label": "Support Level", "value": "Dedicated Team" },
+                { "label": "Reports", "value": "Real-time" },
+                { "label": "Meetings", "value": "Weekly" }
               ]
             }
           ]
@@ -1309,111 +1729,215 @@
           "priceRange": "50",
           "products": [
             {
-              "title": "Innovation Strategy",
-              "description": "Development of innovation strategies and technology roadmaps for competitive advantage.",
-              "icon": "Lightbulb",
-              "slug": "innovation-strategy",
+              "title": "Import Advisory 1.1",
+              "description": "First import advisory 1.1",
+              "icon": "Handshake",
+              "slug": "import-advisory-1.1",
               "features": [
-                "Innovation opportunity analysis",
-                "Technology roadmap development",
-                "Innovation culture assessment",
-                "Process improvement identification",
-                "Technology integration planning",
-                "Performance measurement framework"
+                "Potential buyer identification",
+                "Contact and presentation processes",
+                "Opportunity tracking system",
+                "Integrated communication platform"
               ],
               "price": "10",
               "originalPrice": "15",
               "badge": "Popular",
-              "cta": "Develop Strategy",
+              "cta": "Get Started",
               "paymentLink": "https://buy.stripe.com/eVq9AT2SHfTtcBJ1DpcZa0b",
-              "duration": "6 weeks",
-              "delivery": "Innovation roadmap",
-              "detailedDescription": "Our innovation strategy service helps businesses develop comprehensive innovation roadmaps and technology integration plans. We assess current capabilities and design strategies to maintain competitive advantage through innovation.",
+              "duration": "3 months",
+              "delivery": "Immediate start",
+              "detailedDescription": "Our basic representation service provides essential support for companies looking to establish their presence in new markets. We connect you with qualified buyers and guide you through basic business processes to start your business relationships safely and professionally.",
               "benefits": [
-                "Competitive advantage",
-                "Technology leadership",
-                "Process optimization",
-                "Innovation culture",
-                "Performance improvement",
-                "Sustainable growth"
+                "Buyer identification and connection",
+                "Business process guidance",
+                "Basic relationship management",
+                "Initial consulting support"
               ],
               "additionalInfo": [
-                { "label": "Strategy Scope", "value": "Innovation roadmap" },
-                { "label": "Delivery Time", "value": "6 weeks" },
-                { "label": "Format", "value": "Strategic plan" },
-                { "label": "Support", "value": "12 months" }
+                { "label": "Contract Duration", "value": "3 months" },
+                { "label": "Support Level", "value": "Email and Phone" },
+                { "label": "Reports", "value": "Monthly" },
+                { "label": "Meetings", "value": "As needed" }
               ]
             },
             {
-              "title": "Technology Integration",
-              "description": "Strategic technology integration and digital transformation support.",
-              "icon": "Lightbulb",
-              "slug": "technology-integration",
+              "title": "Import Advisory for Business 1.0",
+              "description": "Advance payment for first initial advisory course 1.0",
+              "icon": "Handshake",
+              "slug": "import-advisory-1.0",
               "features": [
-                "Technology assessment",
-                "Integration strategy development",
-                "Implementation planning",
-                "Change management support",
-                "Performance optimization",
-                "Ongoing maintenance"
+                "Advanced buyer identification system",
+                "Intermediate process management platform",
+                "Relationship tracking dashboard",
+                "Monthly reporting tools",
+                "Integrated communication system",
+                "Progress monitoring platform"
               ],
               "price": "23",
               "originalPrice": "30",
-              "badge": "Premium",
-              "cta": "Integrate Technology",
+              "badge": "Most Popular",
+              "cta": "Get Premium Service",
               "paymentLink": "https://buy.stripe.com/cNi6oHbpd36H0T1eqbcZa0a",
-              "duration": "8 weeks",
-              "delivery": "Integration plan",
-              "detailedDescription": "Our technology integration service provides comprehensive support for implementing new technologies and digital transformation initiatives. We ensure smooth integration with minimal disruption to business operations.",
+              "duration": "6 months",
+              "delivery": "Immediate start",
+              "detailedDescription": "Our intermediate representation service provides professional support for companies looking to establish solid business connections. We connect you with qualified buyers and guide you through intermediate business processes to develop lasting business relationships.",
               "benefits": [
-                "Digital transformation",
-                "Operational efficiency",
-                "Technology optimization",
-                "Change management",
-                "Performance improvement",
-                "Competitive advantage"
+                "Connection with qualified buyers",
+                "Business process guidance",
+                "Business relationship management",
+                "Monthly progress reports",
+                "Email support and consulting",
+                "Opportunity tracking"
               ],
               "additionalInfo": [
-                { "label": "Integration Scope", "value": "Full transformation" },
-                { "label": "Delivery Time", "value": "8 weeks" },
-                { "label": "Format", "value": "Integration plan" },
-                { "label": "Support", "value": "18 months" }
+                { "label": "Contract Duration", "value": "6 months" },
+                { "label": "Support Level", "value": "Email and Consulting" },
+                { "label": "Reports", "value": "Monthly" },
+                { "label": "Meetings", "value": "As needed" }
               ]
             },
             {
-              "title": "Process Innovation",
-              "description": "Process improvement and innovation for operational excellence.",
-              "icon": "Lightbulb",
-              "slug": "process-innovation",
+              "title": "Import Advisory for Beginners",
+              "description": "First import advisory 1.1",
+              "icon": "Handshake",
+              "slug": "import-advisory-1.1",
               "features": [
-                "Process analysis and mapping",
-                "Improvement opportunity identification",
-                "Innovation solution design",
-                "Implementation support",
-                "Performance monitoring",
-                "Continuous improvement"
+                "Basic buyer identification system",
+                "Educational business process platform",
+                "Basic relationship management dashboard",
+                "Monthly reporting tools",
+                "Email communication system",
+                "Progressive learning platform"
+              ],
+              "price": "28",
+              "originalPrice": "35",
+              "badge": "Most Popular",
+              "cta": "Get Premium Service",
+              "paymentLink": "https://buy.stripe.com/14AbJ164T4aL1X5fufcZa0f",
+              "duration": "6 months",
+              "delivery": "Immediate start",
+              "detailedDescription": "Our beginner representation service is designed for companies just starting in international trade. We provide educational guidance, basic business connections, and support to learn the fundamentals of importing safely and professionally.",
+              "benefits": [
+                "Connection with qualified buyers",
+                "Educational business process guidance",
+                "Basic business relationship management",
+                "Monthly progress reports",
+                "Email support and guidance",
+                "Gradual learning of international trade"
+              ],
+              "additionalInfo": [
+                { "label": "Contract Duration", "value": "6 months" },
+                { "label": "Support Level", "value": "Email and Guidance" },
+                { "label": "Reports", "value": "Monthly" },
+                { "label": "Meetings", "value": "As needed" }
+              ]
+            },
+            {
+              "title": "Business Advisory",
+              "description": "First business advisory 1.3",
+              "icon": "Building2",
+              "slug": "import-advisory-1.3",
+              "features": [
+                "Advanced market analysis platform",
+                "Business relationship management system",
+                "Opportunity tracking tools",
+                "Real-time metrics dashboard",
+                "Alert and notification system",
+                "Integrated communication platform"
+              ],
+              "price": "45",
+              "originalPrice": "50",
+              "badge": "Enterprise",
+              "cta": "Get Premium Service",
+              "paymentLink": "https://buy.stripe.com/14AaEXcthaz959h5TFcZa0e",
+              "duration": "12 months",
+              "delivery": "Custom schedule",
+              "detailedDescription": "Our business advisory service is designed for established companies looking to optimize and expand their import operations. It includes specialized expert support, personalized market strategies, and preferential access to our premium network of international buyers and distributors.",
+              "benefits": [
+                "Specialized expert support",
+                "Personalized market strategies",
+                "Preferential network access",
+                "Advanced analytics",
+                "International expansion",
+                "Risk management"
+              ],
+              "additionalInfo": [
+                { "label": "Contract Duration", "value": "12 months" },
+                { "label": "Support Level", "value": "Dedicated Team" },
+                { "label": "Reports", "value": "Real-time" },
+                { "label": "Meetings", "value": "Weekly" }
+              ]
+            },
+            {
+              "title": "Import Advisory for Business 1.2",
+              "description": "Initial advisory for master business",
+              "icon": "Building2",
+              "slug": "import-advisory-1.2",
+              "features": [
+                "Specialized expert support",
+                "Personalized market strategies",
+                "Preferential access to buyer network",
+                "Advanced analysis and reports",
+                "International expansion support",
+                "Risk management services"
               ],
               "price": "50",
               "originalPrice": "60",
-              "badge": "Essential",
-              "cta": "Innovate Processes",
-              "paymentLink": "https://buy.stripe.com/3cI00j0Kz0YzeJRdm7cZa0c",
-              "duration": "4 weeks",
-              "delivery": "Process roadmap",
-              "detailedDescription": "Our process innovation service helps businesses identify and implement process improvements that drive operational excellence and competitive advantage. We focus on sustainable improvements that deliver measurable results.",
+              "badge": "Enterprise",
+              "cta": "Get Premium Service",
+              "paymentLink": "https://buy.stripe.com/14AeVdbpd22DeJR4PBcZa09",
+              "duration": "12 months",
+              "delivery": "Custom schedule",
+              "detailedDescription": "Our advanced advisory service is designed for experienced companies looking to take their import operations to the next level. It includes specialized strategies, deep market analysis, and premium support to maximize return on investment in international trade.",
               "benefits": [
-                "Operational efficiency",
-                "Cost reduction",
-                "Quality improvement",
-                "Innovation culture",
-                "Performance optimization",
-                "Sustainable improvement"
+                "Specialized expert support",
+                "Personalized market strategies",
+                "Preferential network access",
+                "Advanced analytics",
+                "International expansion",
+                "Risk management"
               ],
               "additionalInfo": [
-                { "label": "Process Scope", "value": "Full optimization" },
-                { "label": "Delivery Time", "value": "4 weeks" },
-                { "label": "Format", "value": "Process roadmap" },
-                { "label": "Support", "value": "6 months" }
+                { "label": "Contract Duration", "value": "12 months" },
+                { "label": "Support Level", "value": "Dedicated Team" },
+                { "label": "Reports", "value": "Real-time" },
+                { "label": "Meetings", "value": "Weekly" }
+              ]
+            },
+            {
+              "title": "Master Import Advisory 1.2",
+              "description": "Master Advisory for Premium Class Business",
+              "icon": "Building2",
+              "slug": "import-advisory-1.2",
+              "features": [
+                "Dedicated team of experts",
+                "Personalized market strategies",
+                "Exclusive access to buyer network",
+                "Advanced analysis and reports",
+                "International expansion support",
+                "Risk management services"
+              ],
+              "price": "100",
+              "originalPrice": "120",
+              "badge": "Enterprise",
+              "cta": "Contact Sales",
+              "paymentLink": "https://buy.stripe.com/3cI00j0Kz0YzeJRdm7cZa0c",
+              "duration": "12 months",
+              "delivery": "Custom schedule",
+              "detailedDescription": "Our master advisory service represents the highest level of support for companies looking to dominate the import market. It includes a dedicated executive team, cutting-edge market strategies, and VIP access to our global network of buyers, distributors, and strategic partners.",
+              "benefits": [
+                "Dedicated expert team",
+                "Personalized market strategies",
+                "Exclusive network access",
+                "Advanced analytics",
+                "International expansion",
+                "Risk management"
+              ],
+              "additionalInfo": [
+                { "label": "Contract Duration", "value": "12 months" },
+                { "label": "Support Level", "value": "Dedicated Team" },
+                { "label": "Reports", "value": "Real-time" },
+                { "label": "Meetings", "value": "Weekly" }
               ]
             }
           ]
@@ -1431,111 +1955,215 @@
           "priceRange": "100",
           "products": [
             {
-              "title": "Strategic Planning",
-              "description": "Comprehensive strategic planning for business expansion and growth.",
-              "icon": "Building2",
-              "slug": "strategic-planning",
+              "title": "Import Advisory 1.1",
+              "description": "First import advisory 1.1",
+              "icon": "Handshake",
+              "slug": "import-advisory-1.1",
               "features": [
-                "Strategic analysis and assessment",
-                "Growth opportunity identification",
-                "Resource allocation planning",
-                "Risk assessment and mitigation",
-                "Implementation roadmap",
-                "Performance monitoring framework"
+                "Potential buyer identification",
+                "Contact and presentation processes",
+                "Opportunity tracking system",
+                "Integrated communication platform"
+              ],
+              "price": "10",
+              "originalPrice": "15",
+              "badge": "Popular",
+              "cta": "Get Started",
+              "paymentLink": "https://buy.stripe.com/eVq9AT2SHfTtcBJ1DpcZa0b",
+              "duration": "3 months",
+              "delivery": "Immediate start",
+              "detailedDescription": "Our basic representation service provides essential support for companies looking to establish their presence in new markets. We connect you with qualified buyers and guide you through basic business processes to start your business relationships safely and professionally.",
+              "benefits": [
+                "Buyer identification and connection",
+                "Business process guidance",
+                "Basic relationship management",
+                "Initial consulting support"
+              ],
+              "additionalInfo": [
+                { "label": "Contract Duration", "value": "3 months" },
+                { "label": "Support Level", "value": "Email and Phone" },
+                { "label": "Reports", "value": "Monthly" },
+                { "label": "Meetings", "value": "As needed" }
+              ]
+            },
+            {
+              "title": "Import Advisory for Business 1.0",
+              "description": "Advance payment for first initial advisory course 1.0",
+              "icon": "Handshake",
+              "slug": "import-advisory-1.0",
+              "features": [
+                "Advanced buyer identification system",
+                "Intermediate process management platform",
+                "Relationship tracking dashboard",
+                "Monthly reporting tools",
+                "Integrated communication system",
+                "Progress monitoring platform"
               ],
               "price": "23",
               "originalPrice": "30",
-              "badge": "Popular",
-              "cta": "Develop Plan",
+              "badge": "Most Popular",
+              "cta": "Get Premium Service",
               "paymentLink": "https://buy.stripe.com/cNi6oHbpd36H0T1eqbcZa0a",
-              "duration": "8 weeks",
-              "delivery": "Strategic plan",
-              "detailedDescription": "Our strategic planning service provides comprehensive analysis and planning for business expansion and growth. We develop detailed roadmaps that align with your business objectives and market opportunities.",
+              "duration": "6 months",
+              "delivery": "Immediate start",
+              "detailedDescription": "Our intermediate representation service provides professional support for companies looking to establish solid business connections. We connect you with qualified buyers and guide you through intermediate business processes to develop lasting business relationships.",
               "benefits": [
-                "Clear strategic direction",
-                "Growth acceleration",
-                "Risk mitigation",
-                "Resource optimization",
-                "Performance tracking",
-                "Sustainable expansion"
+                "Connection with qualified buyers",
+                "Business process guidance",
+                "Business relationship management",
+                "Monthly progress reports",
+                "Email support and consulting",
+                "Opportunity tracking"
               ],
               "additionalInfo": [
-                { "label": "Plan Scope", "value": "Comprehensive strategy" },
-                { "label": "Delivery Time", "value": "8 weeks" },
-                { "label": "Format", "value": "Strategic plan" },
-                { "label": "Support", "value": "18 months" }
+                { "label": "Contract Duration", "value": "6 months" },
+                { "label": "Support Level", "value": "Email and Consulting" },
+                { "label": "Reports", "value": "Monthly" },
+                { "label": "Meetings", "value": "As needed" }
               ]
             },
             {
-              "title": "Emerging Market Entry",
-              "description": "Specialized support for entering emerging markets with comprehensive risk management.",
-              "icon": "Building2",
-              "slug": "emerging-market-entry",
+              "title": "Import Advisory for Beginners",
+              "description": "First import advisory 1.1",
+              "icon": "Handshake",
+              "slug": "import-advisory-1.1",
               "features": [
-                "Emerging market analysis",
-                "Entry strategy development",
-                "Risk assessment and mitigation",
-                "Local partner identification",
-                "Regulatory compliance guidance",
-                "Launch support and monitoring"
+                "Basic buyer identification system",
+                "Educational business process platform",
+                "Basic relationship management dashboard",
+                "Monthly reporting tools",
+                "Email communication system",
+                "Progressive learning platform"
+              ],
+              "price": "28",
+              "originalPrice": "35",
+              "badge": "Most Popular",
+              "cta": "Get Premium Service",
+              "paymentLink": "https://buy.stripe.com/14AbJ164T4aL1X5fufcZa0f",
+              "duration": "6 months",
+              "delivery": "Immediate start",
+              "detailedDescription": "Our beginner representation service is designed for companies just starting in international trade. We provide educational guidance, basic business connections, and support to learn the fundamentals of importing safely and professionally.",
+              "benefits": [
+                "Connection with qualified buyers",
+                "Educational business process guidance",
+                "Basic business relationship management",
+                "Monthly progress reports",
+                "Email support and guidance",
+                "Gradual learning of international trade"
+              ],
+              "additionalInfo": [
+                { "label": "Contract Duration", "value": "6 months" },
+                { "label": "Support Level", "value": "Email and Guidance" },
+                { "label": "Reports", "value": "Monthly" },
+                { "label": "Meetings", "value": "As needed" }
+              ]
+            },
+            {
+              "title": "Business Advisory",
+              "description": "First business advisory 1.3",
+              "icon": "Building2",
+              "slug": "import-advisory-1.3",
+              "features": [
+                "Advanced market analysis platform",
+                "Business relationship management system",
+                "Opportunity tracking tools",
+                "Real-time metrics dashboard",
+                "Alert and notification system",
+                "Integrated communication platform"
+              ],
+              "price": "45",
+              "originalPrice": "50",
+              "badge": "Enterprise",
+              "cta": "Get Premium Service",
+              "paymentLink": "https://buy.stripe.com/14AaEXcthaz959h5TFcZa0e",
+              "duration": "12 months",
+              "delivery": "Custom schedule",
+              "detailedDescription": "Our business advisory service is designed for established companies looking to optimize and expand their import operations. It includes specialized expert support, personalized market strategies, and preferential access to our premium network of international buyers and distributors.",
+              "benefits": [
+                "Specialized expert support",
+                "Personalized market strategies",
+                "Preferential network access",
+                "Advanced analytics",
+                "International expansion",
+                "Risk management"
+              ],
+              "additionalInfo": [
+                { "label": "Contract Duration", "value": "12 months" },
+                { "label": "Support Level", "value": "Dedicated Team" },
+                { "label": "Reports", "value": "Real-time" },
+                { "label": "Meetings", "value": "Weekly" }
+              ]
+            },
+            {
+              "title": "Import Advisory for Business 1.2",
+              "description": "Initial advisory for master business",
+              "icon": "Building2",
+              "slug": "import-advisory-1.2",
+              "features": [
+                "Specialized expert support",
+                "Personalized market strategies",
+                "Preferential access to buyer network",
+                "Advanced analysis and reports",
+                "International expansion support",
+                "Risk management services"
+              ],
+              "price": "50",
+              "originalPrice": "60",
+              "badge": "Enterprise",
+              "cta": "Get Premium Service",
+              "paymentLink": "https://buy.stripe.com/14AeVdbpd22DeJR4PBcZa09",
+              "duration": "12 months",
+              "delivery": "Custom schedule",
+              "detailedDescription": "Our advanced advisory service is designed for experienced companies looking to take their import operations to the next level. It includes specialized strategies, deep market analysis, and premium support to maximize return on investment in international trade.",
+              "benefits": [
+                "Specialized expert support",
+                "Personalized market strategies",
+                "Preferential network access",
+                "Advanced analytics",
+                "International expansion",
+                "Risk management"
+              ],
+              "additionalInfo": [
+                { "label": "Contract Duration", "value": "12 months" },
+                { "label": "Support Level", "value": "Dedicated Team" },
+                { "label": "Reports", "value": "Real-time" },
+                { "label": "Meetings", "value": "Weekly" }
+              ]
+            },
+            {
+              "title": "Master Import Advisory 1.2",
+              "description": "Master Advisory for Premium Class Business",
+              "icon": "Building2",
+              "slug": "import-advisory-1.2",
+              "features": [
+                "Dedicated team of experts",
+                "Personalized market strategies",
+                "Exclusive access to buyer network",
+                "Advanced analysis and reports",
+                "International expansion support",
+                "Risk management services"
               ],
               "price": "100",
               "originalPrice": "120",
-              "badge": "Premium",
-              "cta": "Enter Markets",
-              "paymentLink": "https://buy.stripe.com/14AaEXcthaz959h5TFcZa0e",
-              "duration": "12 weeks",
-              "delivery": "Market entry plan",
-              "detailedDescription": "Our emerging market entry service provides specialized support for businesses looking to expand into emerging markets. We offer comprehensive risk management and local expertise to ensure successful market entry.",
+              "badge": "Enterprise",
+              "cta": "Contact Sales",
+              "paymentLink": "https://buy.stripe.com/3cI00j0Kz0YzeJRdm7cZa0c",
+              "duration": "12 months",
+              "delivery": "Custom schedule",
+              "detailedDescription": "Our master advisory service represents the highest level of support for companies looking to dominate the import market. It includes a dedicated executive team, cutting-edge market strategies, and VIP access to our global network of buyers, distributors, and strategic partners.",
               "benefits": [
-                "Emerging market expertise",
-                "Risk management",
-                "Local partnerships",
-                "Regulatory compliance",
-                "Launch support",
-                "Ongoing monitoring"
+                "Dedicated expert team",
+                "Personalized market strategies",
+                "Exclusive network access",
+                "Advanced analytics",
+                "International expansion",
+                "Risk management"
               ],
               "additionalInfo": [
-                { "label": "Market Scope", "value": "Emerging markets" },
-                { "label": "Delivery Time", "value": "12 weeks" },
-                { "label": "Format", "value": "Market entry plan" },
-                { "label": "Support", "value": "24 months" }
-              ]
-            },
-            {
-              "title": "Risk Management & Mitigation",
-              "description": "Comprehensive risk assessment and mitigation strategies for business expansion.",
-              "icon": "Building2",
-              "slug": "risk-management-mitigation",
-              "features": [
-                "Comprehensive risk assessment",
-                "Risk mitigation strategy development",
-                "Contingency planning",
-                "Risk monitoring systems",
-                "Crisis management planning",
-                "Ongoing risk review"
-              ],
-              "price": "45",
-              "originalPrice": "55",
-              "badge": "Essential",
-              "cta": "Manage Risks",
-              "paymentLink": "https://buy.stripe.com/14AeVdbpd22DeJR4PBcZa09",
-              "duration": "6 weeks",
-              "delivery": "Risk management plan",
-              "detailedDescription": "Our risk management and mitigation service provides comprehensive risk assessment and strategy development for business expansion. We help identify potential risks and develop effective mitigation strategies.",
-              "benefits": [
-                "Risk identification",
-                "Mitigation strategies",
-                "Contingency planning",
-                "Crisis management",
-                "Ongoing monitoring",
-                "Peace of mind"
-              ],
-              "additionalInfo": [
-                { "label": "Risk Scope", "value": "Comprehensive assessment" },
-                { "label": "Delivery Time", "value": "6 weeks" },
-                { "label": "Format", "value": "Risk management plan" },
-                { "label": "Support", "value": "12 months" }
+                { "label": "Contract Duration", "value": "12 months" },
+                { "label": "Support Level", "value": "Dedicated Team" },
+                { "label": "Reports", "value": "Real-time" },
+                { "label": "Meetings", "value": "Weekly" }
               ]
             }
           ]
